@@ -68,7 +68,7 @@ Alcance</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Alcance</rem:text>
+<rem:text>test<br/>Dice que esto de arriba es alcance</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -343,7 +343,7 @@ Glosario</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Prueba otra</rem:text>
+<rem:text>Termino 1</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
