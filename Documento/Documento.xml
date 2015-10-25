@@ -413,7 +413,7 @@ Fortalezas</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Una de las fortalezas del sistema actual es la gran cantidad de información que ya tiene registrada.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -448,7 +448,7 @@ Debilidades</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Test</rem:text>
+<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
