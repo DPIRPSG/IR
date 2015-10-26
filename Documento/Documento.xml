@@ -138,8 +138,8 @@ Hospital Virgen del Rocio</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:address><rem:tbd/></rem:address>
-<rem:telephone><rem:tbd/></rem:telephone>
+<rem:address>Av. Manuel Siurot, s/n, 41013 Sevilla</rem:address>
+<rem:telephone>955 01 20 00</rem:telephone>
 <rem:fax><rem:tbd/></rem:fax>
 </rem:organization>
 <rem:organization
@@ -413,7 +413,7 @@ Fortalezas</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Una de las fortalezas del sistema actual es la gran cantidad de información que ya tiene registrada.</rem:text>
+<rem:text>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
