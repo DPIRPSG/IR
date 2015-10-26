@@ -53,6 +53,23 @@ Alcance</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0001">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test<br/>Dice que esto de arriba es alcance</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0004">
@@ -71,6 +88,23 @@ Objetivos</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>1.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0002">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0005">
@@ -228,7 +262,7 @@ Ninguno</rem:comments>
 <rem:section
  oid = "SEC-0002">
 <rem:name>
-Información sobre el Dominio del Problema</rem:name>
+Información sobre el dominio del problema</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -242,6 +276,553 @@ Información sobre el Dominio del Problema</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0006">
+<rem:name>
+Introducción al dominio del problema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0003">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lo cambio porque quiero</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0007">
+<rem:name>
+Glosario de términos del dominio del problema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0004">
+<rem:name>
+Glosario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Termino 1</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+Descripción de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Pros y contras de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Fortalezas de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0005">
+<rem:name>
+Fortalezas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Una de las fortalezas del sistema actual es la gran cantidad de información que ya tiene registrada.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Debilidades de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0006">
+<rem:name>
+Debilidades</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Modelos de procesos de negocios actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:section
+ oid = "SEC-0013">
+<rem:name>
+Descripción de actores de negocio actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0007">
+<rem:name>
+Actores de negocio actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0014">
+<rem:name>
+Descripción de procesos de negocio actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0008">
+<rem:name>
+Procesos de negocio actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0015">
+<rem:name>
+Entorno tecnológico actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:section
+ oid = "SEC-0016">
+<rem:name>
+Descripción del entorno de hardward actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0009">
+<rem:name>
+Hardware</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0017">
+<rem:name>
+Descripción del entorno de software actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0010">
+<rem:name>
+Software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0018">
+<rem:name>
+Necesidades de negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0019">
+<rem:name>
+Objetivos de negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0011">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0020">
+<rem:name>
+Modelos de procesos de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+<rem:section
+ oid = "SEC-0021">
+<rem:name>
+Descripción de actores de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>4.2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0012">
+<rem:name>
+Actores a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0022">
+<rem:name>
+Descripción de procesos de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>4.2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0013">
+<rem:name>
+procesos a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>test</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0023">
+<rem:name>
+Actas de reuniones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>A </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0024">
+<rem:name>
+Documentación relevante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>B </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0025">
+<rem:name>
+Glosario de términos y abreviaturas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>10</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>C </rem:number>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
