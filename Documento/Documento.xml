@@ -36,6 +36,23 @@ Introducción</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+Resumen</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El proyecto que se va a desarrollar abarca la organización interna del Hospital Universitario Virgen del Rocío, en concreto, su Servicio de Hematología. Fundado en 1955, actualmente es el mayor complejo hospitalario del Sistema Sanitario Público de Andalucía, tanto por su intensa actividad asistencial como por su infraestructura y dotación tecnológica, incluyendo la mayor unidad de cuidados intensivos de España. Al tratarse de un hospital universitario, la Universidad de Sevilla es la institución afiliada al complejo sanitario. En resumen, es el centro sanitario de referencia de Andalucía.<br/></rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0003">
 <rem:name>
@@ -68,7 +85,7 @@ Alcance</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test<br/>Dice que esto de arriba es alcance</rem:text>
+<rem:text>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes controles analíticos en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -103,7 +120,7 @@ Objetivos</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Nuestro proyecto pretende dotar al hospital de una herramienta más eficaz para la gestión de todos los procedimientos que se desarrollan en el Servicio de Hematología. El usuario final de este sistema será el personal adscrito a este servicio, y en menor medida, los pacientes, con lo que esperamos que les resulte fácil de usar y que permita agilizar tareas que hasta ahora resultaban muy costosas en tiempo de ejecución.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -276,6 +293,23 @@ Información sobre el dominio del problema</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0015">
+<rem:name>
+Información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de citas de revisión, analíticas de control, dispensación de la medicación, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.<br/>El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las citas de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes controles analíticos que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del fármaco en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).<br/></rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0006">
 <rem:name>
@@ -308,7 +342,7 @@ Introducción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Lo cambio porque quiero</rem:text>
+<rem:text>El sistema a desarrollar comprenderá dos roles principales: los “clientes” y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -343,7 +377,7 @@ Glosario</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Termino 1</rem:text>
+<rem:text>Analíticas de control: Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.<br/><br/>Bioquímica: Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).<br/><br/>Citas: Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.<br/><br/>Controles analíticos: Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.<br/><br/>CRO: Encargado de revisar el CRF y promover dicho ensayo clínico<br/><br/>CRF: Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.<br/><br/>Data Manager: Es un empleado del hospital encargado de realizar el CRF.<br/><br/>Datos clínicos de seguimiento: Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).<br/><br/>Diagnósticos: Procedimiento por el cual se identifica una enfermedad en un paciente.<br/><br/>Dispensación de la medicación: Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc).<br/><br/>Fármaco: Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.<br/><br/>Grupos diagnósticos: Grupos de pacientes afectados por una misma enfermedad o patología.<br/><br/>Hemograma: Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características.<br/><br/>NUHSA: Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.<br/><br/>Patología: Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.<br/><br/>Pautas de tratamiento: Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.<br/><br/>Protocolo de actuación: Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.<br/><br/>Serología: Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -823,6 +857,23 @@ Glosario de términos y abreviaturas</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>C </rem:number>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+Glosario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>CRO: Clinical Research Organization<br/>CRF: Clinical Research Formulary<br/>IP: Investigador principal<br/>NUHSA: Número Único de Historia de Salud de Andalucía<br/>SAES: Serious Adverse Events (Eventos Adversos Serios)</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
