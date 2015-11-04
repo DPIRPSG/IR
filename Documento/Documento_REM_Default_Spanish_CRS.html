@@ -491,7 +491,7 @@ Información sobre el dominio del problema</h1><a name="PRG-0015" />
 <a name="SEC-0006" />
 <h2 align="left">2.1 
 Introducción al dominio del problema</h2><a name="PRG-0003" />
-<p>El sistema a desarrollar comprenderá dos roles principales: los ?clientes? y los usuarios
+<p>El sistema a desarrollar comprenderá dos roles principales: los "clientes" y los usuarios
 <br />Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).
 <br />Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
 <br />
@@ -540,10 +540,12 @@ Glosario de términos del dominio del problema</h2><a name="PRG-0004" />
 <h1 align="left">3 
 Descripción de la situación actual</h1><a name="SEC-0009" />
 <h2 align="left">3.1 
-Pros y contras de la situación actual</h2><a name="SEC-0010" />
+Pros y contras de la situación actual</h2><a name="PRG-0021" />
+<p>En los siguientes apartados describiremos cuales son las fortalezas y las debilidades de la situación actual.</p>
+<a name="SEC-0010" />
 <h3 align="left">3.1.1 
 Fortalezas de la situación actual</h3><a name="PRG-0005" />
-<p>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo</p>
+<p>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo.</p>
 <a name="SEC-0011" />
 <h3 align="left">3.1.2 
 Debilidades de la situación actual</h3><a name="PRG-0006" />
@@ -553,45 +555,203 @@ Debilidades de la situación actual</h3><a name="PRG-0006" />
 <br /> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</p>
 <a name="SEC-0012" />
 <h2 align="left">3.2 
-Modelos de procesos de negocios actuales</h2><a name="SEC-0013" />
+Modelos de procesos de negocios actuales</h2><a name="PRG-0017" />
+<p>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</p>
+<a name="SEC-0013" />
 <h3 align="left">3.2.1 
 Descripción de actores de negocio actuales</h3><a name="PRG-0007" />
-<p>test</p>
+<p>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:
+<br />
+<br />001		Médico
+<br />Versión:		1(02/11/2015)
+<br />Dependencias:	- Gestión de ensayos clínicos de un paciente
+<br />		- Tratar paciente
+<br />Descripción:	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
+<br />Comentarios:	No procede
+<br />
+<br />002		Paciente
+<br />Versión:		1(02/11/2015)
+<br />Dependencias:	- Gestión de ensayos clínicos de un paciente
+<br />		- Tratar paciente
+<br />Descripción:	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
+<br />Comentarios:	No procede
+<br />
+<br />003		Enfermera
+<br />Versión:		1(02/11/2015)
+<br />Dependencias:	- Tratar paciente
+<br />Descripción:	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
+<br />Comentarios:	No procede</p>
 <a name="SEC-0014" />
 <h3 align="left">3.2.2 
 Descripción de procesos de negocio actuales</h3><a name="PRG-0008" />
-<p>test</p>
+<p>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:
+<br />
+<br />001		Gestión de ensayo clínico de 1 paciente.
+<br />Versión:		1(02/11/2015) 
+<br />Dependencias:	- Tratar paciente
+<br />Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de citas, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
+<br />Actores:		-Médico (001)
+<br />		-Paciente (002)
+<br />Comentarios:	No procede
+<br />
+<br />
+</p>
+<a name="GRF-0001" />
+<p align="center">
+<img src="..\3.2.2.png" title="..\3.2.2.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Proceso de negocio</p>
+<a name="PRG-0019" />
+<p>002		Tratar paciente
+<br />Versión:		1(02/11/2015)
+<br />Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
+<br />Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.
+<br />Actores:		-Médico (001)
+<br />		-Enfermera (003)
+<br />		-Paciente (002)
+<br />Comentarios:	No procede</p>
+<a name="GRF-0002" />
+<p align="center">
+<img src="..\Tratar paciente.png" title="..\Tratar paciente.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Proceso tratar paciente</p>
 <a name="SEC-0015" />
 <h2 align="left">3.3 
-Entorno tecnológico actual</h2><a name="SEC-0016" />
+Entorno tecnológico actual</h2><a name="PRG-0022" />
+<p>A continuación se detallará sobre el Hardware y el Software que se usa en el servicio de Hematología para los ensayos clínicos.</p>
+<a name="SEC-0016" />
 <h3 align="left">3.3.1 
 Descripción del entorno de hardward actual</h3><a name="PRG-0009" />
-<p>test</p>
+<p>Disponen de una intranet a la que se conectan los ordenadores de cada empleado y una torre de gran potencia por la cúal comparten entre sí todo lo necesario (Archivos, carpetas, etc).
+<br />También cuentan con material centrado en la monotorización de los pacientes. Éste no es posible integrarlo en el sistema pero exporta información útil en formatos xml y png que deben ser almacenados.</p>
 <a name="SEC-0017" />
 <h3 align="left">3.3.2 
 Descripción del entorno de software actual</h3><a name="PRG-0010" />
-<p>test</p>
+<p>Entre el Software que usan se encuentra:
+<br />- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus citas y pruebas corresponidentes.
+<br />- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</p>
 <a name="SEC-0018" />
 <h1 align="left">4 
 Necesidades de negocio</h1><a name="SEC-0019" />
 <h2 align="left">4.1 
 Objetivos de negocio</h2><a name="PRG-0011" />
-<p>test</p>
+<p>El objetivo de negocio principal del sistema es la gestión de los Ensayos Clínicos los cuales abarcan:
+<br />
+<br />- Gestión de cada ensayo clínico. Esto abarca:
+<br />	- Gestión del propio ensayo.
+<br />	- Gestión de pacientes.
+<br />	- Gestión de empleados y sus cargos.
+<br />
+<br />-Gestión de los medicamentos.
+<br />
+<br />- Gestión de citas de pacientes.
+<br />
+<br />- Gestión de promotores de ensayos.
+<br />
+<br />Otro objetivo de negocio que merece mención a parte es que todos los usurios deben ser capaces de entender y usar el sistema.</p>
 <a name="SEC-0020" />
 <h2 align="left">4.2 
-Modelos de procesos de negocio a implantar</h2><a name="SEC-0021" />
+Modelos de procesos de negocio a implantar</h2><a name="PRG-0020" />
+<p>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra. En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de citas así como de registros que eran imposibles en los modelos actuales.</p>
+<a name="SEC-0021" />
 <h3 align="left">4.2.1 
 Descripción de actores de negocio a implantar</h3><a name="PRG-0012" />
-<p>test</p>
+<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales se describen a continuación:
+<br />
+<br />001		Médico
+<br />Versión		1(02/11/2015)
+<br />Dependencias	- Gestión de ensayos clínicos de un paciente
+<br />		- Tratar paciente
+<br />Descripción	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
+<br />Comentarios	No procede
+<br />
+<br />002		Paciente
+<br />Versión		1(02/11/2015)
+<br />Dependencias	- Gestión de ensayos clínicos de un paciente
+<br />		- Tratar paciente
+<br />Descripción	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
+<br />Comentarios	No procede
+<br />
+<br />003		Enfermera
+<br />Versión		1(02/11/2015)
+<br />Dependencias	- Tratar paciente
+<br />Descripción	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
+<br />Comentarios	No procede
+<br />
+</p>
 <a name="SEC-0022" />
 <h3 align="left">4.2.2 
 Descripción de procesos de negocio a implantar</h3><a name="PRG-0013" />
-<p>test</p>
+<p>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:
+<br />
+<br />001		Gestión de ensayo clínico de 1 paciente.
+<br />Versión		1(02/11/2015) 
+<br />Dependencias	- Tratar paciente
+<br />Descripción	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de citas para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
+<br />Actores		-Médico (001)
+<br />		-Paciente (002)
+<br />Comentarios	No procede
+<br />
+<br />002		Tratar paciente
+<br />Versión		1(02/11/2015)
+<br />Descripción	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
+<br />Importancia	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.
+<br />Actores		-Médico (001)
+<br />		-Enfermera (003)
+<br />		-Paciente (002)
+<br />Comentarios	No procede
+<br />
+</p>
 <a name="SEC-0023" />
 <h1 align="left">A 
-Actas de reuniones</h1><a name="SEC-0024" />
+Actas de reuniones</h1><a name="PRG-0023" />
+<p>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 14/10/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />- Orden del día:
+<br />    1.- Presentación de los asistentes.
+<br />    2.- Exposición de los ensayos clínicos y sus características.
+<br />    3.- Exposición de la situación actual en la gestión de los ensayos clínicos.
+<br />    4.- Exposición de los principales problemas y las posibles soluciones.
+<br />
+<br />- Objetivos principales (de la reunión):
+<br />    Toma de contacto con el proyecto, presentación de los problemas y debilidades del sistema actual y posibles soluciones propuestas por el equipo de desarrollo.
+<br />
+<br />- Desarrollo de la reunión:
+<br />    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.
+<br />    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.
+<br />    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las citas de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.
+<br />    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de citas debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.
+<br />    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. 
+<br />
+<br />    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)
+<br />
+<br />
+<br />- Acuerdos y tareas: 
+<br />    Realizar un esquema de lo que integraría el sistema
+<br />- Puntos pendientes:
+<br />    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.
+<br />- Próximas reuniones:
+<br />    No se concretó la fecha de la próxima reunión.</p>
+<a name="SEC-0024" />
 <h1 align="left">B 
-Documentación relevante</h1><a name="SEC-0025" />
+Documentación relevante</h1><a name="PRG-0024" />
+<p>No procede</p>
+<a name="SEC-0025" />
 <h1 align="left">C 
 Glosario de términos y abreviaturas</h1><a name="PRG-0016" />
 <p>CRO: Clinical Research Organization
