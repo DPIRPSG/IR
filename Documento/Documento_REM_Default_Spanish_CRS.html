@@ -491,7 +491,7 @@ Información sobre el dominio del problema</h1><a name="PRG-0015" />
 <a name="SEC-0006" />
 <h2 align="left">2.1 
 Introducción al dominio del problema</h2><a name="PRG-0003" />
-<p>El sistema a desarrollar comprenderá dos roles principales: los ?clientes? y los usuarios
+<p>El sistema a desarrollar comprenderá dos roles principales: los "clientes" y los usuarios
 <br />Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).
 <br />Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
 <br />
@@ -540,10 +540,12 @@ Glosario de términos del dominio del problema</h2><a name="PRG-0004" />
 <h1 align="left">3 
 Descripción de la situación actual</h1><a name="SEC-0009" />
 <h2 align="left">3.1 
-Pros y contras de la situación actual</h2><a name="SEC-0010" />
+Pros y contras de la situación actual</h2><a name="PRG-0021" />
+<p>En los siguientes apartados describiremos cuales son las fortalezas y las debilidades de la situación actual.</p>
+<a name="SEC-0010" />
 <h3 align="left">3.1.1 
 Fortalezas de la situación actual</h3><a name="PRG-0005" />
-<p>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo</p>
+<p>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo.</p>
 <a name="SEC-0011" />
 <h3 align="left">3.1.2 
 Debilidades de la situación actual</h3><a name="PRG-0006" />
@@ -622,20 +624,38 @@ Proceso de negocio</p>
 Proceso tratar paciente</p>
 <a name="SEC-0015" />
 <h2 align="left">3.3 
-Entorno tecnológico actual</h2><a name="SEC-0016" />
+Entorno tecnológico actual</h2><a name="PRG-0022" />
+<p>A continuación se detallará sobre el Hardware y el Software que se usa en el servicio de Hematología para los ensayos clínicos.</p>
+<a name="SEC-0016" />
 <h3 align="left">3.3.1 
 Descripción del entorno de hardward actual</h3><a name="PRG-0009" />
-<p>test</p>
+<p>Disponen de una intranet a la que se conectan los ordenadores de cada empleado y una torre de gran potencia por la cúal comparten entre sí todo lo necesario (Archivos, carpetas, etc).
+<br />También cuentan con material centrado en la monotorización de los pacientes. Éste no es posible integrarlo en el sistema pero exporta información útil en formatos xml y png que deben ser almacenados.</p>
 <a name="SEC-0017" />
 <h3 align="left">3.3.2 
 Descripción del entorno de software actual</h3><a name="PRG-0010" />
-<p>test</p>
+<p>Entre el Software que usan se encuentra:
+<br />- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus citas y pruebas corresponidentes.
+<br />- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</p>
 <a name="SEC-0018" />
 <h1 align="left">4 
 Necesidades de negocio</h1><a name="SEC-0019" />
 <h2 align="left">4.1 
 Objetivos de negocio</h2><a name="PRG-0011" />
-<p>test</p>
+<p>El objetivo de negocio principal del sistema es la gestión de los Ensayos Clínicos los cuales abarcan:
+<br />
+<br />- Gestión de cada ensayo clínico. Esto abarca:
+<br />	- Gestión del propio ensayo.
+<br />	- Gestión de pacientes.
+<br />	- Gestión de empleados y sus cargos.
+<br />
+<br />-Gestión de los medicamentos.
+<br />
+<br />- Gestión de citas de pacientes.
+<br />
+<br />- Gestión de promotores de ensayos.
+<br />
+<br />Otro objetivo de negocio que merece mención a parte es que todos los usurios deben ser capaces de entender y usar el sistema.</p>
 <a name="SEC-0020" />
 <h2 align="left">4.2 
 Modelos de procesos de negocio a implantar</h2><a name="PRG-0020" />
