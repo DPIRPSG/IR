@@ -1,0 +1,14 @@
+El objetivo de negocio principal del sistema es la gestión de los Ensayos Clínicos los cuales abarcan:
+
+* Gestión de cada ensayo clínico. Esto abarca:
+	** Gestión del propio ensayo.
+	** Gestión de pacientes.
+	** Gestión de empleados y sus cargos.
+
+* Gestión de los medicamentos.
+
+* Gestión de citas de pacientes.
+
+* Gestión de promotores de ensayos.
+
+Otro objetivo de negocio que merece mención a parte es que todos los usurios deben ser capaces de entender y usar el sistema.
