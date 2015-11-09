@@ -818,31 +818,12 @@ Objetivos de negocio</h2><a name="PRG-0011" />
 <a name="SEC-0020" />
 <h2 align="left">4.2 
 Modelos de procesos de negocio a implantar</h2><a name="PRG-0020" />
-<p>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra. En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> así como de registros que eran imposibles en los modelos actuales.</p>
+<p>En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> así como de registros que eran imposibles en los modelos actuales.
+<br />En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</p>
 <a name="SEC-0021" />
 <h3 align="left">4.2.1 
 Descripción de actores de negocio a implantar</h3><a name="PRG-0012" />
-<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales se describen a continuación:
-<br />
-<br />001		Médico
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
-<br />Comentarios	No procede
-<br />
-<br />002		Paciente
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
-<br />Comentarios	No procede
-<br />
-<br />003		Enfermera
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
-<br />Comentarios	No procede
+<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales son los mismos que los descritos en el apartado 3.2.1.
 <br />
 </p>
 <a name="SEC-0022" />
@@ -853,13 +834,13 @@ Descripción de procesos de negocio a implantar</h3><a name="PRG-0013" />
 <br />001		Gestión de ensayo clínico de 1 paciente.
 <br />Versión		1(02/11/2015) 
 <br />Dependencias	- Tratar paciente
-<br />Descripción	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <a href="#GLO-0040" title="Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.">patología</a>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico y se seguiría el proceso habitual.
 <br />Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
 <br />Actores		-Médico (001)
 <br />		-Paciente (002)
 <br />Comentarios	No procede
 <br />
-<br />
+<br />Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:
 <br />
 </p>
 <a name="GRF-0003" />
@@ -873,7 +854,7 @@ Proceso a implantar</p>
 <a name="PRG-0025" />
 <p>002 Tratar paciente 
 <br />Versión 1(02/11/2015) 
-<br />Descripción El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal. 
+<br />Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.
 <br />Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. 
 <br />Actores -Médico (001) 
 <br />-Enfermera (003) 
