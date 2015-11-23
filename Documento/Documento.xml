@@ -36,6 +36,23 @@ Introducción</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+Resumen</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El proyecto que se va a desarrollar abarca la organización interna del Hospital Universitario Virgen del Rocío, en concreto, su Servicio de Hematología. Fundado en 1955, actualmente es el mayor complejo hospitalario del Sistema Sanitario Público de Andalucía, tanto por su intensa actividad asistencial como por su infraestructura y dotación tecnológica, incluyendo la mayor unidad de cuidados intensivos de España. Al tratarse de un hospital universitario, la Universidad de Sevilla es la institución afiliada al complejo sanitario. En resumen, es el centro sanitario de referencia de Andalucía.<br/></rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0003">
 <rem:name>
@@ -68,7 +85,7 @@ Alcance</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test<br/>Dice que esto de arriba es alcance</rem:text>
+<rem:text>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes <rem:ref oid="GLO-0029">controles analíticos</rem:ref> en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -103,7 +120,7 @@ Objetivos</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Nuestro proyecto pretende dotar al hospital de una herramienta más eficaz para la gestión de todos los procedimientos que se desarrollan en el Servicio de Hematología. El usuario final de este sistema será el personal adscrito a este servicio, y en menor medida, los pacientes, con lo que esperamos que les resulte fácil de usar y que permita agilizar tareas que hasta ahora resultaban muy costosas en tiempo de ejecución.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -138,8 +155,8 @@ Hospital Virgen del Rocio</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:address><rem:tbd/></rem:address>
-<rem:telephone><rem:tbd/></rem:telephone>
+<rem:address>Av. Manuel Siurot, s/n, 41013 Sevilla</rem:address>
+<rem:telephone>955 01 20 00</rem:telephone>
 <rem:fax><rem:tbd/></rem:fax>
 </rem:organization>
 <rem:organization
@@ -276,6 +293,23 @@ Información sobre el dominio del problema</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0015">
+<rem:name>
+Información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de <rem:ref oid="GLO-0028">citas</rem:ref> de revisión, <rem:ref oid="GLO-0026">analíticas de control</rem:ref>, <rem:ref oid="GLO-0035">dispensación de la medicación</rem:ref>, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.<br/>El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las <rem:ref oid="GLO-0028">citas</rem:ref> de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes <rem:ref oid="GLO-0029">controles analíticos</rem:ref> que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del <rem:ref oid="GLO-0036">fármaco</rem:ref> en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).<br/></rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0006">
 <rem:name>
@@ -308,7 +342,7 @@ Introducción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Lo cambio porque quiero</rem:text>
+<rem:text>El sistema a desarrollar comprenderá dos roles principales: los &quot;clientes&quot; y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (<rem:ref oid="GLO-0034">diagnósticos</rem:ref>) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -328,23 +362,312 @@ Glosario de términos del dominio del problema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0004">
+<rem:glossaryItem
+ oid = "GLO-0026">
 <rem:name>
-Glosario</rem:name>
+<rem:ref oid="GLO-0026">Analíticas de control</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2015</rem:year>
-<rem:month>10</rem:month>
-<rem:day>19</rem:day>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Termino 1</rem:text>
-</rem:paragraph>
+<rem:text> Determinaciones de diferentes parámetros analíticos (<rem:ref oid="GLO-0038">hemograma</rem:ref>, <rem:ref oid="GLO-0027">bioquímica</rem:ref>, <rem:ref oid="GLO-0043">serología</rem:ref>, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0027">
+<rem:name>
+<rem:ref oid="GLO-0027">Bioquímica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0028">
+<rem:name>
+<rem:ref oid="GLO-0028">Citas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Fechas en las que se realizan revisiones clínicas o extracciones <rem:ref oid="GLO-0026">analíticas de control</rem:ref> a los pacientes. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0029">
+<rem:name>
+<rem:ref oid="GLO-0029">Controles analíticos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0030">
+<rem:name>
+<rem:ref oid="GLO-0030">CRO</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Encargado de revisar el <rem:ref oid="GLO-0031">CRF</rem:ref> y promover dicho ensayo clínico <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0031">
+<rem:name>
+<rem:ref oid="GLO-0031">CRF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Informe de control sobre un ensayo clínico realizado por el <rem:ref oid="GLO-0032">Data Manager</rem:ref> y supervisado por el <rem:ref oid="GLO-0030">CRO</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0032">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Es un empleado del hospital encargado de realizar el <rem:ref oid="GLO-0031">CRF</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0033">
+<rem:name>
+<rem:ref oid="GLO-0033">Datos clínicos de seguimiento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0034">
+<rem:name>
+<rem:ref oid="GLO-0034">Diagnósticos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Procedimiento por el cual se identifica una enfermedad en un paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0035">
+<rem:name>
+<rem:ref oid="GLO-0035">Dispensación de la medicación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc). <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0036">
+<rem:name>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0037">
+<rem:name>
+<rem:ref oid="GLO-0037">Grupos diagnósticos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Grupos de pacientes afectados por una misma enfermedad o <rem:ref oid="GLO-0040">patología</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0038">
+<rem:name>
+<rem:ref oid="GLO-0038">Hemograma</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0039">
+<rem:name>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Es el número único de identificación para los pacientes en el sistema de salud de Andalucía. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0040">
+<rem:name>
+<rem:ref oid="GLO-0040">Patología</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0041">
+<rem:name>
+<rem:ref oid="GLO-0041">Pautas de tratamiento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0042">
+<rem:name>
+<rem:ref oid="GLO-0042">Protocolo de actuación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0043">
+<rem:name>
+<rem:ref oid="GLO-0043">Serología</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).</rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:section>
 <rem:section
@@ -381,6 +704,23 @@ Pros y contras de la situación actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0021">
+<rem:name>
+Pros y contras</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En los siguientes apartados describiremos cuales son las fortalezas y las debilidades de la situación actual.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0010">
 <rem:name>
@@ -413,7 +753,7 @@ Fortalezas</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Una de las fortalezas del sistema actual es la gran cantidad de información que ya tiene registrada.</rem:text>
+<rem:text>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -448,7 +788,7 @@ Debilidades</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</rem:text>
+<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las <rem:ref oid="GLO-0028">citas</rem:ref> con los pacientes.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -469,6 +809,23 @@ Modelos de procesos de negocios actuales</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0017">
+<rem:name>
+Modelos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, &quot;Gestión de ensayo clínico de un paciente&quot;, dentro del cuál se encuentra un segundo proceso de negocio, &quot;Tratar paciente&quot;, que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0013">
 <rem:name>
@@ -501,8 +858,65 @@ Actores de negocio actuales</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:</rem:text>
 </rem:paragraph>
+<rem:actor
+ oid = "ACT-0001">
+<rem:name>
+Médico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0003">
+<rem:name>
+Enfermera</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</rem:actorRole>
+</rem:actor>
 </rem:section>
 <rem:section
  oid = "SEC-0014">
@@ -536,8 +950,63 @@ Procesos de negocio actuales</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión:		1(02/11/2015) <br/>Dependencias:	- Tratar paciente<br/>Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <rem:ref oid="GLO-0040">patología</rem:ref>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <rem:ref oid="GLO-0028">citas</rem:ref>, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores:		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios:	No procede<br/><br/></rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0001">
+<rem:name>
+Proceso de negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\3.2.2.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0019">
+<rem:name>
+Tratar Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Enfermera (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0002">
+<rem:name>
+Proceso tratar paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Tratar paciente.png]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 </rem:section>
 <rem:section
@@ -557,6 +1026,23 @@ Entorno tecnológico actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0022">
+<rem:name>
+Entorno</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallará sobre el Hardware y el Software que se usa en el servicio de Hematología para los ensayos clínicos.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0016">
 <rem:name>
@@ -589,7 +1075,7 @@ Hardware</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Disponen de una intranet a la que se conectan los ordenadores de cada empleado y una torre de gran potencia por la cúal comparten entre sí todo lo necesario (Archivos, carpetas, etc).<br/>También cuentan con material centrado en la monotorización de los pacientes. Éste no es posible integrarlo en el sistema pero exporta información útil en formatos xml y png que deben ser almacenados.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -624,7 +1110,7 @@ Software</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Entre el Software que usan se encuentra:<br/>- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus <rem:ref oid="GLO-0028">citas</rem:ref> y pruebas corresponidentes.<br/>- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -678,7 +1164,7 @@ Objetivos</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>El objetivo de negocio principal del sistema es la gestión de los Ensayos Clínicos los cuales abarcan:<br/><br/>- Gestión de cada ensayo clínico. Esto abarca:<br/>	- Gestión del propio ensayo.<br/>	- Gestión de pacientes.<br/>	- Gestión de empleados y sus cargos.<br/><br/>-Gestión de los medicamentos.<br/><br/>- Gestión de <rem:ref oid="GLO-0028">citas</rem:ref> de pacientes.<br/><br/>- Gestión de promotores de ensayos.<br/><br/>Otro objetivo de negocio que merece mención a parte es que todos los usurios deben ser capaces de entender y usar el sistema.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -698,6 +1184,23 @@ Modelos de procesos de negocio a implantar</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0020">
+<rem:name>
+Necesidades</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <rem:ref oid="GLO-0028">citas</rem:ref> así como de registros que eran imposibles en los modelos actuales.<br/>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, &quot;Gestión de ensayo clínico de un paciente&quot;, dentro del cuál se encuentra un segundo proceso de negocio, &quot;Tratar paciente&quot;, que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0021">
 <rem:name>
@@ -730,7 +1233,7 @@ Actores a implantar</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales son los mismos que los descritos en el apartado 3.2.1.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -765,7 +1268,43 @@ procesos a implantar</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión		1(02/11/2015) <br/>Dependencias	- Tratar paciente<br/>Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <rem:ref oid="GLO-0028">citas</rem:ref> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico y se seguiría el proceso habitual.<br/>Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/><br/>Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:<br/></rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0003">
+<rem:name>
+Proceso a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\4.2.2.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0025">
+<rem:name>
+Tratar Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Enfermera (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -787,6 +1326,42 @@ Actas de reuniones</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>A </rem:number>
+<rem:paragraph
+ oid = "PRG-0023">
+<rem:name>
+Acta reunión 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 14/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>- Orden del día:<br/>    1.- Presentación de los asistentes.<br/>    2.- Exposición de los ensayos clínicos y sus características.<br/>    3.- Exposición de la situación actual en la gestión de los ensayos clínicos.<br/>    4.- Exposición de los principales problemas y las posibles soluciones.<br/><br/>- Objetivos principales (de la reunión):<br/>    Toma de contacto con el proyecto, presentación de los problemas y debilidades del sistema actual y posibles soluciones propuestas por el equipo de desarrollo.<br/><br/>- Desarrollo de la reunión:<br/>    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.<br/>    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.<br/>    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.<br/>    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de <rem:ref oid="GLO-0028">citas</rem:ref> debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.<br/>    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. <br/>    <br/>    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)<br/><br/><br/>- Acuerdos y tareas: <br/>    Realizar un esquema de lo que integraría el sistema<br/>- Puntos pendientes:<br/>    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.<br/>- Próximas reuniones:<br/>    No se concretó la fecha de la próxima reunión.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0044">
+<rem:name>
+Acta reunión 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 27/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    1.- Refutación de las ideas obtenidas en la reunión anterior.<br/>    2.- Resolución de los puntos pendientes de la reunión anterior.<br/>    3.- Exposición de los procesos de un ensayo clínico.<br/>    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Una visión más profunda de como funciona la iteracción con el sistema actual.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. <br/>    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <rem:ref oid="GLO-0028">citas</rem:ref> de pacientes.<br/>    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.<br/>    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.<br/><br/>+-+Acuerdos y tareas: <br/>    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0024">
@@ -805,6 +1380,23 @@ Documentación relevante</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>B </rem:number>
+<rem:paragraph
+ oid = "PRG-0024">
+<rem:name>
+Documentación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0025">
@@ -823,6 +1415,23 @@ Glosario de términos y abreviaturas</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>C </rem:number>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+Glosario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><rem:ref oid="GLO-0030">CRO</rem:ref>: Clinical Research Organization<br/><rem:ref oid="GLO-0031">CRF</rem:ref>: Clinical Research Formulary<br/>IP: Investigador principal<br/><rem:ref oid="GLO-0039">NUHSA</rem:ref>: Número Único de Historia de Salud de Andalucía<br/>SAES: Serious Adverse Events (Eventos Adversos Serios)</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
