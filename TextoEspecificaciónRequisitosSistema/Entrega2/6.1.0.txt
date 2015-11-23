@@ -1,1 +1,37 @@
+= Requisitos generales =
+
+* Nombre: 
+* Fuente: 
+* Autor: 
+* Descripcion: 
+
+== Requisito 1 ==
+* Nombre: Requisito General 1
+* Fuente: Padre_Migue
+* Autor: Manuel López
+* Descripción: Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
+
+== Requisito 2 ==
+* Nombre: Requisito General 2
+* Fuente: Padre_Migue
+* Autor: Manuel López
+* Descripcion: Conocer el estado actual del inventario de medicamentos y cual ha sido asignado a cada paciente.
+
+== Requisito 3 ==
+* Nombre: Requisito General 3
+* Fuente: Padre_Migue
+* Autor: Manuel López
+* Descripción: Conocer las citas de los pacientes pertenecientes a un ensayo
+
+== Requisito 4 ==
+* Nombre: Requisito General 4
+* Fuente: Padre_Migue
+* Autor: Manuel López
+* Descripción: Conocer los promotores de un ensayo
+
+== Requisito 5 ==
+* Nombre: Requisito General 5
+* Fuente: Padre_Migue
+* Autor: Manuel López
+* Descripción: Disponer de distintos listados sobre el Ensayo.
  
