@@ -1,0 +1,12 @@
+NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
+- Los actores y los casos de uso llevan unos índices que no están plasmados en este documento. Ya con todos los actores y casos instanciados en el sistema, se deberán cambiar a mano.
+
+6.2 Casos de uso del sistema
+
+6.2.1 Diagrama de caso de uso del sistema
+
+
+6.2.2 Especificaciones de actores del sistema
+
+
+6.2.2 Especificaciones de casos de uso del sistema
