@@ -245,7 +245,7 @@ Introducción</h1><a name="PRG-0014" />
 <a name="SEC-0003" />
 <h2 align="left">1.1 
 Alcance</h2><a name="PRG-0001" />
-<p>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes controles analíticos en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.
+<p>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes <a href="#GLO-0029" title="Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.">controles analíticos</a> en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.
 <br />
 </p>
 <a name="SEC-0004" />
@@ -484,58 +484,84 @@ Ninguno</td>
 <a name="SEC-0002" />
 <h1 align="left">2 
 Información sobre el dominio del problema</h1><a name="PRG-0015" />
-<p>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de citas de revisión, analíticas de control, dispensación de la medicación, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.
-<br />El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las citas de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes controles analíticos que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del fármaco en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).
+<p>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de revisión, <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a>, <a href="#GLO-0035" title="Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc).">dispensación de la medicación</a>, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.
+<br />El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes <a href="#GLO-0029" title="Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.">controles analíticos</a> que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).
 <br />
 </p>
 <a name="SEC-0006" />
 <h2 align="left">2.1 
 Introducción al dominio del problema</h2><a name="PRG-0003" />
 <p>El sistema a desarrollar comprenderá dos roles principales: los "clientes" y los usuarios
-<br />Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).
+<br />Los clientes del sistema serían los pacientes con diferentes enfermedades (<a href="#GLO-0034" title="Procedimiento por el cual se identifica una enfermedad en un paciente.">diagnósticos</a>) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).
 <br />Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
 <br />
 </p>
 <a name="SEC-0007" />
 <h2 align="left">2.2 
-Glosario de términos del dominio del problema</h2><a name="PRG-0004" />
-<p>Analíticas de control: Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.
-<br />
-<br />Bioquímica: Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).
-<br />
-<br />Citas: Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.
-<br />
-<br />Controles analíticos: Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.
-<br />
-<br />CRO: Encargado de revisar el CRF y promover dicho ensayo clínico
-<br />
-<br />CRF: Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.
-<br />
-<br />Data Manager: Es un empleado del hospital encargado de realizar el CRF.
-<br />
-<br />Datos clínicos de seguimiento: Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).
-<br />
-<br />Diagnósticos: Procedimiento por el cual se identifica una enfermedad en un paciente.
-<br />
-<br />Dispensación de la medicación: Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc).
-<br />
-<br />Fármaco: Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.
-<br />
-<br />Grupos diagnósticos: Grupos de pacientes afectados por una misma enfermedad o patología.
-<br />
-<br />Hemograma: Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características.
-<br />
-<br />NUHSA: Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.
-<br />
-<br />Patología: Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.
-<br />
-<br />Pautas de tratamiento: Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.
-<br />
-<br />Protocolo de actuación: Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.
-<br />
-<br />Serología: Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).
+Glosario de términos del dominio del problema</h2><a name="GLO-0026" />
+<p align="left">
+<b> Analíticas de control:</b> Determinaciones de diferentes parámetros analíticos (<a href="#GLO-0038" title="Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características.">hemograma</a>, <a href="#GLO-0027" title="Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).">bioquímica</a>, <a href="#GLO-0043" title="Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).">serología</a>, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente. 
 <br />
 </p>
+<a name="GLO-0027" />
+<p align="left">
+<b> Bioquímica:</b> Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).</p>
+<a name="GLO-0028" />
+<p align="left">
+<b> Citas:</b> Fechas en las que se realizan revisiones clínicas o extracciones <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a> a los pacientes. </p>
+<a name="GLO-0029" />
+<p align="left">
+<b> Controles analíticos:</b> Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.</p>
+<a name="GLO-0030" />
+<p align="left">
+<b> CRO:</b> Encargado de revisar el <a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a> y promover dicho ensayo clínico 
+<br />
+</p>
+<a name="GLO-0031" />
+<p align="left">
+<b> CRF:</b> Informe de control sobre un ensayo clínico realizado por el <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a> y supervisado por el <a href="#GLO-0030" title="Encargado de revisar el CRF y promover dicho ensayo clínico">CRO</a>.</p>
+<a name="GLO-0032" />
+<p align="left">
+<b> Data Manager:</b> Es un empleado del hospital encargado de realizar el <a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a>.</p>
+<a name="GLO-0033" />
+<p align="left">
+<b> Datos clínicos de seguimiento:</b> Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).</p>
+<a name="GLO-0034" />
+<p align="left">
+<b> Diagnósticos:</b> Procedimiento por el cual se identifica una enfermedad en un paciente.</p>
+<a name="GLO-0035" />
+<p align="left">
+<b> Dispensación de la medicación:</b> Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc). 
+<br />
+</p>
+<a name="GLO-0036" />
+<p align="left">
+<b> Fármaco:</b> Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano. </p>
+<a name="GLO-0037" />
+<p align="left">
+<b> Grupos diagnósticos:</b> Grupos de pacientes afectados por una misma enfermedad o <a href="#GLO-0040" title="Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.">patología</a>.</p>
+<a name="GLO-0038" />
+<p align="left">
+<b> Hemograma:</b> Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características. 
+<br />
+</p>
+<a name="GLO-0039" />
+<p align="left">
+<b> NUHSA:</b> Es el número único de identificación para los pacientes en el sistema de salud de Andalucía. 
+<br />
+</p>
+<a name="GLO-0040" />
+<p align="left">
+<b> Patología:</b> Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.</p>
+<a name="GLO-0041" />
+<p align="left">
+<b> Pautas de tratamiento:</b> Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.</p>
+<a name="GLO-0042" />
+<p align="left">
+<b> Protocolo de actuación:</b> Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.</p>
+<a name="GLO-0043" />
+<p align="left">
+<b> Serología:</b> Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).</p>
 <a name="SEC-0008" />
 <h1 align="left">3 
 Descripción de la situación actual</h1><a name="SEC-0009" />
@@ -552,7 +578,7 @@ Debilidades de la situación actual</h3><a name="PRG-0006" />
 <p>Las debilidades del sistema son las siguientes:
 <br /> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.
 <br /> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.
-<br /> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</p>
+<br /> - El sistema no guarda información sobre las fechas de las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> con los pacientes.</p>
 <a name="SEC-0012" />
 <h2 align="left">3.2 
 Modelos de procesos de negocios actuales</h2><a name="PRG-0017" />
@@ -560,27 +586,160 @@ Modelos de procesos de negocios actuales</h2><a name="PRG-0017" />
 <a name="SEC-0013" />
 <h3 align="left">3.2.1 
 Descripción de actores de negocio actuales</h3><a name="PRG-0007" />
-<p>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:
+<p>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:</p>
+<a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+Médico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
 <br />
-<br />001		Médico
-<br />Versión:		1(02/11/2015)
-<br />Dependencias:	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción:	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
-<br />Comentarios:	No procede
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
 <br />
-<br />002		Paciente
-<br />Versión:		1(02/11/2015)
-<br />Dependencias:	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción:	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
-<br />Comentarios:	No procede
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
 <br />
-<br />003		Enfermera
-<br />Versión:		1(02/11/2015)
-<br />Dependencias:	- Tratar paciente
-<br />Descripción:	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
-<br />Comentarios:	No procede</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Enfermera</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0014" />
 <h3 align="left">3.2.2 
 Descripción de procesos de negocio actuales</h3><a name="PRG-0008" />
@@ -589,7 +748,7 @@ Descripción de procesos de negocio actuales</h3><a name="PRG-0008" />
 <br />001		Gestión de ensayo clínico de 1 paciente.
 <br />Versión:		1(02/11/2015) 
 <br />Dependencias:	- Tratar paciente
-<br />Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de citas, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <a href="#GLO-0040" title="Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.">patología</a>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
 <br />Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
 <br />Actores:		-Médico (001)
 <br />		-Paciente (002)
@@ -635,7 +794,7 @@ Descripción del entorno de hardward actual</h3><a name="PRG-0009" />
 <h3 align="left">3.3.2 
 Descripción del entorno de software actual</h3><a name="PRG-0010" />
 <p>Entre el Software que usan se encuentra:
-<br />- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus citas y pruebas corresponidentes.
+<br />- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> y pruebas corresponidentes.
 <br />- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</p>
 <a name="SEC-0018" />
 <h1 align="left">4 
@@ -651,7 +810,7 @@ Objetivos de negocio</h2><a name="PRG-0011" />
 <br />
 <br />-Gestión de los medicamentos.
 <br />
-<br />- Gestión de citas de pacientes.
+<br />- Gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de pacientes.
 <br />
 <br />- Gestión de promotores de ensayos.
 <br />
@@ -659,31 +818,12 @@ Objetivos de negocio</h2><a name="PRG-0011" />
 <a name="SEC-0020" />
 <h2 align="left">4.2 
 Modelos de procesos de negocio a implantar</h2><a name="PRG-0020" />
-<p>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra. En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de citas así como de registros que eran imposibles en los modelos actuales.</p>
+<p>En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> así como de registros que eran imposibles en los modelos actuales.
+<br />En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</p>
 <a name="SEC-0021" />
 <h3 align="left">4.2.1 
 Descripción de actores de negocio a implantar</h3><a name="PRG-0012" />
-<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales se describen a continuación:
-<br />
-<br />001		Médico
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
-<br />Comentarios	No procede
-<br />
-<br />002		Paciente
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Gestión de ensayos clínicos de un paciente
-<br />		- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
-<br />Comentarios	No procede
-<br />
-<br />003		Enfermera
-<br />Versión		1(02/11/2015)
-<br />Dependencias	- Tratar paciente
-<br />Descripción	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
-<br />Comentarios	No procede
+<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales son los mismos que los descritos en el apartado 3.2.1.
 <br />
 </p>
 <a name="SEC-0022" />
@@ -694,13 +834,13 @@ Descripción de procesos de negocio a implantar</h3><a name="PRG-0013" />
 <br />001		Gestión de ensayo clínico de 1 paciente.
 <br />Versión		1(02/11/2015) 
 <br />Dependencias	- Tratar paciente
-<br />Descripción	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de citas para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico y se seguiría el proceso habitual.
 <br />Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
 <br />Actores		-Médico (001)
 <br />		-Paciente (002)
 <br />Comentarios	No procede
 <br />
-<br />
+<br />Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:
 <br />
 </p>
 <a name="GRF-0003" />
@@ -714,7 +854,7 @@ Proceso a implantar</p>
 <a name="PRG-0025" />
 <p>002 Tratar paciente 
 <br />Versión 1(02/11/2015) 
-<br />Descripción El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal. 
+<br />Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.
 <br />Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. 
 <br />Actores -Médico (001) 
 <br />-Enfermera (003) 
@@ -744,8 +884,8 @@ Actas de reuniones</h1><a name="PRG-0023" />
 <br />- Desarrollo de la reunión:
 <br />    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.
 <br />    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.
-<br />    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las citas de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.
-<br />    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de citas debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.
+<br />    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.
+<br />    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.
 <br />    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. 
 <br />
 <br />    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)
@@ -757,6 +897,37 @@ Actas de reuniones</h1><a name="PRG-0023" />
 <br />    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.
 <br />- Próximas reuniones:
 <br />    No se concretó la fecha de la próxima reunión.</p>
+<a name="PRG-0044" />
+<p>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 27/10/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />+-+Orden del día:
+<br />    1.- Refutación de las ideas obtenidas en la reunión anterior.
+<br />    2.- Resolución de los puntos pendientes de la reunión anterior.
+<br />    3.- Exposición de los procesos de un ensayo clínico.
+<br />    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.
+<br />
+<br />+-+Objetivos principales (de la reunión):
+<br />    Una visión más profunda de como funciona la iteracción con el sistema actual.
+<br />
+<br />+-+Desarrollo de la reunión:
+<br />    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. 
+<br />    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de pacientes.
+<br />    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.
+<br />    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.
+<br />
+<br />+-+Acuerdos y tareas: 
+<br />    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).
+<br />+-+Puntos pendientes:
+<br />    No quedo ningún punto pendiente.
+<br />+-+Próximas reuniones:
+<br />    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</p>
 <a name="SEC-0024" />
 <h1 align="left">B 
 Documentación relevante</h1><a name="PRG-0024" />
@@ -764,10 +935,13 @@ Documentación relevante</h1><a name="PRG-0024" />
 <a name="SEC-0025" />
 <h1 align="left">C 
 Glosario de términos y abreviaturas</h1><a name="PRG-0016" />
-<p>CRO: Clinical Research Organization
-<br />CRF: Clinical Research Formulary
+<p>
+<a href="#GLO-0030" title="Encargado de revisar el CRF y promover dicho ensayo clínico">CRO</a>: Clinical Research Organization
+<br />
+<a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a>: Clinical Research Formulary
 <br />IP: Investigador principal
-<br />NUHSA: Número Único de Historia de Salud de Andalucía
+<br />
+<a href="#GLO-0039" title="Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.">NUHSA</a>: Número Único de Historia de Salud de Andalucía
 <br />SAES: Serious Adverse Events (Eventos Adversos Serios)</p>
 </body>
 </html>
