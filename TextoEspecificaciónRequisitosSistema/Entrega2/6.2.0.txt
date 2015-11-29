@@ -212,7 +212,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Secuencia normal:
 			1) El actor Investigador Principal (ACT-005) pide al sistema una lista de los ensayos a los que está asignado.
 			2) El sistema le devuelve dicha lista.
-			3) El actor Investigador Principal (ACT-005) selecciona el ensayo del que se quiere notificar una incidencia devolver envases.
+			3) El actor Investigador Principal (ACT-005) selecciona el ensayo del que se quiere notificar una incidencia.
 			4) El sistema devuelve la vista con la información del ensayo.
 			5) El actor Investigador principal (ACT-005) pide al sistema el formulario de notificación de incidencias.
 			6) El sistema le devuelve el formulario.
