@@ -12,9 +12,10 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 	ACT-001 -> UC-0004
 	ACT-001 -> UC-0005
 	ACT-004 -> UC-0005
-	ACT-002 -> UC-0006
+	ACT-003 -> UC-0006
 	ACT-005 -> UC-0007
 	ACT-001 -> UC-0008
+	ACT-002 -> UC-0008
 	
 
 6.2.2 Especificaciones de actores del sistema
@@ -69,9 +70,10 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Comentarios:
 			No procede
 
+
 6.2.3 Especificaciones de casos de uso del sistema
 
-	UC-0001 Petición de consulta
+	UC-0001 Petición de cita
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -85,9 +87,8 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Secuencia normal:
 			1) El actor Paciente (ACT-002) solicita una cita de revisión.
 			2) El sistema muestra el formulario de petición de citas.
-			3) El actor Paciente (ACT-002) rellena los campos necesarios eligiendo el horario disponible.
-			4) El actor Paciente (ACT-002) solicita al sistema que registre su cita.
-			5) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
+			3) El actor Paciente (ACT-002) rellena los campos necesarios y solicita al sistema que registre su cita.
+			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
 		Comentarios: No procede.
 
 	UC-0002 Envío de los datos de la consulta
@@ -104,9 +105,8 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Secuencia normal:
 			1) El actor Enfermera (ACT-003) pide la lista de nuevas citas.
 			2) El sistema muestra la lista de citas por procesar.
-			3) El actor Enfermera (ACT-003) le asigna los datos necesarios a la cita (Médico asignado, lugar de la cita)
-			4) El actor Enfermera (ACT-003) solicita al sistema que envíe su cita.
-			5) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
+			3) El actor Enfermera (ACT-003) le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.
+			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
 		Comentarios: No procede.
 
 	UC-0003 Gestión de las analíticas de control
@@ -128,8 +128,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			4) El sistema devuelve el perfil del actor Paciente (ACT—002) seleccionado.
 			5) El actor Médico (ACT-001) elige en el perfil la pestaña “Pruebas médicas”.
 			6) El sistema devuelve la lista de las analíticas del actor Paciente (ACT-002).
-			7) En esa vista, el actor Médico (ACT-001) elige la analítica requerida
-			8) El sistema devuelve la información de la analítica mostrando el informe de la misma.
+			7) En esa vista, el actor Médico (ACT-001) elige la analítica requerida, que podrá ser descargado desde un enlace.
 		Comentarios: No procede.
 
 	UC-0004 Petición de medicamentos.
@@ -147,11 +146,9 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			1) El actor Médico (ACT-001) pide al sistema la lista de los ensayos clínicos asociados a él.
 			2) El sistema devuelve la vista con la lista de los ensayos clínicos.
 			3) El actor Médico (ACT-001) selecciona un ensayo clínico.
-			4) El sistema devuelve la vista con los datos del ensayo clínico
-			5) El actor Médico (ACT-001) ante la necesidad de nuevo material farmacológico para un ensayo solicita a través de la vista nuevo material.
-			6) El sistema le devuelve el formulario de petición de medicamentos.
-			7) El actor Médico (ACT-001) rellena el formulario y lo envía
-			8) El sistema envía un mensaje de confirmación del envío del formulario.
+			4) El sistema devuelve un formulario con el identificador del ensayo y el nombre del paciente ya rellenos.
+			5) El actor Médico (ACT-001) rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo fármaco y las unidades de este último) y lo envía
+			6) El sistema envía un mensaje de confirmación del envío del formulario.
 		Comentarios: No procede.
 
 	UC-0005 Aceptación de pedidos de medicamentos.
@@ -190,15 +187,12 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			1) El actor Enfermera (ACT-003) pide al sistema una lista de los ensayos a los que está asignado.
 			2) El sistema le devuelve dicha lista.
 			3) El actor Enfermera (ACT-003) selecciona el ensayo del que se quieren devolver envases.
-			4) El sistema devuelve la vista con la información del ensayo.
-			5) El actor Enfermera (ACT-003) pide al sistema el formulario de devolución de productos.
-			6) El sistema le devuelve el formulario.
-			7) El actor Enfermera (ACT-003) rellena una lista con los artículos y las cantidades a devolver.
-			8) El actor Enfermera (ACT-003) envía el formulario
-			9) El sistema devuelve un mensaje de confirmación de envío del formulario.
+			4) El sistema le devuelve el formulario de devolución de productos.
+			5) El actor Enfermera (ACT-003) rellena una lista con los artículos y las cantidades a devolver y envía el formulario.
+			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
 		Comentarios: No procede.	
 
-	UC-0007 Gestión de incidecias
+	UC-0007 Gestión de incidencias
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -213,12 +207,9 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			1) El actor Investigador Principal (ACT-005) pide al sistema una lista de los ensayos a los que está asignado.
 			2) El sistema le devuelve dicha lista.
 			3) El actor Investigador Principal (ACT-005) selecciona el ensayo del que se quiere notificar una incidencia.
-			4) El sistema devuelve la vista con la información del ensayo.
-			5) El actor Investigador principal (ACT-005) pide al sistema el formulario de notificación de incidencias.
-			6) El sistema le devuelve el formulario.
-			7) El actor Investigador Principal (ACT-005) rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, las consecuencias de la misma.
-			8) El actor Investigador Principal (ACT-005) envía el formulario
-			9) El sistema devuelve un mensaje de confirmación de envío del formulario.
+			4) El sistema devuelve la vista con el formulario de notificación de incidencias.
+			5) El actor Investigador Principal (ACT-005) rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Tras esto, el actor Investigador Principal (ACT-005) envía el formulario.
+			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
 		Comentarios: No procede.
 
 	UC-0008 Gestión de efectos adversos en los tratamientos.
@@ -238,12 +229,16 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			2) El sistema le devuelve dicha lista.
 			3) El actor Médico (ACT-001) selecciona el actor Paciente (ACT-002) al que se le quiere asignar el efecto adverso del tratamiento.
 			4) El sistema devuelve la vista con la información del actor Paciente (ACT-002).
-			5) El actor Médico (ACT-001) pide al sistema la vista de ensayos asociados al paciente.
-			6) El sistema le devuelve la vista con los ensayos del paciente.
-			7) El actor Médico (ACT-001) elige un ensayo.
-			8) El sistema le devuelve la vista del ensayo del paciente.
-			9) El actor Médico (ACT-001) redacta el efecto adverso del actor Paciente (ACT-002)
-			10) El actor Médico (ACT-001) envía el informe.
-			11) El sistema envía un mensaje de confirmación de envío del informe.
+			5) El actor Médico (ACT-001) selecciona la pestaña “Efectos adversos” dentro del perfil del actor Paciente (ACT-002) seleccionado.
+			6) El sistema le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-002).
+			7) El actor Médico (ACT-001) le pide al sistema el formulario para poder registrar un nuevo efecto adverso.
+			8) El sistema le devuelve el formulario.
+			9) El actor Médico (ACT-001) rellena el formulario con los datos necesarios (Ensayo clínico asociado y una descripción del efecto adverso). Tras rellenar el formulario, el actor Médico (ACT-001) envía el formulario.
+			10) El sistema envía un mensaje de confirmación de envío del informe.
 		Comentarios: No procede.
 
+6.7 Información sobre trazabilidad
+
+ 	Matriz Todos los requisitos —> Objetivos generales
+
+	Matriz Todos los elementos del diagrama de clases —> Requisitos de información y reglas de negocio.
