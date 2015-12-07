@@ -342,7 +342,7 @@ Introducción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>El sistema a desarrollar comprenderá dos roles principales: los &quot;clientes&quot; y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (<rem:ref oid="GLO-0034">diagnósticos</rem:ref>) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
+<rem:text>El sistema a desarrollar comprenderá dos roles principales: los &quot;clientes&quot; y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -501,7 +501,7 @@ Ninguno</rem:comments>
 <rem:glossaryItem
  oid = "GLO-0034">
 <rem:name>
-<rem:ref oid="GLO-0034">Diagnósticos</rem:ref></rem:name>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -950,7 +950,7 @@ Procesos de negocio actuales</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión:		1(02/11/2015) <br/>Dependencias:	- Tratar paciente<br/>Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <rem:ref oid="GLO-0040">patología</rem:ref>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <rem:ref oid="GLO-0028">citas</rem:ref>, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores:		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios:	No procede<br/><br/></rem:text>
+<rem:text>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión:		1(02/11/2015) <br/>Dependencias:	- Tratar paciente<br/>Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <rem:ref oid="GLO-0040">patología</rem:ref>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <rem:ref oid="GLO-0028">citas</rem:ref>, analíticas, controles y demás, según su grupo <rem:ref oid="GLO-0034">diagnóstico</rem:ref>. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores:		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios:	No procede<br/><br/></rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0001">
@@ -1268,7 +1268,7 @@ procesos a implantar</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión		1(02/11/2015) <br/>Dependencias	- Tratar paciente<br/>Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <rem:ref oid="GLO-0028">citas</rem:ref> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico y se seguiría el proceso habitual.<br/>Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/><br/>Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:<br/></rem:text>
+<rem:text>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión		1(02/11/2015) <br/>Dependencias	- Tratar paciente<br/>Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <rem:ref oid="GLO-0028">citas</rem:ref> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo <rem:ref oid="GLO-0034">diagnóstico</rem:ref> y se seguiría el proceso habitual.<br/>Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/><br/>Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:<br/></rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0003">
@@ -1307,6 +1307,1416 @@ Ninguno</rem:comments>
 <rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Enfermera (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
 </rem:paragraph>
 </rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0026">
+<rem:name>
+Descripción de los subsistemas a desarrollar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0027">
+<rem:name>
+Catálogo de requisitos del sistema a desarrollar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Requisitos generales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.2 </rem:number>
+<rem:section
+ oid = "SEC-0035">
+<rem:name>
+Diagrama de casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0036">
+<rem:name>
+Especificación de actores del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.2 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0037">
+<rem:name>
+Especificación de casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.3 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0030">
+<rem:name>
+Requisitos funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.3 </rem:number>
+<rem:section
+ oid = "SEC-0038">
+<rem:name>
+Requisitos de información del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.1 </rem:number>
+<rem:informationRequirement
+ oid = "IRQ-0001">
+<rem:name>
+Ensayos clínicos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Ensayos clínicos</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0041">
+<rem:description>
+ID</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0001">
+<rem:description>
+Promotor del Ensayo clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0002">
+<rem:description>
+Situación actual del Ensayo Clínico<br/>(Pre-evaluación, abierto o cerrado)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0003">
+<rem:description>
+Informe <rem:ref oid="GLO-0031">CRF</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0004">
+<rem:description>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref> experimental</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0005">
+<rem:description>
+Criterio de inclusión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0006">
+<rem:description>
+Criterio de exclusión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0007">
+<rem:description>
+Periodo de reclutamiento</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0008">
+<rem:description>
+Pacientes propuestos a la inclusión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0009">
+<rem:description>
+Pacientes incluidos en el Ensayo clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0002">
+<rem:name>
+Empleados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Empleados</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0011">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0012">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0015">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0017">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0018">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0013">
+<rem:description>
+Ensayos en los que participa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0014">
+<rem:description>
+Cargo en cada ensayo en el que participa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0003">
+<rem:name>
+Pacientes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Pacientes</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0019">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0020">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0021">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0022">
+<rem:description>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0023">
+<rem:description>
+NHC</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0038">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0039">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0024">
+<rem:description>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0025">
+<rem:description>
+Ensayo en el que participa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0026">
+<rem:description>
+Medicación asignada</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0027">
+<rem:description>
+Fecha de inclusión en el Ensayo</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0028">
+<rem:description>
+Fecha de revisión clínica</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0029">
+<rem:description>
+Fechas de estudios complementarios<br/>(Radiografías, <rem:ref oid="GLO-0026">analíticas de control</rem:ref> ...)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0004">
+<rem:name>
+Promotor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Promotor del ensayo</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0030">
+<rem:description>
+Nombre de la empresa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0031">
+<rem:description>
+CIF</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0005">
+<rem:name>
+Monitor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Monitor del ensayo</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0032">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0033">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0034">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0035">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0036">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0037">
+<rem:description>
+Empresa para la que trabaja</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0039">
+<rem:name>
+Requisitos de reglas de negocio del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.2 </rem:number>
+<rem:constraintRequirement
+ oid = "CRQ-0001">
+<rem:name>
+Mantener los pacientes en el sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Mantener los pacientes en el sistema un mínimo de 15 años desde su fecha de inclusión para cumplir con la ley vigente sobre Ensayos Clínicos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0002">
+<rem:name>
+Un Investigador Principal por Ensayo Clínico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que sólo haya un Investigador Principal en cada Ensayo Clínico.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0003">
+<rem:name>
+No eliminar empleados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen empleados aunque cambien de hospital para permitir que puedan verificar los datos requeridos por los monitores.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0004">
+<rem:name>
+No eliminar promotores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen los promotores para mantener la información de los mismos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0005">
+<rem:name>
+No eliminar Ensayos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen los Ensayos Clínicos en los que no se incluyan pacientes para mantener la información de los mismos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0006">
+<rem:name>
+Un paciente en un sólo Ensayo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que si un paciente está o ha estado en un Ensayo Clínico no pueda ser propuesto para otro para evitar duplicidad de participación en Ensayos Clínicos conforme a la normativa vigente.</rem:description>
+</rem:constraintRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0040">
+<rem:name>
+Requisitos de conducta del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.3 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0001">
+<rem:name>
+Lista de Ensayos Clínicos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener a principios de mes una lista con los Ensayos Clínicos abiertos y los pacientes incluidos en cada Ensayo Clínico.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0002">
+<rem:name>
+Lista de <rem:ref oid="GLO-0028">citas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener cada semana una lista con los pacientes con cita médica para la próxima semana y los estudios complementarios a realizar al paciente.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0003">
+<rem:name>
+Lista de pacientes con su medicación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los pacientes  con su respectiva medicación.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0004">
+<rem:name>
+Lista de monitores con visita</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener cada semana una lista con los monitores que tienen visita la semana siguiente.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0005">
+<rem:name>
+Lista de pacientes con su estudio a realizar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los estudios complementarios a realizar a los pacientes.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0006">
+<rem:name>
+Lista de Ensayos con número de pacientes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los Ensayos Clínicos abiertos y el número de pacientes incluido en cada Ensayo.</rem:description>
+</rem:functionalRequirement>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.4 </rem:number>
+<rem:section
+ oid = "SEC-0041">
+<rem:name>
+Requisitos de fiabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.1 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0004">
+<rem:name>
+Disponibilidad 24/7</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que el programa esté operativo<br/>permanentemente y que no exista<br/>restricción horaria de acceso<br/>para facilitar el registro de los datos<br/>independientemente del horario</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0042">
+<rem:name>
+Requisitos de usabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.2 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0003">
+<rem:name>
+Multi-Usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que varios usuarios puedan<br/>estar registrando datos simultáneamente<br/>en un mismo paciente o Ensayo</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0043">
+<rem:name>
+Requisitos de mantenibilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.3 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0044">
+<rem:name>
+Requisitos de eficiencia del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.4 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0045">
+<rem:name>
+Requisitos de portabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.5 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0005">
+<rem:name>
+Clave acceso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que se pueda acceder de<br/>forma remota al sistema con una clave<br/>especial de acceso para consulta de datos puntuales<br/>desde fuera del hospital</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0046">
+<rem:name>
+Requisitos de seguridad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.6 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0001">
+<rem:name>
+Acceso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que sólo puedan acceder al sistema los empleados autorizados de la<br/>organización para cumplir con la Ley de Protección de Datos</rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0002">
+<rem:name>
+Datos Encriptados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que todos los datos personales de los pacientes<br/>se almacenen de forma encriptada para cumplir con la Ley de Protección de Datos </rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0006">
+<rem:name>
+Acceso Restringido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que cada empleado perteneciente<br/>al Ensayo sólo vea la información que necesita<br/>para mantener en el anonimato a<br/>los pacientes y evitar filtraciones de<br/>información referentes al Ensayo Clínico</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0047">
+<rem:name>
+Otros requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.7 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0032">
+<rem:name>
+Restricciones técnicas del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.5 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0033">
+<rem:name>
+Requisitos de integración del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.6 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0034">
+<rem:name>
+Información sobre trazabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.7 </rem:number>
 </rem:section>
 </rem:section>
 <rem:section
@@ -1448,6 +2858,258 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno
 </rem:comments>
+<rem:section
+ oid = "SEC-0048">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:section
+ oid = "SEC-0052">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0053">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.2 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0049">
+<rem:name>
+Arquitectura lógica del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0054">
+<rem:name>
+Diagramas de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0055">
+<rem:name>
+Descripción de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0050">
+<rem:name>
+Modelo de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0056">
+<rem:name>
+Diagrama de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0057">
+<rem:name>
+Descripción de las clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0058">
+<rem:name>
+Diagramas de estado de las clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0051">
+<rem:name>
+Interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0059">
+<rem:name>
+Diagramas de navegación del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0060">
+<rem:name>
+Esquemas de la interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0061">
+<rem:name>
+Descripción de la interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.3 </rem:number>
+</rem:section>
+</rem:section>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Conflictos y Defectos</rem:name>
