@@ -1,4 +1,4 @@
-= Requisitos generales =
+== Requisitos generales ==
 
 * Nombre: 
 * Fuente: 
@@ -34,4 +34,5 @@
 * Fuente: Padre_Migue
 * Autor: Manuel López
 * Descripción: Disponer de distintos listados sobre el Ensayo.
+
  
