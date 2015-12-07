@@ -1,0 +1,14 @@
+6.5 __  Restricciones técnicas del sistema
+
+Las únicas restricciones técnicas impuestas por el cliente son:
+
+== Compatibilidad ==
+Autor: ManuelLR
+Fuente: Padre_Migue
+Descripción: El sistema deberá ser compatible con los navegadores web firefox, chrome, safari e internet explorer 
+
+
+== Rendimiento ==
+Autor: ManuelLR
+Fuente: Padre_Migue
+Descripción: El sistema deberá funcionar sin ningún problema de rendimiento en la máquina que ya poseen
