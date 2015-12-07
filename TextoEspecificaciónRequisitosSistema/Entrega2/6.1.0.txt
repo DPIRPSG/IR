@@ -8,31 +8,31 @@
 == Requisito 1 ==
 * Nombre: Requisito General 1
 * Fuente: Padre_Migue
-* Autor: Manuel L贸pez
-* Descripci贸n: Conocer la situaci贸n actual del Ensayo Cl铆nico, el personal asociado a 茅l y los pacientes incluidos en 茅l.
+* Autor: Manuel L髉ez
+* Descripci髇: Conocer la situaci髇 actual del Ensayo Cl憝nico, el personal asociado a 閘 y los pacientes incluidos en 閘.
 
 == Requisito 2 ==
 * Nombre: Requisito General 2
 * Fuente: Padre_Migue
-* Autor: Manuel L贸pez
+* Autor: Manuel L髉ez
 * Descripcion: Conocer el estado actual del inventario de medicamentos y cual ha sido asignado a cada paciente.
 
 == Requisito 3 ==
 * Nombre: Requisito General 3
 * Fuente: Padre_Migue
-* Autor: Manuel L贸pez
-* Descripci贸n: Conocer las citas de los pacientes pertenecientes a un ensayo
+* Autor: Manuel L髉ez
+* Descripci髇: Conocer las citas de los pacientes pertenecientes a un ensayo
 
 == Requisito 4 ==
 * Nombre: Requisito General 4
 * Fuente: Padre_Migue
-* Autor: Manuel L贸pez
-* Descripci贸n: Conocer los promotores de un ensayo
+* Autor: Manuel L髉ez
+* Descripci髇: Conocer los promotores de un ensayo
 
 == Requisito 5 ==
 * Nombre: Requisito General 5
 * Fuente: Padre_Migue
-* Autor: Manuel L贸pez
-* Descripci贸n: Disponer de distintos listados sobre el Ensayo.
+* Autor: Manuel L髉ez
+* Descripci髇: Disponer de distintos listados sobre el Ensayo.
 
  
