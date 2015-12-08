@@ -239,6 +239,37 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 
 6.7 Información sobre trazabilidad
 
- 	Matriz Todos los requisitos —> Objetivos generales
+ 	Matriz Todos los requisitos —> Objetivos generales 
+		
+		NOTA: Los objetivos generales los he tomado del segundo párrafo del apartado 2.0
+		NOTA: Para facilitar la lectura lo he puesto como Objetivos generales —> Todos los requisitos
+
+												IRQ-001	IRQ-002	IRQ-003	IRQ-004	IRQ-005
+		Gestión de pacientes y empleados						x		x		x		X
+		Gestión de citas													x
+		Gestión de ensayos y analíticas							x		x		x		x		x
+		Gestión de recepción de medicamento						x		x		x
+		Control en la dispensación del fármaco en experimentación		x		x				x
+		Devolución de envases								x				x
+		Gestión de incidencias / efectos adversos					x		x		x		x
+
+												CRQ-001	CRQ-002	CRQ-003	CRQ-004	CRQ-005	CRQ-006
+		Gestión de pacientes y empleados						x				x		x		x		x
+		Gestión de citas									x
+		Gestión de ensayos y analíticas							x		x		x		x		x		x
+		Gestión de recepción de medicamento						x				x				x
+		Control en la dispensación del fármaco en experimentación				x		x				x
+		Devolución de envases								x								x		
+		Gestión de incidencias / efectos adversos					x		x		x				x
+
+												FRQ-001	FRQ-002	FRQ-003	FRQ-004	FRQ-005	FRQ-006
+		Gestión de pacientes y empleados						x		x		x		x		x		x
+		Gestión de citas											x
+		Gestión de ensayos y analíticas							x				x		x		x		x
+		Gestión de recepción de medicamento						x				
+		Control en la dispensación del fármaco en experimentación		x
+		Devolución de envases								x
+		Gestión de incidencias / efectos adversos					x								x
+
 
 	Matriz Todos los elementos del diagrama de clases —> Requisitos de información y reglas de negocio.
