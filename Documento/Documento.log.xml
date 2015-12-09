@@ -2,7 +2,7 @@
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>PRG-0058</rem:owner><rem:date>
+<rem:owner>GRF-0049</rem:owner><rem:date>
 <rem:year>2015</rem:year>
 <rem:month>12</rem:month>
 <rem:day>9</rem:day>
@@ -2242,77 +2242,39 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0058</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2015</rem:year>
 <rem:month>12</rem:month>
 <rem:day>9</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [Matriz Todos los requisitos —> Objetivos generales 
-
-OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
-
-OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.
-
-OBJ-0003: El sistema deberá Conocer las citas de los pacientes pertenecientes a un Ensayo.
-
-OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.
-
-OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.] -> [Matriz Todos los requisitos -> Objetivos generales 
-
-OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
-
-OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.
-
-OBJ-0003: El sistema deberá Conocer las citas de los pacientes pertenecientes a un Ensayo.
-
-OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.
-
-OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GRF-0048</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2015</rem:year>
 <rem:month>12</rem:month>
 <rem:day>9</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GRF-0048</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2015</rem:year>
 <rem:month>12</rem:month>
 <rem:day>9</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadida fuente [STK-0005] Francisco Javier Rodríguez Martorell]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>PRG-0059</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2015</rem:year>
 <rem:month>12</rem:month>
 <rem:day>9</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>PRG-0059</rem:owner><rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [Matriz Todos los elementos del diagrama de clases —> Requisitos de información y reglas de negocio.] -> [Matriz Todos los elementos del diagrama de clases -> Requisitos de información y reglas de negocio.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GRF-0048</rem:owner><rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido autor [STK-0003] Guillermo Alcalá Gamero]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 </rem:log>
