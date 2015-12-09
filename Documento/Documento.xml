@@ -3841,6 +3841,65 @@ Información sobre trazabilidad</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>6.7 </rem:number>
+<rem:paragraph
+ oid = "PRG-0058">
+<rem:name>
+Información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Matriz Todos los requisitos -&gt; Objetivos generales <br/><br/>OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/><br/>OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/><br/>OBJ-0003: El sistema deberá Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un Ensayo.<br/><br/>OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.<br/><br/>OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0048">
+<rem:name>
+Matriz</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 1.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0059">
+<rem:name>
+Información 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Matriz Todos los elementos del diagrama de clases -&gt; Requisitos de información y reglas de negocio.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
