@@ -1,0 +1,4 @@
+ 
+== AS 2.2 ==
+
+Como podemos observar en el diagrama de la arquitectura lógica del sistema, el sistema se estructurará en 4 bloques principales. El usuario interactuará con los componentes relativos a la presentación del sistema, es decir, las herramientas visuales con las que se controla el sistema. Los componentes de Presentación interactuan a su vez con los de Lógica de Negocio los cuales impementan la propia lógica del sistema, es decir, esta capa realiza las operaciones que el sistema requiera tales como pueden ser la eliminación o creación de algún elemento. La Lógica de Negocio interactua con la Persistencia que es la encargada de gestionar el almacenacenamiento de los datos interactuando con SGBD que es el sistema de gestión de base de datos.

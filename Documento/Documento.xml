@@ -968,7 +968,7 @@ Proceso de negocio</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\3.2.2.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -1004,7 +1004,7 @@ Proceso tratar paciente</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\Tratar paciente.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
@@ -1286,7 +1286,7 @@ Proceso a implantar</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\4.2.2.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -3863,7 +3863,7 @@ Ninguno</rem:comments>
 <rem:graphicFile
  oid = "GRF-0048">
 <rem:name>
-Matriz</rem:name>
+Matriz 1</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -3900,6 +3900,27 @@ Información 2</rem:name>
 Ninguno</rem:comments>
 <rem:text>Matriz Todos los elementos del diagrama de clases -&gt; Requisitos de información y reglas de negocio.</rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0049">
+<rem:name>
+Matriz 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 2.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 </rem:section>
 <rem:section
@@ -4188,6 +4209,27 @@ Diagramas de la arquitectura del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0050">
+<rem:name>
+Diagrama</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoAnálisisSistema\Entrega2\2.0. Lógica del sistema\AS.2.1.png]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0055">
@@ -4206,6 +4248,25 @@ Descripción de la arquitectura del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0060">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Como podemos observar en el diagrama de la arquitectura lógica del sistema, el sistema se estructurará en 4 bloques principales. El usuario interactuará con los componentes relativos a la presentación del sistema, es decir, las herramientas visuales con las que se controla el sistema. Los componentes de Presentación interactuan a su vez con los de Lógica de Negocio los cuales impementan la propia lógica del sistema, es decir, esta capa realiza las operaciones que el sistema requiera tales como pueden ser la eliminación o creación de algún elemento. La Lógica de Negocio interactua con la Persistencia que es la encargada de gestionar el almacenacenamiento de los datos interactuando con SGBD que es el sistema de gestión de base de datos.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
