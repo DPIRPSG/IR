@@ -1,0 +1,31 @@
+== Acta reunión 5 ==
+
+Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+Fecha: 26/11/2015
+Asistentes: 
+    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+    
++-+Orden del día:
+    
+    1.- Resolución de dudas pendientes respecto a los requisitos.
+    2.- Revisión de los mockups.
+
++-+Objetivos principales (de la reunión):
+    Revisión de los mockups.
+
++-+Desarrollo de la reunión:
+    Primeramente se resolvieron algunas dudas para finalizar los requisitos. 
+    Por último se comentaron los mockups los cuales le parecieron correctos debido a las pautas de la última reunión.
+
++-+Acuerdos y tareas: 
+    Ninguno.
++-+Puntos pendientes:
+    No quedo ningún punto pendiente.
++-+Próximas reuniones:
+    La próxima reunión se concreto una vez se hubiera realizado la revisión del segundo entregable.
+
+
