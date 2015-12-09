@@ -271,3 +271,25 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		FRQ-0006		x		x		x				x										
 
 	Matriz Todos los elementos del diagrama de clases —> Requisitos de información y reglas de negocio.
+
+						IRQ-0001	IRQ-0002	IRQ-0003	IRQ-0004	IRQ-0005
+		Investigador principal				x						
+		Subinvestigador					x						
+		Data Manager						x						
+		Responsable de Farmacia				x						
+		Personal de farmacia					x						
+		Ensayo clínico			x								
+		Monitor del ensayo											x
+		Promotor										x		
+		Paciente								x				
+
+						CRQ-0001	CRQ-0002	CRQ-0003	CRQ-0004	CRQ-0005	CRQ-0006
+		Investigador principal				x		x						
+		Subinvestigador							x						
+		Data Manager				x				x						
+		Responsable de Farmacia						x						
+		Personal de farmacia							x						
+		Ensayo clínico					x						x		x
+		Monitor del ensayo													
+		Promotor										x				
+		Paciente				x										x
