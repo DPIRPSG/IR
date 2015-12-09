@@ -245,7 +245,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		NOTA: Para facilitar la lectura lo he puesto como Objetivos generales —> Todos los requisitos
 
 												IRQ-001	IRQ-002	IRQ-003	IRQ-004	IRQ-005
-		Gestión de pacientes y empleados						x		x		x		X
+		Gestión de pacientes y empleados						x		x		x		x
 		Gestión de citas													x
 		Gestión de ensayos y analíticas							x		x		x		x		x
 		Gestión de recepción de medicamento						x		x		x
