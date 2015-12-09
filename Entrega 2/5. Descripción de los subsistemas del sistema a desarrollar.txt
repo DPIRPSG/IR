@@ -1,0 +1,21 @@
+El sistema a desarrollar quedará dividido en los siguientes subsistemas:
+
+001		Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
+Descripción	Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, 		incluyendo el personal médico y los pacientes que participan en él.
+Comentarios	No procede
+
+002		Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.
+Descripción	Este subsistema agrupa los requisitos relacionados con los fármacos experimentales que se aplican en cada ensayo, la gestión 			de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluídos en ensayos concretos.
+Comentarios	No procede
+
+003		Conocer las citas de los pacientes pertenecientes a un ensayo.
+Descripción	Este subsistema agrupa los requisitos relacionados con las citas que piden los pacientes, así como su gestión por parte del 			personal de enfermería y la consulta de las mismas por parte de los médicos.
+Comentarios	No procede
+
+004		Conocer los promotores de un ensayo
+Descripción	Este subsistema agrupa los requisitos relacionados con poder listar los promotores de cada ensayo clínico en partícular así 			como gestionar las visitas que hacen los mismos a los centros implicados.
+Comentarios	No procede
+
+005		Disponer de distintos listados sobre el Ensayo.
+Descripción	Este subsistema agrupa los requisitos relacionados con la posibilidad de listar los ensayos clínicos y sus datos pertinentes, 		ya sean en su totalidad, mensualmente, asociados a ciertos personal médico, los pacientes que lo incluyen o cualquier otra 			forma de filtración requerida en cada vista de la aplicación.
+Comentarios	No procede
