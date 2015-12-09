@@ -1,0 +1,40 @@
+== Acta reunión 3 ==
+
+-+-+-+-+-+-+ NO FINALIZADA ! ! ! ! -+-+-+-+-+-+
+Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+Fecha: xx/xx/2015 (unos días después de la entrega)
+Asistentes: 
+    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+    
++-+Orden del día:
+
+    Decir que todo estaba bien
+    hablar de los mockups
+    resolver algunos otros puntos
+
+    1.- Refutación de las ideas obtenidas en la reunión anterior.
+    2.- Resolución de los puntos pendientes de la reunión anterior.
+    3.- Exposición de los procesos de un ensayo clínico.
+    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.
+
++-+Objetivos principales (de la reunión):
+    Una visión más profunda de como funciona la iteracción con el sistema actual.
+
++-+Desarrollo de la reunión:
+    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. 
+    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las citas de pacientes.
+    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.
+    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.
+
++-+Acuerdos y tareas: 
+    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).
++-+Puntos pendientes:
+    No quedo ningún punto pendiente.
++-+Próximas reuniones:
+    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.
+
+
