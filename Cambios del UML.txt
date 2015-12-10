@@ -1,0 +1,25 @@
+Cambios en el UML:
+
+- No solapar las subclases
+
+- La cardinalidad de Ensayo Clínico es 0..*
+
+- Posibilidad de cambio del los empleados:
+	Empleado *———1* Rol <-{Completo Disjunto} —— Todos los roles
+
+- Posibilidad 2:
+	Empleado 1*——<>——0..1 Rol
+		     ||*
+		  Proyecto
+
+- Posibilidad 3: (No da toda la información)
+	Empleado 1——* Asignación *——1 Rol
+			||1…*
+			||1
+		     Proyecto
+
+- Cambiar Fecha de Visita de Monitor de ensayo a una clase externa ya que de la manera que lo tenemos sólo se guarda una.
+
+- Eliminar la nota “No eliminar pacientes antes de 15 años”
+
+- 
