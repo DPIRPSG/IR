@@ -18,4 +18,4 @@ Cambios de la entrega 2 de IR:
 - Implementar la solución de Amador en el diagrama de clases.
 - Matrices de rastreabilidad en REM
 - Punto 3, hay que hacerlo directamente en REM. Se llama Nuevo tipo de objeto, valor y asociación.
-- Modificar 3.3, quitar el recuadro de afuera
+- Modificar 3.3, poner nombre al cuadrado negro (Incluido en ensayo)
