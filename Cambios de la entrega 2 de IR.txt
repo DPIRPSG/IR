@@ -4,14 +4,14 @@ Cambios de la entrega 2 de IR:
 - Apartados 5 y 6 mal enfocados:
 	- Gestión de pacientes, ensayos clínicos y personal sanitario.
 	- En el 6 son objetivos generales.
-	- Faltan las post-condiciones en los casos de uso.
-	- UC-002 llamarlo Confirmación de cita o algo parecido.
-	- Falta seleccionar la cita y que el sistema le muestre la cita.
-	- Ninguna referencia a las interfaces.
-	- UC-003 llamarlo Solicitar las analíticas de un paciente.
-	- UC-007 llamarlo Notificar incidencia.
-	- Unificar pasos 6 y 7 del UC-007.
-	- UC-008 llamarlo de forma diferente.
+	- Faltan las post-condiciones en los casos de uso. HECHO
+	- UC-002 llamarlo Confirmación de cita o algo parecido. HECHO
+	- Falta seleccionar la cita y que el sistema le muestre la cita. HECHO
+	- Ninguna referencia a las interfaces. HECHO
+	- UC-003 llamarlo Solicitar las analíticas de un paciente. HECHO
+	- UC-007 llamarlo Notificar incidencia. HECHO
+	- Unificar pasos 6 y 7 del UC-007. HECHO
+	- UC-008 llamarlo de forma diferente. HECHO
 - IRQ comienzan por “Información sobre” o “Datos de”.
 - Especificar información sobre el Data Manager, quién es, etc. Definir los cargos en IRQ-002.
 - Todo lo que esté en el diagrama de clases debe estar en los IRQ.
