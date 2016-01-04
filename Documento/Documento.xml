@@ -2692,7 +2692,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0014">
 <rem:description>
-Cargo en cada ensayo en el que participa</rem:description>
+Cargo en cada ensayo en el que participa (Los cargos pueden ser Investigador Principal, Subinvestigador, <rem:ref oid="GLO-0032">Data Manager</rem:ref>, Responsable de Farmacia y Responsable de Enfermería).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
