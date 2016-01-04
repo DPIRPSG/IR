@@ -13,7 +13,8 @@
 	- Unificar pasos 6 y 7 del UC-007. ---> LISTO
 	- UC-008 llamarlo de forma diferente. ---> LISTO
 - IRQ comienzan por “Información sobre” o “Datos de”. ---> LISTO
-- Especificar información sobre el Data Manager, quién es, etc. Definir los cargos en IRQ-002.
+- Especificar información sobre el Data Manager, quién es, etc.
+- Definir los cargos en IRQ-002. ---> LISTO
 - Todo lo que esté en el diagrama de clases debe estar en los IRQ.
 - Implementar la solución de Amador en el diagrama de clases.
 - Matrices de rastreabilidad en REM
