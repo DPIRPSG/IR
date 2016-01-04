@@ -1803,7 +1803,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0002">
 <rem:name>
-Envío de los datos de la consulta</rem:name>
+Confirmación de cita</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1856,8 +1856,26 @@ muestra la lista de <rem:ref oid="GLO-0028">citas</rem:ref> por procesar.</rem:d
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0048">
+<rem:step oid = "STP-0094">
 <rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+elige la cita en el que esté interesado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0095">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve el formulario con la información de dicha cita.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0048">
+<rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0006">
 <rem:description>
 le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.</rem:description>
@@ -1866,7 +1884,7 @@ le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0049">
-<rem:number>4</rem:number>
+<rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
 muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</rem:description>
@@ -1878,7 +1896,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0003">
 <rem:name>
-Gestión de las <rem:ref oid="GLO-0026">analíticas de control</rem:ref></rem:name>
+Solicitar las analíticas de un Paciente</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1944,7 +1962,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-devuelve el perfil del actor Paciente (ACT—005) seleccionado.</rem:description>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1953,7 +1971,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-elige en el perfil la pestaña “Pruebas médicas”.</rem:description>
+elige en el perfil la pestaña &quot;Pruebas médicas&quot;.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2250,7 +2268,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0007">
 <rem:name>
-Gestión de incidencias</rem:name>
+Notificar incidencia</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2325,22 +2343,13 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0008">
 <rem:description>
-rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0079">
-<rem:number>6</rem:number>
-<rem:actorAction actor = "ACT-0008">
-<rem:description>
-envía el formulario.</rem:description>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0080">
-<rem:number>7</rem:number>
+<rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
 devuelve un mensaje de confirmación de envío del formulario.</rem:description>
@@ -2352,7 +2361,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0008">
 <rem:name>
-Gestión de efectos adversos en los tratamientos.</rem:name>
+Adición de efectos adversos en los tratamientos.</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2427,7 +2436,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-selecciona la pestaña “Efectos adversos” dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
+selecciona la pestaña &quot;Efectos adversos&quot; dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2463,22 +2472,13 @@ Ninguno</rem:comments>
 <rem:number>9</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso).</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0090">
-<rem:number>10</rem:number>
-<rem:actorAction actor = "ACT-0004">
-<rem:description>
-envía el formulario.</rem:description>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0091">
-<rem:number>11</rem:number>
+<rem:number>10</rem:number>
 <rem:systemAction>
 <rem:description>
 envía un mensaje de confirmación de envío del informe.</rem:description>
@@ -2526,7 +2526,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
-Ensayos clínicos</rem:name>
+Información sobre Ensayos clínicos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2616,7 +2616,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Empleados</rem:name>
+Información sobre Empleados</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2700,7 +2700,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0003">
 <rem:name>
-Pacientes</rem:name>
+Información sobre Pacientes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2808,7 +2808,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0004">
 <rem:name>
-Promotor</rem:name>
+Información sobre Promotor</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2868,7 +2868,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0005">
 <rem:name>
-Monitor</rem:name>
+Información sobre Monitor</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>

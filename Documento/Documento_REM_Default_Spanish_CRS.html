@@ -1910,7 +1910,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Envío de los datos de la consulta</th>
+Confirmación de cita</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1962,7 +1962,7 @@ un responsable de enfermería devuelva la confirmación de una cita.</em>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -1986,8 +1986,27 @@ muestra la lista de <a href="#GLO-0028" title="Fechas en las que se realizan rev
 </td>
 </tr>
 <tr>
-<a name="STP-0048" />
+<a name="STP-0094" />
 <td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsables de Enfermería (ACT-0006)
+    </a>
+<em>
+elige la cita en el que esté interesado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0095" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+le devuelve el formulario con la información de dicha cita.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0048" />
+<td align="center" valign="top">5</td>
 <td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
 Responsables de Enfermería (ACT-0006)
     </a>
@@ -1997,7 +2016,7 @@ le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita
 </tr>
 <tr>
 <a name="STP-0049" />
-<td align="center" valign="top">4</td>
+<td align="center" valign="top">6</td>
 <td>El
      
     sistema<em>
@@ -2078,8 +2097,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de las <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a>
-</th>
+Solicitar las analíticas de un Paciente</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2170,7 +2188,7 @@ elige el Paciente (ACT-005) en el que esté interesado.</em>
 <td>El
      
     sistema<em>
-devuelve el perfil del actor Paciente (ACT?005) seleccionado.</em>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</em>
 </td>
 </tr>
 <tr>
@@ -2180,7 +2198,7 @@ devuelve el perfil del actor Paciente (ACT?005) seleccionado.</em>
 Médico (ACT-0004)
     </a>
 <em>
-elige en el perfil la pestaña ?Pruebas médicas?.</em>
+elige en el perfil la pestaña "Pruebas médicas".</em>
 </td>
 </tr>
 <tr>
@@ -2828,7 +2846,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0007</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de incidencias</th>
+Notificar incidencia</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2880,7 +2898,7 @@ el Investigador Principal notifique alguna incidencia en el sistema.</em>
 El Investigador Principal se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -2929,22 +2947,12 @@ devuelve la vista con el formulario de notificación de incidencias.</em>
 Investigador Principal (ACT-0008)
     </a>
 <em>
-rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia.</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0079" />
-<td align="center" valign="top">6</td>
-<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.">
-Investigador Principal (ACT-0008)
-    </a>
-<em>
-envía el formulario.</em>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0080" />
-<td align="center" valign="top">7</td>
+<td align="center" valign="top">6</td>
 <td>El
      
     sistema<em>
@@ -3025,7 +3033,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de efectos adversos en los tratamientos.</th>
+Adición de efectos adversos en los tratamientos.</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3077,7 +3085,7 @@ el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún 
 El médico se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="12">Secuencia normal</th>
+<th align="left" valign="top" rowspan="11">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -3126,7 +3134,7 @@ devuelve la vista con la información del actor Paciente (ACT-005).</em>
 Médico (ACT-0004)
     </a>
 <em>
-selecciona la pestaña ?Efectos adversos? dentro del perfil del actor Paciente (ACT-005) seleccionado.</em>
+selecciona la pestaña "Efectos adversos" dentro del perfil del actor Paciente (ACT-005) seleccionado.</em>
 </td>
 </tr>
 <tr>
@@ -3164,22 +3172,12 @@ le devuelve el formulario.</em>
 Médico (ACT-0004)
     </a>
 <em>
-rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso).</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0090" />
-<td align="center" valign="top">10</td>
-<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
-Médico (ACT-0004)
-    </a>
-<em>
-envía el formulario.</em>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0091" />
-<td align="center" valign="top">11</td>
+<td align="center" valign="top">10</td>
 <td>El
      
     sistema<em>
@@ -3264,7 +3262,7 @@ Requisitos de información del sistema</h3><a name="IRQ-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0001</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Ensayos clínicos</th>
+Información sobre Ensayos clínicos</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3404,7 +3402,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Empleados</th>
+Información sobre Empleados</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3540,7 +3538,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Pacientes</th>
+Información sobre Pacientes</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3691,7 +3689,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0004</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Promotor</th>
+Información sobre Promotor</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3815,7 +3813,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0005</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Monitor</th>
+Información sobre Monitor</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
