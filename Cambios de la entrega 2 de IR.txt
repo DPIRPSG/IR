@@ -1,18 +1,18 @@
-Cambios de la entrega 2 de IR:
+﻿Cambios de la entrega 2 de IR:
 - Quitar los PD (Por determinar) por un guión “-”.
 - Unificar criterios (Enfermera y Responsable de Enfermería).
 - Apartados 5 y 6 mal enfocados:
 	- Gestión de pacientes, ensayos clínicos y personal sanitario.
 	- En el 6 son objetivos generales.
 	- Faltan las post-condiciones en los casos de uso.
-	- UC-002 llamarlo Confirmación de cita o algo parecido.
-	- Falta seleccionar la cita y que el sistema le muestre la cita.
+	- UC-002 llamarlo Confirmación de cita o algo parecido. ---> LISTO
+	- Falta seleccionar la cita y que el sistema le muestre la cita. ---> LISTO
 	- Ninguna referencia a las interfaces.
-	- UC-003 llamarlo Solicitar las analíticas de un paciente.
-	- UC-007 llamarlo Notificar incidencia.
-	- Unificar pasos 6 y 7 del UC-007.
-	- UC-008 llamarlo de forma diferente.
-- IRQ comienzan por “Información sobre” o “Datos de”.
+	- UC-003 llamarlo Solicitar las analíticas de un paciente. ---> LISTO
+	- UC-007 llamarlo Notificar incidencia. ---> LISTO
+	- Unificar pasos 6 y 7 del UC-007. ---> LISTO
+	- UC-008 llamarlo de forma diferente. ---> LISTO
+- IRQ comienzan por “Información sobre” o “Datos de”. ---> LISTO
 - Especificar información sobre el Data Manager, quién es, etc. Definir los cargos en IRQ-002.
 - Todo lo que esté en el diagrama de clases debe estar en los IRQ.
 - Implementar la solución de Amador en el diagrama de clases.
