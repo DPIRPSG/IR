@@ -1,0 +1,295 @@
+NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
+- Los actores y los casos de uso llevan unos índices que no están plasmados en este documento. Ya con todos los actores y casos instanciados en el sistema, se deberán cambiar a mano.
+
+6.2 Casos de uso del sistema
+
+6.2.1 Diagrama de caso de uso del sistema
+
+	ACT-002 —> UC-0001
+	ACT-003 —> UC-0002
+	ACT-001 —> UC-0003
+	ACT-002 -> UC-0003
+	ACT-001 -> UC-0004
+	ACT-001 -> UC-0005
+	ACT-004 -> UC-0005
+	ACT-003 -> UC-0006
+	ACT-005 -> UC-0007
+	ACT-001 -> UC-0008
+	ACT-002 -> UC-0008
+	
+
+6.2.2 Especificaciones de actores del sistema
+
+	ACT-001 Médico
+		Versión:
+			1 (23/11/2015)
+		Dependencias:
+			-
+		Descripción:
+			Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Sub-investigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
+		Comentarios:
+			No procede
+
+	ACT-002 Paciente
+		Versión:
+			1 (23/11/2015)
+		Dependencias:
+			-
+		Descripción:
+			Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
+		Comentarios:
+			No procede
+
+	ACT-003 Enfermera
+		Versión:
+			1 (23/11/2015)
+		Dependencias:
+			-
+		Descripción:
+			Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
+		Comentarios:
+			No procede
+
+	ACT-004 Responsable de farmacia
+		Versión:
+			1 (25/11/2015)
+		Dependencias:
+			-
+		Descripción:
+			Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.
+		Comentarios:
+			No procede
+
+	ACT-005 Investigador principal
+		Versión:
+			1 (25/11/2015)
+		Dependencias:
+			-
+		Descripción:
+			Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.
+		Comentarios:
+			No procede
+
+
+6.2.3 Especificaciones de casos de uso del sistema
+
+	UC-0001 Petición de cita
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-002 Paciente
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un paciente pida una cita.
+		Precondición:
+			El paciente se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Paciente (ACT-002) solicita una cita de revisión.
+			2) El sistema muestra el formulario de petición de citas.
+			3) El actor Paciente (ACT-002) rellena los campos necesarios y solicita al sistema que registre su cita.
+			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
+		Comentarios: No procede.
+
+	UC-0002 Envío de los datos de la consulta
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-003 Enfermera
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando una enfermera devuelva la confirmación de una cita.
+		Precondición:
+			La enfermera se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Enfermera (ACT-003) pide la lista de nuevas citas.
+			2) El sistema muestra la lista de citas por procesar.
+			3) El actor Enfermera (ACT-003) le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.
+			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
+		Comentarios: No procede.
+
+	UC-0003 Gestión de las analíticas de control
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-001 Médico
+			ACT-002 Paciente
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un médico desee gestionar las analíticas de control asignadas a él mismo.
+		Precondición:
+			El médico se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Médico (ACT-001) pide la lista de actores Paciente (ACT-002) asociados a ellos.
+			2) El sistema devuelve la lista de actores Pacientes (ACT-002) requerida.
+			3) El actor Médico (Act-001) elige el Paciente (ACT-002) en el que esté interesado.
+			4) El sistema devuelve el perfil del actor Paciente (ACT—002) seleccionado.
+			5) El actor Médico (ACT-001) elige en el perfil la pestaña “Pruebas médicas”.
+			6) El sistema devuelve la lista de las analíticas del actor Paciente (ACT-002).
+			7) En esa vista, el actor Médico (ACT-001) elige la analítica requerida, que podrá ser descargado desde un enlace.
+		Comentarios: No procede.
+
+	UC-0004 Petición de medicamentos.
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-001 Médico
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un médico pida medicamentos.
+		Precondición:
+			El médico se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Médico (ACT-001) pide al sistema la lista de los ensayos clínicos asociados a él.
+			2) El sistema devuelve la vista con la lista de los ensayos clínicos.
+			3) El actor Médico (ACT-001) selecciona un ensayo clínico.
+			4) El sistema devuelve un formulario con el identificador del ensayo y el nombre del paciente ya rellenos.
+			5) El actor Médico (ACT-001) rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo fármaco y las unidades de este último) y lo envía
+			6) El sistema envía un mensaje de confirmación del envío del formulario.
+		Comentarios: No procede.
+
+	UC-0005 Aceptación de pedidos de medicamentos.
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-001 Médico
+			ACT-004 Responsable de farmacia.
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el responsable de farmacia reciba una petición de medicamentos.
+		Precondición:
+			El responsable de farmacia se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Responsable de Farmacia (ACT-004) pide al sistema la lista de las nuevas peticiones de medicamentos.
+			2) El sistema devuelve la vista con la lista de las peticiones.
+			3) El actor Responsable de Farmacia (ACT-004) revisa la petición. Esto permite que no se pidan productos con un amplio stock o productos innecesarios.
+			5) El actor Responsable de Farmacia (ACT-004) decide si cancela o no la petición. El actor Responsable de Farmacia (ACT-004) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.
+			6) En ambos casos, el sistema notifica al actor Médico (ACT-001) de la decisión del actor Responsable de Farmacia (ACT-004).
+		Comentarios: No procede.
+
+
+	UC-0006 Devolución de envases de tratamientos en experimentación
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-003 Enfermera
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando una enfermera efectúe la devolución de los envases de tratamiento en experimentación.
+		Precondición:
+			La enfermera se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Enfermera (ACT-003) pide al sistema una lista de los ensayos a los que está asignado.
+			2) El sistema le devuelve dicha lista.
+			3) El actor Enfermera (ACT-003) selecciona el ensayo del que se quieren devolver envases.
+			4) El sistema le devuelve el formulario de devolución de productos.
+			5) El actor Enfermera (ACT-003) rellena una lista con los artículos y las cantidades a devolver y envía el formulario.
+			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
+		Comentarios: No procede.	
+
+	UC-0007 Gestión de incidencias
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-005 Investigador principal
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el investigador principal notifique alguna incidencia en el sistema
+		Precondición:
+			El investigador principal se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Investigador Principal (ACT-005) pide al sistema una lista de los ensayos a los que está asignado.
+			2) El sistema le devuelve dicha lista.
+			3) El actor Investigador Principal (ACT-005) selecciona el ensayo del que se quiere notificar una incidencia.
+			4) El sistema devuelve la vista con el formulario de notificación de incidencias.
+			5) El actor Investigador Principal (ACT-005) rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Tras esto, el actor Investigador Principal (ACT-005) envía el formulario.
+			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
+		Comentarios: No procede.
+
+	UC-0008 Gestión de efectos adversos en los tratamientos.
+		Versión:
+			1 (25/11/2015)
+		Autores:
+			Guillermo Alcalá Gamero
+		Dependencias:
+			ACT-001 Médico
+			ACT-002 Paciente
+		Descripción:
+			El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún paciente.
+		Precondición:
+			El médico se ha identificado correctamente y su sesión está abierta.
+		Secuencia normal:
+			1) El actor Médico (ACT-001) pide al sistema una lista de los actores Paciente (ACT-002) que tiene asignado.
+			2) El sistema le devuelve dicha lista.
+			3) El actor Médico (ACT-001) selecciona el actor Paciente (ACT-002) al que se le quiere asignar el efecto adverso del tratamiento.
+			4) El sistema devuelve la vista con la información del actor Paciente (ACT-002).
+			5) El actor Médico (ACT-001) selecciona la pestaña “Efectos adversos” dentro del perfil del actor Paciente (ACT-002) seleccionado.
+			6) El sistema le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-002).
+			7) El actor Médico (ACT-001) le pide al sistema el formulario para poder registrar un nuevo efecto adverso.
+			8) El sistema le devuelve el formulario.
+			9) El actor Médico (ACT-001) rellena el formulario con los datos necesarios (Ensayo clínico asociado y una descripción del efecto adverso). Tras rellenar el formulario, el actor Médico (ACT-001) envía el formulario.
+			10) El sistema envía un mensaje de confirmación de envío del informe.
+		Comentarios: No procede.
+
+6.7 Información sobre trazabilidad
+
+ 	Matriz Todos los requisitos —> Objetivos generales 
+
+		OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
+		OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.
+		OBJ-0003: El sistema deberá Conocer las citas de los pacientes pertenecientes a un Ensayo.
+		OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.
+		OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.
+
+				OBJ-0001	OBJ-0002	OBJ-0003	OBJ-0004	OBJ-0005
+		IRQ-0001		x		x		x		x		x
+		IRQ-0002		x								x
+		IRQ-0003		x		x		x				x
+		IRQ-0004								x		x
+		IRQ-0005		x		x		x				x
+
+				OBJ-0001	OBJ-0002	OBJ-0003	OBJ-0004	OBJ-0005
+		CRQ-0001		x		x		x				x
+		CRQ-0002		x								x
+		CRQ-0003		x								x
+		CRQ-0004								x		x
+		CRQ-0005		x		x		x		x		x
+		CRQ-0006		x		x		x				x
+
+				OBJ-0001	OBJ-0002	OBJ-0003	OBJ-0004	OBJ-0005
+		FRQ-0001		x		x		x		x		x
+		FRQ-0002						x				
+		FRQ-0003		x		x						x
+		FRQ-0004		x		x						x
+		FRQ-0005		x		x		x				x
+		FRQ-0006		x		x		x				x										
+
+	Matriz Todos los elementos del diagrama de clases —> Requisitos de información y reglas de negocio.
+
+						IRQ-0001	IRQ-0002	IRQ-0003	IRQ-0004	IRQ-0005
+		Investigador principal				x						
+		Subinvestigador					x						
+		Data Manager						x						
+		Responsable de Farmacia				x						
+		Personal de farmacia					x						
+		Ensayo clínico			x								
+		Monitor del ensayo											x
+		Promotor										x		
+		Paciente								x				
+
+						CRQ-0001	CRQ-0002	CRQ-0003	CRQ-0004	CRQ-0005	CRQ-0006
+		Investigador principal				x		x						
+		Subinvestigador							x						
+		Data Manager				x				x						
+		Responsable de Farmacia						x						
+		Personal de farmacia							x						
+		Ensayo clínico					x						x		x
+		Monitor del ensayo													
+		Promotor										x				
+		Paciente				x										x
