@@ -2,7 +2,7 @@
 - Quitar los PD (Por determinar) por un guión “-”.
 - Unificar criterios (Enfermera y Responsable de Enfermería). ---> LISTO
 - Apartados 5 y 6 mal enfocados:
-	- Gestión de pacientes, ensayos clínicos y personal sanitario.
+	- Gestión de pacientes, ensayos clínicos y personal sanitario. ---> LISTO
 	- En el 6 son objetivos generales.
 	- Faltan las post-condiciones en los casos de uso. ---> LISTO
 	- UC-002 llamarlo Confirmación de cita o algo parecido. ---> LISTO
