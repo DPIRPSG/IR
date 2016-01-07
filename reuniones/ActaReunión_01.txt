@@ -1,0 +1,34 @@
+Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+Fecha: 14/10/2015
+Asistentes: 
+    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+    
++-+Orden del día:
+    1.- Presentación de los asistentes.
+    2.- Exposición de los ensayos clínicos y sus características.
+    3.- Exposición de la situación actual en la gestión de los ensayos clínicos.
+    4.- Exposición de los principales problemas y las posibles soluciones.
+
++-+Objetivos principales (de la reunión):
+    Toma de contacto con el proyecto, presentación de los problemas y debilidades del sistema actual y posibles soluciones propuestas por el equipo de desarrollo.
+
++-+Desarrollo de la reunión:
+    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.
+    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.
+    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las citas de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.
+    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de citas debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.
+    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. 
+    
+    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)
+
+
++-+Acuerdos y tareas: 
+    Realizar un esquema de lo que integraría el sistema
++-+Puntos pendientes:
+    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.
++-+Próximas reuniones:
+    No se concretó la fecha de la próxima reunión.

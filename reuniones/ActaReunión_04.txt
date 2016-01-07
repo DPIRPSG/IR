@@ -1,0 +1,40 @@
+== Acta reunión 4 ==
+
+Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+Fecha: 19/11/2015
+Asistentes: 
+    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+    
++-+Orden del día:
+
+    +Peticiones mockups
+    Resolver algunas dudas de lo anterior
+    +Guía y Enumeración de requisitos (II)
+    Requisitos de integración....
+    Hablar de los puntos futuros 
+    
+    
+    1.- Finalización requisitos.
+    2.- Comentarios y pautas a seguir en los mockups.
+
++-+Objetivos principales (de la reunión):
+    Finalizar los requisitos y tener una idea clara de como continuar los mockups.
+
++-+Desarrollo de la reunión:
+    Primeramente se completaron todas las ideas necesarias para realizar los requisitos del sistema. 
+    Por último se mostraron algunos mockups de lo que sería la interfaz gráfica finalizada y se comentaron algunos aspectos a cambiar y mejorar.
+
++-+Acuerdos y tareas: 
+    Revisión total de los mockups para la próxima reunión.
+    
++-+Puntos pendientes:
+    No quedo ningún punto pendiente.
+    
++-+Próximas reuniones:
+    La próxima reunión se concretará una vez finalizados los mockups.
+
+

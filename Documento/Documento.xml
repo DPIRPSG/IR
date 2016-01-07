@@ -85,7 +85,7 @@ Alcance</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes controles analíticos en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.<br/></rem:text>
+<rem:text>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes <rem:ref oid="GLO-0029">controles analíticos</rem:ref> en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -308,7 +308,7 @@ Información</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de citas de revisión, analíticas de control, dispensación de la medicación, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.<br/>El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las citas de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes controles analíticos que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del fármaco en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).<br/></rem:text>
+<rem:text>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de <rem:ref oid="GLO-0028">citas</rem:ref> de revisión, <rem:ref oid="GLO-0026">analíticas de control</rem:ref>, <rem:ref oid="GLO-0035">dispensación de la medicación</rem:ref>, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.<br/>El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las <rem:ref oid="GLO-0028">citas</rem:ref> de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes <rem:ref oid="GLO-0029">controles analíticos</rem:ref> que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del <rem:ref oid="GLO-0036">fármaco</rem:ref> en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).<br/></rem:text>
 </rem:paragraph>
 <rem:section
  oid = "SEC-0006">
@@ -342,7 +342,7 @@ Introducción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>El sistema a desarrollar comprenderá dos roles principales: los “clientes” y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
+<rem:text>El sistema a desarrollar comprenderá dos roles principales: los &quot;clientes&quot; y los usuarios<br/>Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).<br/>Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -362,23 +362,312 @@ Glosario de términos del dominio del problema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0004">
+<rem:glossaryItem
+ oid = "GLO-0026">
 <rem:name>
-Glosario</rem:name>
+<rem:ref oid="GLO-0026">Analíticas de control</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2015</rem:year>
-<rem:month>10</rem:month>
-<rem:day>19</rem:day>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Analíticas de control: Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.<br/><br/>Bioquímica: Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).<br/><br/>Citas: Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.<br/><br/>Controles analíticos: Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.<br/><br/>CRO: Encargado de revisar el CRF y promover dicho ensayo clínico<br/><br/>CRF: Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.<br/><br/>Data Manager: Es un empleado del hospital encargado de realizar el CRF.<br/><br/>Datos clínicos de seguimiento: Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).<br/><br/>Diagnósticos: Procedimiento por el cual se identifica una enfermedad en un paciente.<br/><br/>Dispensación de la medicación: Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc).<br/><br/>Fármaco: Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.<br/><br/>Grupos diagnósticos: Grupos de pacientes afectados por una misma enfermedad o patología.<br/><br/>Hemograma: Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características.<br/><br/>NUHSA: Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.<br/><br/>Patología: Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.<br/><br/>Pautas de tratamiento: Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.<br/><br/>Protocolo de actuación: Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.<br/><br/>Serología: Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).<br/></rem:text>
-</rem:paragraph>
+<rem:text> Determinaciones de diferentes parámetros analíticos (<rem:ref oid="GLO-0038">hemograma</rem:ref>, <rem:ref oid="GLO-0027">bioquímica</rem:ref>, <rem:ref oid="GLO-0043">serología</rem:ref>, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0027">
+<rem:name>
+<rem:ref oid="GLO-0027">Bioquímica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0028">
+<rem:name>
+<rem:ref oid="GLO-0028">Citas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Fechas en las que se realizan revisiones clínicas o extracciones <rem:ref oid="GLO-0026">analíticas de control</rem:ref> a los pacientes. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0029">
+<rem:name>
+<rem:ref oid="GLO-0029">Controles analíticos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0030">
+<rem:name>
+<rem:ref oid="GLO-0030">CRO</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Encargado de revisar el <rem:ref oid="GLO-0031">CRF</rem:ref> y promover dicho ensayo clínico <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0031">
+<rem:name>
+<rem:ref oid="GLO-0031">CRF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Informe de control sobre un ensayo clínico realizado por el <rem:ref oid="GLO-0032">Data Manager</rem:ref> y supervisado por el <rem:ref oid="GLO-0030">CRO</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0032">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Es un empleado del hospital encargado de realizar el <rem:ref oid="GLO-0031">CRF</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0033">
+<rem:name>
+<rem:ref oid="GLO-0033">Datos clínicos de seguimiento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0034">
+<rem:name>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Procedimiento por el cual se identifica una enfermedad en un paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0035">
+<rem:name>
+<rem:ref oid="GLO-0035">Dispensación de la medicación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc). <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0036">
+<rem:name>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0037">
+<rem:name>
+<rem:ref oid="GLO-0037">Grupos diagnósticos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Grupos de pacientes afectados por una misma enfermedad o <rem:ref oid="GLO-0040">patología</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0038">
+<rem:name>
+<rem:ref oid="GLO-0038">Hemograma</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0039">
+<rem:name>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Es el número único de identificación para los pacientes en el sistema de salud de Andalucía. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0040">
+<rem:name>
+<rem:ref oid="GLO-0040">Patología</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0041">
+<rem:name>
+<rem:ref oid="GLO-0041">Pautas de tratamiento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0042">
+<rem:name>
+<rem:ref oid="GLO-0042">Protocolo de actuación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0043">
+<rem:name>
+<rem:ref oid="GLO-0043">Serología</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).</rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:section>
 <rem:section
@@ -415,6 +704,23 @@ Pros y contras de la situación actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0021">
+<rem:name>
+Pros y contras</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En los siguientes apartados describiremos cuales son las fortalezas y las debilidades de la situación actual.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0010">
 <rem:name>
@@ -447,7 +753,7 @@ Fortalezas</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo</rem:text>
+<rem:text>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -482,7 +788,7 @@ Debilidades</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las citas con los pacientes.</rem:text>
+<rem:text>Las debilidades del sistema son las siguientes:<br/> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.<br/> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.<br/> - El sistema no guarda información sobre las fechas de las <rem:ref oid="GLO-0028">citas</rem:ref> con los pacientes.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -552,8 +858,65 @@ Actores de negocio actuales</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:<br/><br/>001		Médico<br/>Versión:		1(02/11/2015)<br/>Dependencias:	- Gestión de ensayos clínicos de un paciente<br/>		- Tratar paciente<br/>Descripción:	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/>Comentarios:	No procede<br/><br/>002		Paciente<br/>Versión:		1(02/11/2015)<br/>Dependencias:	- Gestión de ensayos clínicos de un paciente<br/>		- Tratar paciente<br/>Descripción:	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.<br/>Comentarios:	No procede<br/><br/>003		Enfermera<br/>Versión:		1(02/11/2015)<br/>Dependencias:	- Tratar paciente<br/>Descripción:	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.<br/>Comentarios:	No procede</rem:text>
+<rem:text>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:</rem:text>
 </rem:paragraph>
+<rem:actor
+ oid = "ACT-0001">
+<rem:name>
+Médico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0003">
+<rem:name>
+Responsables de Enfermería</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</rem:actorRole>
+</rem:actor>
 </rem:section>
 <rem:section
  oid = "SEC-0014">
@@ -587,7 +950,7 @@ Procesos de negocio actuales</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión:		1(02/11/2015) <br/>Dependencias:	- Tratar paciente<br/>Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de citas, analíticas, controles y demás, según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores:		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios:	No procede<br/><br/></rem:text>
+<rem:text>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión:		1(02/11/2015) <br/>Dependencias:	- Tratar paciente<br/>Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <rem:ref oid="GLO-0040">patología</rem:ref>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <rem:ref oid="GLO-0028">citas</rem:ref>, analíticas, controles y demás, según su grupo <rem:ref oid="GLO-0034">diagnóstico</rem:ref>. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores:		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios:	No procede<br/><br/></rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0001">
@@ -605,7 +968,7 @@ Proceso de negocio</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\3.2.2.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -623,7 +986,7 @@ Tratar Paciente</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Enfermera (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
+<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. El Responsable de Enfermería recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Responsable de Enfermería (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0002">
@@ -641,7 +1004,7 @@ Proceso tratar paciente</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\Tratar paciente.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
@@ -663,6 +1026,23 @@ Entorno tecnológico actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0022">
+<rem:name>
+Entorno</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallará sobre el Hardware y el Software que se usa en el servicio de Hematología para los ensayos clínicos.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0016">
 <rem:name>
@@ -695,7 +1075,7 @@ Hardware</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Disponen de una intranet a la que se conectan los ordenadores de cada empleado y una torre de gran potencia por la cúal comparten entre sí todo lo necesario (Archivos, carpetas, etc).<br/>También cuentan con material centrado en la monotorización de los pacientes. Éste no es posible integrarlo en el sistema pero exporta información útil en formatos xml y png que deben ser almacenados.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -730,7 +1110,7 @@ Software</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Entre el Software que usan se encuentra:<br/>- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus <rem:ref oid="GLO-0028">citas</rem:ref> y pruebas corresponidentes.<br/>- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -784,7 +1164,7 @@ Objetivos</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>test</rem:text>
+<rem:text>Objetivo 1<br/><br/>COMO: Director del Ensayo Clínico<br/>QUIERO: Un sistema que englobe todas las gestiones necesarias de un Ensayo Clínico<br/>PARA: Facilitar el acceso a los datos por parte del personal de los Ensayos<br/><br/><br/>Objetivo 2<br/><br/>COMO: Director del Ensayo Clínico<br/>QUIERO: Un sistema fácil de entender y accesible para todo el personal perteneciente a los ensayos<br/>PARA: Reducir el tiempo de aprendizaje y fomentar su uso<br/><br/><br/>Objetivo 3<br/><br/>COMO: Personal perteneciente al Ensayo Clínico<br/>QUIERO: Poder gestionar de manera eficiente los Ensayos Clínicos<br/>PARA: Poder centrarme en el Ensayo Clínico.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -819,7 +1199,7 @@ Necesidades</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, &quot;Gestión de ensayo clínico de un paciente&quot;, dentro del cuál se encuentra un segundo proceso de negocio, &quot;Tratar paciente&quot;, que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra. En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de citas así como de registros que eran imposibles en los modelos actuales.</rem:text>
+<rem:text>En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <rem:ref oid="GLO-0028">citas</rem:ref> así como de registros que eran imposibles en los modelos actuales.<br/>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, &quot;Gestión de ensayo clínico de un paciente&quot;, dentro del cuál se encuentra un segundo proceso de negocio, &quot;Tratar paciente&quot;, que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</rem:text>
 </rem:paragraph>
 <rem:section
  oid = "SEC-0021">
@@ -853,7 +1233,7 @@ Actores a implantar</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales se describen a continuación:<br/><br/>001		Médico<br/>Versión		1(02/11/2015)<br/>Dependencias	- Gestión de ensayos clínicos de un paciente<br/>		- Tratar paciente<br/>Descripción	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.<br/>Comentarios	No procede<br/><br/>002		Paciente<br/>Versión		1(02/11/2015)<br/>Dependencias	- Gestión de ensayos clínicos de un paciente<br/>		- Tratar paciente<br/>Descripción	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.<br/>Comentarios	No procede<br/><br/>003		Enfermera<br/>Versión		1(02/11/2015)<br/>Dependencias	- Tratar paciente<br/>Descripción	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.<br/>Comentarios	No procede<br/></rem:text>
+<rem:text>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales son los mismos que los descritos en el apartado 3.2.1.<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -888,9 +1268,2678 @@ procesos a implantar</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión		1(02/11/2015) <br/>Dependencias	- Tratar paciente<br/>Descripción	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de citas para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.<br/>Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/><br/>002		Tratar paciente<br/>Versión		1(02/11/2015)<br/>Descripción	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores		-Médico (001)<br/>		-Enfermera (003)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/></rem:text>
+<rem:text>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:<br/><br/>001		Gestión de ensayo clínico de 1 paciente.<br/>Versión		1(02/11/2015) <br/>Dependencias	- Tratar paciente<br/>Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <rem:ref oid="GLO-0028">citas</rem:ref> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo <rem:ref oid="GLO-0034">diagnóstico</rem:ref> y se seguiría el proceso habitual.<br/>Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.<br/>Actores		-Médico (001)<br/>		-Paciente (002)<br/>Comentarios	No procede<br/><br/>Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:<br/></rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0003">
+<rem:name>
+Proceso a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0025">
+<rem:name>
+Tratar Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Responsable de Enfermería (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
 </rem:paragraph>
 </rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0026">
+<rem:name>
+Descripción de los subsistemas a desarrollar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+<rem:paragraph
+ oid = "PRG-0056">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema a desarrollar quedará dividido en los siguientes subsistemas:<br/><br/>001<br/>Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, 		incluyendo el personal médico y los pacientes que participan en él.<br/>Comentarios<br/>No procede<br/><br/>002<br/>Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluídos en ensayos concretos.<br/>Comentarios<br/>No procede<br/><br/>003<br/>Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con las <rem:ref oid="GLO-0028">citas</rem:ref> que piden los pacientes, así como su gestión por parte del personal de enfermería y la consulta de las mismas por parte de los médicos.<br/>Comentarios<br/>No procede<br/><br/>004<br/>Conocer los promotores de un ensayo<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con poder listar los promotores de cada ensayo clínico en partícular así como gestionar las visitas que hacen los mismos a los centros implicados.<br/>Comentarios<br/>No procede<br/><br/>005<br/>Disponer de distintos listados sobre el Ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de listar los ensayos clínicos y sus datos pertinentes, 		ya sean en su totalidad, mensualmente, asociados a ciertos personal médico, los pacientes que lo incluyen o cualquier otra forma de filtración requerida en cada vista de la aplicación.<br/>Comentarios<br/>No procede</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0027">
+<rem:name>
+Catálogo de requisitos del sistema a desarrollar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Requisitos generales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.1 </rem:number>
+<rem:objective
+ oid = "OBJ-0001">
+<rem:name>
+Requisito General 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0002">
+<rem:name>
+Requisito General 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0003">
+<rem:name>
+Requisito General 3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un Ensayo.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0004">
+<rem:name>
+Requisito General 4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Conocer los promotores de un Ensayo.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0005">
+<rem:name>
+Requisito General 5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Disponer de distintos listados sobre el Ensayo.</rem:description>
+</rem:objective>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.2 </rem:number>
+<rem:section
+ oid = "SEC-0035">
+<rem:name>
+Diagrama de casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0045">
+<rem:name>
+Diagrama</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ACT-005 -&gt; UC-0001<br/>ACT-006 -&gt; UC-0002<br/>ACT-004 -&gt; UC-0003<br/>ACT-005 -&gt; UC-0003<br/>ACT-004 -&gt; UC-0004<br/>ACT-004 -&gt; UC-0005<br/>ACT-007 -&gt; UC-0005<br/>ACT-006 -&gt; UC-0006<br/>ACT-008 -&gt; UC-0007<br/>ACT-004 -&gt; UC-0008<br/>ACT-005 -&gt; UC-0008</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0036">
+<rem:name>
+Especificación de actores del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.2 </rem:number>
+<rem:actor
+ oid = "ACT-0004">
+<rem:name>
+Médico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0005">
+<rem:name>
+Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0006">
+<rem:name>
+Responsables de Enfermería</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:actorRole>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0007">
+<rem:name>
+Responsable de farmacia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0008">
+<rem:name>
+Investigador Principal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0009">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.</rem:actorRole>
+</rem:actor>
+</rem:section>
+<rem:section
+ oid = "SEC-0037">
+<rem:name>
+Especificación de casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.3 </rem:number>
+<rem:useCase
+ oid = "UC-0001">
+<rem:name>
+Petición de cita</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+un paciente pida una cita.</rem:triggeringEvent>
+<rem:precondition>
+El paciente se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0042">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0005">
+<rem:description>
+solicita una cita de revisión.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0043">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra el formulario de petición de <rem:ref oid="GLO-0028">citas</rem:ref>.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0044">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0005">
+<rem:description>
+rellena los campos necesarios y solicita al sistema que registre su cita.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0045">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Confirmación de cita</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+un responsable de enfermería devuelva la confirmación de una cita.</rem:triggeringEvent>
+<rem:precondition>
+El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0046">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+pide la lista de nuevas <rem:ref oid="GLO-0028">citas</rem:ref>.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0047">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra la lista de <rem:ref oid="GLO-0028">citas</rem:ref> por procesar.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0094">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+elige la cita en el que esté interesado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0095">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve la cita requerida.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0048">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0049">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0003">
+<rem:name>
+Solicitar las analíticas de un Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+un médico desee gestionar las <rem:ref oid="GLO-0026">analíticas de control</rem:ref> asignadas a él mismo.</rem:triggeringEvent>
+<rem:precondition>
+El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0050">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+pide la lista de actores Paciente (ACT-005) asociados a ellos.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0051">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la lista de actores Paciente (ACT-005) requerida.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0052">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+elige el Paciente (ACT-005) en el que esté interesado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0053">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0054">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0055">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la lista de las analíticas del actor Paciente (ACT-005).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0056">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+elige la analítica requerida, que podrá ser descargado desde un enlace.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0004">
+<rem:name>
+Petición de Fármacos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+un médico pida fármacos.</rem:triggeringEvent>
+<rem:precondition>
+El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora la nueva petición de medicamentos.</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0057">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+pide al sistema la lista de los Ensayos Clínicos asociados a él.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0058">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la vista con la lista de los Ensayos Clínicos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0059">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+selecciona un Ensayo Clínico.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0060">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve un formulario con el identificador del Ensayo y el nombre del paciente ya rellenos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0061">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo <rem:ref oid="GLO-0036">fármaco</rem:ref> y las unidades de este último) y lo envía.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0062">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+envía un mensaje de confirmación del envío del formulario.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0005">
+<rem:name>
+Aceptación de pedidos de Fármacos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+el responsable de farmacia reciba una petición de fármacos.</rem:triggeringEvent>
+<rem:precondition>
+El responsable de farmacia se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0063">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0007">
+<rem:description>
+pide al sistema la lista de las nuevas peticiones de fármacos.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0064">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la vista con la lista de las peticiones.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0065">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0007">
+<rem:description>
+revisa la petición. Esto permite que no se pidan productos con un amplio stock o productos innecesarios.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0066">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0007">
+<rem:description>
+decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0067">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Devolución de envases de tratamientos en experimentación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+un responsable de enfermería efectúe la devolución de los envases de tratamiento en experimentación.</rem:triggeringEvent>
+<rem:precondition>
+El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora el listado de los artículos a devolver.</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0068">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+pide al sistema una lista de los Ensayos a los que está asignado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0069">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve dicha lista.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0070">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+selecciona el Ensayo del que se quieren devolver envases.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0071">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve el formulario de devolución de productos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0072">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+rellena una lista con los artículos y las cantidades a devolver y envía el formulario.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0073">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve un mensaje de confirmación de envío del formulario.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+Notificar incidencia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+el Investigador Principal notifique alguna incidencia en el sistema.</rem:triggeringEvent>
+<rem:precondition>
+El Investigador Principal se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora la incidencia creada.</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0074">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0008">
+<rem:description>
+pide al sistema una lista de los Ensayos a los que está asignado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0075">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve dicha lista.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0076">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0008">
+<rem:description>
+selecciona el Ensayo del que se quiere notificar una incidencia.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0077">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la vista con el formulario de notificación de incidencias.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0078">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0008">
+<rem:description>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0080">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve un mensaje de confirmación de envío del formulario.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0008">
+<rem:name>
+Adición de efectos adversos en los tratamientos.</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+No procede</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún paciente.</rem:triggeringEvent>
+<rem:precondition>
+El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
+<rem:postcondition>
+El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0081">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+pide al sistema una lista de los actores Paciente (ACT-005) que tiene asignado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0082">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve dicha lista.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0083">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+selecciona el actor Paciente (ACT-005) al que se le quiere asignar el efecto adverso del tratamiento.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0084">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+devuelve la vista con la información del actor Paciente (ACT-005).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0085">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0086">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-005).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0087">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+le pide al sistema el formulario para poder registrar un nuevo efecto adverso.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0088">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve el formulario.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0089">
+<rem:number>9</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0091">
+<rem:number>10</rem:number>
+<rem:systemAction>
+<rem:description>
+envía un mensaje de confirmación de envío del informe.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0030">
+<rem:name>
+Requisitos funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.3 </rem:number>
+<rem:section
+ oid = "SEC-0038">
+<rem:name>
+Requisitos de información del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.1 </rem:number>
+<rem:informationRequirement
+ oid = "IRQ-0001">
+<rem:name>
+Información sobre Ensayos clínicos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Ensayos clínicos</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0041">
+<rem:description>
+ID</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0001">
+<rem:description>
+Monitor del Ensayo clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0002">
+<rem:description>
+Situación actual del Ensayo Clínico<br/>(Pre-evaluación, abierto o cerrado)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0004">
+<rem:description>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref> experimental</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0005">
+<rem:description>
+Criterio de inclusión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0006">
+<rem:description>
+Criterio de exclusión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0007">
+<rem:description>
+Periodo de reclutamiento</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0009">
+<rem:description>
+Pacientes incluidos en el Ensayo clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0002">
+<rem:name>
+Información sobre Empleados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Empleados</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0011">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0012">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0015">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0017">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0018">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0013">
+<rem:description>
+Ensayos en los que participa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0014">
+<rem:description>
+Cargo en cada ensayo en el que participa (Los cargos pueden ser Investigador Principal, Subinvestigador, <rem:ref oid="GLO-0032">Data Manager</rem:ref>, Responsable de Farmacia y Responsable de Enfermería).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0003">
+<rem:name>
+Información sobre Pacientes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Pacientes</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0019">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0020">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0021">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0022">
+<rem:description>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0023">
+<rem:description>
+NHC</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0024">
+<rem:description>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0025">
+<rem:description>
+Ensayo en el que participa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0026">
+<rem:description>
+Fármacos asignados</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0027">
+<rem:description>
+Fecha de inclusión en el Ensayo</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0028">
+<rem:description>
+Fecha de revisión clínica</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0029">
+<rem:description>
+Fechas de estudios complementarios<br/>(Radiografías, <rem:ref oid="GLO-0026">analíticas de control</rem:ref> ...)</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0004">
+<rem:name>
+Información sobre Promotor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Promotor del ensayo</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0030">
+<rem:description>
+Nombre de la empresa</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0031">
+<rem:description>
+CIF</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0093">
+<rem:description>
+Monitor que colabora con el Ensayo Clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0005">
+<rem:name>
+Información sobre Monitor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+Monitor del ensayo</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0032">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0033">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0035">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0036">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0037">
+<rem:description>
+Empresa para la que trabaja</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0092">
+<rem:description>
+Fecha de visita</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0039">
+<rem:name>
+Requisitos de reglas de negocio del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.2 </rem:number>
+<rem:constraintRequirement
+ oid = "CRQ-0001">
+<rem:name>
+Mantener los pacientes en el sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Mantener los pacientes en el sistema un mínimo de 15 años desde su fecha de inclusión para cumplir con la ley vigente sobre Ensayos Clínicos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0002">
+<rem:name>
+Un Investigador Principal por Ensayo Clínico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que sólo haya un Investigador Principal en cada Ensayo Clínico.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0003">
+<rem:name>
+No eliminar empleados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen empleados aunque cambien de hospital para permitir que puedan verificar los datos requeridos por los monitores.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0004">
+<rem:name>
+No eliminar promotores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen los promotores para mantener la información de los mismos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0005">
+<rem:name>
+No eliminar Ensayos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que no se eliminen los Ensayos Clínicos en los que no se incluyan pacientes para mantener la información de los mismos.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0006">
+<rem:name>
+Un paciente en un sólo Ensayo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Que si un paciente está o ha estado en un Ensayo Clínico no pueda ser propuesto para otro para evitar duplicidad de participación en Ensayos Clínicos conforme a la normativa vigente.</rem:description>
+</rem:constraintRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0040">
+<rem:name>
+Requisitos de conducta del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.3 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0001">
+<rem:name>
+Lista de Ensayos Clínicos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener a principios de mes una lista con los Ensayos Clínicos abiertos y los pacientes incluidos en cada Ensayo Clínico.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0002">
+<rem:name>
+Lista de <rem:ref oid="GLO-0028">citas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener cada semana una lista con los pacientes con cita médica para la próxima semana y los estudios complementarios a realizar al paciente.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0003">
+<rem:name>
+Lista de pacientes con su medicación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los pacientes  con su respectiva medicación.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0004">
+<rem:name>
+Lista de monitores con visita</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener cada semana una lista con los monitores que tienen visita la semana siguiente.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0005">
+<rem:name>
+Lista de pacientes con su estudio a realizar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los estudios complementarios a realizar a los pacientes.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0006">
+<rem:name>
+Lista de Ensayos con número de pacientes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder generar en cualquier momento una lista con los Ensayos Clínicos abiertos y el número de pacientes incluido en cada Ensayo.</rem:description>
+</rem:functionalRequirement>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.4 </rem:number>
+<rem:section
+ oid = "SEC-0041">
+<rem:name>
+Requisitos de fiabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.1 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0004">
+<rem:name>
+Disponibilidad 24/7</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que el programa esté operativo<br/>permanentemente y que no exista<br/>restricción horaria de acceso<br/>para facilitar el registro de los datos<br/>independientemente del horario</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0042">
+<rem:name>
+Requisitos de usabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.2 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0003">
+<rem:name>
+Multi-Usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que varios usuarios puedan<br/>estar registrando datos simultáneamente<br/>en un mismo paciente o Ensayo</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0043">
+<rem:name>
+Requisitos de mantenibilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0046">
+<rem:name>
+No procede</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0044">
+<rem:name>
+Requisitos de eficiencia del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0047">
+<rem:name>
+No procede</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0045">
+<rem:name>
+Requisitos de portabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.5 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0005">
+<rem:name>
+Clave acceso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que se pueda acceder de<br/>forma remota al sistema con una clave<br/>especial de acceso para consulta de datos puntuales<br/>desde fuera del hospital</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0046">
+<rem:name>
+Requisitos de seguridad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.6 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0001">
+<rem:name>
+Acceso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que sólo puedan acceder al sistema los empleados autorizados de la<br/>organización para cumplir con la Ley de Protección de Datos</rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0002">
+<rem:name>
+Datos Encriptados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que todos los datos personales de los pacientes<br/>se almacenen de forma encriptada para cumplir con la Ley de Protección de Datos </rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0006">
+<rem:name>
+Acceso Restringido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+asegurarse de que cada empleado perteneciente<br/>al Ensayo sólo vea la información que necesita<br/>para mantener en el anonimato a<br/>los pacientes y evitar filtraciones de<br/>información referentes al Ensayo Clínico</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0047">
+<rem:name>
+Otros requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.7 </rem:number>
+<rem:paragraph
+ oid = "PRG-0048">
+<rem:name>
+No procede</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0032">
+<rem:name>
+Restricciones técnicas del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.5 </rem:number>
+<rem:paragraph
+ oid = "PRG-0052">
+<rem:name>
+Restricciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Las únicas restricciones técnicas impuestas por el cliente son:<br/><br/>== Compatibilidad ==<br/>Descripción: El sistema deberá ser compatible con los navegadores web firefox, chrome, safari e internet explorer.<br/><br/><br/>== Rendimiento ==<br/>Descripción: El sistema deberá funcionar sin ningún problema de rendimiento en la máquina que ya poseen.<br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0033">
+<rem:name>
+Requisitos de integración del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.6 </rem:number>
+<rem:paragraph
+ oid = "PRG-0049">
+<rem:name>
+No procede</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0034">
+<rem:name>
+Información sobre trazabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.7 </rem:number>
+<rem:paragraph
+ oid = "PRG-0058">
+<rem:name>
+Información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Matriz Todos los requisitos -&gt; Objetivos generales <br/><br/>OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/><br/>OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/><br/>OBJ-0003: El sistema deberá Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un Ensayo.<br/><br/>OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.<br/><br/>OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0048">
+<rem:name>
+Matriz 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 1.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0059">
+<rem:name>
+Información 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Matriz Todos los elementos del diagrama de clases -&gt; Requisitos de información y reglas de negocio.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0049">
+<rem:name>
+Matriz 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 2.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 </rem:section>
 <rem:section
@@ -910,6 +3959,42 @@ Actas de reuniones</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>A </rem:number>
+<rem:paragraph
+ oid = "PRG-0023">
+<rem:name>
+Acta reunión 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 14/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>- Orden del día:<br/>    1.- Presentación de los asistentes.<br/>    2.- Exposición de los ensayos clínicos y sus características.<br/>    3.- Exposición de la situación actual en la gestión de los ensayos clínicos.<br/>    4.- Exposición de los principales problemas y las posibles soluciones.<br/><br/>- Objetivos principales (de la reunión):<br/>    Toma de contacto con el proyecto, presentación de los problemas y debilidades del sistema actual y posibles soluciones propuestas por el equipo de desarrollo.<br/><br/>- Desarrollo de la reunión:<br/>    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.<br/>    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.<br/>    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.<br/>    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de <rem:ref oid="GLO-0028">citas</rem:ref> debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.<br/>    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. <br/>    <br/>    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)<br/><br/><br/>- Acuerdos y tareas: <br/>    Realizar un esquema de lo que integraría el sistema<br/>- Puntos pendientes:<br/>    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.<br/>- Próximas reuniones:<br/>    No se concretó la fecha de la próxima reunión.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0044">
+<rem:name>
+Acta reunión 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 27/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    1.- Refutación de las ideas obtenidas en la reunión anterior.<br/>    2.- Resolución de los puntos pendientes de la reunión anterior.<br/>    3.- Exposición de los procesos de un ensayo clínico.<br/>    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Una visión más profunda de como funciona la iteracción con el sistema actual.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. <br/>    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <rem:ref oid="GLO-0028">citas</rem:ref> de pacientes.<br/>    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.<br/>    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.<br/><br/>+-+Acuerdos y tareas: <br/>    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0024">
@@ -928,6 +4013,23 @@ Documentación relevante</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>B </rem:number>
+<rem:paragraph
+ oid = "PRG-0024">
+<rem:name>
+Documentación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No procede</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0025">
@@ -961,7 +4063,7 @@ Glosario</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>CRO: Clinical Research Organization<br/>CRF: Clinical Research Formulary<br/>IP: Investigador principal<br/>NUHSA: Número Único de Historia de Salud de Andalucía<br/>SAES: Serious Adverse Events (Eventos Adversos Serios)</rem:text>
+<rem:text><rem:ref oid="GLO-0030">CRO</rem:ref>: Clinical Research Organization<br/><rem:ref oid="GLO-0031">CRF</rem:ref>: Clinical Research Formulary<br/>IP: Investigador principal<br/><rem:ref oid="GLO-0039">NUHSA</rem:ref>: Número Único de Historia de Salud de Andalucía<br/>SAES: Serious Adverse Events (Eventos Adversos Serios)</rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:c_requirementsSpecification>
@@ -979,6 +4081,1280 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno
 </rem:comments>
+	 <rem:preparedFor organizations = "ORG-0002 "/>
+	 <rem:preparedBy organizations = "ORG-0001 "/>
+<rem:section
+ oid = "SEC-0048">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0053">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El proyecto que se va a desarrollar abarca la organización interna del Hospital Universitario Virgen del Rocío, en concreto, su Servicio de Hematología. Fundado en 1955, actualmente es el mayor complejo hospitalario del Sistema Sanitario Público de Andalucía, tanto por su intensa actividad asistencial como por su infraestructura y dotación tecnológica, incluyendo la mayor unidad de cuidados intensivos de España. Al tratarse de un hospital universitario, la Universidad de Sevilla es la institución afiliada al complejo sanitario. En resumen, es el centro sanitario de referencia de Andalucía. </rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0052">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0054">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes <rem:ref oid="GLO-0029">controles analíticos</rem:ref> en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto. </rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0053">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0055">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Nuestro proyecto pretende dotar al hospital de una herramienta más eficaz para la gestión de todos los procedimientos que se desarrollan en el Servicio de Hematología. El usuario final de este sistema será el personal adscrito a este servicio, y en menor medida, los pacientes, con lo que esperamos que les resulte fácil de usar y que permita agilizar tareas que hasta ahora resultaban muy costosas en tiempo de ejecución. </rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0049">
+<rem:name>
+Arquitectura lógica del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0054">
+<rem:name>
+Diagramas de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0050">
+<rem:name>
+Diagrama</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoAnálisisSistema\Entrega2\2.0. Lógica del sistema\AS.2.1.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0055">
+<rem:name>
+Descripción de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0060">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Como podemos observar en el diagrama de la arquitectura lógica del sistema, el sistema se estructurará en 4 bloques principales. El usuario interactuará con los componentes relativos a la presentación del sistema, es decir, las herramientas visuales con las que se controla el sistema. Los componentes de Presentación interactuan a su vez con los de Lógica de Negocio los cuales impementan la propia lógica del sistema, es decir, esta capa realiza las operaciones que el sistema requiera tales como pueden ser la eliminación o creación de algún elemento. La Lógica de Negocio interactua con la Persistencia que es la encargada de gestionar el almacenacenamiento de los datos interactuando con SGBD que es el sistema de gestión de base de datos.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0050">
+<rem:name>
+Modelo de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0056">
+<rem:name>
+Diagrama de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0004">
+<rem:name>
+Diagrama de clases</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\UML GECH.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0057">
+<rem:name>
+Descripción de las clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0050">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Ensayo Clínico:<br/>Esta clase se corresponde con los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes.<br/>Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo.<br/><br/>Empleado:<br/>Esta clase se corresponde con los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto.<br/><br/>Paciente:<br/>Esta clase se corresponde con los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/>Cabe destacar que un paciente solo puede participar en un solo Ensayo.<br/><br/>Monitor del Ensayo:<br/>Esta clase se corresponde con los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/><br/>Promotor:<br/>Esta clase se corresponde con los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0058">
+<rem:name>
+Diagramas de estado de las clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0005">
+<rem:name>
+Diagrama de estado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Diagrama de estado GECH.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0051">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este diagrama podemos ver en los distintos estados que está un paciente desde que entra en un Ensayo Clínico hasta que lo deja.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0051">
+<rem:name>
+Interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0059">
+<rem:name>
+Diagramas de navegación del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0006">
+<rem:name>
+Diagrama de navegación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Diagrama de navegación del sistema.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0060">
+<rem:name>
+Esquemas de la interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0007">
+<rem:name>
+1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\1.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0008">
+<rem:name>
+2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\2.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0009">
+<rem:name>
+3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\3.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0010">
+<rem:name>
+4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\4.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0011">
+<rem:name>
+5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\5.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0012">
+<rem:name>
+6</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\6.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0013">
+<rem:name>
+7</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\7.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0014">
+<rem:name>
+8</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\8.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0015">
+<rem:name>
+9</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\9.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0016">
+<rem:name>
+10</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\10.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0017">
+<rem:name>
+11</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\11.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0018">
+<rem:name>
+12</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\12.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0019">
+<rem:name>
+13</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\13.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0020">
+<rem:name>
+14</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\14.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0021">
+<rem:name>
+15</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\15.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0022">
+<rem:name>
+16</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\16.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0023">
+<rem:name>
+17</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\17.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0024">
+<rem:name>
+18</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\18.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0025">
+<rem:name>
+19</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\19.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0026">
+<rem:name>
+20</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\20.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0027">
+<rem:name>
+21</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\21.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0028">
+<rem:name>
+22</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\22.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0029">
+<rem:name>
+23</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\23.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0030">
+<rem:name>
+24</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\24.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0031">
+<rem:name>
+25</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\25.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0032">
+<rem:name>
+26</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\26.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0033">
+<rem:name>
+27</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\27.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0034">
+<rem:name>
+28</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\28.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0035">
+<rem:name>
+29</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\29.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0036">
+<rem:name>
+30</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\30.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0037">
+<rem:name>
+31</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\31.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0038">
+<rem:name>
+32</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\32.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0039">
+<rem:name>
+33</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\33.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0040">
+<rem:name>
+34</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\34.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0041">
+<rem:name>
+35</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\35.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0042">
+<rem:name>
+36</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\36.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0043">
+<rem:name>
+37</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\37.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0044">
+<rem:name>
+38</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\38.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0045">
+<rem:name>
+39</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\39.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0046">
+<rem:name>
+40</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\40.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0047">
+<rem:name>
+41</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\MockUps\41.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0061">
+<rem:name>
+Descripción de la interfaz de usuario del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>11</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0057">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se presenta la descripción de la interfaz de usuario del sistema. Se presenta de manera ordenada desde la página de Inicio, pasando por cada una de las pantallas y acciones de cada rol que se puede identificar en el sistema y según los casos de uso descritos para el mismo. Los números mostrados entre paréntesis hacen referencia (a una página en contreto del pdf y por tanto) a 1 esquema(MockUp) en concreto de la interfaz de usuario del sistema en el orden en que aparecen. Entre corchetes se mostrará el ID del caso de uso al que hacen referencia las acciones que se muestran.<br/><br/>En primer lugar (1), y común a cualquier tipo de usuario que entra al sistema, se muestra una pantalla con el nombre o logo de la aplicación junto con 6 botones. Cada botón corresponde a 1 rol en el sistema. El usuario hará click en el botón correspondiente al rol con el que quiere iniciar sesión. El color del botón le será familiar durante todo el recorrido en el sistema.<br/><br/>Una vez escogido su rol aparecerá un simple formulario de inicio de sesión (2), junto con el nombre o logo de la aplicación y el correspondiente botón para efectuar la autenticación en el sistema. Las franjas de colores motradas en la esquina inferior derecha únicamente representan que el fondo de esta pantalla estará personalizado conforme al rol de usuario escogido anteriormente.<br/><br/>Tras iniciar sesión habrá una serie de elementos comunes a cualquier usuario (3). Estos consisten en un Header sencillo en el que se muestran (en este orden) el nombre o logo de la aplicación, un menu (migas de pan) que le muestra por dónde va pasando dentro de la aplicación y le permite volver a acciones anteriores para facilitarle la navegación y guiarle en todo momento, su nombre completo, su foto de carné y un botón para cerrar su sesión por completo. Además el color de este Header estará personalizado conforme al rol de usuario escogido anteriormente. Todo esto hace que el usuario sepa en todo momento identificar con qué rol está autenticado, dónde está y qué está haciendo, teniendo el control absoluto y sencillo sobre ello. El contenido (body) bajo el header será totalmente cambiante según el rol autenticado y la acción que se realice.<br/><br/>Comenzamos por el rol de Paciente, el cuál al entrar al sistema podrá ver una lista de sus <rem:ref oid="GLO-0028">citas</rem:ref> pendientes (4) y podrá solicitar una nueva cita (5) [UC-0001], esto le llevará a un nuevo formulario (6) donde podrá rellenar/seleccionar los datos oportunos (7,8) y solicitar dicha cita (9), recibiendo el mensaje de confirmación oportuno (10) y devolviéndolo a la vista de sus <rem:ref oid="GLO-0028">citas</rem:ref> pendientes (11), la cuál se verá actualizada cuando el responsable de enfermería correspondiente le asigne una consulta y un médico (en el caso de que no sea previamente asignado por el paciente). Es importante aclarar que en todo formulario enviado a través de la aplicación se recibirá un mensaje de confirmación similar al mostrado en el esquema &quot;(10)&quot;.<br/><br/>Un Investigador Principal, por su parte, tendrá acceso a una pantalla (12) con tres pestañas &quot;Ensayos clínicos abiertos&quot;, &quot;Citas semana actual&quot; y &quot;Citas próxima semana&quot;. En la primera de ellas podrá ver una tabla con todos los ensayos clínicos abiertos este mes y sus datos correspondientes, haciendo clic en uno de ellos tal y como se muestra se le llevará a un nuevo formulario donde podrá notificar una nueva incidencia relacionada con el mismo (13) [UC-0007]. Esta incidencia es enviada a una empresa externa que no tendrá acceso a la aplicación. Por otro lado, si en vez de hacer clic en un ensayo clínico se hace clic en el número de pacientes incluidos en el mismo (14) aparecerá una nueva pantalla con la lista de pacientes correspondiente (15). En la segunda pestaña &quot;Citas semana actual&quot; se le mostrará una tabla con las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene para la semana actual (16). En la tercera pestaña &quot;Citas próxima semana&quot; tendrá acceso a un listado de las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene la semana siguiente a la actual (17).<br/><br/>Un Subinvestigador tendrá acceso a tres opciones principales mediante tres grandes y claros botones: <br/>Haciendo clic en el primero de ellos &quot;Mis pacientes&quot; (18) tendrá acceso a un listado con todos los pacientes a los que trata él mismo (19); haciendo clic en uno de ellos tendrá acceso al perfil detallado del paciente que incluye tres pestañas: &quot;Datos&quot;, en la que tendrá una ficha con los datos oportunos del paciente (20), &quot;Pruebas médicas&quot;, donde podrá ver las pruebas médicas que se le han realizado al paciente y descargar sus informes (21) [UC-0003], y &quot;Efectos Adversos&quot;, donde podrá ver los efectos adversos que le han ido surgiendo al paciente (22) así como documentar un nuevo efecto adverso, en cuyo caso se le llevaría a otro formulario que rellenaría con los datos oportunos y enviaría mediante el botón correspondiente (23) [UC-0008]. <br/>Si selecciona la segunda opción &quot;Mis ensayos clínicos&quot; (24) tendrá acceso a una vista con los ensayos clínicos en los que participa y ciertos datos de los mismos. Dentro de la casilla donde se muestran los fármacos experimentales que se usan en el ensayo clínico habrá un botón (25) que le permitirá añadir nuevos fármacos (26) [UC-0004] así como modificar los actuales en cuestiones de dosis y demás. Si, por el contrario, hace clic en el botón de &quot;Fármacos pedidos&quot; (27) se le llevará a una nueva vista con una lista de los fármacos que ha pedido con anterioridad (28) y que todavía no aparecen en el correspondiente ensayo clínico, donde comprobará si es que todavía está pendiente de confirmación o ha sido rechazado por parte del responsable de farmacia, en cuyo caso se le especificará el motivo en forma de nota. <br/>Si decide hacer clic en la tercera opción &quot;Mis citas&quot; (29) accederá a una nueva vista con 2 pestañas: &quot;Semana actual&quot;, donde podrá visualizar las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene pendientes para la semana en la que se encuentra (30) y &quot;Próxima semana&quot;, en la que verá las de la semana siguiente (31).<br/><br/>Con el rol de Enfermería se tendrá acceso a 2 opciones principales (32):<br/>Haciendo clic en la primera &quot;Citas&quot;, se le mostrará una tabla con las <rem:ref oid="GLO-0028">citas</rem:ref> pedidas por parte de los pacientes (33). Haciendo clic en cualquier de los campos pendientes de asignación de una cita se le llevará a un nuevo formulario (34) donde podrá rellenar los datos que faltan en la misma (35) y enviárselo de vuelta al portal del paciente (36) [UC-0002].<br/>Si hace clic en la segunda opción &quot;Ensayos asignados&quot; (37) se le mostrará una tabla con los ensayos que le corresponden con los pocos datos a los que tiene acceso (38), haciendo clic en el enlace &quot;devolver&quot; de uno de los ensayos clínicos se pondrá a su disposición otro formulario (39) donde especificará los envases que va a devolver relacionados con dicho ensayo [UC-0006].<br/><br/>Un usuario autenticado como responsable de Farmacia tendrá una única vista (40) con un listado de fármacos pedidos por los médicos en los distintos ensayos clínicos, donde podrá aceptar los pedidos o rechazarlos por cualquier motivo que especificará mediante una nota en el campo correspondiente [UC-0005].<br/><br/>Por último, como <rem:ref oid="GLO-0032">Data Manager</rem:ref> la única opción que se tendrá dentro del sistema será la de listar los monitores que tienen visita la semana que viene con los datos oportunos para que pueda organizar todo correctamente (41).</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Conflictos y Defectos</rem:name>

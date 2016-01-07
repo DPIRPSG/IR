@@ -1,0 +1,35 @@
+== Acta reunión 3 ==
+
+Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+Fecha: 10/11/2015
+Asistentes: 
+    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+    
++-+Orden del día:
+
+    1.- Comentarios primer entregable.
+    2.- Petición de requisitos.
+
+
++-+Objetivos principales (de la reunión):
+    Enumeración de los requisitos.
+
++-+Desarrollo de la reunión:
+    Primeramente se comentó la corrección del primer entregable y, puesto que nos comentaron que íbamos por buen camino, pasamos al siguiente punto. 
+    A continuación se paso a la explicación de que es un requisito, para que lo necesitamos y algunos ejemplos. Tras esto, empezamos a hablar de todos los posibles requisitos.
+    
++-+Acuerdos y tareas: 
+    Por parte de los desarrolladores: Realización formalizada de los requisitos del sistema y algunos diseños básicos de mockups.
+    Por parte del cliente: Petición de algunos requisitos a sus compañeros.
+    
++-+Puntos pendientes:
+    Requisitos del sistema.
+    
++-+Próximas reuniones:
+    La próxima reunión se concreto para la próxima semana.
+
+
