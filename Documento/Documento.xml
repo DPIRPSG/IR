@@ -986,7 +986,7 @@ Tratar Paciente</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Enfermera (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
+<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. El Responsable de Enfermería recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Responsable de Enfermería (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0002">
@@ -1304,7 +1304,7 @@ Tratar Paciente</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Enfermera (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
+<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Responsable de Enfermería (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -1707,6 +1707,25 @@ Investigador Principal</rem:name>
 Ninguno</rem:comments>
 <rem:actorRole>Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.</rem:actorRole>
 </rem:actor>
+<rem:actor
+ oid = "ACT-0009">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.</rem:actorRole>
+</rem:actor>
 </rem:section>
 <rem:section
  oid = "SEC-0037">
@@ -1759,7 +1778,7 @@ un paciente pida una cita.</rem:triggeringEvent>
 <rem:precondition>
 El paciente se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1834,7 +1853,7 @@ un responsable de enfermería devuelva la confirmación de una cita.</rem:triggeri
 <rem:precondition>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1869,7 +1888,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-le devuelve el formulario con la información de dicha cita.</rem:description>
+le devuelve la cita requerida.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1927,7 +1946,7 @@ un médico desee gestionar las <rem:ref oid="GLO-0026">analíticas de control</rem
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1971,7 +1990,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-elige en el perfil la pestaña &quot;Pruebas médicas&quot;.</rem:description>
+selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2029,7 +2048,7 @@ un médico pida fármacos.</rem:triggeringEvent>
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la nueva petición de medicamentos.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2122,7 +2141,7 @@ el responsable de farmacia reciba una petición de fármacos.</rem:triggeringEvent
 <rem:precondition>
 El responsable de farmacia se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2166,7 +2185,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
-notifica al actor Médico (ACT-005) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
+notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2206,7 +2225,7 @@ un responsable de enfermería efectúe la devolución de los envases de tratamiento
 <rem:precondition>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora el listado de los artículos a devolver.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2299,7 +2318,7 @@ el Investigador Principal notifique alguna incidencia en el sistema.</rem:trigge
 <rem:precondition>
 El Investigador Principal se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la incidencia creada.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2392,7 +2411,7 @@ el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún 
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2436,7 +2455,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-selecciona la pestaña &quot;Efectos adversos&quot; dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
+selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>

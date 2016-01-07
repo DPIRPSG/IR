@@ -1,4 +1,4 @@
-NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
+﻿NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 - Los actores y los casos de uso llevan unos índices que no están plasmados en este documento. Ya con todos los actores y casos instanciados en el sistema, se deberán cambiar a mano.
 
 Changelog del archivo (04/01/2016)
