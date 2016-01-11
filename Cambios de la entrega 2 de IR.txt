@@ -1,0 +1,22 @@
+﻿Cambios de la entrega 2 de IR:
+- Quitar los PD (Por determinar) por un guión “-”.
+- Unificar criterios (Enfermera y Responsable de Enfermería). ---> LISTO
+- Apartados 5 y 6 mal enfocados:
+	- Gestión de pacientes, ensayos clínicos y personal sanitario. ---> LISTO
+	- En el 6 son objetivos generales.
+	- Faltan las post-condiciones en los casos de uso. ---> LISTO
+	- UC-002 llamarlo Confirmación de cita o algo parecido. ---> LISTO
+	- Falta seleccionar la cita y que el sistema le muestre la cita. ---> LISTO
+	- Ninguna referencia a las interfaces. ---> LISTO
+	- UC-003 llamarlo Solicitar las analíticas de un paciente. ---> LISTO
+	- UC-007 llamarlo Notificar incidencia. ---> LISTO
+	- Unificar pasos 6 y 7 del UC-007. ---> LISTO
+	- UC-008 llamarlo de forma diferente. ---> LISTO
+- IRQ comienzan por “Información sobre” o “Datos de”. ---> LISTO
+- Especificar información sobre el Data Manager, quién es, etc. ---> LISTO
+- Definir los cargos en IRQ-002. ---> LISTO
+- Todo lo que esté en el diagrama de clases debe estar en los IRQ. ---> CREO QUE ESTÁ, PERO TENGO QUE REVISARLO
+- Implementar la solución de Amador en el diagrama de clases.
+- Matrices de rastreabilidad en REM
+- Punto 3, hay que hacerlo directamente en REM. Se llama Nuevo tipo de objeto, valor y asociación.
+- Modificar 3.3, poner nombre al cuadrado negro (Incluido en ensayo)

@@ -912,7 +912,7 @@ Descripción de procesos de negocio actuales</h3><a name="PRG-0008" />
 </p>
 <a name="GRF-0001" />
 <p align="center">
-<img src="..\3.2.2.png" title="..\3.2.2.png" />
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -921,15 +921,15 @@ Proceso de negocio</p>
 <a name="PRG-0019" />
 <p>002		Tratar paciente
 <br />Versión:		1(02/11/2015)
-<br />Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
+<br />Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. El Responsable de Enfermería recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
 <br />Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.
 <br />Actores:		-Médico (001)
-<br />		-Enfermera (003)
+<br />		-Responsable de Enfermería (003)
 <br />		-Paciente (002)
 <br />Comentarios:	No procede</p>
 <a name="GRF-0002" />
 <p align="center">
-<img src="..\Tratar paciente.png" title="..\Tratar paciente.png" />
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png" />
 </p>
 <p align="center">
 <b>Figura 2</b>:
@@ -1004,7 +1004,7 @@ Descripción de procesos de negocio a implantar</h3><a name="PRG-0013" />
 </p>
 <a name="GRF-0003" />
 <p align="center">
-<img src="..\4.2.2.png" title="..\4.2.2.png" />
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -1016,7 +1016,7 @@ Proceso a implantar</p>
 <br />Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.
 <br />Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. 
 <br />Actores -Médico (001) 
-<br />-Enfermera (003) 
+<br />-Responsable de Enfermería (003) 
 <br />-Paciente (002) 
 <br />Comentarios No procede </p>
 <a name="SEC-0026" />
@@ -1025,37 +1025,23 @@ Descripción de los subsistemas a desarrollar</h1><a name="PRG-0056" />
 <p>El sistema a desarrollar quedará dividido en los siguientes subsistemas:
 <br />
 <br />001
-<br />Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.
+<br />Pacientes
 <br />Descripción
-<br />Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, 		incluyendo el personal médico y los pacientes que participan en él.
+<br />Este subsistema agrupa los requisitos relacionados con la gestión de los pacientes participantes en los distintos Ensayos Clínicos, el almacenamiento de sus datos e informes necesarios y la gestión completa de sus <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> con el personal sanitario pertinente.
 <br />Comentarios
 <br />No procede
 <br />
 <br />002
-<br />Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.
+<br />Ensayos Clínicos
 <br />Descripción
-<br />Este subsistema agrupa los requisitos relacionados con los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluídos en ensayos concretos.
+<br />Este subsistema agrupa los requisitos relacionados con los Ensayos Clínicos, los fármacos que se utilizan, los pacientes que participan, las incidencias ocurridas y el resto de datos y documentación necesaria y disponible para cada personal santario en el sistema.
 <br />Comentarios
 <br />No procede
 <br />
 <br />003
-<br />Conocer las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de los pacientes pertenecientes a un ensayo.
+<br />Personal sanitario
 <br />Descripción
-<br />Este subsistema agrupa los requisitos relacionados con las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> que piden los pacientes, así como su gestión por parte del personal de enfermería y la consulta de las mismas por parte de los médicos.
-<br />Comentarios
-<br />No procede
-<br />
-<br />004
-<br />Conocer los promotores de un ensayo
-<br />Descripción
-<br />Este subsistema agrupa los requisitos relacionados con poder listar los promotores de cada ensayo clínico en partícular así como gestionar las visitas que hacen los mismos a los centros implicados.
-<br />Comentarios
-<br />No procede
-<br />
-<br />005
-<br />Disponer de distintos listados sobre el Ensayo.
-<br />Descripción
-<br />Este subsistema agrupa los requisitos relacionados con la posibilidad de listar los ensayos clínicos y sus datos pertinentes, 		ya sean en su totalidad, mensualmente, asociados a ciertos personal médico, los pacientes que lo incluyen o cualquier otra forma de filtración requerida en cada vista de la aplicación.
+<br />Este subsistema agrupa los requisitos relacionados con la gestión y paricipación del distinto personal sanitario en el sistema.
 <br />Comentarios
 <br />No procede</p>
 <a name="SEC-0027" />
@@ -1735,6 +1721,58 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="ACT-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0009</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 07/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0037" />
 <h3 align="left">6.2.3 
 Especificación de casos de uso del sistema</h3><a name="UC-0001" />
@@ -1839,8 +1877,7 @@ muestra un mensaje de confirmación anunciando que la cita se ha guardado correct
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -1910,7 +1947,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Envío de los datos de la consulta</th>
+Confirmación de cita</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1962,7 +1999,7 @@ un responsable de enfermería devuelva la confirmación de una cita.</em>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -1986,8 +2023,27 @@ muestra la lista de <a href="#GLO-0028" title="Fechas en las que se realizan rev
 </td>
 </tr>
 <tr>
-<a name="STP-0048" />
+<a name="STP-0094" />
 <td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsables de Enfermería (ACT-0006)
+    </a>
+<em>
+elige la cita en el que esté interesado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0095" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+le devuelve la cita requerida.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0048" />
+<td align="center" valign="top">5</td>
 <td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
 Responsables de Enfermería (ACT-0006)
     </a>
@@ -1997,7 +2053,7 @@ le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita
 </tr>
 <tr>
 <a name="STP-0049" />
-<td align="center" valign="top">4</td>
+<td align="center" valign="top">6</td>
 <td>El
      
     sistema<em>
@@ -2007,8 +2063,7 @@ muestra un mensaje de confirmación anunciando que la cita se ha guardado correct
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2078,8 +2133,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de las <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a>
-</th>
+Solicitar las analíticas de un Paciente</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2170,7 +2224,7 @@ elige el Paciente (ACT-005) en el que esté interesado.</em>
 <td>El
      
     sistema<em>
-devuelve el perfil del actor Paciente (ACT?005) seleccionado.</em>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</em>
 </td>
 </tr>
 <tr>
@@ -2180,7 +2234,7 @@ devuelve el perfil del actor Paciente (ACT?005) seleccionado.</em>
 Médico (ACT-0004)
     </a>
 <em>
-elige en el perfil la pestaña ?Pruebas médicas?.</em>
+selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</em>
 </td>
 </tr>
 <tr>
@@ -2205,8 +2259,7 @@ elige la analítica requerida, que podrá ser descargado desde un enlace.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2392,8 +2445,7 @@ envía un mensaje de confirmación del envío del formulario.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora la nueva petición de medicamentos.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2564,14 +2616,13 @@ decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) p
 <td>El
      
     sistema<em>
-notifica al actor Médico (ACT-005) de la decisión del actor Responsable de farmacia (ACT-007).</em>
+notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2757,8 +2808,7 @@ devuelve un mensaje de confirmación de envío del formulario.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora el listado de los artículos a devolver.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2828,7 +2878,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0007</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de incidencias</th>
+Notificar incidencia</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2880,7 +2930,7 @@ el Investigador Principal notifique alguna incidencia en el sistema.</em>
 El Investigador Principal se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -2929,22 +2979,12 @@ devuelve la vista con el formulario de notificación de incidencias.</em>
 Investigador Principal (ACT-0008)
     </a>
 <em>
-rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia.</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0079" />
-<td align="center" valign="top">6</td>
-<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.">
-Investigador Principal (ACT-0008)
-    </a>
-<em>
-envía el formulario.</em>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0080" />
-<td align="center" valign="top">7</td>
+<td align="center" valign="top">6</td>
 <td>El
      
     sistema<em>
@@ -2954,8 +2994,7 @@ devuelve un mensaje de confirmación de envío del formulario.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora la incidencia creada.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3025,7 +3064,7 @@ No procede</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Gestión de efectos adversos en los tratamientos.</th>
+Adición de efectos adversos en los tratamientos.</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3077,7 +3116,7 @@ el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún 
 El médico se ha identificado correctamente y su sesión está abierta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="12">Secuencia normal</th>
+<th align="left" valign="top" rowspan="11">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -3126,7 +3165,7 @@ devuelve la vista con la información del actor Paciente (ACT-005).</em>
 Médico (ACT-0004)
     </a>
 <em>
-selecciona la pestaña ?Efectos adversos? dentro del perfil del actor Paciente (ACT-005) seleccionado.</em>
+selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.</em>
 </td>
 </tr>
 <tr>
@@ -3164,22 +3203,12 @@ le devuelve el formulario.</em>
 Médico (ACT-0004)
     </a>
 <em>
-rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso).</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0090" />
-<td align="center" valign="top">10</td>
-<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
-Médico (ACT-0004)
-    </a>
-<em>
-envía el formulario.</em>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0091" />
-<td align="center" valign="top">11</td>
+<td align="center" valign="top">10</td>
 <td>El
      
     sistema<em>
@@ -3189,8 +3218,7 @@ envía un mensaje de confirmación de envío del informe.</em>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3264,7 +3292,7 @@ Requisitos de información del sistema</h3><a name="IRQ-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0001</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Ensayos clínicos</th>
+Información sobre Ensayos clínicos</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3404,7 +3432,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0002</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Empleados</th>
+Información sobre Empleados</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3474,7 +3502,7 @@ Teléfono</li>
 Ensayos en los que participa</li>
 <li>
 <a name="DAT-0014" />
-Cargo en cada ensayo en el que participa</li>
+Cargo en cada ensayo en el que participa (Los cargos pueden ser Investigador Principal, Subinvestigador, <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a>, Responsable de Farmacia y Responsable de Enfermería).</li>
 </ul>
 </td>
 </tr>
@@ -3540,7 +3568,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Pacientes</th>
+Información sobre Pacientes</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3691,7 +3719,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0004</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Promotor</th>
+Información sobre Promotor</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3815,7 +3843,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0005</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Monitor</th>
+Información sobre Monitor</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>

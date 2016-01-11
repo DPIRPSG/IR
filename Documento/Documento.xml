@@ -968,7 +968,7 @@ Proceso de negocio</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\3.2.2.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -986,7 +986,7 @@ Tratar Paciente</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Enfermera (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
+<rem:text>002		Tratar paciente<br/>Versión:		1(02/11/2015)<br/>Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. El Responsable de Enfermería recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.<br/>Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.<br/>Actores:		-Médico (001)<br/>		-Responsable de Enfermería (003)<br/>		-Paciente (002)<br/>Comentarios:	No procede</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0002">
@@ -1004,7 +1004,7 @@ Proceso tratar paciente</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\Tratar paciente.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
@@ -1286,7 +1286,7 @@ Proceso a implantar</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\4.2.2.png]]>
+<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -1304,7 +1304,7 @@ Tratar Paciente</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Enfermera (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
+<rem:text>002 Tratar paciente <br/>Versión 1(02/11/2015) <br/>Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.<br/>Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. <br/>Actores -Médico (001) <br/>-Responsable de Enfermería (003) <br/>-Paciente (002) <br/>Comentarios No procede </rem:text>
 </rem:paragraph>
 </rem:section>
 </rem:section>
@@ -1343,7 +1343,7 @@ Descripción</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>El sistema a desarrollar quedará dividido en los siguientes subsistemas:<br/><br/>001<br/>Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, 		incluyendo el personal médico y los pacientes que participan en él.<br/>Comentarios<br/>No procede<br/><br/>002<br/>Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluídos en ensayos concretos.<br/>Comentarios<br/>No procede<br/><br/>003<br/>Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con las <rem:ref oid="GLO-0028">citas</rem:ref> que piden los pacientes, así como su gestión por parte del personal de enfermería y la consulta de las mismas por parte de los médicos.<br/>Comentarios<br/>No procede<br/><br/>004<br/>Conocer los promotores de un ensayo<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con poder listar los promotores de cada ensayo clínico en partícular así como gestionar las visitas que hacen los mismos a los centros implicados.<br/>Comentarios<br/>No procede<br/><br/>005<br/>Disponer de distintos listados sobre el Ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de listar los ensayos clínicos y sus datos pertinentes, 		ya sean en su totalidad, mensualmente, asociados a ciertos personal médico, los pacientes que lo incluyen o cualquier otra forma de filtración requerida en cada vista de la aplicación.<br/>Comentarios<br/>No procede</rem:text>
+<rem:text>El sistema a desarrollar quedará dividido en los siguientes subsistemas:<br/><br/>001<br/>Pacientes<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la gestión de los pacientes participantes en los distintos Ensayos Clínicos, el almacenamiento de sus datos e informes necesarios y la gestión completa de sus <rem:ref oid="GLO-0028">citas</rem:ref> con el personal sanitario pertinente.<br/>Comentarios<br/>No procede<br/><br/>002<br/>Ensayos Clínicos<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con los Ensayos Clínicos, los fármacos que se utilizan, los pacientes que participan, las incidencias ocurridas y el resto de datos y documentación necesaria y disponible para cada personal santario en el sistema.<br/>Comentarios<br/>No procede<br/><br/>003<br/>Personal sanitario<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la gestión y paricipación del distinto personal sanitario en el sistema.<br/>Comentarios<br/>No procede</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -1707,6 +1707,25 @@ Investigador Principal</rem:name>
 Ninguno</rem:comments>
 <rem:actorRole>Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.</rem:actorRole>
 </rem:actor>
+<rem:actor
+ oid = "ACT-0009">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.</rem:actorRole>
+</rem:actor>
 </rem:section>
 <rem:section
  oid = "SEC-0037">
@@ -1759,7 +1778,7 @@ un paciente pida una cita.</rem:triggeringEvent>
 <rem:precondition>
 El paciente se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1803,7 +1822,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0002">
 <rem:name>
-Envío de los datos de la consulta</rem:name>
+Confirmación de cita</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1834,7 +1853,7 @@ un responsable de enfermería devuelva la confirmación de una cita.</rem:triggeri
 <rem:precondition>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1856,8 +1875,26 @@ muestra la lista de <rem:ref oid="GLO-0028">citas</rem:ref> por procesar.</rem:d
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0048">
+<rem:step oid = "STP-0094">
 <rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+elige la cita en el que esté interesado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0095">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+le devuelve la cita requerida.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0048">
+<rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0006">
 <rem:description>
 le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.</rem:description>
@@ -1866,7 +1903,7 @@ le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0049">
-<rem:number>4</rem:number>
+<rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
 muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</rem:description>
@@ -1878,7 +1915,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0003">
 <rem:name>
-Gestión de las <rem:ref oid="GLO-0026">analíticas de control</rem:ref></rem:name>
+Solicitar las analíticas de un Paciente</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1909,7 +1946,7 @@ un médico desee gestionar las <rem:ref oid="GLO-0026">analíticas de control</rem
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -1944,7 +1981,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-devuelve el perfil del actor Paciente (ACT—005) seleccionado.</rem:description>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1953,7 +1990,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-elige en el perfil la pestaña “Pruebas médicas”.</rem:description>
+selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2011,7 +2048,7 @@ un médico pida fármacos.</rem:triggeringEvent>
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la nueva petición de medicamentos.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2104,7 +2141,7 @@ el responsable de farmacia reciba una petición de fármacos.</rem:triggeringEvent
 <rem:precondition>
 El responsable de farmacia se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2148,7 +2185,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
-notifica al actor Médico (ACT-005) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
+notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2188,7 +2225,7 @@ un responsable de enfermería efectúe la devolución de los envases de tratamiento
 <rem:precondition>
 El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora el listado de los artículos a devolver.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2250,7 +2287,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0007">
 <rem:name>
-Gestión de incidencias</rem:name>
+Notificar incidencia</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2281,7 +2318,7 @@ el Investigador Principal notifique alguna incidencia en el sistema.</rem:trigge
 <rem:precondition>
 El Investigador Principal se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora la incidencia creada.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2325,22 +2362,13 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0008">
 <rem:description>
-rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0079">
-<rem:number>6</rem:number>
-<rem:actorAction actor = "ACT-0008">
-<rem:description>
-envía el formulario.</rem:description>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0080">
-<rem:number>7</rem:number>
+<rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
 devuelve un mensaje de confirmación de envío del formulario.</rem:description>
@@ -2352,7 +2380,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0008">
 <rem:name>
-Gestión de efectos adversos en los tratamientos.</rem:name>
+Adición de efectos adversos en los tratamientos.</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2383,7 +2411,7 @@ el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún 
 <rem:precondition>
 El médico se ha identificado correctamente y su sesión está abierta.</rem:precondition>
 <rem:postcondition>
-<rem:tbd/></rem:postcondition>
+El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
@@ -2427,7 +2455,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-selecciona la pestaña “Efectos adversos” dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
+selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2463,22 +2491,13 @@ Ninguno</rem:comments>
 <rem:number>9</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso).</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0090">
-<rem:number>10</rem:number>
-<rem:actorAction actor = "ACT-0004">
-<rem:description>
-envía el formulario.</rem:description>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0091">
-<rem:number>11</rem:number>
+<rem:number>10</rem:number>
 <rem:systemAction>
 <rem:description>
 envía un mensaje de confirmación de envío del informe.</rem:description>
@@ -2526,7 +2545,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
-Ensayos clínicos</rem:name>
+Información sobre Ensayos clínicos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2616,7 +2635,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Empleados</rem:name>
+Información sobre Empleados</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2692,7 +2711,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0014">
 <rem:description>
-Cargo en cada ensayo en el que participa</rem:description>
+Cargo en cada ensayo en el que participa (Los cargos pueden ser Investigador Principal, Subinvestigador, <rem:ref oid="GLO-0032">Data Manager</rem:ref>, Responsable de Farmacia y Responsable de Enfermería).</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -2700,7 +2719,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0003">
 <rem:name>
-Pacientes</rem:name>
+Información sobre Pacientes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2808,7 +2827,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0004">
 <rem:name>
-Promotor</rem:name>
+Información sobre Promotor</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2868,7 +2887,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0005">
 <rem:name>
-Monitor</rem:name>
+Información sobre Monitor</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -4209,6 +4228,27 @@ Diagramas de la arquitectura del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0050">
+<rem:name>
+Diagrama</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\TextoAnálisisSistema\Entrega2\2.0. Lógica del sistema\AS.2.1.png]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0055">
@@ -4227,6 +4267,25 @@ Descripción de la arquitectura del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0060">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Como podemos observar en el diagrama de la arquitectura lógica del sistema, el sistema se estructurará en 4 bloques principales. El usuario interactuará con los componentes relativos a la presentación del sistema, es decir, las herramientas visuales con las que se controla el sistema. Los componentes de Presentación interactuan a su vez con los de Lógica de Negocio los cuales impementan la propia lógica del sistema, es decir, esta capa realiza las operaciones que el sistema requiera tales como pueden ser la eliminación o creación de algún elemento. La Lógica de Negocio interactua con la Persistencia que es la encargada de gestionar el almacenacenamiento de los datos interactuando con SGBD que es el sistema de gestión de base de datos.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section

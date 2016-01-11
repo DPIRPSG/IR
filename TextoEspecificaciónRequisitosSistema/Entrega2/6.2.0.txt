@@ -1,5 +1,17 @@
-NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
+﻿NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 - Los actores y los casos de uso llevan unos índices que no están plasmados en este documento. Ya con todos los actores y casos instanciados en el sistema, se deberán cambiar a mano.
+
+Changelog del archivo (04/01/2016)
+- Sustitución de los “No procede” por “-”.
+- Postcondiciones añadidas a los casos de uso.
+- UC-0002 renombrado (Envío de los datos de la consulta —> Confirmación de cita).
+- UC-0002 editado. Se le ha añadido el paso de que se le muestre la cita a la Enfermera
+- UC-0003 y UC-0008 editados. Eliminadas las referencias a las interfaces de usuario.
+- UC-0003 renombrado (Gestión de las analíticas de control -> Solicitar las analíticas de un paciente)
+- UC-0007 renombrado (Gestión de incidencias -> Notificar incidencia)
+- UC-0008 renombrado (Gestión de efectos adversos en los tratamientos —> Adicción de efectos adversos en los tratamientos)
+- Data Manager añadido con actor del sistema.
+- FALTA Actualizar Matrices de rastreabilidad, aquí nombradas como “Matrices de trazabilidad”, cuando los cambios de los IRQ estén hechos.
 
 6.2 Casos de uso del sistema
 
@@ -28,7 +40,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Descripción:
 			Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Sub-investigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
 		Comentarios:
-			No procede
+			-
 
 	ACT-002 Paciente
 		Versión:
@@ -48,7 +60,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Descripción:
 			Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
 		Comentarios:
-			No procede
+			-
 
 	ACT-004 Responsable de farmacia
 		Versión:
@@ -58,7 +70,7 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Descripción:
 			Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.
 		Comentarios:
-			No procede
+			-
 
 	ACT-005 Investigador principal
 		Versión:
@@ -68,8 +80,17 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Descripción:
 			Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.
 		Comentarios:
-			No procede
+			-
 
+	ACT-006 Data Manager
+		Versión:
+			2 (04/01/2016)
+		Dependencias:
+			-
+		Descripción:
+			Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.
+		Comentarios:
+			-
 
 6.2.3 Especificaciones de casos de uso del sistema
 
@@ -89,9 +110,12 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			2) El sistema muestra el formulario de petición de citas.
 			3) El actor Paciente (ACT-002) rellena los campos necesarios y solicita al sistema que registre su cita.
 			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
-		Comentarios: No procede.
+		Postcondición:
+			El sistema recoge ahora la petición de cita del actor Paciente (ACT-002).
+		Comentarios:
+			-
 
-	UC-0002 Envío de los datos de la consulta
+	UC-0002 Confirmación de cita
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -105,11 +129,16 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 		Secuencia normal:
 			1) El actor Enfermera (ACT-003) pide la lista de nuevas citas.
 			2) El sistema muestra la lista de citas por procesar.
-			3) El actor Enfermera (ACT-003) le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.
-			4) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
-		Comentarios: No procede.
+			3) El actor Enfermera (ACT-003) selecciona la cita que desea editar.
+			4) El sistema le devuelve la cita requerida.
+			5) El actor Enfermera (ACT-003) le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.
+			6) El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.
+		Postcondición:
+			El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.
+		Comentarios:
+			—
 
-	UC-0003 Gestión de las analíticas de control
+	UC-0003 Solicitar las analíticas de un paciente
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -126,10 +155,13 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			2) El sistema devuelve la lista de actores Pacientes (ACT-002) requerida.
 			3) El actor Médico (Act-001) elige el Paciente (ACT-002) en el que esté interesado.
 			4) El sistema devuelve el perfil del actor Paciente (ACT—002) seleccionado.
-			5) El actor Médico (ACT-001) elige en el perfil la pestaña “Pruebas médicas”.
+			5) El actor Médico (ACT-001) selecciona las pruebas médicas del actor Paciente (ACT-002) dentro del perfil de este.
 			6) El sistema devuelve la lista de las analíticas del actor Paciente (ACT-002).
 			7) En esa vista, el actor Médico (ACT-001) elige la analítica requerida, que podrá ser descargado desde un enlace.
-		Comentarios: No procede.
+		Postcondición:
+			En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.
+		Comentarios:
+			-
 
 	UC-0004 Petición de medicamentos.
 		Versión:
@@ -149,7 +181,10 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			4) El sistema devuelve un formulario con el identificador del ensayo y el nombre del paciente ya rellenos.
 			5) El actor Médico (ACT-001) rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo fármaco y las unidades de este último) y lo envía
 			6) El sistema envía un mensaje de confirmación del envío del formulario.
-		Comentarios: No procede.
+		Postcondición:
+			El sistema recoge ahora la nueva petición de medicamentos.
+		Comentarios:
+			-
 
 	UC-0005 Aceptación de pedidos de medicamentos.
 		Versión:
@@ -169,7 +204,10 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			3) El actor Responsable de Farmacia (ACT-004) revisa la petición. Esto permite que no se pidan productos con un amplio stock o productos innecesarios.
 			5) El actor Responsable de Farmacia (ACT-004) decide si cancela o no la petición. El actor Responsable de Farmacia (ACT-004) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.
 			6) En ambos casos, el sistema notifica al actor Médico (ACT-001) de la decisión del actor Responsable de Farmacia (ACT-004).
-		Comentarios: No procede.
+		Postcondición:
+			El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-001) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-004).
+		Comentarios:
+			-
 
 
 	UC-0006 Devolución de envases de tratamientos en experimentación
@@ -190,9 +228,12 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			4) El sistema le devuelve el formulario de devolución de productos.
 			5) El actor Enfermera (ACT-003) rellena una lista con los artículos y las cantidades a devolver y envía el formulario.
 			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
-		Comentarios: No procede.	
+		Postcondición:
+			El sistema recoge ahora el listado de los artículos a devolver.
+		Comentarios:
+			-	
 
-	UC-0007 Gestión de incidencias
+	UC-0007 Notificar incidencia
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -210,9 +251,12 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			4) El sistema devuelve la vista con el formulario de notificación de incidencias.
 			5) El actor Investigador Principal (ACT-005) rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Tras esto, el actor Investigador Principal (ACT-005) envía el formulario.
 			6) El sistema devuelve un mensaje de confirmación de envío del formulario.
-		Comentarios: No procede.
+		Postcondición:
+			El sistema recoge ahora la incidencia creada.
+		Comentarios:
+			-
 
-	UC-0008 Gestión de efectos adversos en los tratamientos.
+	UC-0008 Adicción de efectos adversos en los tratamientos.
 		Versión:
 			1 (25/11/2015)
 		Autores:
@@ -229,13 +273,16 @@ NOTA PARA EL QUE TENGA QUE TOCAR EL REM:
 			2) El sistema le devuelve dicha lista.
 			3) El actor Médico (ACT-001) selecciona el actor Paciente (ACT-002) al que se le quiere asignar el efecto adverso del tratamiento.
 			4) El sistema devuelve la vista con la información del actor Paciente (ACT-002).
-			5) El actor Médico (ACT-001) selecciona la pestaña “Efectos adversos” dentro del perfil del actor Paciente (ACT-002) seleccionado.
+			5) El actor Médico (ACT-001) selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-002) seleccionado.
 			6) El sistema le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-002).
 			7) El actor Médico (ACT-001) le pide al sistema el formulario para poder registrar un nuevo efecto adverso.
 			8) El sistema le devuelve el formulario.
 			9) El actor Médico (ACT-001) rellena el formulario con los datos necesarios (Ensayo clínico asociado y una descripción del efecto adverso). Tras rellenar el formulario, el actor Médico (ACT-001) envía el formulario.
 			10) El sistema envía un mensaje de confirmación de envío del informe.
-		Comentarios: No procede.
+		Postcondición:
+			El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-002)
+		Comentarios:
+			-
 
 6.7 Información sobre trazabilidad
 
