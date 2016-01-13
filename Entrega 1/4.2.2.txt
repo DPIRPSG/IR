@@ -1,0 +1,19 @@
+Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:
+
+001		Gestión de ensayo clínico de 1 paciente.
+Versión		1(02/11/2015) 
+Dependencias	- Tratar paciente
+Descripción	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la patología, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de citas para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo diagnóstico. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
+Actores		-Médico (001)
+		-Paciente (002)
+Comentarios	No procede
+
+002		Tratar paciente
+Versión		1(02/11/2015)
+Descripción	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. La enfermera recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
+Importancia	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.
+Actores		-Médico (001)
+		-Enfermera (003)
+		-Paciente (002)
+Comentarios	No procede

@@ -1,0 +1,21 @@
+En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:
+
+001		Médico
+Versión		1(02/11/2015)
+Dependencias	- Gestión de ensayos clínicos de un paciente
+		- Tratar paciente
+Descripción	Este actor de negocio actual representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorizacion al manejo de datos.
+Comentarios	No procede
+
+002		Paciente
+Versión		1(02/11/2015)
+Dependencias	- Gestión de ensayos clínicos de un paciente
+		- Tratar paciente
+Descripción	Este actor de negocio actual representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.
+Comentarios	No procede
+
+003		Enfermera
+Versión		1(02/11/2015)
+Dependencias	- Tratar paciente
+Descripción	Este actor de negocio actual representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.
+Comentarios	No procede

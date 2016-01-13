@@ -1,0 +1,13 @@
+El sistema a desarrollar quedará dividido en los siguientes subsistemas:
+
+001		Gestión de pacientes
+Descripción	Este subsistema agrupa los requisitos relacionados con la gestión de los pacientes participantes en los distintos Ensayos Clínicos, el almacenamiento de sus datos e informes necesarios y la gestión completa de sus citas con el personal sanitario pertinente.
+Comentarios	No procede
+
+002		Ensayos Clínicos
+Descripción	Este subsistema agrupa los requisitos relacionados con los Ensayos Clínicos, los fármacos que se utilizan, los pacientes que participan, las incidencias ocurridas y el resto de datos y documentación necesaria y disponible para cada personal santario en el sistema.
+Comentarios	No procede
+
+003		Personal sanitario
+Descripción	Este subsistema agrupa los requisitos relacionados con la gestión y paricipación del distinto personal sanitario en el sistema.
+Comentarios	No procede
