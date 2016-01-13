@@ -1,0 +1,101 @@
+Cambios para a introducir en REM para Migue:
+
+// Las líneas indicadas con “//” son anotaciones para el que vaya a montar el REM. Eliminar al pasar los datos a REM
+
+// Todo el punto 5 debe ser sustituido por lo escrito a continuación
+5 Descripción de los subsistemas a desarrollar
+
+001 Gestión de pacientes
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de pedir citas así como la recolección de toda su información de carácter clínico.
+Comentarios
+No procede
+
+002 Gestión de ensayos clínicos
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, incluyendo el personal médico y los pacientes que participan en él, los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluidos en ensayos concretos. También incluye la posibilidad de listar los promotores de cada ensayo clínico en particular así como gestionar las visitas que hacen los mismos a los centros implicados.
+Comentarios
+No procede
+
+003 Gestión de personal sanitario
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de ver el personal sanitario asociado a cada ensayo, así como la gestión de las citas por parte de los mismos.
+Comentarios
+No procede
+
+// Todo el punto 6.1 y la primera matriz del 6.7 deben ser sustituidos por lo escrito a continuación
+// Le pregunté a la profesora acerca de los apartados “Descripción” y me dijo que pusiese lo mismo del punto 5
+6 Catálogo de requisitos del sistema a desarrollar
+
+6.1 Requisitos generales del sistema
+
+OBJ-0001 Gestión de pacientes
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de pedir citas así como la recolección de toda su información de carácter clínico.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+OBJ-0002 Gestión de ensayos clínicos
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, incluyendo el personal médico y los pacientes que participan en él, los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluidos en ensayos concretos. También incluye la posibilidad de listar los promotores de cada ensayo clínico en particular así como gestionar las visitas que hacen los mismos a los centros implicados.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+OBJ-0003 Gestión de personal sanitario
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de ver el personal sanitario asociado a cada ensayo, así como la gestión de las citas por parte de los mismos.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+6.7 Información sobre trazabilidad
+
+Matriz Todos los requisitos -> Objetivos generales
+
+OBJ-0001 Gestión de pacientes
+OBJ-0002 Gestión de ensayos clínicos
+OBJ-0003 Gestión de personal sanitario
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+IRQ-0001			x			x
+IRQ-0002									x
+IRQ-0003			x			x
+IRQ-0004						x
+IRQ-0005									x
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+CRQ-0001			x
+CRQ-0002						x			x
+CRQ-0003									x
+CRQ-0004									x
+CRQ-0005			x			x
+CRQ-0006			x			x
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+FRQ-0001			x			x
+FRQ-0002			x
+FRQ-0003			x
+FRQ-0004									x
+FRQ-0005			x			x
+FRQ-0006			x			x
+
+// Esta matriz no hay que cambiarla pero hay que tener cuidado con las tabulaciones del txt que en el documento a entregar se nos pusieron mal. Si hay alguna duda con las tabulaciones, avisad a Guillermo.
+Matriz Todos los elementos del diagrama de clases -> Requisitos de información y reglas de negocio.
+
