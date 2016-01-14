@@ -4361,25 +4361,6 @@ Descripción de las clases del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0050">
-<rem:name>
-Descripción</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:text>Ensayo Clínico:<br/>Esta clase se corresponde con los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes.<br/>Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo.<br/><br/>Empleado:<br/>Esta clase se corresponde con los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto.<br/><br/>Paciente:<br/>Esta clase se corresponde con los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/>Cabe destacar que un paciente solo puede participar en un solo Ensayo.<br/><br/>Monitor del Ensayo:<br/>Esta clase se corresponde con los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/><br/>Promotor:<br/>Esta clase se corresponde con los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:text>
-</rem:paragraph>
 <rem:objectType
  oid = "TYP-0001">
 <rem:name>
@@ -4398,18 +4379,292 @@ Ensayo Clínico</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-A los Ensayos Clínicos del sistema</rem:description>
-<rem:attribute oid = "ATT-0097" baseType = "PVT-0001">
+los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes. <br/>Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo. </rem:description>
+<rem:attribute oid = "ATT-0097" baseType = "PVT-0002">
 <rem:name>
-Este</rem:name>
+ID</rem:name>
 <rem:description>
-<rem:tbd/></rem:description>
+Representa el número del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0106" baseType = "VAL-0001">
+<rem:name>
+Situación actual</rem:name>
+<rem:description>
+La situación actual en la que se encuentra el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+<rem:expression>
+<rem:natural>
+<rem:tbd/></rem:natural>
+<rem:ocl><![CDATA[Pre-Evaluación]]></rem:ocl>
+</rem:expression>
+</rem:attribute>
+<rem:attribute oid = "ATT-0107" baseType = "PVT-0004">
+<rem:name>
+Criterio de inclusión</rem:name>
+<rem:description>
+el criterio por el cual se tendrá en cuenta la inclusión de un paciente al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0108" baseType = "PVT-0004">
+<rem:name>
+Criterio de exclusión</rem:name>
+<rem:description>
+el criterio por el cual se tendrá en cuenta la no inclusión de un paciente al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0109" baseType = "PVT-0005">
+<rem:name>
+Inicio de periodo de reclutamiento</rem:name>
+<rem:description>
+La fecha en la que empezó el reclutamiento de pacientes para dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0110" baseType = "PVT-0005">
+<rem:name>
+Fin de periodo de reclutamiento</rem:name>
+<rem:description>
+La fecha en la que acabó el reclutamiento de pacientes para dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0111" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref> experimental</rem:name>
+<rem:description>
+el nombre del <rem:ref oid="GLO-0036">fármaco</rem:ref> que se aplicará en el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0002">
+<rem:name>
+Empleado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto. </rem:description>
+<rem:attribute oid = "ATT-0113" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre del Empleado</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0114" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0115" baseType = "PVT-0004">
+<rem:name>
+DNI</rem:name>
+<rem:description>
+el DNI del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0116" baseType = "PVT-0004">
+<rem:name>
+Email</rem:name>
+<rem:description>
+el email del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0117" baseType = "PVT-0004">
+<rem:name>
+Número de teléfono</rem:name>
+<rem:description>
+el número de teléfono del Empleado.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
+<rem:objectType
+ oid = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. <br/>Cabe destacar que un paciente solo puede participar en un solo Ensayo. </rem:description>
+<rem:attribute oid = "ATT-0118" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre del Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0119" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos del Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0120" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:name>
+<rem:description>
+el número único de identificación para los pacientes en el sistema de salud de Andalucía. </rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0121" baseType = "PVT-0004">
+<rem:name>
+NHC</rem:name>
+<rem:description>
+el Número de Historia Clínica.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0122" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:name>
+<rem:description>
+el diagóstico del Paciente en el momento de entrar al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0123" baseType = "PVT-0004">
+<rem:name>
+Fármacos asignados</rem:name>
+<rem:description>
+el nombre de los fármacos que tiene asignado un Paciente, a parte del <rem:ref oid="GLO-0036">fármaco</rem:ref> de dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0124" baseType = "PVT-0005">
+<rem:name>
+Fecha de inclusión en el Ensayo</rem:name>
+<rem:description>
+la fecha en la que el Paciente entra en el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0004">
+<rem:name>
+Monitor del Ensayo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:description>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0005">
+<rem:name>
+Promotor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:description>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:userDefinedValueType
+ oid = "VAL-0001">
+<rem:name>
+Situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Representa los valores que puede adquirir la Situación actual de un Ensayo.</rem:description>
+<rem:definition>
+{Pre-Evaluación, Abierto, Cerrado}
+</rem:definition>
+</rem:userDefinedValueType>
 </rem:section>
 <rem:section
  oid = "SEC-0058">
