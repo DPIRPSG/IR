@@ -250,24 +250,7 @@ Diagrama de clases del sistema</h2><a name="GRF-0004" />
 Diagrama de clases</p>
 <a name="SEC-0057" />
 <h2 align="left">3.2 
-Descripción de las clases del sistema</h2><a name="PRG-0050" />
-<p>Ensayo Clínico:
-<br />Esta clase se corresponde con los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes.
-<br />Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo.
-<br />
-<br />Empleado:
-<br />Esta clase se corresponde con los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto.
-<br />
-<br />Paciente:
-<br />Esta clase se corresponde con los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.
-<br />Cabe destacar que un paciente solo puede participar en un solo Ensayo.
-<br />
-<br />Monitor del Ensayo:
-<br />Esta clase se corresponde con los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.
-<br />
-<br />Promotor:
-<br />Esta clase se corresponde con los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</p>
-<a name="TYP-0001" />
+Descripción de las clases del sistema</h2><a name="TYP-0001" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">TYP-0001</th>
@@ -301,7 +284,8 @@ Miguel Rodríguez Caballero</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-A los Ensayos Clínicos del sistema</em>
+los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes. 
+<br />Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo. </em>
 </td>
 </tr>
 <tr>
@@ -333,25 +317,872 @@ Ninguno</td>
 <a name="ATT-0097" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
-<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
 <th align="left" valign="top" width="100%">
 Ensayo Clínico::
-Este</th>
+ID</th>
 </tr>
 <tr>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este atributo representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+Representa el número del Ensayo.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Tipo</th>
 <td align="left" valign="top">
 <code>
-Real</code>
+Integer</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0106" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Situación actual</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La situación actual en la que se encuentra el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Situación actual</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Valor inicial</th>
+<td align="left" valign="top">
+<code>Pre-Evaluación</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0107" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Criterio de inclusión</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el criterio por el cual se tendrá en cuenta la inclusión de un paciente al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0108" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Criterio de exclusión</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el criterio por el cual se tendrá en cuenta la no inclusión de un paciente al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0109" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Inicio de periodo de reclutamiento</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La fecha en la que empezó el reclutamiento de pacientes para dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0110" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Fin de periodo de reclutamiento</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La fecha en la que acabó el reclutamiento de pacientes para dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0111" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico:: Fármaco experimental</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> que se aplicará en el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0002</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0113" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Nombre</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del Empleado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0114" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Apellidos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+los apellidos del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0115" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+DNI</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el DNI del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0116" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Email</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el email del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0117" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Número de teléfono</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el número de teléfono del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0003</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. 
+<br />Cabe destacar que un paciente solo puede participar en un solo Ensayo. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0118" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Nombre</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0119" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Apellidos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+los apellidos del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0120" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente:: NUHSA</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el número único de identificación para los pacientes en el sistema de salud de Andalucía. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0121" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+NHC</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el Número de Historia Clínica.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0122" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente:: Diagnóstico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el diagóstico del Paciente en el momento de entrar al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0123" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Fármacos asignados</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre de los fármacos que tiene asignado un Paciente, a parte del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> de dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0124" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Fecha de inclusión en el Ensayo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+la fecha en la que el Paciente entra en el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0004</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Monitor del Ensayo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0005</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Promotor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="VAL-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">VAL-0001</th>
+<th align="left" valign="top" width="100%">
+Situación actual</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo valor representa
+<em>
+Representa los valores que puede adquirir la Situación actual de un Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Definición</th>
+<td align="left" valign="top">
+<code>
+{Pre-Evaluación, Abierto, Cerrado}
+</code>
 </td>
 </tr>
 <tr>
