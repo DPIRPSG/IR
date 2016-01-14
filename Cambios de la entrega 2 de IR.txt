@@ -16,7 +16,7 @@
 - Especificar información sobre el Data Manager, quién es, etc. ---> LISTO
 - Definir los cargos en IRQ-002. ---> LISTO
 - Todo lo que esté en el diagrama de clases debe estar en los IRQ. ---> CREO QUE ESTÁ, PERO TENGO QUE REVISARLO
-- Implementar la solución de Amador en el diagrama de clases.
+- Implementar la solución de Amador en el diagrama de clases. ---> LISTO
 - Matrices de rastreabilidad en REM
 - Punto 3, hay que hacerlo directamente en REM. Se llama Nuevo tipo de objeto, valor y asociación.
 - Modificar 3.3, poner nombre al cuadrado negro (Incluido en ensayo)
