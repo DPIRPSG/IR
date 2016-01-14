@@ -3,7 +3,7 @@
 - Unificar criterios (Enfermera y Responsable de Enfermería). ---> LISTO
 - Apartados 5 y 6 mal enfocados:
 	- Gestión de pacientes, ensayos clínicos y personal sanitario. ---> LISTO
-	- En el 6 son objetivos generales.
+	- En el 6 son objetivos generales. ---> SOLO FALTA ESTO!!
 	- Faltan las post-condiciones en los casos de uso. ---> LISTO
 	- UC-002 llamarlo Confirmación de cita o algo parecido. ---> LISTO
 	- Falta seleccionar la cita y que el sistema le muestre la cita. ---> LISTO
