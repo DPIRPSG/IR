@@ -1,0 +1,387 @@
+Cambios para a introducir en REM para Migue:
+
+// Las líneas indicadas con “//” son anotaciones para el que vaya a montar el REM. Eliminar al pasar los datos a REM
+
+// Todo el punto 5 debe ser sustituido por lo escrito a continuación
+5 Descripción de los subsistemas a desarrollar
+
+001 Gestión de pacientes
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de pedir citas así como la recolección de toda su información de carácter clínico.
+Comentarios
+No procede
+
+002 Gestión de ensayos clínicos
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, incluyendo el personal médico y los pacientes que participan en él, los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluidos en ensayos concretos. También incluye la posibilidad de listar los promotores de cada ensayo clínico en particular así como gestionar las visitas que hacen los mismos a los centros implicados.
+Comentarios
+No procede
+
+003 Gestión de personal sanitario
+Descripción
+Este subsistema agrupa los requisitos relacionados con la posibilidad de ver el personal sanitario asociado a cada ensayo, así como la gestión de las citas por parte de los mismos.
+Comentarios
+No procede
+
+// Todo el punto 6.1 y la primera matriz del 6.7 deben ser sustituidos por lo escrito a continuación
+// Le pregunté a la profesora acerca de los apartados “Descripción” y me dijo que pusiese lo mismo del punto 5
+6 Catálogo de requisitos del sistema a desarrollar
+
+6.1 Requisitos generales del sistema
+
+OBJ-0001 Gestión de pacientes
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de pedir citas así como la recolección de toda su información de carácter clínico.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+OBJ-0002 Gestión de ensayos clínicos
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, incluyendo el personal médico y los pacientes que participan en él, los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluidos en ensayos concretos. También incluye la posibilidad de listar los promotores de cada ensayo clínico en particular así como gestionar las visitas que hacen los mismos a los centros implicados.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+OBJ-0003 Gestión de personal sanitario
+Versión: 2.0 (13/01/2016)
+Autores: Manuel Francisco López Ruiz
+Fuentes: Francisco Javier Rodríguez Martorell
+Descripción: Este subsistema agrupa los requisitos relacionados con la posibilidad de ver el personal sanitario asociado a cada ensayo, así como la gestión de las citas por parte de los mismos.
+Subobjetivos: Ninguno
+Importancia: -
+Urgencia: -
+Estado: -
+Estabilidad: -
+Comentarios: Ninguno
+
+6.7 Información sobre trazabilidad
+
+Matriz Todos los requisitos -> Objetivos generales
+
+OBJ-0001 Gestión de pacientes
+OBJ-0002 Gestión de ensayos clínicos
+OBJ-0003 Gestión de personal sanitario
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+IRQ-0001			x			x
+IRQ-0002									x
+IRQ-0003			x			x
+IRQ-0004						x
+IRQ-0005									x
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+CRQ-0001			x
+CRQ-0002						x			x
+CRQ-0003									x
+CRQ-0004									x
+CRQ-0005			x			x
+CRQ-0006			x			x
+
+			OBJ-0001		OBJ-0002		OBJ-0003
+FRQ-0001			x			x
+FRQ-0002			x
+FRQ-0003			x
+FRQ-0004									x
+FRQ-0005			x			x
+FRQ-0006			x			x
+
+// Esta matriz no hay que cambiarla pero hay que tener cuidado con las tabulaciones del txt que en el documento a entregar se nos pusieron mal. Si hay alguna duda con las tabulaciones, avisad a Guillermo.
+Matriz Todos los elementos del diagrama de clases -> Requisitos de información y reglas de negocio.
+
+// A PARTIR DE AQUÍ ES DE LA ENTREGA 3
+
+7 Información sobre trazabilidad
+
+Matriz de trazabilidad de clases frente a requisitos de los tipos que se consideren oportunos (IRQ,CRQ)
+
+					IRQ-0001	IRQ-0002	IRQ-0003	IRQ-0004	IRQ-0005
+Investigador principal				x
+Subinvestigador						x
+Data Manager						x
+Responsable de farmacia				x
+Personal de Enfermería				x
+Ensayo clínico				x		x		x		x
+Monitor del ensayo			x								x
+Promotor											x
+Paciente					x				x
+
+					CRQ-0001	CRQ-0002	CRQ-0003	CRQ-0004	CRQ-0005	CRQ-0006
+Investigador principal				x		x
+Subinvestigador								x
+Data Manager								x
+Responsable de farmacia						x
+Personal de Enfermería						x
+Ensayo clínico						x						x		x
+Monitor del ensayo							x
+Promotor											x
+Paciente					x								x		x
+
+Matriz de trazabilidad de diagramas de secuencia frente a requisitos de los tipos que se consideren oportunos (UC, FRQ)
+
+			UC-0001	UC-0002	UC-0003	UC-0004	UC-0005	UC-0006	UC-0007	UC-0008		
+DS-0001			x
+DS-0002					x
+DS-0003							x
+DS-0004									x
+DS-0005											x
+DS-0006													x
+DS-0007															x
+DS-0008																	x
+
+			FRQ-0001	FRQ-0002	FRQ-0003	FRQ-0004	FRQ-0005	FRQ-0006
+DS-0001
+DS-0002					x
+DS-0003							x				x
+DS-0004			x				x						x
+DS-0005
+DS-0006			x										x
+DS-0007			x										x
+DS-0008							x				x
+
+Matriz de trazabilidad de pantallas e informes frente a requisitos de los tipos que se consideren oportunos (UC, FRQ)
+
+			UC-0001	UC-0002	UC-0003	UC-0004	UC-0005	UC-0006	UC-0007	UC-0008
+Pantalla-1
+Pantalla-2
+Pantalla-3
+Pantalla-4			x
+Pantalla-5			x
+Pantalla-6			x
+Pantalla-7			x
+Pantalla-8			x
+Pantalla-9			x
+Pantalla-10		x
+Pantalla-11		x
+Pantalla-12														x
+Pantalla-13														x
+Pantalla-14														x
+Pantalla-15														x
+Pantalla-16
+Pantalla-17
+Pantalla-18						x										x
+Pantalla-19						x										x
+Pantalla-20						x
+Pantalla-21						x
+Pantalla-22																x
+Pantalla-23																x
+Pantalla-24								x
+Pantalla-25								x
+Pantalla-26								x
+Pantalla-27								x
+Pantalla-28								x
+Pantalla-29
+Pantalla-30
+Pantalla-31
+Pantalla-32				x
+Pantalla-33				x
+Pantalla-34				x
+Pantalla-35				x
+Pantalla-36				x
+Pantalla-37												x
+Pantalla-38												x
+Pantalla-39												x
+Pantalla-40										x
+Pantalla-41
+
+
+			FRQ-0001	FRQ-0002	FRQ-0003	FRQ-0004	FRQ-0005	FRQ-0006
+Pantalla-1
+Pantalla-2
+Pantalla-3
+Pantalla-4					x
+Pantalla-5					x
+Pantalla-6											x
+Pantalla-7											x
+Pantalla-8											x
+Pantalla-9											x
+Pantalla-10				x						x
+Pantalla-11				x						x
+Pantalla-12		x				x						x
+Pantalla-13
+Pantalla-14		x				x						x
+Pantalla-15
+Pantalla-16				x						x
+Pantalla-17				x						x
+Pantalla-18
+Pantalla-19
+Pantalla-20						x
+Pantalla-21										x
+Pantalla-22
+Pantalla-23
+Pantalla-24		x				x						x
+Pantalla-25		x				x						x
+Pantalla-26						x						x
+Pantalla-27		x				x						x
+Pantalla-28						x						x
+Pantalla-29				x						x
+Pantalla-30				x						x
+Pantalla-31				x						x
+Pantalla-32				x						x
+Pantalla-33				x						x
+Pantalla-34										x
+Pantalla-35										x
+Pantalla-36										x
+Pantalla-37		x										x
+Pantalla-38		x										x
+Pantalla-39												x
+Pantalla-40		x				x						x
+Pantalla-41								x
+
+Matriz de trazabilidad de interfaces de servicios frente a requisitos de los tipos que se consideren oportunos (UC, FRQ)
+
+Matriz de trazabilidad de clases frente a diagramas de secuencia.
+
+					DS-0001	DS-0002	DS-0003	DS-0004	DS-0005	DS-0006	DS-0007	DS-0008
+Investigador principal														x
+Subinvestigador								x		x		x						x
+Data Manager
+Responsable de farmacia										x
+Personal de Enfermería				x								x
+Ensayo clínico
+Monitor del ensayo
+Promotor
+Paciente					x				x										x
+
+Matriz de trazabilidad de pantallas e informes frente a diagramas de secuencia.
+
+			UC-0001	UC-0002	UC-0003	UC-0004	UC-0005	UC-0006	UC-0007	UC-0008
+Pantalla-1
+Pantalla-2
+Pantalla-3
+Pantalla-4			x
+Pantalla-5			x
+Pantalla-6			x
+Pantalla-7			x
+Pantalla-8			x
+Pantalla-9			x
+Pantalla-10		x
+Pantalla-11		x
+Pantalla-12														x
+Pantalla-13														x
+Pantalla-14														x
+Pantalla-15														x
+Pantalla-16
+Pantalla-17
+Pantalla-18						x										x
+Pantalla-19						x										x
+Pantalla-20						x
+Pantalla-21						x
+Pantalla-22																x
+Pantalla-23																x
+Pantalla-24								x
+Pantalla-25								x
+Pantalla-26								x
+Pantalla-27								x
+Pantalla-28								x
+Pantalla-29
+Pantalla-30
+Pantalla-31
+Pantalla-32				x
+Pantalla-33				x
+Pantalla-34				x
+Pantalla-35				x
+Pantalla-36				x
+Pantalla-37												x
+Pantalla-38												x
+Pantalla-39												x
+Pantalla-40										x
+Pantalla-41
+
+Matriz de trazabilidad de pantallas e informes frente a clases.
+
+			Investigador principal	Subinvestigador	Data Manager	Responsable de Farmacia	Personal de Enfermería
+Pantalla-1
+Pantalla-2
+Pantalla-3
+Pantalla-4
+Pantalla-5
+Pantalla-6
+Pantalla-7
+Pantalla-8
+Pantalla-9
+Pantalla-10
+Pantalla-11
+Pantalla-12				x
+Pantalla-13				x
+Pantalla-14				x
+Pantalla-15				x
+Pantalla-16				x
+Pantalla-17				x
+Pantalla-18								x
+Pantalla-19								x
+Pantalla-20								x
+Pantalla-21								x
+Pantalla-22								x
+Pantalla-23								x
+Pantalla-24								x
+Pantalla-25								x
+Pantalla-26								x
+Pantalla-27								x
+Pantalla-28								x
+Pantalla-29								x
+Pantalla-30								x
+Pantalla-31								x
+Pantalla-32																				x
+Pantalla-33																				x
+Pantalla-34																				x
+Pantalla-35																				x
+Pantalla-36																				x
+Pantalla-37																				x
+Pantalla-38																				x
+Pantalla-39																				x
+Pantalla-40																x
+Pantalla-41											x
+
+			Ensayo clínico	Monitor de ensayo	Promotor	Paciente
+Pantalla-1
+Pantalla-2
+Pantalla-3
+Pantalla-4												x
+Pantalla-5												x
+Pantalla-6												x
+Pantalla-7												x
+Pantalla-8												x
+Pantalla-9												x
+Pantalla-10											x
+Pantalla-11											x
+Pantalla-12			x
+Pantalla-13
+Pantalla-14			x
+Pantalla-15
+Pantalla-16
+Pantalla-17
+Pantalla-18
+Pantalla-19
+Pantalla-20			x
+Pantalla-21
+Pantalla-22
+Pantalla-23
+Pantalla-24			x
+Pantalla-25			x
+Pantalla-26			x
+Pantalla-27			x
+Pantalla-28			x
+Pantalla-29
+Pantalla-30
+Pantalla-31
+Pantalla-32
+Pantalla-33
+Pantalla-34
+Pantalla-35
+Pantalla-36
+Pantalla-37			x
+Pantalla-38			x
+Pantalla-39			x
+Pantalla-40			x
+Pantalla-41						x
