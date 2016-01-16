@@ -1,0 +1,26 @@
+La interfaz de servicios del sistema consta de un único Sistema de Gestión de Ensatos Clínicos Hospitalarios compuesto por siete interfaces:
+
+-ServiciosPaciente: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Pacientes registrados en el sistema:
+	-ConsultarPacientesPorInvestigador(): Dado un Investigador (Ya sea Investigador Principal o Subinvestigador) devuelve un listado de pacientes con los que tiene relación en ese momento, ya sea que tiene cita con él, participan en uno de sus Ensayos Clínicos o ha participado en alguno, etc...
+		-Parámetros de entrada: Un objeto de tipo InvestigadorPrincipal o Subinvestigador.
+		-Tipo devuelto: Una lista de objetos Paciente.
+	-ConsultarPerfil(): Dado un Paciente devuelve una lista con todos los datos de su perfil registrados.
+		-Parámetros de entrada: Un objeto de tipo Paciente.
+		-Tipo devuelto: Una lista con los distintos objetos de tipo cadena correspondientes a los datos del perfil del Paciente pasado como parámetro: Nombre, Apellidos, NumeroHistoriaClinica, NUHSA, Diagnostico, Ensayo, MedicacionAsignada, FechaInclusion, FechaRevision, FechaEstudios.
+	-ConsultarEfectosAdversos(): Dado un Paciente devuelve una lista con los distintos Efectos Adversos ocurridos al paciente registrados en el sistema.
+		-Parámetros de entrada: Un objeto de tipo Paciente.
+		-Tipo devuelto: Una lista de objetos EfectoAdverso, cuyos parámetros son dos objetos de tipo cadena: Fecha y descripción.
+	
+	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si devuelve una confirmación positiva, añade/asigna dicho EfectoAdverso al Paciente.
+		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
+		-Tipo devuelto: void (No devuelve nada).
+	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve una confirmación positiva o negativa, según corresponda.
+		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
+		-Tipo devuelto: Un objeto de tipo Boolean que devuelve "true" si la validación ha sido superada con éxito, es decir, no ha habido errores de validación, y "false" si ha habido algún error de validación.
+
+	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si durante el proceso se captura alguna excepción relacionada con la validación de alguno de sus atributos, devuelve un listado con dichos errores. En caso contrario añade/asigna dicho EfectoAdverso al Paciente.
+		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
+		-Tipo devuelto: Una lista de objetos cadena correspondiente a los errores capturados durante la validación.
+	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no.
+		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
+		-Tipo devuelto: Un objeto de tipo Boolean que devuelve "true" si la validación ha sido superada con éxito, es decir, no ha habido errores de validación, y "false" si ha habido algún error de validación.
