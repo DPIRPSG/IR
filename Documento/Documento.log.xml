@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>C</rem:type>
-<rem:owner>GRF-0051</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
 <rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [GRF-0004] Diagrama de clases con 0 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -3295,94 +3295,13 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0011</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [TYP-0010] Copia de Investigador Principal del proyecto E:\CARPETA COMPARTIDA\IR\DOCUMENTO\Documento.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0012</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [TYP-0011] Copia de Copia de Investigador Principal del proyecto E:\CARPETA COMPARTIDA\IR\DOCUMENTO\Documento.rem]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>D</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [TYP-0010] Copia de Investigador Principal con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0007</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0008</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>TYP-0006</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [BaseType] del hijo nº2 actualizada: [Real] -> [Enumerado Tipo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>TYP-0007</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [PD] -> [a la fecha de la cita del Monitor.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0006</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>VAL-0002</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [VAL-0001] Enumerado Situación actual del proyecto E:\CARPETA COMPARTIDA\IR\DOCUMENTO\Documento.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0009</rem:owner><rem:date>
-<rem:year>2016</rem:year>
-<rem:month>1</rem:month>
-<rem:day>16</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [GRF-0004] Diagrama de clases con 0 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -3392,6 +3311,24 @@
 <rem:day>16</rem:day>
 </rem:date>
 <rem:description><![CDATA[Eliminado el objeto [GRF-0051]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [ObjectType]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -3404,164 +3341,785 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0006</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([ATT-0133] Fecha : Date)]]></rem:description>
+<rem:description><![CDATA[Añadida fila [ConstraintRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0006</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([ATT-0134] Tipo : Real)]]></rem:description>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0007</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([ATT-0135] Fecha : Date)]]></rem:description>
+<rem:description><![CDATA[Eliminada columna [ObjectType]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [TYP-0010] Copia de Investigador Principal con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0009</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [PD] -> [al cargo de Investigador Principal.]]]></rem:description>
+<rem:description><![CDATA[Añadida columna [ObjectType]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0009</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [IsAbstract] actualizada [false] -> [true]]]></rem:description>
+<rem:description><![CDATA[Añadida fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>TYP-0013</rem:owner><rem:date>
+<rem:owner>TRM-0002</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [TYP-0012] Copia de Copia de Copia de Investigador Principal del proyecto E:\CARPETA COMPARTIDA\IR\DOCUMENTO\Documento.rem]]></rem:description>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0012</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al cargo de Investigador Principal.] -> [al cargo de Responsable de Farmacia.]]]></rem:description>
+<rem:description><![CDATA[Añadida fila [FunctionalRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>VAL-0002</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Enumerado Situación actual] -> [Enumerado Tipo]]]></rem:description>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>VAL-0002</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Definition] actualizada [{Pre-Evaluación, Abierto, Cerrado}] -> [{Revisión, Estudios Complementarios}]]]></rem:description>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>VAL-0002</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [los valores que puede adquirir la Situación actual de un Ensayo.] -> [los dos tipos de citas que hay para un Paciente.]]]></rem:description>
+<rem:description><![CDATA[Eliminada fila [FunctionalRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0010</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Investigador Principal] -> [Subinvestigador]]]></rem:description>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0010</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al cargo de Investigador Principal.] -> [al cargo de Subinvestigador.]]]></rem:description>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0012</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Copia de Investigador Principal] -> [Responsable de Farmacia]]]></rem:description>
+<rem:description><![CDATA[Añadida fila [UseCase]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0011</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Investigador Principal] -> [Data Manager]]]></rem:description>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0011</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al cargo de Investigador Principal.] -> [al cargo de Data Manager.]]]></rem:description>
+<rem:description><![CDATA[Eliminada fila [UseCase]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0013</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Copia de Copia de Investigador Principal] -> [Responsable de Enfermería]]]></rem:description>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>TYP-0013</rem:owner><rem:date>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al cargo de Investigador Principal.] -> [al cargo de Responsable de Enfermería.]]]></rem:description>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>TYP-0010</rem:owner><rem:date>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
 <rem:year>2016</rem:year>
 <rem:month>1</rem:month>
 <rem:day>16</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [TYP-0009] Investigador Principal del proyecto E:\CARPETA COMPARTIDA\IR\DOCUMENTO\Documento.rem]]></rem:description>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0058] Información con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [GRF-0048] Matriz 1 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0004] Requisito General 4 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0059] Información 2 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0005] Requisito General 5 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [TRM-0003]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido autor [STK-0003] Guillermo Alcalá Gamero]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fuente [STK-0005] Francisco Javier Rodríguez Martorell]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [GRF-0049] Matriz 2 con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [ConstraintRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [InformationRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada fila [FunctionalRequirement]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada columna [Objective]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>TRM-0001</rem:owner><rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fila [InformationRequirement]]]></rem:description>
 </rem:change>
 </rem:log>
