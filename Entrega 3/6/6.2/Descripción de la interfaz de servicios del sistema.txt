@@ -11,16 +11,9 @@ La interfaz de servicios del sistema consta de un único Sistema de Gestión de En
 		-Parámetros de entrada: Un objeto de tipo Paciente.
 		-Tipo devuelto: Una lista de objetos EfectoAdverso, cuyos parámetros son dos objetos de tipo cadena: Fecha y descripción.
 	
-	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si devuelve una confirmación positiva, añade/asigna dicho EfectoAdverso al Paciente.
+	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si este no devuelve errores, añade/asigna dicho EfectoAdverso al Paciente.
 		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
 		-Tipo devuelto: void (No devuelve nada).
-	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve una confirmación positiva o negativa, según corresponda.
+	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
 		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
-		-Tipo devuelto: Un objeto de tipo Boolean que devuelve "true" si la validación ha sido superada con éxito, es decir, no ha habido errores de validación, y "false" si ha habido algún error de validación.
-
-	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si durante el proceso se captura alguna excepción relacionada con la validación de alguno de sus atributos, devuelve un listado con dichos errores. En caso contrario añade/asigna dicho EfectoAdverso al Paciente.
-		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
-		-Tipo devuelto: Una lista de objetos cadena correspondiente a los errores capturados durante la validación.
-	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no.
-		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
-		-Tipo devuelto: Un objeto de tipo Boolean que devuelve "true" si la validación ha sido superada con éxito, es decir, no ha habido errores de validación, y "false" si ha habido algún error de validación.
+		-Tipo devuelto: Una lista de objetos cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
