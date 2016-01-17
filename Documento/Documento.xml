@@ -5266,6 +5266,314 @@ Diagramas de secuencia del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0053">
+<rem:name>
+DS-0001</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0001.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0064">
+<rem:name>
+Descripción 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0001.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0054">
+<rem:name>
+DS-0002</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0002.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0065">
+<rem:name>
+Descripción 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0002.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0055">
+<rem:name>
+DS-0003</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0003.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0066">
+<rem:name>
+Descripción 3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0003.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0056">
+<rem:name>
+DS-0004</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0004.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0067">
+<rem:name>
+Descripción 4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0004.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0057">
+<rem:name>
+DS-0005</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0005_ConDudas.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0068">
+<rem:name>
+Descripción 5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0005.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0058">
+<rem:name>
+DS-0006</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0006.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0069">
+<rem:name>
+Descripción 6</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0006.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0059">
+<rem:name>
+DS-0007</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0007.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0070">
+<rem:name>
+Descripción 7</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0007.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0060">
+<rem:name>
+DS-0008</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\4.1\DS-0008.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:paragraph
+ oid = "PRG-0071">
+<rem:name>
+Descripción 8</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Este diagrama de secuencia está relacionado con el caso de uso UC-0008.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0064">
@@ -5284,6 +5592,23 @@ Descripción de los diagramas de secuencia del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0072">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La descripción de los diagramas de secuencia están incluidos en el apartado 4.1.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
