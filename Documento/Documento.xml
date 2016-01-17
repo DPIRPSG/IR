@@ -157,7 +157,7 @@ Hospital Virgen del Rocio</rem:name>
 Ninguno</rem:comments>
 <rem:address>Av. Manuel Siurot, s/n, 41013 Sevilla</rem:address>
 <rem:telephone>955 01 20 00</rem:telephone>
-<rem:fax><rem:tbd/></rem:fax>
+<rem:fax>-</rem:fax>
 </rem:organization>
 <rem:organization
  oid = "ORG-0001">
@@ -174,9 +174,9 @@ Grupo IR</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:address><rem:tbd/></rem:address>
-<rem:telephone><rem:tbd/></rem:telephone>
-<rem:fax><rem:tbd/></rem:fax>
+<rem:address>-</rem:address>
+<rem:telephone>-</rem:telephone>
+<rem:fax>-</rem:fax>
 </rem:organization>
 <rem:stakeholder
  oid = "STK-0001">
@@ -1343,7 +1343,7 @@ Descripción</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>El sistema a desarrollar quedará dividido en los siguientes subsistemas:<br/><br/>001<br/>Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de ver los datos pertinentes de cada ensayo clínico, 		incluyendo el personal médico y los pacientes que participan en él.<br/>Comentarios<br/>No procede<br/><br/>002<br/>Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con los fármacos experimentales que se aplican en cada ensayo, la gestión de la petición de los mismos y la posibilidad de agregar o modificar dosis a los pacientes incluídos en ensayos concretos.<br/>Comentarios<br/>No procede<br/><br/>003<br/>Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con las <rem:ref oid="GLO-0028">citas</rem:ref> que piden los pacientes, así como su gestión por parte del personal de enfermería y la consulta de las mismas por parte de los médicos.<br/>Comentarios<br/>No procede<br/><br/>004<br/>Conocer los promotores de un ensayo<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con poder listar los promotores de cada ensayo clínico en partícular así como gestionar las visitas que hacen los mismos a los centros implicados.<br/>Comentarios<br/>No procede<br/><br/>005<br/>Disponer de distintos listados sobre el Ensayo.<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la posibilidad de listar los ensayos clínicos y sus datos pertinentes, 		ya sean en su totalidad, mensualmente, asociados a ciertos personal médico, los pacientes que lo incluyen o cualquier otra forma de filtración requerida en cada vista de la aplicación.<br/>Comentarios<br/>No procede</rem:text>
+<rem:text>El sistema a desarrollar quedará dividido en los siguientes subsistemas:<br/><br/>001<br/>Pacientes<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la gestión de los pacientes participantes en los distintos Ensayos Clínicos, el almacenamiento de sus datos e informes necesarios y la gestión completa de sus <rem:ref oid="GLO-0028">citas</rem:ref> con el personal sanitario pertinente.<br/>Comentarios<br/>No procede<br/><br/>002<br/>Ensayos Clínicos<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con los Ensayos Clínicos, los fármacos que se utilizan, los pacientes que participan, las incidencias ocurridas y el resto de datos y documentación necesaria y disponible para cada personal santario en el sistema.<br/>Comentarios<br/>No procede<br/><br/>003<br/>Personal sanitario<br/>Descripción<br/>Este subsistema agrupa los requisitos relacionados con la gestión y paricipación del distinto personal sanitario en el sistema.<br/>Comentarios<br/>No procede</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -1383,7 +1383,7 @@ Ninguno</rem:comments>
 <rem:objective
  oid = "OBJ-0001">
 <rem:name>
-Requisito General 1</rem:name>
+Gestión de Pacientes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1397,25 +1397,17 @@ Requisito General 1</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
-Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.</rem:description>
+encargarse de la gestión de los pacientes como de sus <rem:ref oid="GLO-0028">citas</rem:ref>.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0002">
 <rem:name>
-Requisito General 2</rem:name>
+Gestión de Ensayos Clínicos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1429,25 +1421,17 @@ Requisito General 2</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
-Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.</rem:description>
+encargarse de la gestión de los Ensayos Clínicos.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0003">
 <rem:name>
-Requisito General 3</rem:name>
+Gestión de Personal Sanitario</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1461,84 +1445,12 @@ Requisito General 3</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
-Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un Ensayo.</rem:description>
-</rem:objective>
-<rem:objective
- oid = "OBJ-0004">
-<rem:name>
-Requisito General 4</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0004 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
-<rem:description>
-Conocer los promotores de un Ensayo.</rem:description>
-</rem:objective>
-<rem:objective
- oid = "OBJ-0005">
-<rem:name>
-Requisito General 5</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0004 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
-<rem:description>
-Disponer de distintos listados sobre el Ensayo.</rem:description>
+encargarse de la gestión de los empleados que trabajen en los distintos Ensayos Clínicos.</rem:description>
 </rem:objective>
 </rem:section>
 <rem:section
@@ -1575,25 +1487,27 @@ Diagrama de casos de uso del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>6.2.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0045">
+<rem:graphicFile
+ oid = "GRF-0052">
 <rem:name>
-Diagrama</rem:name>
+Diagrama de casos de uso</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>ACT-005 -&gt; UC-0001<br/>ACT-006 -&gt; UC-0002<br/>ACT-004 -&gt; UC-0003<br/>ACT-005 -&gt; UC-0003<br/>ACT-004 -&gt; UC-0004<br/>ACT-004 -&gt; UC-0005<br/>ACT-007 -&gt; UC-0005<br/>ACT-006 -&gt; UC-0006<br/>ACT-008 -&gt; UC-0007<br/>ACT-004 -&gt; UC-0008<br/>ACT-005 -&gt; UC-0008</rem:text>
-</rem:paragraph>
+<rem:fileName>
+<![CDATA[..\Diagrama de caso de uso del sistema.png]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0036">
@@ -1761,18 +1675,10 @@ Petición de cita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un paciente pida una cita.</rem:triggeringEvent>
 <rem:precondition>
@@ -1780,7 +1686,10 @@ El paciente se ha identificado correctamente y su sesión está abierta.</rem:prec
 <rem:postcondition>
 El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0042">
 <rem:number>1</rem:number>
@@ -1836,18 +1745,10 @@ Confirmación de cita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un responsable de enfermería devuelva la confirmación de una cita.</rem:triggeringEvent>
 <rem:precondition>
@@ -1855,7 +1756,10 @@ El responsable de enfermería se ha identificado correctamente y su sesión está a
 <rem:postcondition>
 El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0046">
 <rem:number>1</rem:number>
@@ -1929,18 +1833,10 @@ Solicitar las analíticas de un Paciente</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un médico desee gestionar las <rem:ref oid="GLO-0026">analíticas de control</rem:ref> asignadas a él mismo.</rem:triggeringEvent>
 <rem:precondition>
@@ -1948,7 +1844,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
 </rem:frequency>
 <rem:step oid = "STP-0050">
 <rem:number>1</rem:number>
@@ -2031,18 +1930,10 @@ Petición de Fármacos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un médico pida fármacos.</rem:triggeringEvent>
 <rem:precondition>
@@ -2050,7 +1941,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 El sistema recoge ahora la nueva petición de medicamentos.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0057">
 <rem:number>1</rem:number>
@@ -2124,18 +2018,10 @@ Aceptación de pedidos de Fármacos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el responsable de farmacia reciba una petición de fármacos.</rem:triggeringEvent>
 <rem:precondition>
@@ -2143,7 +2029,10 @@ El responsable de farmacia se ha identificado correctamente y su sesión está abi
 <rem:postcondition>
 El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0063">
 <rem:number>1</rem:number>
@@ -2208,18 +2097,10 @@ Devolución de envases de tratamientos en experimentación</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un responsable de enfermería efectúe la devolución de los envases de tratamiento en experimentación.</rem:triggeringEvent>
 <rem:precondition>
@@ -2227,7 +2108,10 @@ El responsable de enfermería se ha identificado correctamente y su sesión está a
 <rem:postcondition>
 El sistema recoge ahora el listado de los artículos a devolver.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0068">
 <rem:number>1</rem:number>
@@ -2301,18 +2185,10 @@ Notificar incidencia</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el Investigador Principal notifique alguna incidencia en el sistema.</rem:triggeringEvent>
 <rem:precondition>
@@ -2320,7 +2196,10 @@ El Investigador Principal se ha identificado correctamente y su sesión está abie
 <rem:postcondition>
 El sistema recoge ahora la incidencia creada.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0074">
 <rem:number>1</rem:number>
@@ -2394,18 +2273,10 @@ Adición de efectos adversos en los tratamientos.</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún paciente.</rem:triggeringEvent>
 <rem:precondition>
@@ -2413,7 +2284,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0081">
 <rem:number>1</rem:number>
@@ -2559,29 +2433,23 @@ Información sobre Ensayos clínicos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Ensayos clínicos</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>5</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>10</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0041">
 <rem:description>
@@ -2649,29 +2517,23 @@ Información sobre Empleados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Empleados</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>5</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>10</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>20</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0011">
 <rem:description>
@@ -2733,29 +2595,23 @@ Información sobre Pacientes</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Pacientes</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>15</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>10</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>30</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0019">
 <rem:description>
@@ -2841,29 +2697,23 @@ Información sobre Promotor</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Promotor del ensayo</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>3</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>5</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0030">
 <rem:description>
@@ -2901,29 +2751,23 @@ Información sobre Monitor</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Monitor del ensayo</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>5</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>5</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>10</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0032">
 <rem:description>
@@ -2997,18 +2841,10 @@ Mantener los pacientes en el sistema</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Mantener los pacientes en el sistema un mínimo de 15 años desde su fecha de inclusión para cumplir con la ley vigente sobre Ensayos Clínicos.</rem:description>
 </rem:constraintRequirement>
@@ -3029,18 +2865,10 @@ Un Investigador Principal por Ensayo Clínico</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que sólo haya un Investigador Principal en cada Ensayo Clínico.</rem:description>
 </rem:constraintRequirement>
@@ -3061,18 +2889,10 @@ No eliminar empleados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen empleados aunque cambien de hospital para permitir que puedan verificar los datos requeridos por los monitores.</rem:description>
 </rem:constraintRequirement>
@@ -3093,18 +2913,10 @@ No eliminar promotores</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen los promotores para mantener la información de los mismos.</rem:description>
 </rem:constraintRequirement>
@@ -3125,18 +2937,10 @@ No eliminar Ensayos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen los Ensayos Clínicos en los que no se incluyan pacientes para mantener la información de los mismos.</rem:description>
 </rem:constraintRequirement>
@@ -3157,18 +2961,10 @@ Un paciente en un sólo Ensayo</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que si un paciente está o ha estado en un Ensayo Clínico no pueda ser propuesto para otro para evitar duplicidad de participación en Ensayos Clínicos conforme a la normativa vigente.</rem:description>
 </rem:constraintRequirement>
@@ -3207,18 +3003,10 @@ Lista de Ensayos Clínicos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener a principios de mes una lista con los Ensayos Clínicos abiertos y los pacientes incluidos en cada Ensayo Clínico.</rem:description>
 </rem:functionalRequirement>
@@ -3239,18 +3027,10 @@ Lista de <rem:ref oid="GLO-0028">citas</rem:ref></rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener cada semana una lista con los pacientes con cita médica para la próxima semana y los estudios complementarios a realizar al paciente.</rem:description>
 </rem:functionalRequirement>
@@ -3271,18 +3051,10 @@ Lista de pacientes con su medicación</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los pacientes  con su respectiva medicación.</rem:description>
 </rem:functionalRequirement>
@@ -3303,18 +3075,10 @@ Lista de monitores con visita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener cada semana una lista con los monitores que tienen visita la semana siguiente.</rem:description>
 </rem:functionalRequirement>
@@ -3335,18 +3099,10 @@ Lista de pacientes con su estudio a realizar</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los estudios complementarios a realizar a los pacientes.</rem:description>
 </rem:functionalRequirement>
@@ -3367,18 +3123,10 @@ Lista de Ensayos con número de pacientes</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los Ensayos Clínicos abiertos y el número de pacientes incluido en cada Ensayo.</rem:description>
 </rem:functionalRequirement>
@@ -3435,18 +3183,10 @@ Disponibilidad 24/7</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que el programa esté operativo<br/>permanentemente y que no exista<br/>restricción horaria de acceso<br/>para facilitar el registro de los datos<br/>independientemente del horario</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3485,18 +3225,10 @@ Multi-Usuario</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que varios usuarios puedan<br/>estar registrando datos simultáneamente<br/>en un mismo paciente o Ensayo</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3605,18 +3337,10 @@ Clave acceso</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que se pueda acceder de<br/>forma remota al sistema con una clave<br/>especial de acceso para consulta de datos puntuales<br/>desde fuera del hospital</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3655,18 +3379,10 @@ Acceso</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que sólo puedan acceder al sistema los empleados autorizados de la<br/>organización para cumplir con la Ley de Protección de Datos</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3687,18 +3403,10 @@ Datos Encriptados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que todos los datos personales de los pacientes<br/>se almacenen de forma encriptada para cumplir con la Ley de Protección de Datos </rem:description>
 </rem:nonFunctionalRequirement>
@@ -3719,18 +3427,10 @@ Acceso Restringido</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que cada empleado perteneciente<br/>al Ensayo sólo vea la información que necesita<br/>para mantener en el anonimato a<br/>los pacientes y evitar filtraciones de<br/>información referentes al Ensayo Clínico</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3860,86 +3560,132 @@ Información sobre trazabilidad</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>6.7 </rem:number>
-<rem:paragraph
- oid = "PRG-0058">
+<rem:traceabilityMatrix
+ oid = "TRM-0001">
 <rem:name>
-Información</rem:name>
+Requisitos Generales frente a funcionales</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Matriz Todos los requisitos -&gt; Objetivos generales <br/><br/>OBJ-0001: El sistema deberá Conocer la situación actual del Ensayo Clínico, el personal asociado a él y los pacientes incluidos en él.<br/><br/>OBJ-0002: El sistema deberá Conocer el estado actual del inventario de fármacos y cual ha sido asignado a cada paciente.<br/><br/>OBJ-0003: El sistema deberá Conocer las <rem:ref oid="GLO-0028">citas</rem:ref> de los pacientes pertenecientes a un Ensayo.<br/><br/>OBJ-0004: El sistema deberá Conocer los promotores de un Ensayo.<br/><br/>OBJ-0005: El sistema deberá Disponer de distintos listados sobre el Ensayo.</rem:text>
-</rem:paragraph>
-<rem:graphicFile
- oid = "GRF-0048">
-<rem:name>
-Matriz 1</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:fileName>
-<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 1.jpg]]>
-</rem:fileName>
-</rem:graphicFile>
-<rem:paragraph
- oid = "PRG-0059">
-<rem:name>
-Información 2</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:text>Matriz Todos los elementos del diagrama de clases -&gt; Requisitos de información y reglas de negocio.</rem:text>
-</rem:paragraph>
-<rem:graphicFile
- oid = "GRF-0049">
-<rem:name>
-Matriz 2</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:fileName>
-<![CDATA[..\TextoEspecificaciónRequisitosSistema\Entrega2\Matriz 2.jpg]]>
-</rem:fileName>
-</rem:graphicFile>
+<rem:tr>
+<rem:th/>
+<rem:th oid ="OBJ-0001"/>
+<rem:th oid ="OBJ-0002"/>
+<rem:th oid ="OBJ-0003"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0001"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0002"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0003"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0004"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0005"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0001"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0002"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0003"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0004"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0005"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0006"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0001"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0002"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0003"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0004"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0005"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="FRQ-0006"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+</rem:tr>
+</rem:traceabilityMatrix>
 </rem:section>
 </rem:section>
 <rem:section
@@ -3994,6 +3740,63 @@ Acta reunión 2</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 27/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    1.- Refutación de las ideas obtenidas en la reunión anterior.<br/>    2.- Resolución de los puntos pendientes de la reunión anterior.<br/>    3.- Exposición de los procesos de un ensayo clínico.<br/>    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Una visión más profunda de como funciona la iteracción con el sistema actual.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. <br/>    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <rem:ref oid="GLO-0028">citas</rem:ref> de pacientes.<br/>    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.<br/>    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.<br/><br/>+-+Acuerdos y tareas: <br/>    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0061">
+<rem:name>
+Acta reunión 3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 3 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 10/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/><br/>    1.- Comentarios primer entregable.<br/>    2.- Petición de requisitos.<br/><br/><br/>+-+Objetivos principales (de la reunión):<br/>    Enumeración de los requisitos.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentó la corrección del primer entregable y, puesto que nos comentaron que íbamos por buen camino, pasamos al siguiente punto. <br/>    A continuación se paso a la explicación de que es un requisito, para que lo necesitamos y algunos ejemplos. Tras esto, empezamos a hablar de todos los posibles requisitos.<br/>    <br/>+-+Acuerdos y tareas: <br/>    Por parte de los desarrolladores: Realización formalizada de los requisitos del sistema y algunos diseños básicos de mockups.<br/>    Por parte del cliente: Petición de algunos requisitos a sus compañeros.<br/>    <br/>+-+Puntos pendientes:<br/>    Requisitos del sistema.<br/>    <br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto para la próxima semana.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0062">
+<rem:name>
+Acta reunión 4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 4 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 19/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/><br/>    +Peticiones mockups<br/>    Resolver algunas dudas de lo anterior<br/>    +Guía y Enumeración de requisitos (II)<br/>    Requisitos de integración....<br/>    Hablar de los puntos futuros <br/>    <br/>    <br/>    1.- Finalización requisitos.<br/>    2.- Comentarios y pautas a seguir en los mockups.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Finalizar los requisitos y tener una idea clara de como continuar los mockups.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se completaron todas las ideas necesarias para realizar los requisitos del sistema. <br/>    Por último se mostraron algunos mockups de lo que sería la interfaz gráfica finalizada y se comentaron algunos aspectos a cambiar y mejorar.<br/><br/>+-+Acuerdos y tareas: <br/>    Revisión total de los mockups para la próxima reunión.<br/>    <br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>    <br/>+-+Próximas reuniones:<br/>    La próxima reunión se concretará una vez finalizados los mockups.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0063">
+<rem:name>
+Acta reunión 5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 5 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 26/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    <br/>    1.- Resolución de dudas pendientes respecto a los requisitos.<br/>    2.- Revisión de los mockups.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Revisión de los mockups.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se resolvieron algunas dudas para finalizar los requisitos. <br/>    Por último se comentaron los mockups los cuales le parecieron correctos debido a las pautas de la última reunión.<br/><br/>+-+Acuerdos y tareas: <br/>    Ninguno.<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del segundo entregable.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -4323,16 +4126,16 @@ Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.1 </rem:number>
 <rem:graphicFile
- oid = "GRF-0004">
+ oid = "GRF-0051">
 <rem:name>
 Diagrama de clases</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 "/>
@@ -4340,7 +4143,7 @@ Diagrama de clases</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\UML GECH.png]]>
+<![CDATA[..\GECH.png]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
@@ -4361,25 +4164,917 @@ Descripción de las clases del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
-<rem:paragraph
- oid = "PRG-0050">
+<rem:objectType
+ oid = "TYP-0001">
 <rem:name>
-Descripción</rem:name>
+Ensayo Clínico</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 "/>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Ensayo Clínico:<br/>Esta clase se corresponde con los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes.<br/>Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo.<br/><br/>Empleado:<br/>Esta clase se corresponde con los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto.<br/><br/>Paciente:<br/>Esta clase se corresponde con los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/>Cabe destacar que un paciente solo puede participar en un solo Ensayo.<br/><br/>Monitor del Ensayo:<br/>Esta clase se corresponde con los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.<br/><br/>Promotor:<br/>Esta clase se corresponde con los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:text>
-</rem:paragraph>
+<rem:description>
+los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes. <br/>Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo. </rem:description>
+<rem:attribute oid = "ATT-0097" baseType = "PVT-0002">
+<rem:name>
+ID</rem:name>
+<rem:description>
+Representa el número del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0106" baseType = "VAL-0001">
+<rem:name>
+Situación actual</rem:name>
+<rem:description>
+La situación actual en la que se encuentra el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+<rem:expression>
+<rem:natural>
+<rem:tbd/></rem:natural>
+<rem:ocl><![CDATA[Pre-Evaluación]]></rem:ocl>
+</rem:expression>
+</rem:attribute>
+<rem:attribute oid = "ATT-0107" baseType = "PVT-0004">
+<rem:name>
+Criterio de inclusión</rem:name>
+<rem:description>
+el criterio por el cual se tendrá en cuenta la inclusión de un paciente al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0108" baseType = "PVT-0004">
+<rem:name>
+Criterio de exclusión</rem:name>
+<rem:description>
+el criterio por el cual se tendrá en cuenta la no inclusión de un paciente al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0109" baseType = "PVT-0005">
+<rem:name>
+Inicio de periodo de reclutamiento</rem:name>
+<rem:description>
+La fecha en la que empezó el reclutamiento de pacientes para dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0110" baseType = "PVT-0005">
+<rem:name>
+Fin de periodo de reclutamiento</rem:name>
+<rem:description>
+La fecha en la que acabó el reclutamiento de pacientes para dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0111" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref> experimental</rem:name>
+<rem:description>
+el nombre del <rem:ref oid="GLO-0036">fármaco</rem:ref> que se aplicará en el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:component oid = "COM-0148" baseType = "TYP-0009">
+<rem:name>
+Investigador Principal</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:component>
+<rem:component oid = "COM-0147" baseType = "TYP-0010">
+<rem:name>
+Subinvestigador</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+1</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:component>
+<rem:component oid = "COM-0149" baseType = "TYP-0011">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:component>
+<rem:component oid = "COM-0150" baseType = "TYP-0012">
+<rem:name>
+Responsable de Farmacia</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:component>
+<rem:component oid = "COM-0151" baseType = "TYP-0013">
+<rem:name>
+Responsable de Enfermería</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+1</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:component>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0002">
+<rem:name>
+Empleado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto. </rem:description>
+<rem:attribute oid = "ATT-0113" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre del Empleado</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0114" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0115" baseType = "PVT-0004">
+<rem:name>
+DNI</rem:name>
+<rem:description>
+el DNI del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0116" baseType = "PVT-0004">
+<rem:name>
+Email</rem:name>
+<rem:description>
+el email del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0117" baseType = "PVT-0004">
+<rem:name>
+Número de teléfono</rem:name>
+<rem:description>
+el número de teléfono del Empleado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. <br/>Cabe destacar que un paciente solo puede participar en un solo Ensayo. </rem:description>
+<rem:attribute oid = "ATT-0118" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre del Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0119" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos del Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0120" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0039">NUHSA</rem:ref></rem:name>
+<rem:description>
+el número único de identificación para los pacientes en el sistema de salud de Andalucía. </rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0121" baseType = "PVT-0004">
+<rem:name>
+NHC</rem:name>
+<rem:description>
+el Número de Historia Clínica.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0122" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0034">Diagnóstico</rem:ref></rem:name>
+<rem:description>
+el diagóstico del Paciente en el momento de entrar al Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0123" baseType = "PVT-0004">
+<rem:name>
+Fármacos asignados</rem:name>
+<rem:description>
+el nombre de los fármacos que tiene asignado un Paciente, a parte del <rem:ref oid="GLO-0036">fármaco</rem:ref> de dicho Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0124" baseType = "PVT-0005">
+<rem:name>
+Fecha de inclusión en el Ensayo</rem:name>
+<rem:description>
+la fecha en la que el Paciente entra en el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0004">
+<rem:name>
+Monitor del Ensayo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:description>
+<rem:attribute oid = "ATT-0125" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre del Monitor del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0126" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos del Monitor del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0127" baseType = "PVT-0004">
+<rem:name>
+Número de teléfono</rem:name>
+<rem:description>
+el número de teléfono del Monitor del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0128" baseType = "PVT-0004">
+<rem:name>
+Email</rem:name>
+<rem:description>
+el email del Monitor del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0005">
+<rem:name>
+Promotor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</rem:description>
+<rem:attribute oid = "ATT-0129" baseType = "PVT-0004">
+<rem:name>
+Nombre de empresa</rem:name>
+<rem:description>
+el nombre de la empresa que promueve el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0130" baseType = "PVT-0004">
+<rem:name>
+CIF</rem:name>
+<rem:description>
+el CIF de la empresa que promueve el Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0006">
+<rem:name>
+Cita Paciente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+a las <rem:ref oid="GLO-0028">citas</rem:ref> de los Pacientes.</rem:description>
+<rem:attribute oid = "ATT-0133" baseType = "PVT-0005">
+<rem:name>
+Fecha</rem:name>
+<rem:description>
+a la fecha de la cita del Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0134" baseType = "VAL-0002">
+<rem:name>
+Tipo</rem:name>
+<rem:description>
+el tipo de la cita, ya sea de revisión o para estudios complementarios.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0007">
+<rem:name>
+Cita Monitor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+a las <rem:ref oid="GLO-0028">citas</rem:ref> de los Monitores.</rem:description>
+<rem:attribute oid = "ATT-0135" baseType = "PVT-0005">
+<rem:name>
+Fecha</rem:name>
+<rem:description>
+a la fecha de la cita del Monitor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0008">
+<rem:name>
+Cargo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+El cargo de un Empleado en un Ensayo Clínico.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0008" oid = "TYP-0009">
+<rem:name>
+Investigador Principal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+al cargo de Investigador Principal.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0008" oid = "TYP-0010">
+<rem:name>
+Subinvestigador</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+al cargo de Subinvestigador.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0008" oid = "TYP-0011">
+<rem:name>
+<rem:ref oid="GLO-0032">Data Manager</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+al cargo de <rem:ref oid="GLO-0032">Data Manager</rem:ref>.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0008" oid = "TYP-0012">
+<rem:name>
+Responsable de Farmacia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+al cargo de Responsable de Farmacia.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0008" oid = "TYP-0013">
+<rem:name>
+Responsable de Enfermería</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+al cargo de Responsable de Enfermería.</rem:description>
+<rem:isAbstract/>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:userDefinedValueType
+ oid = "VAL-0001">
+<rem:name>
+Enumerado Situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los valores que puede adquirir la Situación actual de un Ensayo.</rem:description>
+<rem:definition>
+{Pre-Evaluación, Abierto, Cerrado}
+</rem:definition>
+</rem:userDefinedValueType>
+<rem:userDefinedValueType
+ oid = "VAL-0002">
+<rem:name>
+Enumerado Tipo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+los dos tipos de <rem:ref oid="GLO-0028">citas</rem:ref> que hay para un Paciente.</rem:description>
+<rem:definition>
+{Revisión, Estudios Complementarios}
+</rem:definition>
+</rem:userDefinedValueType>
+<rem:associationType
+ oid = "ASO-0001">
+<rem:name>
+Participa en</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+que un Paciente participa en un Ensayo Clínico.</rem:description>
+<rem:role oid = "ROL-0131" baseType = "TYP-0001">
+<rem:name>
+Ensayo Clínico</rem:name>
+<rem:description>
+al Ensayo Clínico</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0132" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+al Paciente.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0002">
+<rem:name>
+Tiene</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+que un paciente tiene una cita.</rem:description>
+<rem:role oid = "ROL-0136" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+al Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0137" baseType = "TYP-0006">
+<rem:name>
+Cita</rem:name>
+<rem:description>
+a la cita del Paciente.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0003">
+<rem:name>
+Monitoriza A</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+de que un Monitor monitoriza un Ensayo Clínico.</rem:description>
+<rem:role oid = "ROL-0138" baseType = "TYP-0004">
+<rem:name>
+Monitor</rem:name>
+<rem:description>
+al Monitor del Ensayo.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0139" baseType = "TYP-0001">
+<rem:name>
+Ensayo Clínico</rem:name>
+<rem:description>
+al Ensayo Clínico.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0004">
+<rem:name>
+Trabaja Para</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+de que un Monitor trabaja para un Promotor.</rem:description>
+<rem:role oid = "ROL-0140" baseType = "TYP-0004">
+<rem:name>
+Monitor</rem:name>
+<rem:description>
+a un Monitor.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+1</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0141" baseType = "TYP-0005">
+<rem:name>
+Promotor</rem:name>
+<rem:description>
+a un Promotor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0005">
+<rem:name>
+Tiene</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+de la cita que tiene un Monitor.</rem:description>
+<rem:role oid = "ROL-0142" baseType = "TYP-0004">
+<rem:name>
+Monitor</rem:name>
+<rem:description>
+a un Monitor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0143" baseType = "TYP-0007">
+<rem:name>
+Cita</rem:name>
+<rem:description>
+a la cita que tiene un Monitor.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0006">
+<rem:name>
+Tiene</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+el cargo que tiene un Empleado en un Ensayo.</rem:description>
+<rem:role oid = "ROL-0144" baseType = "TYP-0002">
+<rem:name>
+Empleado</rem:name>
+<rem:description>
+a un Empleado.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+1</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0145" baseType = "TYP-0008">
+<rem:name>
+Cargo</rem:name>
+<rem:description>
+al cargo que puede tener un Empleado en un Ensayo Clínico.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
 </rem:section>
 <rem:section
  oid = "SEC-0058">
@@ -4439,6 +5134,60 @@ Ninguno</rem:comments>
 </rem:section>
 </rem:section>
 <rem:section
+ oid = "SEC-0062">
+<rem:name>
+Modelo de casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0063">
+<rem:name>
+Diagramas de secuencia del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0064">
+<rem:name>
+Descripción de los diagramas de secuencia del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
  oid = "SEC-0051">
 <rem:name>
 Interfaz de usuario del sistema</rem:name>
@@ -4454,7 +5203,7 @@ Interfaz de usuario del sistema</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
-<rem:number>4 </rem:number>
+<rem:number>5 </rem:number>
 <rem:section
  oid = "SEC-0059">
 <rem:name>
@@ -4471,7 +5220,7 @@ Diagramas de navegación del sistema</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>4.1 </rem:number>
+<rem:number>5.1 </rem:number>
 <rem:graphicFile
  oid = "GRF-0006">
 <rem:name>
@@ -4510,7 +5259,7 @@ Esquemas de la interfaz de usuario del sistema</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>4.2 </rem:number>
+<rem:number>5.2 </rem:number>
 <rem:graphicFile
  oid = "GRF-0007">
 <rem:name>
@@ -5333,7 +6082,7 @@ Descripción de la interfaz de usuario del sistema</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>4.3 </rem:number>
+<rem:number>5.3 </rem:number>
 <rem:paragraph
  oid = "PRG-0057">
 <rem:name>
@@ -5354,6 +6103,288 @@ Ninguno</rem:comments>
 <rem:text>A continuación se presenta la descripción de la interfaz de usuario del sistema. Se presenta de manera ordenada desde la página de Inicio, pasando por cada una de las pantallas y acciones de cada rol que se puede identificar en el sistema y según los casos de uso descritos para el mismo. Los números mostrados entre paréntesis hacen referencia (a una página en contreto del pdf y por tanto) a 1 esquema(MockUp) en concreto de la interfaz de usuario del sistema en el orden en que aparecen. Entre corchetes se mostrará el ID del caso de uso al que hacen referencia las acciones que se muestran.<br/><br/>En primer lugar (1), y común a cualquier tipo de usuario que entra al sistema, se muestra una pantalla con el nombre o logo de la aplicación junto con 6 botones. Cada botón corresponde a 1 rol en el sistema. El usuario hará click en el botón correspondiente al rol con el que quiere iniciar sesión. El color del botón le será familiar durante todo el recorrido en el sistema.<br/><br/>Una vez escogido su rol aparecerá un simple formulario de inicio de sesión (2), junto con el nombre o logo de la aplicación y el correspondiente botón para efectuar la autenticación en el sistema. Las franjas de colores motradas en la esquina inferior derecha únicamente representan que el fondo de esta pantalla estará personalizado conforme al rol de usuario escogido anteriormente.<br/><br/>Tras iniciar sesión habrá una serie de elementos comunes a cualquier usuario (3). Estos consisten en un Header sencillo en el que se muestran (en este orden) el nombre o logo de la aplicación, un menu (migas de pan) que le muestra por dónde va pasando dentro de la aplicación y le permite volver a acciones anteriores para facilitarle la navegación y guiarle en todo momento, su nombre completo, su foto de carné y un botón para cerrar su sesión por completo. Además el color de este Header estará personalizado conforme al rol de usuario escogido anteriormente. Todo esto hace que el usuario sepa en todo momento identificar con qué rol está autenticado, dónde está y qué está haciendo, teniendo el control absoluto y sencillo sobre ello. El contenido (body) bajo el header será totalmente cambiante según el rol autenticado y la acción que se realice.<br/><br/>Comenzamos por el rol de Paciente, el cuál al entrar al sistema podrá ver una lista de sus <rem:ref oid="GLO-0028">citas</rem:ref> pendientes (4) y podrá solicitar una nueva cita (5) [UC-0001], esto le llevará a un nuevo formulario (6) donde podrá rellenar/seleccionar los datos oportunos (7,8) y solicitar dicha cita (9), recibiendo el mensaje de confirmación oportuno (10) y devolviéndolo a la vista de sus <rem:ref oid="GLO-0028">citas</rem:ref> pendientes (11), la cuál se verá actualizada cuando el responsable de enfermería correspondiente le asigne una consulta y un médico (en el caso de que no sea previamente asignado por el paciente). Es importante aclarar que en todo formulario enviado a través de la aplicación se recibirá un mensaje de confirmación similar al mostrado en el esquema &quot;(10)&quot;.<br/><br/>Un Investigador Principal, por su parte, tendrá acceso a una pantalla (12) con tres pestañas &quot;Ensayos clínicos abiertos&quot;, &quot;Citas semana actual&quot; y &quot;Citas próxima semana&quot;. En la primera de ellas podrá ver una tabla con todos los ensayos clínicos abiertos este mes y sus datos correspondientes, haciendo clic en uno de ellos tal y como se muestra se le llevará a un nuevo formulario donde podrá notificar una nueva incidencia relacionada con el mismo (13) [UC-0007]. Esta incidencia es enviada a una empresa externa que no tendrá acceso a la aplicación. Por otro lado, si en vez de hacer clic en un ensayo clínico se hace clic en el número de pacientes incluidos en el mismo (14) aparecerá una nueva pantalla con la lista de pacientes correspondiente (15). En la segunda pestaña &quot;Citas semana actual&quot; se le mostrará una tabla con las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene para la semana actual (16). En la tercera pestaña &quot;Citas próxima semana&quot; tendrá acceso a un listado de las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene la semana siguiente a la actual (17).<br/><br/>Un Subinvestigador tendrá acceso a tres opciones principales mediante tres grandes y claros botones: <br/>Haciendo clic en el primero de ellos &quot;Mis pacientes&quot; (18) tendrá acceso a un listado con todos los pacientes a los que trata él mismo (19); haciendo clic en uno de ellos tendrá acceso al perfil detallado del paciente que incluye tres pestañas: &quot;Datos&quot;, en la que tendrá una ficha con los datos oportunos del paciente (20), &quot;Pruebas médicas&quot;, donde podrá ver las pruebas médicas que se le han realizado al paciente y descargar sus informes (21) [UC-0003], y &quot;Efectos Adversos&quot;, donde podrá ver los efectos adversos que le han ido surgiendo al paciente (22) así como documentar un nuevo efecto adverso, en cuyo caso se le llevaría a otro formulario que rellenaría con los datos oportunos y enviaría mediante el botón correspondiente (23) [UC-0008]. <br/>Si selecciona la segunda opción &quot;Mis ensayos clínicos&quot; (24) tendrá acceso a una vista con los ensayos clínicos en los que participa y ciertos datos de los mismos. Dentro de la casilla donde se muestran los fármacos experimentales que se usan en el ensayo clínico habrá un botón (25) que le permitirá añadir nuevos fármacos (26) [UC-0004] así como modificar los actuales en cuestiones de dosis y demás. Si, por el contrario, hace clic en el botón de &quot;Fármacos pedidos&quot; (27) se le llevará a una nueva vista con una lista de los fármacos que ha pedido con anterioridad (28) y que todavía no aparecen en el correspondiente ensayo clínico, donde comprobará si es que todavía está pendiente de confirmación o ha sido rechazado por parte del responsable de farmacia, en cuyo caso se le especificará el motivo en forma de nota. <br/>Si decide hacer clic en la tercera opción &quot;Mis citas&quot; (29) accederá a una nueva vista con 2 pestañas: &quot;Semana actual&quot;, donde podrá visualizar las <rem:ref oid="GLO-0028">citas</rem:ref> que tiene pendientes para la semana en la que se encuentra (30) y &quot;Próxima semana&quot;, en la que verá las de la semana siguiente (31).<br/><br/>Con el rol de Enfermería se tendrá acceso a 2 opciones principales (32):<br/>Haciendo clic en la primera &quot;Citas&quot;, se le mostrará una tabla con las <rem:ref oid="GLO-0028">citas</rem:ref> pedidas por parte de los pacientes (33). Haciendo clic en cualquier de los campos pendientes de asignación de una cita se le llevará a un nuevo formulario (34) donde podrá rellenar los datos que faltan en la misma (35) y enviárselo de vuelta al portal del paciente (36) [UC-0002].<br/>Si hace clic en la segunda opción &quot;Ensayos asignados&quot; (37) se le mostrará una tabla con los ensayos que le corresponden con los pocos datos a los que tiene acceso (38), haciendo clic en el enlace &quot;devolver&quot; de uno de los ensayos clínicos se pondrá a su disposición otro formulario (39) donde especificará los envases que va a devolver relacionados con dicho ensayo [UC-0006].<br/><br/>Un usuario autenticado como responsable de Farmacia tendrá una única vista (40) con un listado de fármacos pedidos por los médicos en los distintos ensayos clínicos, donde podrá aceptar los pedidos o rechazarlos por cualquier motivo que especificará mediante una nota en el campo correspondiente [UC-0005].<br/><br/>Por último, como <rem:ref oid="GLO-0032">Data Manager</rem:ref> la única opción que se tendrá dentro del sistema será la de listar los monitores que tienen visita la semana que viene con los datos oportunos para que pueda organizar todo correctamente (41).</rem:text>
 </rem:paragraph>
 </rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0065">
+<rem:name>
+Interfaz de servicios del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:section
+ oid = "SEC-0067">
+<rem:name>
+Diagramas de la interfaz de servicios del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0068">
+<rem:name>
+Descripción de la interfaz de servicios del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.2 </rem:number>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0066">
+<rem:name>
+Información sobre trazabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>7 </rem:number>
+<rem:traceabilityMatrix
+ oid = "TRM-0002">
+<rem:name>
+Clases frente a Requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:tr>
+<rem:th/>
+<rem:th oid ="TYP-0001"/>
+<rem:th oid ="TYP-0002"/>
+<rem:th oid ="TYP-0003"/>
+<rem:th oid ="TYP-0004"/>
+<rem:th oid ="TYP-0005"/>
+<rem:th oid ="TYP-0006"/>
+<rem:th oid ="TYP-0007"/>
+<rem:th oid ="TYP-0008"/>
+<rem:th oid ="TYP-0009"/>
+<rem:th oid ="TYP-0010"/>
+<rem:th oid ="TYP-0011"/>
+<rem:th oid ="TYP-0012"/>
+<rem:th oid ="TYP-0013"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0001"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0002"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0003"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0004"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0005"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0001"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0002"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0003"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0004"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0005"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="CRQ-0006"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+</rem:traceabilityMatrix>
 </rem:section>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
@@ -5386,6 +6417,171 @@ Ninguno
 Ninguno
 </rem:comments>
 </rem:changeRequestsSpecification>
+<rem:trace source = "IRQ-0003"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0003"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0004"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0005"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0006"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0002"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0003"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0005"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0006"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0006"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0005"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0006"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0004"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "TYP-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "TYP-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0003"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0003"  target = "TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0004"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0004"  target = "TYP-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0005"  target = "TYP-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0001"  target = "TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "TYP-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0003"  target = "TYP-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0004"  target = "TYP-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0006"  target = "TYP-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0006"  target = "TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0003"  target = "TYP-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0005"  target = "TYP-0007" >
+<rem:isChecked/>
+</rem:trace>
 <rem:predefinedValueTypes>
 <rem:predefinedValueType
  oid = "PVT-0001">

@@ -1,0 +1,37 @@
+La interfaz de servicios del sistema consta de un único Sistema de Gestión de Ensatos Clínicos Hospitalarios compuesto por siete interfaces:
+
+-ServiciosPaciente: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Pacientes registrados en el sistema:
+	-ConsultarPacientesPorInvestigador(): Dado un Investigador (Ya sea Investigador Principal o Subinvestigador) devuelve un listado de pacientes con los que tiene relación en ese momento, ya sea que tiene cita con él, participan en uno de sus Ensayos Clínicos o ha participado en alguno, etc...
+		-Parámetros de entrada: Un objeto de tipo InvestigadorPrincipal o Subinvestigador.
+		-Tipo devuelto: Una lista de objetos Paciente.
+	-ConsultarPerfil(): Dado un Paciente devuelve una lista con todos los datos de su perfil registrados.
+		-Parámetros de entrada: Un objeto de tipo Paciente.
+		-Tipo devuelto: Una lista con los distintos objetos de tipo cadena correspondientes a los datos del perfil del Paciente pasado como parámetro: Nombre, Apellidos, NumeroHistoriaClinica, NUHSA, Diagnostico, Ensayo, MedicacionAsignada, FechaInclusion, FechaRevision, FechaEstudios.
+	-ConsultarEfectosAdversos(): Dado un Paciente devuelve una lista con los distintos Efectos Adversos ocurridos al paciente registrados en el sistema.
+		-Parámetros de entrada: Un objeto de tipo Paciente.
+		-Tipo devuelto: Una lista de objetos EfectoAdverso, cuyos parámetros son dos objetos de tipo cadena: Fecha y descripción.
+	-AñadirEfectoAdverso(): Dado un Paciente y un nuevo EfectoAdverso, realiza la comprobación de la operación validarEfectoAdverso() y, si este no devuelve errores, añade/asigna dicho EfectoAdverso al Paciente.
+		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
+		-Tipo devuelto: void (No devuelve nada).
+	-ValidarEfectoAdverso(): Dada un EfectoAdverso valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
+		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
+		-Tipo devuelto: Una lista de objetos cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
+	-ConsultarCitasSinProcesar(): Devuelve un listado de las Citas que todavía no tengan Investigador o consulta asignados.
+		-Parámetros de entrada: Ninguno.
+		-Tipo devuelto: Una lista de objetos Cita cuyos campos Investigador o Consulta sean vacíos o nulos.
+	-ConsultarCita(): Dado el ID de una cita, devuelve la cita que le corresponde.
+		-Parámetros de entrada: Un objeto de tipo entero.
+		-Tipo devuelto: Un objeto de tipo Cita.
+
+-ServiciosInvestigadorPrincipal: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Investigadores Principales registrados en el sistema:
+
+-ServiciosSubinvestigador: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Subinvestigadores registrados en el sistema:
+
+-ServiciosResponsableFarmacia: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Farmaciaregistrados en el sistema:
+
+-ServiciosResponsableEnfermería: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Enfermería registrados en el sistema:
+
+-ServiciosDataManager: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Pacientes Data Manager en el sistema:
+
+-ServiciosEnsayosClínicos: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Ensayos Clínicos registrados en el sistema:
+

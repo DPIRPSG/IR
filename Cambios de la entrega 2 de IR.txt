@@ -2,8 +2,8 @@
 - Quitar los PD (Por determinar) por un guión “-”.
 - Unificar criterios (Enfermera y Responsable de Enfermería). ---> LISTO
 - Apartados 5 y 6 mal enfocados:
-	- Gestión de pacientes, ensayos clínicos y personal sanitario.
-	- En el 6 son objetivos generales.
+	- Gestión de pacientes, ensayos clínicos y personal sanitario. Sustituirlos que están por estos 3.HECHO
+	- En el 6 son objetivos generales. Se pone lo mismo que en el punto 5. HECHO
 	- Faltan las post-condiciones en los casos de uso. ---> LISTO
 	- UC-002 llamarlo Confirmación de cita o algo parecido. ---> LISTO
 	- Falta seleccionar la cita y que el sistema le muestre la cita. ---> LISTO
@@ -16,7 +16,10 @@
 - Especificar información sobre el Data Manager, quién es, etc. ---> LISTO
 - Definir los cargos en IRQ-002. ---> LISTO
 - Todo lo que esté en el diagrama de clases debe estar en los IRQ. ---> CREO QUE ESTÁ, PERO TENGO QUE REVISARLO
-- Implementar la solución de Amador en el diagrama de clases.
-- Matrices de rastreabilidad en REM
+- Implementar la solución de Amador en el diagrama de clases. ---> LISTO
+- Matrices de rastreabilidad en REM HECHO
 - Punto 3, hay que hacerlo directamente en REM. Se llama Nuevo tipo de objeto, valor y asociación.
 - Modificar 3.3, poner nombre al cuadrado negro (Incluido en ensayo)
+
+Esta es la página de MADEJA dónde viene lo de Guillermo sobre las matrices de rastreabilidad:
+- http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/411

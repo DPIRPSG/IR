@@ -130,30 +130,79 @@ Diagramas de estado de las clases del sistema</a>
 <tr>
 <th align="left" valign="top">4 </th>
 <th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0062">
+Modelo de casos de uso del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0063">
+Diagramas de secuencia del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0064">
+Descripción de los diagramas de secuencia del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
 <a href="#SEC-0051">
 Interfaz de usuario del sistema</a>
 </th>
 </tr>
 <tr><td />
-<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top">5.1 </td>
 <td align="left" valign="top" width="100%" colspan="2">
 <a href="#SEC-0059">
 Diagramas de navegación del sistema</a>
 </td>
 </tr>
 <tr><td />
-<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top">5.2 </td>
 <td align="left" valign="top" width="100%" colspan="2">
 <a href="#SEC-0060">
 Esquemas de la interfaz de usuario del sistema</a>
 </td>
 </tr>
 <tr><td />
-<td align="left" valign="top">4.3 </td>
+<td align="left" valign="top">5.3 </td>
 <td align="left" valign="top" width="100%" colspan="2">
 <a href="#SEC-0061">
 Descripción de la interfaz de usuario del sistema</a>
 </td>
+</tr>
+<tr>
+<th align="left" valign="top">6 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0065">
+Interfaz de servicios del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0067">
+Diagramas de la interfaz de servicios del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0068">
+Descripción de la interfaz de servicios del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">7 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0066">
+Información sobre trazabilidad</a>
+</th>
 </tr>
 </table>
 <p />
@@ -191,9 +240,9 @@ Descripción de la arquitectura del sistema</h2><a name="PRG-0060" />
 <h1 align="left">3 
 Modelo de clases del sistema</h1><a name="SEC-0056" />
 <h2 align="left">3.1 
-Diagrama de clases del sistema</h2><a name="GRF-0004" />
+Diagrama de clases del sistema</h2><a name="GRF-0051" />
 <p align="center">
-<img src="..\UML GECH.png" title="..\UML GECH.png" />
+<img src="..\GECH.png" title="..\GECH.png" />
 </p>
 <p align="center">
 <b>Figura 1</b>:
@@ -201,23 +250,2683 @@ Diagrama de clases del sistema</h2><a name="GRF-0004" />
 Diagrama de clases</p>
 <a name="SEC-0057" />
 <h2 align="left">3.2 
-Descripción de las clases del sistema</h2><a name="PRG-0050" />
-<p>Ensayo Clínico:
-<br />Esta clase se corresponde con los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes.
-<br />Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo.
+Descripción de las clases del sistema</h2><a name="TYP-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0001</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Ensayo Clínico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 11/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
 <br />
-<br />Empleado:
-<br />Esta clase se corresponde con los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. En el diagrama podemos ver que es con los empleados, el monitor y los pacientes. 
+<br />Es importante destacar que solo puede haber un Investigador Principal en cada Ensayo. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="6">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<a name="COM-0148" />
+<td align="left" valign="top">
+Investigador Principal</td>
+<td align="left" valign="top">
+<code>
+Investigador Principal</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0147" />
+<td align="left" valign="top">
+Subinvestigador</td>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Subinvestigador
+        )
+    </code>
+</td>
+<td align="left" valign="top">
+1..
+                                
+*</td>
+</tr>
+<tr>
+<a name="COM-0149" />
+<td align="left" valign="top"> Data Manager</td>
+<td align="left" valign="top">
+<code> Data Manager</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0150" />
+<td align="left" valign="top">
+Responsable de Farmacia</td>
+<td align="left" valign="top">
+<code>
+Responsable de Farmacia</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0151" />
+<td align="left" valign="top">
+Responsable de Enfermería</td>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Responsable de Enfermería
+        )
+    </code>
+</td>
+<td align="left" valign="top">
+1..
+                                
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0097" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+ID</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+Representa el número del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Integer</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0106" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Situación actual</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La situación actual en la que se encuentra el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Enumerado Situación actual</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Valor inicial</th>
+<td align="left" valign="top">
+<code>Pre-Evaluación</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0107" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Criterio de inclusión</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el criterio por el cual se tendrá en cuenta la inclusión de un paciente al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0108" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Criterio de exclusión</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el criterio por el cual se tendrá en cuenta la no inclusión de un paciente al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0109" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Inicio de periodo de reclutamiento</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La fecha en la que empezó el reclutamiento de pacientes para dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0110" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico::
+Fin de periodo de reclutamiento</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+La fecha en la que acabó el reclutamiento de pacientes para dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0111" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Ensayo Clínico:: Fármaco experimental</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> que se aplicará en el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0002</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
 <br />
-<br />Paciente:
-<br />Esta clase se corresponde con los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.
-<br />Cabe destacar que un paciente solo puede participar en un solo Ensayo.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los empleados del Hospital. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. Una particularidad de esta clase es que para ver que cargo tiene cada empleado en un Ensayo hacemos una herencia en el UML, ya que un empleado puede ser Investigador Principal en un determinado Ensayo, pero Subinvestigador en otro distinto. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0113" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Nombre</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del Empleado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0114" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Apellidos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+los apellidos del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0115" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+DNI</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el DNI del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0116" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Email</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el email del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0117" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Empleado::
+Número de teléfono</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el número de teléfono del Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0003</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
 <br />
-<br />Monitor del Ensayo:
-<br />Esta clase se corresponde con los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Pacientes de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa. 
+<br />Cabe destacar que un paciente solo puede participar en un solo Ensayo. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0118" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Nombre</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0119" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Apellidos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+los apellidos del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0120" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente:: NUHSA</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el número único de identificación para los pacientes en el sistema de salud de Andalucía. </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0121" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+NHC</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el Número de Historia Clínica.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0122" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente:: Diagnóstico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el diagóstico del Paciente en el momento de entrar al Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0123" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Fármacos asignados</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre de los fármacos que tiene asignado un Paciente, a parte del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> de dicho Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0124" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Paciente::
+Fecha de inclusión en el Ensayo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+la fecha en la que el Paciente entra en el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0004</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Monitor del Ensayo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
 <br />
-<br />Promotor:
-<br />Esta clase se corresponde con los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Monitores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0125" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Monitor del Ensayo::
+Nombre</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre del Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0126" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Monitor del Ensayo::
+Apellidos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+los apellidos del Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0127" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Monitor del Ensayo::
+Número de teléfono</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el número de teléfono del Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0128" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Monitor del Ensayo::
+Email</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el email del Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0005</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Promotor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+los Promotores de los distintos Ensayos. Queremos guardar sobre éstos la información que se ve en el UML y con que otras clases interactúa.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0129" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Promotor::
+Nombre de empresa</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el nombre de la empresa que promueve el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0130" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Promotor::
+CIF</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el CIF de la empresa que promueve el Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0006</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Cita Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+a las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de los Pacientes.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0133" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Cita Paciente::
+Fecha</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+a la fecha de la cita del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0134" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo constante</th>
+<th align="left" valign="top" width="100%">
+Cita Paciente::
+Tipo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el tipo de la cita, ya sea de revisión o para estudios complementarios.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Enumerado Tipo</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0007</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Cita Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo de objetos representa
+<em>
+a las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de los Monitores.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ATT-0135" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Cita Monitor::
+Fecha</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+a la fecha de la cita del Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Date</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0008</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Cargo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+El cargo de un Empleado en un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos (disjuntos)</th>
+<td colspan="3" align="left" valign="top">
+<li>
+<a href="&#xA;										#TYP-0009">
+									[TYP-0009] 
+									
+Investigador Principal</a>
+</li>
+<li>
+<a href="&#xA;										#TYP-0010">
+									[TYP-0010] 
+									
+Subinvestigador</a>
+</li>
+<li>
+<a href="&#xA;										#TYP-0011">
+									[TYP-0011] 
+									 Data Manager</a>
+</li>
+<li>
+<a href="&#xA;										#TYP-0012">
+									[TYP-0012] 
+									
+Responsable de Farmacia</a>
+</li>
+<li>
+<a href="&#xA;										#TYP-0013">
+									[TYP-0013] 
+									
+Responsable de Enfermería</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0009</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Investigador Principal</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+al cargo de Investigador Principal.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0008">
+							[TYP-0008] 
+							
+Cargo</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0010" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0010</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Subinvestigador</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+al cargo de Subinvestigador.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0008">
+							[TYP-0008] 
+							
+Cargo</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0011" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0011</th>
+<th align="left" valign="top" width="100%" colspan="3"> Data Manager</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+al cargo de <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a>.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0008">
+							[TYP-0008] 
+							
+Cargo</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0012" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0012</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Responsable de Farmacia</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+al cargo de Responsable de Farmacia.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0008">
+							[TYP-0008] 
+							
+Cargo</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="TYP-0013" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">TYP-0013</th>
+<th align="left" valign="top" width="100%" colspan="3">
+Responsable de Enfermería</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="3">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="3">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="3">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="3" align="left" valign="top">
+    Este tipo abstracto de objetos representa
+<em>
+al cargo de Responsable de Enfermería.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Supertipo</th>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0008">
+							[TYP-0008] 
+							
+Cargo</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subtipos</th>
+<td colspan="3" align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top">Nombre</th>
+<th align="left" valign="top">Tipo</th>
+<th align="left" valign="top">Multiplicidad</th>
+</tr>
+<tr>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+<td align="left" valign="top">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="3">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="VAL-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">VAL-0001</th>
+<th align="left" valign="top" width="100%">
+Enumerado Situación actual</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 14/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo valor representa
+<em>
+los valores que puede adquirir la Situación actual de un Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Definición</th>
+<td align="left" valign="top">
+<code>
+{Pre-Evaluación, Abierto, Cerrado}
+</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="VAL-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">VAL-0002</th>
+<th align="left" valign="top" width="100%">
+Enumerado Tipo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo valor representa
+<em>
+los dos tipos de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> que hay para un Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Definición</th>
+<td align="left" valign="top">
+<code>
+{Revisión, Estudios Complementarios}
+</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0001</th>
+<th align="left" valign="top" width="100%">
+Participa en(
+            
+Ensayo Clínico, 
+Paciente
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 16/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+que un Paciente participa en un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0131" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Participa en(
+        
+Ensayo Clínico, 
+Paciente
+        )::
+Ensayo Clínico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Ensayo Clínico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Ensayo Clínico</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0132" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Participa en(
+        
+Ensayo Clínico, 
+Paciente
+        )::
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Paciente
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0002</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Paciente, 
+Cita Paciente
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+que un paciente tiene una cita.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0136" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Paciente, 
+Cita Paciente
+        )::
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Paciente</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0137" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Paciente, 
+Cita Paciente
+        )::
+Cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a la cita del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cita Paciente
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0003</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+            
+Monitor del Ensayo, 
+Ensayo Clínico
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de que un Monitor monitoriza un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0138" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+        
+Monitor del Ensayo, 
+Ensayo Clínico
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Monitor del Ensayo</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0139" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+        
+Monitor del Ensayo, 
+Ensayo Clínico
+        )::
+Ensayo Clínico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Ensayo Clínico</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0004</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+            
+Monitor del Ensayo, 
+Promotor
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de que un Monitor trabaja para un Promotor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0140" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+        
+Monitor del Ensayo, 
+Promotor
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Monitor del Ensayo
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+1..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0141" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+        
+Monitor del Ensayo, 
+Promotor
+        )::
+Promotor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Promotor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Promotor</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0005</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Monitor del Ensayo, 
+Cita Monitor
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de la cita que tiene un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0142" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Monitor del Ensayo, 
+Cita Monitor
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Monitor del Ensayo</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0143" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Monitor del Ensayo, 
+Cita Monitor
+        )::
+Cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a la cita que tiene un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cita Monitor
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0006</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Empleado, 
+Cargo
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+el cargo que tiene un Empleado en un Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0144" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Empleado, 
+Cargo
+        )::
+Empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Empleado
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0145" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Empleado, 
+Cargo
+        )::
+Cargo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al cargo que puede tener un Empleado en un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cargo
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0058" />
 <h2 align="left">3.3 
 Diagramas de estado de las clases del sistema</h2><a name="GRF-0005" />
@@ -230,10 +2939,16 @@ Diagramas de estado de las clases del sistema</h2><a name="GRF-0005" />
 Diagrama de estado</p>
 <a name="PRG-0051" />
 <p>En este diagrama podemos ver en los distintos estados que está un paciente desde que entra en un Ensayo Clínico hasta que lo deja.</p>
-<a name="SEC-0051" />
+<a name="SEC-0062" />
 <h1 align="left">4 
-Interfaz de usuario del sistema</h1><a name="SEC-0059" />
+Modelo de casos de uso del sistema</h1><a name="SEC-0063" />
 <h2 align="left">4.1 
+Diagramas de secuencia del sistema</h2><a name="SEC-0064" />
+<h2 align="left">4.2 
+Descripción de los diagramas de secuencia del sistema</h2><a name="SEC-0051" />
+<h1 align="left">5 
+Interfaz de usuario del sistema</h1><a name="SEC-0059" />
+<h2 align="left">5.1 
 Diagramas de navegación del sistema</h2><a name="GRF-0006" />
 <p align="center">
 <img src="..\Diagrama de navegación del sistema.png" title="..\Diagrama de navegación del sistema.png" />
@@ -243,7 +2958,7 @@ Diagramas de navegación del sistema</h2><a name="GRF-0006" />
                 
 Diagrama de navegación</p>
 <a name="SEC-0060" />
-<h2 align="left">4.2 
+<h2 align="left">5.2 
 Esquemas de la interfaz de usuario del sistema</h2><a name="GRF-0007" />
 <p align="center">
 <img src="..\MockUps\1.png" title="..\MockUps\1.png" />
@@ -573,7 +3288,7 @@ Esquemas de la interfaz de usuario del sistema</h2><a name="GRF-0007" />
                 
 41</p>
 <a name="SEC-0061" />
-<h2 align="left">4.3 
+<h2 align="left">5.3 
 Descripción de la interfaz de usuario del sistema</h2><a name="PRG-0057" />
 <p>A continuación se presenta la descripción de la interfaz de usuario del sistema. Se presenta de manera ordenada desde la página de Inicio, pasando por cada una de las pantallas y acciones de cada rol que se puede identificar en el sistema y según los casos de uso descritos para el mismo. Los números mostrados entre paréntesis hacen referencia (a una página en contreto del pdf y por tanto) a 1 esquema(MockUp) en concreto de la interfaz de usuario del sistema en el orden en que aparecen. Entre corchetes se mostrará el ID del caso de uso al que hacen referencia las acciones que se muestran.
 <br />
@@ -599,5 +3314,546 @@ Descripción de la interfaz de usuario del sistema</h2><a name="PRG-0057" />
 <br />Un usuario autenticado como responsable de Farmacia tendrá una única vista (40) con un listado de fármacos pedidos por los médicos en los distintos ensayos clínicos, donde podrá aceptar los pedidos o rechazarlos por cualquier motivo que especificará mediante una nota en el campo correspondiente [UC-0005].
 <br />
 <br />Por último, como <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a> la única opción que se tendrá dentro del sistema será la de listar los monitores que tienen visita la semana que viene con los datos oportunos para que pueda organizar todo correctamente (41).</p>
+<a name="SEC-0065" />
+<h1 align="left">6 
+Interfaz de servicios del sistema</h1><a name="SEC-0067" />
+<h2 align="left">6.1 
+Diagramas de la interfaz de servicios del sistema</h2><a name="SEC-0068" />
+<h2 align="left">6.2 
+Descripción de la interfaz de servicios del sistema</h2><a name="SEC-0066" />
+<h1 align="left">7 
+Información sobre trazabilidad</h1><a name="TRM-0002" />
+<table border="1" width="100%">
+<tr>
+<th bgcolor="#c8e0e0">TRM-0002</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0001" title="Ensayo Clínico">TYP-0001</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0002" title="Empleado">TYP-0002</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0003" title="Paciente">TYP-0003</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0004" title="Monitor del Ensayo">TYP-0004</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0005" title="Promotor">TYP-0005</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0006" title="Cita Paciente">TYP-0006</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0007" title="Cita Monitor">TYP-0007</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0008" title="Cargo">TYP-0008</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0009" title="Investigador Principal">TYP-0009</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0010" title="Subinvestigador">TYP-0010</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0011" title="Data Manager">TYP-0011</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0012" title="Responsable de Farmacia">TYP-0012</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #TYP-0013" title="Responsable de Enfermería">TYP-0013</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0001" title="Información sobre Ensayos clínicos">IRQ-0001</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0002" title="Información sobre Empleados">IRQ-0002</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0003" title="Información sobre Pacientes">IRQ-0003</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0004" title="Información sobre Promotor">IRQ-0004</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0005" title="Información sobre Monitor">IRQ-0005</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0001" title="Mantener los pacientes en el sistema">CRQ-0001</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0002" title="Un Investigador Principal por Ensayo Clínico">CRQ-0002</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0003" title="No eliminar empleados">CRQ-0003</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0004" title="No eliminar promotores">CRQ-0004</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0005" title="No eliminar Ensayos">CRQ-0005</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0006" title="Un paciente en un sólo Ensayo">CRQ-0006</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+</table>
+<p align="center">
+<b>Matriz de rastreabilidad</b>:
+        
+Clases frente a Requisitos</p>
 </body>
 </html>
