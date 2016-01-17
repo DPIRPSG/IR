@@ -157,7 +157,7 @@ Hospital Virgen del Rocio</rem:name>
 Ninguno</rem:comments>
 <rem:address>Av. Manuel Siurot, s/n, 41013 Sevilla</rem:address>
 <rem:telephone>955 01 20 00</rem:telephone>
-<rem:fax><rem:tbd/></rem:fax>
+<rem:fax>-</rem:fax>
 </rem:organization>
 <rem:organization
  oid = "ORG-0001">
@@ -174,9 +174,9 @@ Grupo IR</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:address><rem:tbd/></rem:address>
-<rem:telephone><rem:tbd/></rem:telephone>
-<rem:fax><rem:tbd/></rem:fax>
+<rem:address>-</rem:address>
+<rem:telephone>-</rem:telephone>
+<rem:fax>-</rem:fax>
 </rem:organization>
 <rem:stakeholder
  oid = "STK-0001">
@@ -1397,18 +1397,10 @@ Gestión de Pacientes</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 encargarse de la gestión de los pacientes como de sus <rem:ref oid="GLO-0028">citas</rem:ref>.</rem:description>
 </rem:objective>
@@ -1429,18 +1421,10 @@ Gestión de Ensayos Clínicos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 encargarse de la gestión de los Ensayos Clínicos.</rem:description>
 </rem:objective>
@@ -1461,18 +1445,10 @@ Gestión de Personal Sanitario</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 encargarse de la gestión de los empleados que trabajen en los distintos Ensayos Clínicos.</rem:description>
 </rem:objective>
@@ -1699,18 +1675,10 @@ Petición de cita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un paciente pida una cita.</rem:triggeringEvent>
 <rem:precondition>
@@ -1718,7 +1686,10 @@ El paciente se ha identificado correctamente y su sesión está abierta.</rem:prec
 <rem:postcondition>
 El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0042">
 <rem:number>1</rem:number>
@@ -1774,18 +1745,10 @@ Confirmación de cita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un responsable de enfermería devuelva la confirmación de una cita.</rem:triggeringEvent>
 <rem:precondition>
@@ -1793,7 +1756,10 @@ El responsable de enfermería se ha identificado correctamente y su sesión está a
 <rem:postcondition>
 El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0046">
 <rem:number>1</rem:number>
@@ -1867,18 +1833,10 @@ Solicitar las analíticas de un Paciente</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un médico desee gestionar las <rem:ref oid="GLO-0026">analíticas de control</rem:ref> asignadas a él mismo.</rem:triggeringEvent>
 <rem:precondition>
@@ -1886,7 +1844,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
 </rem:frequency>
 <rem:step oid = "STP-0050">
 <rem:number>1</rem:number>
@@ -1969,18 +1930,10 @@ Petición de Fármacos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un médico pida fármacos.</rem:triggeringEvent>
 <rem:precondition>
@@ -1988,7 +1941,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 El sistema recoge ahora la nueva petición de medicamentos.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0057">
 <rem:number>1</rem:number>
@@ -2062,18 +2018,10 @@ Aceptación de pedidos de Fármacos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el responsable de farmacia reciba una petición de fármacos.</rem:triggeringEvent>
 <rem:precondition>
@@ -2081,7 +2029,10 @@ El responsable de farmacia se ha identificado correctamente y su sesión está abi
 <rem:postcondition>
 El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0063">
 <rem:number>1</rem:number>
@@ -2146,18 +2097,10 @@ Devolución de envases de tratamientos en experimentación</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 un responsable de enfermería efectúe la devolución de los envases de tratamiento en experimentación.</rem:triggeringEvent>
 <rem:precondition>
@@ -2165,7 +2108,10 @@ El responsable de enfermería se ha identificado correctamente y su sesión está a
 <rem:postcondition>
 El sistema recoge ahora el listado de los artículos a devolver.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0068">
 <rem:number>1</rem:number>
@@ -2239,18 +2185,10 @@ Notificar incidencia</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el Investigador Principal notifique alguna incidencia en el sistema.</rem:triggeringEvent>
 <rem:precondition>
@@ -2258,7 +2196,10 @@ El Investigador Principal se ha identificado correctamente y su sesión está abie
 <rem:postcondition>
 El sistema recoge ahora la incidencia creada.</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0074">
 <rem:number>1</rem:number>
@@ -2332,18 +2273,10 @@ Adición de efectos adversos en los tratamientos.</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 No procede</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún paciente.</rem:triggeringEvent>
 <rem:precondition>
@@ -2351,7 +2284,10 @@ El médico se ha identificado correctamente y su sesión está abierta.</rem:precon
 <rem:postcondition>
 El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
 <rem:step oid = "STP-0081">
 <rem:number>1</rem:number>
@@ -2497,29 +2433,23 @@ Información sobre Ensayos clínicos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Ensayos clínicos</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>5</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>10</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0041">
 <rem:description>
@@ -2587,29 +2517,23 @@ Información sobre Empleados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Empleados</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>5</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>10</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>20</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0011">
 <rem:description>
@@ -2671,29 +2595,23 @@ Información sobre Pacientes</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Pacientes</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>15</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>10</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>30</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0019">
 <rem:description>
@@ -2779,29 +2697,23 @@ Información sobre Promotor</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Promotor del ensayo</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>20</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>3</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>5</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0030">
 <rem:description>
@@ -2839,29 +2751,23 @@ Información sobre Monitor</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
 Monitor del ensayo</rem:relevantConcept>
 <rem:averageLifeTime>
-<rem:tbd/>
+<rem:value>5</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:averageLifeTime>
 <rem:maximumLifeTime>
-<rem:tbd/>
+<rem:value>10</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
 </rem:maximumLifeTime>
-<rem:averageOcurrences><rem:tbd/>
+<rem:averageOcurrences><rem:value>5</rem:value>
 </rem:averageOcurrences>
-<rem:maximumOcurrences><rem:tbd/>
+<rem:maximumOcurrences><rem:value>10</rem:value>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0032">
 <rem:description>
@@ -2935,18 +2841,10 @@ Mantener los pacientes en el sistema</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Mantener los pacientes en el sistema un mínimo de 15 años desde su fecha de inclusión para cumplir con la ley vigente sobre Ensayos Clínicos.</rem:description>
 </rem:constraintRequirement>
@@ -2967,18 +2865,10 @@ Un Investigador Principal por Ensayo Clínico</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que sólo haya un Investigador Principal en cada Ensayo Clínico.</rem:description>
 </rem:constraintRequirement>
@@ -2999,18 +2889,10 @@ No eliminar empleados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen empleados aunque cambien de hospital para permitir que puedan verificar los datos requeridos por los monitores.</rem:description>
 </rem:constraintRequirement>
@@ -3031,18 +2913,10 @@ No eliminar promotores</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen los promotores para mantener la información de los mismos.</rem:description>
 </rem:constraintRequirement>
@@ -3063,18 +2937,10 @@ No eliminar Ensayos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que no se eliminen los Ensayos Clínicos en los que no se incluyan pacientes para mantener la información de los mismos.</rem:description>
 </rem:constraintRequirement>
@@ -3095,18 +2961,10 @@ Un paciente en un sólo Ensayo</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 Que si un paciente está o ha estado en un Ensayo Clínico no pueda ser propuesto para otro para evitar duplicidad de participación en Ensayos Clínicos conforme a la normativa vigente.</rem:description>
 </rem:constraintRequirement>
@@ -3145,18 +3003,10 @@ Lista de Ensayos Clínicos</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener a principios de mes una lista con los Ensayos Clínicos abiertos y los pacientes incluidos en cada Ensayo Clínico.</rem:description>
 </rem:functionalRequirement>
@@ -3177,18 +3027,10 @@ Lista de <rem:ref oid="GLO-0028">citas</rem:ref></rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener cada semana una lista con los pacientes con cita médica para la próxima semana y los estudios complementarios a realizar al paciente.</rem:description>
 </rem:functionalRequirement>
@@ -3209,18 +3051,10 @@ Lista de pacientes con su medicación</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los pacientes  con su respectiva medicación.</rem:description>
 </rem:functionalRequirement>
@@ -3241,18 +3075,10 @@ Lista de monitores con visita</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 tener cada semana una lista con los monitores que tienen visita la semana siguiente.</rem:description>
 </rem:functionalRequirement>
@@ -3273,18 +3099,10 @@ Lista de pacientes con su estudio a realizar</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los estudios complementarios a realizar a los pacientes.</rem:description>
 </rem:functionalRequirement>
@@ -3305,18 +3123,10 @@ Lista de Ensayos con número de pacientes</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 poder generar en cualquier momento una lista con los Ensayos Clínicos abiertos y el número de pacientes incluido en cada Ensayo.</rem:description>
 </rem:functionalRequirement>
@@ -3373,18 +3183,10 @@ Disponibilidad 24/7</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que el programa esté operativo<br/>permanentemente y que no exista<br/>restricción horaria de acceso<br/>para facilitar el registro de los datos<br/>independientemente del horario</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3423,18 +3225,10 @@ Multi-Usuario</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que varios usuarios puedan<br/>estar registrando datos simultáneamente<br/>en un mismo paciente o Ensayo</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3543,18 +3337,10 @@ Clave acceso</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que se pueda acceder de<br/>forma remota al sistema con una clave<br/>especial de acceso para consulta de datos puntuales<br/>desde fuera del hospital</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3593,18 +3379,10 @@ Acceso</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que sólo puedan acceder al sistema los empleados autorizados de la<br/>organización para cumplir con la Ley de Protección de Datos</rem:description>
 </rem:nonFunctionalRequirement>
@@ -3625,18 +3403,10 @@ Datos Encriptados</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que todos los datos personales de los pacientes<br/>se almacenen de forma encriptada para cumplir con la Ley de Protección de Datos </rem:description>
 </rem:nonFunctionalRequirement>
@@ -3657,18 +3427,10 @@ Acceso Restringido</rem:name>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
 <rem:description>
 asegurarse de que cada empleado perteneciente<br/>al Ensayo sólo vea la información que necesita<br/>para mantener en el anonimato a<br/>los pacientes y evitar filtraciones de<br/>información referentes al Ensayo Clínico</rem:description>
 </rem:nonFunctionalRequirement>
