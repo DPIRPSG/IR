@@ -297,15 +297,78 @@ los Ensayos Clínicos del Hospital. Queremos guardar sobre éstos la información q
 <td colspan="3" align="left" valign="top">Ninguno</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Componentes</th>
+<th align="left" valign="top" rowspan="6">Componentes</th>
 <th align="left" valign="top">Nombre</th>
 <th align="left" valign="top">Tipo</th>
 <th align="left" valign="top">Multiplicidad</th>
 </tr>
 <tr>
-<td align="left" valign="top">-</td>
-<td align="left" valign="top">-</td>
-<td align="left" valign="top">-</td>
+<a name="COM-0148" />
+<td align="left" valign="top">
+Investigador Principal</td>
+<td align="left" valign="top">
+<code>
+Investigador Principal</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0147" />
+<td align="left" valign="top">
+Subinvestigador</td>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Subinvestigador
+        )
+    </code>
+</td>
+<td align="left" valign="top">
+1..
+                                
+*</td>
+</tr>
+<tr>
+<a name="COM-0149" />
+<td align="left" valign="top"> Data Manager</td>
+<td align="left" valign="top">
+<code> Data Manager</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0150" />
+<td align="left" valign="top">
+Responsable de Farmacia</td>
+<td align="left" valign="top">
+<code>
+Responsable de Farmacia</code>
+</td>
+<td align="left" valign="top">
+                                1
+                            </td>
+</tr>
+<tr>
+<a name="COM-0151" />
+<td align="left" valign="top">
+Responsable de Enfermería</td>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Responsable de Enfermería
+        )
+    </code>
+</td>
+<td align="left" valign="top">
+1..
+                                
+*</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -2183,12 +2246,679 @@ al Paciente.</em>
 <th align="left" valign="top">Tipo</th>
 <td align="left" valign="top">
 <code>
+            Set(
+        
+Paciente
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0002</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Paciente, 
+Cita Paciente
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+que un paciente tiene una cita.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0136" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Paciente, 
+Cita Paciente
+        )::
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
 Paciente</code>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Multiplicidad</th>
 <td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0137" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Paciente, 
+Cita Paciente
+        )::
+Cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a la cita del Paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cita Paciente
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0003</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+            
+Monitor del Ensayo, 
+Ensayo Clínico
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de que un Monitor monitoriza un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0138" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+        
+Monitor del Ensayo, 
+Ensayo Clínico
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Monitor del Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Monitor del Ensayo</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0139" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Monitoriza A(
+        
+Monitor del Ensayo, 
+Ensayo Clínico
+        )::
+Ensayo Clínico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Ensayo Clínico</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0004</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+            
+Monitor del Ensayo, 
+Promotor
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de que un Monitor trabaja para un Promotor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0140" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+        
+Monitor del Ensayo, 
+Promotor
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Monitor del Ensayo
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+1..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0141" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Trabaja Para(
+        
+Monitor del Ensayo, 
+Promotor
+        )::
+Promotor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Promotor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Promotor</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0005</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Monitor del Ensayo, 
+Cita Monitor
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+de la cita que tiene un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0142" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Monitor del Ensayo, 
+Cita Monitor
+        )::
+Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+Monitor del Ensayo</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0143" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Monitor del Ensayo, 
+Cita Monitor
+        )::
+Cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a la cita que tiene un Monitor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cita Monitor
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ASO-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0006</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+            
+Empleado, 
+Cargo
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 17/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+el cargo que tiene un Empleado en un Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0144" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Empleado, 
+Cargo
+        )::
+Empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+a un Empleado.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Empleado
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+1</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ROL-0145" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Rol variable</th>
+<th align="left" valign="top" width="100%">
+Tiene(
+        
+Empleado, 
+Cargo
+        )::
+Cargo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este rol representa
+<em>
+al cargo que puede tener un Empleado en un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+            Set(
+        
+Cargo
+        )
+    </code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Multiplicidad</th>
+<td align="left" valign="top">
+0..
+						
+*</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
