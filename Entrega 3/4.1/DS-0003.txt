@@ -1,0 +1,66 @@
+
+
+# Realizado con https://www.websequencediagrams.com/
+
+
+title Solicitar las analíticas de un Paciente. (UC-0003)
+# UC-0003
+# mockup 21.png
+
+# Se basan en los casos de uso
+# http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/411
+
+
+
+#1. El actor Médico (ACT-0004) pide la lista de actores Paciente (ACT-005) asociados a ellos. 
+
+Médico->Interfaz \nde usuario: Solicita \npacientes asociados
+# note right of Bob: Bob thinks about it
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita pacientes \nasociados a ese médico
+
+
+#2. El sistema devuelve la lista de actores Paciente (ACT-005) requerida. 
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario->Médico: Muestra \npacientes asociados
+
+
+#3. El actor Médico (ACT-0004) elige el Paciente (ACT-005) en el que esté interesado. 
+
+Médico->Interfaz \nde usuario: Selecciona el\npaciente
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita información sobre \npaciente seleccionado
+
+
+#4. El sistema devuelve el perfil del actor Paciente (ACT-005) seleccionado. 
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario->Médico: Muestra información \npaciente seleccionado
+
+
+#5. El actor Médico (ACT-0004) selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste. 
+
+Médico->Interfaz \nde usuario: Solicita pruebas \n médicas del paciente
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita pruebas \n médicas del paciente
+
+
+#6. El sistema devuelve la lista de las analíticas del actor Paciente (ACT-005). 
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario->Médico: Muestra anaĺíticas \n del paciente
+
+
+#7. El actor Médico (ACT-0004) elige la analítica requerida, que podrá ser descargado desde un enlace. 
+
+Médico->Interfaz \nde usuario: Solicita descarga \n analítica seleccionada
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita descarga \n analítica seleccionada
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario-->Médico: 
