@@ -11,10 +11,11 @@ UC-0002:
 - Paso 1 y 3: Cambiar “Responsables de enfermería” por “Responsable de enfermería”.
 
 UC-0003:
+- Paso 5: Cambiar “El actor Médico (ACT-001) selecciona las pruebas médicas del actor Paciente (ACT-002) dentro del perfil de este.” por “El actor Médico (ACT-001) selecciona las analíticas del actor Paciente (ACT-002) dentro del perfil de este.”
 - Paso 7: Cambiar “El actor Médico (ACT-0004) elige la analítica requerida, que podrá ser descargado desde un enlace.” por “El actor Médico (ACT-0004) podrá descargar desde un enlace la analítica que desee.”.
 
 UC-0004:
-- Quizás haya que cambiar el Mockup 26 poniendo un desplegable con los pacientes que haya en ese ensayo y así elegirlo en el momento. Si se hace esto hay que cambiar el 4, ya que el paciente no vendría relleno.
+- Paso 4: Cambiar “El sistema devuelve un formulario con el identificador del Ensayo y el nombre del paciente ya rellenos.” por “El sistema devuelve un formulario con el identificador del Ensayo ya relleno.”
 
 UC-0005:
 - Paso 4: Cambiar “El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.” por “El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. Tras su elección, envía su decisión al sistema. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.”.
