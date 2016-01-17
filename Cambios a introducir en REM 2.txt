@@ -1,0 +1,24 @@
+Cambios a introducir en REM 2
+
+6.2.2 Especificación de actores del sistema
+
+ACT-0006:
+- Cambiar “Responsables de enfermería” por “Responsable de enfermería”.
+
+6.2.3 Especificación de casos de uso del sistema
+
+UC-0002:
+- Paso 1 y 3: Cambiar “Responsables de enfermería” por “Responsable de enfermería”.
+
+UC-0003:
+- Paso 7: Cambiar “El actor Médico (ACT-0004) elige la analítica requerida, que podrá ser descargado desde un enlace.” por “El actor Médico (ACT-0004) podrá descargar desde un enlace la analítica que desee.”.
+
+UC-0004:
+- Quizás haya que cambiar el Mockup 26 poniendo un desplegable con los pacientes que haya en ese ensayo y así elegirlo en el momento. Si se hace esto hay que cambiar el 4, ya que el paciente no vendría relleno.
+
+UC-0005:
+- Paso 4: Cambiar “El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.” por “El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. Tras su elección, envía su decisión al sistema. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.”.
+-Paso 6: Añadir “El sistema notifica al actor Responsable de Farmacia (ACT-0007) de que su decisión ha sido guardada en el sistema”.
+
+UC-0006
+- Paso 3: Cambiar “El actor Responsables de Enfermería (ACT-0006) selecciona el Ensayo del que se quieren devolver envases.” por “El actor Responsable de Enfermería (ACT-0006) selecciona el conjunto de ensayo y médico del que se quieren devolver envases”.
