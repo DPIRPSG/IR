@@ -1,0 +1,64 @@
+
+
+# Realizado con https://www.websequencediagrams.com/
+
+
+title Petición de Fármacos. (UC-0004)
+# UC-0004
+# Mockup 26.png
+
+
+# Se basan en los casos de uso
+# http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/411
+
+
+
+#1. El actor Médico (ACT-0004) pide al sistema la lista de los Ensayos Clínicos asociados a él.
+
+Médico->Interfaz \nde usuario: Solicita Ensayos \n Clínicos asociados
+# note right of Bob: Bob thinks about it
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita Ensayos Clínicos \n asociados a ese médico
+
+
+#2. El sistema devuelve la vista con la lista de los Ensayos Clínicos. 
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario->Médico: Muestra Ensayos \n Clínicos asociados
+
+
+#3. El actor Médico (ACT-0004) selecciona un Ensayo Clínico. 
+
+Médico->Interfaz \nde usuario: Selecciona un \n Ensayo Clínico
+
+
+#4. El sistema devuelve un formulario con el identificador del Ensayo y el nombre del paciente ya rellenos. 
+
+Interfaz \nde usuario->Médico: Muestra formulario \n petición de farmacos
+
+
+#5. El actor Médico (ACT-0004) rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo fármaco y las unidades de este último) y lo envía. 
+
+loop
+    Médico->+Interfaz \nde usuario: Envío formulario\n petición farmacos
+    Interfaz \nde usuario->+Interfaz \nde usuario: Validar\nformulario
+    alt Error de validación en interfaz de usuario
+        Interfaz \nde usuario-->-Médico: Muestra errores \n en el formulario
+    end
+    
+    Interfaz \nde usuario->+Interfaz\nde servicios: Añadir petición \n de farmaco
+
+    Interfaz\nde servicios->+Interfaz\nde servicios: Validar petición \n de fármaco
+    alt Error de validación en interfaz de servicios
+        Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
+        Interfaz \nde usuario-->Médico: Muestra errores \n en el formulario
+    end
+end
+
+
+#6. El sistema envía un mensaje de confirmación del envío del formulario.  
+
+Interfaz\nde servicios-->-Interfaz \nde usuario: Correcto
+
+Interfaz \nde usuario-->-Médico: Confirmación añadido \n petición de fármaco
