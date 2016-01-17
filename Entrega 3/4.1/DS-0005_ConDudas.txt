@@ -15,7 +15,7 @@ title  Aceptación de pedidos de Fármacos. (UC-0005)
 
 #1. El actor Responsable de farmacia (ACT-0007) pide al sistema la lista de las nuevas peticiones de fármacos. 
 
-Médico->Interfaz \nde usuario: Solicita nuevas peticiones \n de farmacos asignados
+Responsable de \n farmacia->Interfaz \nde usuario: Solicita nuevas peticiones \n de farmacos asignados
 # note right of Bob: Bob thinks about it
 
 Interfaz \nde usuario->Interfaz\nde servicios: Solicita nuevas peticiones \n de farmacos asignados
@@ -25,16 +25,16 @@ Interfaz \nde usuario->Interfaz\nde servicios: Solicita nuevas peticiones \n de 
 
 Interfaz\nde servicios-->Interfaz \nde usuario:
 
-Interfaz \nde usuario->Médico: Muestra lista peticiones \n de farmacos
+Interfaz \nde usuario->Responsable de \n farmacia: Muestra lista peticiones \n de farmacos
 
 
 #3. El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta. 
 
 loop
-    Médico->+Interfaz \nde usuario: Envío resoluciones \n petición de fármacos
+    Responsable de \n farmacia->+Interfaz \nde usuario: Envío resoluciones \n petición de fármacos
     Interfaz \nde usuario->+Interfaz \nde usuario: Validar \n resoluciones
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Médico: Muestra errores \n en la lista
+        Interfaz \nde usuario-->-Responsable de \n farmacia: Muestra errores \n en la lista
     end
     
     loop
@@ -43,10 +43,10 @@ loop
         Interfaz\nde servicios->+Interfaz\nde servicios: Validar resolución \n petición de farmao
         alt Error de validación en interfaz de servicios
             Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-            Interfaz \nde usuario-->Médico: Muestra errores \n en la lista
+            Interfaz \nde usuario-->Responsable de \n farmacia: Muestra errores \n en la lista
         end
         
-        Interfaz\nde servicios->Médico real: Envío de notificación
+        Interfaz\nde servicios->Médico: Envío de notificación
         
         Interfaz\nde servicios-->-Interfaz \nde usuario: Resolución correcta
 
@@ -56,4 +56,4 @@ end
 
 #10. El sistema envía un mensaje de confirmación de envío del informe. 
 
-Interfaz \nde usuario-->-Médico: Confirmación resoluciones \n petición de fármacos
+Interfaz \nde usuario-->-Responsable de \n farmacia: Confirmación resoluciones \n petición de fármacos

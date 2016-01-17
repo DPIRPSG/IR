@@ -52,7 +52,7 @@ Interfaz \nde usuario->Interfaz\nde servicios: Solicita pruebas \n médicas del 
 
 Interfaz\nde servicios-->Interfaz \nde usuario:
 
-Interfaz \nde usuario->Médico: Muestra anaĺíticas \n del paciente
+Interfaz \nde usuario->Médico: Muestra analíticas \n del paciente
 
 
 #7. El actor Médico (ACT-0004) elige la analítica requerida, que podrá ser descargado desde un enlace. 
