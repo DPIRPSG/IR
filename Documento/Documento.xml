@@ -1567,7 +1567,7 @@ No procede</rem:comments>
 <rem:actor
  oid = "ACT-0006">
 <rem:name>
-Responsables de Enfermería</rem:name>
+Responsable de Enfermería</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1586,7 +1586,7 @@ No procede</rem:comments>
 <rem:actor
  oid = "ACT-0007">
 <rem:name>
-Responsable de farmacia</rem:name>
+Responsable de Farmacia</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1889,7 +1889,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
+selecciona las analíticas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1907,7 +1907,7 @@ Ninguno</rem:comments>
 <rem:number>7</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-elige la analítica requerida, que podrá ser descargado desde un enlace.</rem:description>
+podrá descargar desde un enlace la analítica que desee.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1977,7 +1977,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-devuelve un formulario con el identificador del Ensayo y el nombre del paciente ya rellenos.</rem:description>
+devuelve un formulario con el identificador del Ensayo Clínico ya relleno.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2065,7 +2065,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:actorAction actor = "ACT-0007">
 <rem:description>
-decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</rem:description>
+decide si cancela o no la petición. Tras su elección, envía su decisión al sistema. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2075,6 +2075,15 @@ Ninguno</rem:comments>
 <rem:systemAction>
 <rem:description>
 notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0158">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+notifica al actor Responsable de Farmacia (ACT-0007) de que su decisión ha sido guardada en el sistema.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2135,7 +2144,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0006">
 <rem:description>
-selecciona el Ensayo del que se quieren devolver envases.</rem:description>
+selecciona el conjunto de Ensayo y médico del que se quieren devolver envases.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2675,7 +2684,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0029">
 <rem:description>
-Fechas de estudios complementarios<br/>(Radiografías, <rem:ref oid="GLO-0026">analíticas de control</rem:ref> ...)</rem:description>
+Fechas de Analíticas</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0155">
+<rem:description>
+Efectos Adversos (Descripción y fecha)</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -4759,6 +4774,45 @@ al cargo de Responsable de Enfermería.</rem:description>
 <rem:isAbstract/>
 <rem:disjointSubtypes/>
 </rem:objectType>
+<rem:objectType
+ oid = "TYP-0014">
+<rem:name>
+Efecto Adverso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+a los distintos afectos adversos que pueda tener un Paciente.</rem:description>
+<rem:attribute oid = "ATT-0152" baseType = "PVT-0004">
+<rem:name>
+Descripción</rem:name>
+<rem:description>
+una descripción del efecto adverso.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0153" baseType = "PVT-0005">
+<rem:name>
+Fecha</rem:name>
+<rem:description>
+la fecha en la que se registró el efecto adverso.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
 <rem:userDefinedValueType
  oid = "VAL-0001">
 <rem:name>
@@ -4802,7 +4856,7 @@ Ninguno</rem:comments>
 <rem:description>
 los dos tipos de <rem:ref oid="GLO-0028">citas</rem:ref> que hay para un Paciente.</rem:description>
 <rem:definition>
-{Revisión, Estudios Complementarios}
+{Revisión, Analítica}
 </rem:definition>
 </rem:userDefinedValueType>
 <rem:associationType
@@ -5063,6 +5117,51 @@ Ninguno</rem:comments>
 Cargo</rem:name>
 <rem:description>
 al cargo que puede tener un Empleado en un Ensayo Clínico.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0007">
+<rem:name>
+Tiene</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+que un PAciente tiene un Efecto Adverso.</rem:description>
+<rem:role oid = "ROL-0156" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+al Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0157" baseType = "TYP-0014">
+<rem:name>
+Efecto Adverso</rem:name>
+<rem:description>
+al Efecto Adverso.</rem:description>
 <rem:isSet/>
 <rem:multiplicity>
 <rem:lowerBound>
@@ -6207,6 +6306,7 @@ Ninguno</rem:comments>
 <rem:th oid ="TYP-0011"/>
 <rem:th oid ="TYP-0012"/>
 <rem:th oid ="TYP-0013"/>
+<rem:th oid ="TYP-0014"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0001"/>
@@ -6214,6 +6314,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6239,6 +6340,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0003"/>
@@ -6255,6 +6357,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0004"/>
@@ -6263,6 +6366,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6287,12 +6391,14 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0001"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6319,6 +6425,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0003"/>
@@ -6335,6 +6442,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0004"/>
@@ -6343,6 +6451,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6367,12 +6476,14 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0006"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
