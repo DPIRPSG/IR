@@ -1511,25 +1511,27 @@ Diagrama de casos de uso del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>6.2.1 </rem:number>
-<rem:paragraph
- oid = "PRG-0045">
+<rem:graphicFile
+ oid = "GRF-0052">
 <rem:name>
-Diagrama</rem:name>
+Diagrama de casos de uso</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2015</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0003 "/>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>ACT-005 -&gt; UC-0001<br/>ACT-006 -&gt; UC-0002<br/>ACT-004 -&gt; UC-0003<br/>ACT-005 -&gt; UC-0003<br/>ACT-004 -&gt; UC-0004<br/>ACT-004 -&gt; UC-0005<br/>ACT-007 -&gt; UC-0005<br/>ACT-006 -&gt; UC-0006<br/>ACT-008 -&gt; UC-0007<br/>ACT-004 -&gt; UC-0008<br/>ACT-005 -&gt; UC-0008</rem:text>
-</rem:paragraph>
+<rem:fileName>
+<![CDATA[..\Diagrama de caso de uso del sistema.png]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0036">
@@ -3977,6 +3979,63 @@ Acta reunión 2</rem:name>
 Ninguno</rem:comments>
 <rem:text>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 27/10/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    1.- Refutación de las ideas obtenidas en la reunión anterior.<br/>    2.- Resolución de los puntos pendientes de la reunión anterior.<br/>    3.- Exposición de los procesos de un ensayo clínico.<br/>    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Una visión más profunda de como funciona la iteracción con el sistema actual.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. <br/>    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <rem:ref oid="GLO-0028">citas</rem:ref> de pacientes.<br/>    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.<br/>    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.<br/><br/>+-+Acuerdos y tareas: <br/>    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</rem:text>
 </rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0061">
+<rem:name>
+Acta reunión 3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 3 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 10/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/><br/>    1.- Comentarios primer entregable.<br/>    2.- Petición de requisitos.<br/><br/><br/>+-+Objetivos principales (de la reunión):<br/>    Enumeración de los requisitos.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se comentó la corrección del primer entregable y, puesto que nos comentaron que íbamos por buen camino, pasamos al siguiente punto. <br/>    A continuación se paso a la explicación de que es un requisito, para que lo necesitamos y algunos ejemplos. Tras esto, empezamos a hablar de todos los posibles requisitos.<br/>    <br/>+-+Acuerdos y tareas: <br/>    Por parte de los desarrolladores: Realización formalizada de los requisitos del sistema y algunos diseños básicos de mockups.<br/>    Por parte del cliente: Petición de algunos requisitos a sus compañeros.<br/>    <br/>+-+Puntos pendientes:<br/>    Requisitos del sistema.<br/>    <br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto para la próxima semana.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0062">
+<rem:name>
+Acta reunión 4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 4 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 19/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/><br/>    +Peticiones mockups<br/>    Resolver algunas dudas de lo anterior<br/>    +Guía y Enumeración de requisitos (II)<br/>    Requisitos de integración....<br/>    Hablar de los puntos futuros <br/>    <br/>    <br/>    1.- Finalización requisitos.<br/>    2.- Comentarios y pautas a seguir en los mockups.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Finalizar los requisitos y tener una idea clara de como continuar los mockups.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se completaron todas las ideas necesarias para realizar los requisitos del sistema. <br/>    Por último se mostraron algunos mockups de lo que sería la interfaz gráfica finalizada y se comentaron algunos aspectos a cambiar y mejorar.<br/><br/>+-+Acuerdos y tareas: <br/>    Revisión total de los mockups para la próxima reunión.<br/>    <br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>    <br/>+-+Próximas reuniones:<br/>    La próxima reunión se concretará una vez finalizados los mockups.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0063">
+<rem:name>
+Acta reunión 5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>== Acta reunión 5 ==<br/><br/>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío<br/>Fecha: 26/11/2015<br/>Asistentes: <br/>    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.<br/>    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.<br/>    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.<br/>    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.<br/>    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.<br/>    <br/>+-+Orden del día:<br/>    <br/>    1.- Resolución de dudas pendientes respecto a los requisitos.<br/>    2.- Revisión de los mockups.<br/><br/>+-+Objetivos principales (de la reunión):<br/>    Revisión de los mockups.<br/><br/>+-+Desarrollo de la reunión:<br/>    Primeramente se resolvieron algunas dudas para finalizar los requisitos. <br/>    Por último se comentaron los mockups los cuales le parecieron correctos debido a las pautas de la última reunión.<br/><br/>+-+Acuerdos y tareas: <br/>    Ninguno.<br/>+-+Puntos pendientes:<br/>    No quedo ningún punto pendiente.<br/>+-+Próximas reuniones:<br/>    La próxima reunión se concreto una vez se hubiera realizado la revisión del segundo entregable.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0024">
@@ -6305,13 +6364,13 @@ Ninguno
 Ninguno
 </rem:comments>
 </rem:changeRequestsSpecification>
-<rem:trace source = "IRQ-0001"  target = "TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0001"  target = "TYP-0004" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source = "IRQ-0003"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0003"  target = "OBJ-0002" >
@@ -6321,6 +6380,21 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0005"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0002"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "CRQ-0005"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "CRQ-0006"  target = "OBJ-0001" >
@@ -6344,19 +6418,16 @@ Ninguno
 <rem:trace source = "CRQ-0005"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "CRQ-0001"  target = "OBJ-0001" >
+<rem:trace source = "CRQ-0006"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0001"  target = "TYP-0001" >
+<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
+<rem:trace source = "FRQ-0005"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0001"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
+<rem:trace source = "FRQ-0006"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "CRQ-0003"  target = "OBJ-0003" >
@@ -6368,19 +6439,13 @@ Ninguno
 <rem:trace source = "FRQ-0004"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "CRQ-0005"  target = "OBJ-0001" >
+<rem:trace source = "IRQ-0001"  target = "TYP-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "CRQ-0006"  target = "OBJ-0002" >
+<rem:trace source = "IRQ-0001"  target = "TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "FRQ-0001"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "FRQ-0005"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "FRQ-0006"  target = "OBJ-0002" >
+<rem:trace source = "IRQ-0001"  target = "TYP-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0002"  target = "TYP-0001" >
@@ -6462,12 +6527,6 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0005"  target = "TYP-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0002"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "CRQ-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
