@@ -15,48 +15,48 @@ title  Devolución de envases de tratamientos en experimentación. (UC-0006)
 
 #1. El actor Responsables de Enfermería (ACT-0006) pide al sistema una lista de los Ensayos a los que está asignado. 
 
-Responsable de \n Enfermería->Interfaz \nde usuario: Solicita Ensayos \n Clínicos asignados
+Responsable de \n Enfermería->Interfaz \n de Usuario: Solicita Ensayos \n Clínicos asignados
 # note right of Bob: Bob thinks about it
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita  Ensayos \n Clínicos asignados
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita  Ensayos \n Clínicos asignados
 
 
 #2. El sistema le devuelve dicha lista. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Responsable de \n Enfermería: Muestra Ensayos Clínicos \n y médicos asignados
+Interfaz \n de Usuario->Responsable de \n Enfermería: Muestra Ensayos Clínicos \n y médicos asignados
 
 
 #3. El actor Responsables de Enfermería (ACT-0006) selecciona el Ensayo del que se quieren devolver envases. 
 
-Responsable de \n Enfermería->Interfaz \nde usuario: Selecciona el médico \n y el Ensayo Clínico
+Responsable de \n Enfermería->Interfaz \n de Usuario: Selecciona el médico \n y el Ensayo Clínico
 
 
 #4. El sistema le devuelve el formulario de devolución de productos.
 
-Interfaz \nde usuario->Responsable de \n Enfermería: Muestra formulario \n devolución de envases
+Interfaz \n de Usuario->Responsable de \n Enfermería: Muestra formulario \n devolución de envases
 
 
 #5. El actor Responsables de Enfermería (ACT-0006) rellena una lista con los artículos y las cantidades a devolver y envía el formulario.  
 
 loop
-    Responsable de \n Enfermería->+Interfaz \nde usuario: Envío formulario \n devolución de envases
-    Interfaz \nde usuario->+Interfaz \nde usuario: Validar \n formulario
+    Responsable de \n Enfermería->+Interfaz \n de Usuario: Envío formulario \n devolución de envases
+    Interfaz \n de Usuario->+Interfaz \n de Usuario: Validar \n formulario
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Responsable de \n Enfermería: Muestra errores \n en el formulario
+        Interfaz \n de Usuario-->-Responsable de \n Enfermería: Muestra errores \n en el formulario
     end
     
     loop
-        Interfaz \nde usuario->+Interfaz\nde servicios: Añadir devolución \n de envase
+        Interfaz \n de Usuario->+Interfaz \n de Servicios: Añadir devolución \n de envase
 
-        Interfaz\nde servicios->+Interfaz\nde servicios: Validar devolucion \n de envase
+        Interfaz \n de Servicios->+Interfaz \n de Servicios: Validar devolucion \n de envase
         alt Error de validación en interfaz de servicios
-            Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-            Interfaz \nde usuario-->Responsable de \n Enfermería: Muestra errores \n en la formulario
+            Interfaz \n de Servicios-->-Interfaz \n de Usuario: Errores
+            Interfaz \n de Usuario-->Responsable de \n Enfermería: Muestra errores \n en la formulario
         end
             
-        Interfaz\nde servicios-->-Interfaz \nde usuario: Devolución correcta
+        Interfaz \n de Servicios-->-Interfaz \n de Usuario: Devolución correcta
 
     end
 end
@@ -64,4 +64,4 @@ end
 
 #6. El sistema devuelve un mensaje de confirmación de envío del formulario. 
 
-Interfaz \nde usuario-->-Responsable de \n Enfermería: Confirmación añadido \n devolución de envases
+Interfaz \n de Usuario-->-Responsable de \n Enfermería: Confirmación añadido \n devolución de envases

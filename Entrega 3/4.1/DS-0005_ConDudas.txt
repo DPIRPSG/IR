@@ -15,40 +15,40 @@ title  Aceptación de pedidos de Fármacos. (UC-0005)
 
 #1. El actor Responsable de farmacia (ACT-0007) pide al sistema la lista de las nuevas peticiones de fármacos. 
 
-Responsable de \n farmacia->Interfaz \nde usuario: Solicita nuevas peticiones \n de farmacos asignados
+Responsable de \n Farmacia->Interfaz \n de Usuario: Solicita nuevas peticiones \n de farmacos asignados
 # note right of Bob: Bob thinks about it
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita nuevas peticiones \n de farmacos asignados
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita nuevas peticiones \n de farmacos asignados
 
 
 #2. El sistema devuelve la vista con la lista de las peticiones. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Responsable de \n farmacia: Muestra lista peticiones \n de farmacos
+Interfaz \n de Usuario->Responsable de \n Farmacia: Muestra lista peticiones \n de farmacos
 
 
 #3. El actor Responsable de farmacia (ACT-0007) decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta. 
 
 loop
-    Responsable de \n farmacia->+Interfaz \nde usuario: Envío resoluciones \n petición de fármacos
-    Interfaz \nde usuario->+Interfaz \nde usuario: Validar \n resoluciones
+    Responsable de \n Farmacia->+Interfaz \n de Usuario: Envío resoluciones \n petición de fármacos
+    Interfaz \n de Usuario->+Interfaz \n de Usuario: Validar \n resoluciones
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Responsable de \n farmacia: Muestra errores \n en la lista
+        Interfaz \n de Usuario-->-Responsable de \n Farmacia: Muestra errores \n en la lista
     end
     
     loop
-        Interfaz \nde usuario->+Interfaz\nde servicios: Añadir resolución \n petición de fármaco
+        Interfaz \n de Usuario->+Interfaz \n de Servicios: Añadir resolución \n petición de fármaco
 
-        Interfaz\nde servicios->+Interfaz\nde servicios: Validar resolución \n petición de farmao
+        Interfaz \n de Servicios->+Interfaz \n de Servicios: Validar resolución \n petición de farmao
         alt Error de validación en interfaz de servicios
-            Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-            Interfaz \nde usuario-->Responsable de \n farmacia: Muestra errores \n en la lista
+            Interfaz \n de Servicios-->-Interfaz \n de Usuario: Errores
+            Interfaz \n de Usuario-->Responsable de \n Farmacia: Muestra errores \n en la lista
         end
         
-        Interfaz\nde servicios->Médico: Envío de notificación
+        Interfaz \n de Servicios->Médico: Envío de notificación
         
-        Interfaz\nde servicios-->-Interfaz \nde usuario: Resolución correcta
+        Interfaz \n de Servicios-->-Interfaz \n de Usuario: Resolución correcta
 
     end
 end
@@ -56,4 +56,4 @@ end
 
 #10. El sistema envía un mensaje de confirmación de envío del informe. 
 
-Interfaz \nde usuario-->-Responsable de \n farmacia: Confirmación resoluciones \n petición de fármacos
+Interfaz \n de Usuario-->-Responsable de \n Farmacia: Confirmación resoluciones \n petición de fármacos
