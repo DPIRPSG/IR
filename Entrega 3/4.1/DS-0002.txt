@@ -14,54 +14,54 @@ title Confirmación de cita. (UC-0002)
 
 #1. El actor Responsables de Enfermería (ACT-0006) pide la lista de nuevas citas. 
 
-Responsables de \n Enfermería->Interfaz \nde usuario: Solicita las \nnuevas citas
+Responsable de \n Enfermería->Interfaz \n de Usuario: Solicita las \nnuevas citas
 # note right of Bob: Bob thinks about it
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita nuevas \n citas asignadas a ese\n responsable de enfermería
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita nuevas \n citas asignadas a ese\n responsable de enfermería
 
 
 #2. El sistema muestra la lista de citas por procesar. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Responsables de \n Enfermería: Muestra las \nnuevas citas
+Interfaz \n de Usuario->Responsable de \n Enfermería: Muestra las \nnuevas citas
 
 
 #3. El actor Responsables de Enfermería (ACT-0006) elige la cita en el que esté interesado. 
 
-Responsables de \n Enfermería->Interfaz \nde usuario: Elige la cita
+Responsable de \n Enfermería->Interfaz \n de Usuario: Elige la cita
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita información sobre \n la cita seleccionada
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita información sobre \n la cita seleccionada
 
 
 #4. El sistema le devuelve la cita requerida. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Responsables de \n Enfermería: Muestra la cita \nseleccionada
+Interfaz \n de Usuario->Responsable de \n Enfermería: Muestra la cita \nseleccionada
 
 
 #5. El actor Responsables de Enfermería (ACT-0006) le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.  
 
 loop
-    Responsables de \n Enfermería->+Interfaz \nde usuario: Envío datos\n cita
-    Interfaz \nde usuario->+Interfaz \nde usuario: Validar\n cita
+    Responsable de \n Enfermería->+Interfaz \n de Usuario: Envío datos\n cita
+    Interfaz \n de Usuario->+Interfaz \n de Usuario: Validar\n cita
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Responsables de \n Enfermería: Muestra errores
+        Interfaz \n de Usuario-->-Responsable de \n Enfermería: Muestra errores
     end
     
-    Interfaz \nde usuario->+Interfaz\nde servicios: Añadir datos \n de la cita
+    Interfaz \n de Usuario->+Interfaz \n de Servicios: Añadir datos \n de la cita
 
-    Interfaz\nde servicios->+Interfaz\nde servicios: Validar\n cita
+    Interfaz \n de Servicios->+Interfaz \n de Servicios: Validar\n cita
     alt Error de validación en interfaz de servicios
-        Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-        Interfaz \nde usuario-->Responsables de \n Enfermería: Muestra errores
+        Interfaz \n de Servicios-->-Interfaz \n de Usuario: Errores
+        Interfaz \n de Usuario-->Responsable de \n Enfermería: Muestra errores
     end
 end
 
 
 #6. El sistema muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente. 
 
-Interfaz\nde servicios-->-Interfaz \nde usuario: Correcto
+Interfaz \n de Servicios-->-Interfaz \n de Usuario: Correcto
 
-Interfaz \nde usuario-->-Responsables de \n Enfermería: Confirmación añadido\n datos cita
+Interfaz \n de Usuario-->-Responsable de \n Enfermería: Confirmación añadido\n datos cita
