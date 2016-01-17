@@ -10,39 +10,73 @@ La interfaz de servicios del sistema consta de un único Sistema de Gestión de En
 	-ConsultarEfectosAdversos(): Dado un Paciente, devuelve una lista con los distintos Efectos Adversos ocurridos al paciente registrados en el sistema.
 		-Parámetros de entrada: Un objeto de tipo Paciente.
 		-Tipo devuelto: Una lista de objetos EfectoAdverso, cuyos parámetros son dos objetos de tipo cadena: Fecha y descripción.
-	-AñadirEfectoAdverso(): Dado un Paciente, y un nuevo EfectoAdverso, realiza la comprobación de la operación ValidarEfectoAdverso() y, si esta no devuelve errores, añade/asigna dicho EfectoAdverso al Paciente.
+	-AnadirEfectoAdverso(): Dado un Paciente, y un nuevo EfectoAdverso, realiza la comprobación de la operación ValidarEfectoAdverso() y, si esta no devuelve errores, añade/asigna dicho EfectoAdverso al Paciente.
 		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo EfectoAdverso.
 		-Tipo devuelto: void (No devuelve nada).
 	-ValidarEfectoAdverso(): Dado un EfectoAdverso, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
 		-Parámetros de entrada: Un objeto de tipo EfectoAdverso.
-		-Tipo devuelto: Una lista de objetos cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
+		-Tipo devuelto: Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
 	-ConsultarCitasSinProcesar(): Devuelve un listado de las Citas que todavía no tengan Investigador o consulta asignados.
 		-Parámetros de entrada: Ninguno.
 		-Tipo devuelto: Una lista de objetos Cita cuyos campos Investigador o Consulta sean vacíos o nulos.
 	-ConsultarCita(): Dado el ID de una cita, devuelve la cita que le corresponde.
 		-Parámetros de entrada: Un objeto de tipo entero.
 		-Tipo devuelto: Un objeto de tipo Cita.
-	-AñadirDatosCita(): Dada una Cita, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, añade a la misma una Consulta y un Investigador, en el que caso de que éste no hubiera sido añadido por el Paciente.
-		-Parámetros de entrada: Un objeto de tipo Cita.
+	-ModificarCita(): Dada una Cita, una Consulta y un Investigador, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, añade a la misma la Consulta y el Investigador, en el que caso de que éste no hubiera sido añadido por el Paciente, que se pasan como parámetro.
+		-Parámetros de entrada: Un objeto de tipo Cita, otro de tipo cadena, correspondiente a la Consulta, y otro de tipo Investigador.
 		-Tipo devuelto: void (No devuelve nada).
 	-ValidarCita(): Dada una Cita, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
 		-Parámetros de entrada: Un objeto de tipo Cita
-		-Tipo devuelto: Una lista de objetos cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
-	-AñadirCita(): Dados un Paciente y una Cita, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, agrega dicha cita a la lista de Citas del Paciente.
+		-Tipo devuelto: Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
+	-AnadirCita(): Dados un Paciente y una Cita, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, agrega dicha cita a la lista de Citas del Paciente.
 		-Parámetros de entrada: Un objeto de tipo Paciente y otro de tipo Cita.
 		-Tipo devuelto: void (No devuelve nada).
-	-ConsultarPruebas(): Dado un Paciente, devuelve
+	-ConsultarAnaliticas(): Dado un Paciente, devuelve un listado de las Analiticas del mismo.
+		-Parámetros de entrada: Un objeto de tipo Paciente.
+		-Tipo devuelto: Una lista de objetos de tipo Analitica.
+	-DecargarAnalitica(): Dada una Analítica, ofrece al usuario la descarga de su informe correspondiente.
+		-Parámetros de entrada: Un objeto de tipo Analitica.
+		-Tipo devuelto: void (No devuelve nada).
 	
 
 -ServiciosInvestigadorPrincipal: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Investigadores Principales registrados en el sistema:
 
 -ServiciosSubinvestigador: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Subinvestigadores registrados en el sistema:
 
--ServiciosResponsableFarmacia: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Farmaciaregistrados en el sistema:
+-ServiciosResponsableFarmacia: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Farmacia registrados en el sistema:
 
 -ServiciosResponsableEnfermería: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Enfermería registrados en el sistema:
 
--ServiciosDataManager: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Pacientes Data Manager en el sistema:
+-ServiciosDataManager: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Data Managers en el sistema:
 
 -ServiciosEnsayosClínicos: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Ensayos Clínicos registrados en el sistema:
-
+	-ConsultarEnsayosPorInvestigador(): Dado un Investigador, devuelve un listado con los Ensayos Clínicos en los que participa.
+		-Parámetros de entrada: Un objeto de tipo Investigador.
+		-Tipo devuelto: Una lista de objetos de tipo EnsayoClinico.
+	-AnadirPeticionFarmaco(): Dado un EnsayoClinico y un Investigador, realiza la comprobación de la operación validarPeticionFarmaco() y, si esta no devuelve errores, añade una Petición de Fármaco asociada a dicho Investigador a la lista de Peticiones de Fármacos del Ensayo Clínico.
+		-Parámetros de entrada: Un objeto de tipo EnsayoClinico y otro de tipo Investigador.
+		-Tipo devuelto: void (No devuelve nada).
+	-ValidarPeticionFarmaco(): Dada una Petición de Fármaco, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
+		-Parámetros de entrada: Un objeto de tipo PeticionFarmaco.
+		-Tipo devuelto: Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
+	-ConsultarPeticionesFarmacos(): Devuelve un listado con todas las peticiones de fármacos pendientes de aceptación.
+		-Parámetros de entrada: Ninguno.
+		-Tipo devuelto: Una lista de objetos de tipo PeticionFarmaco.
+	-ModificarPeticionFarmaco(): Dada una Petición de Fármaco, una Resolución y una Nota de Resolución, realiza la comprobación de la operación ValidarPeticionFarmaco() y, si esta no devuelve errores, añade la Resolución pasada como parámetro a la misma.
+		-Parámetros de entrada: Un objeto de tipo PeticionFarmaco y otro de tipo enumerado, correspondiente a la Resolucion (Pendiente, Aceptada o Rechazada), y otro de tipo cadena, correspondiente a la NotaDeResolucion.
+		-Tipo devuelto: void (No devuelve nada).
+	-ConsultarEnsayosPorResponsableEnfermeria(): Dado un Responsable de Enfermería, devuelve un listado con los Ensayos Clínicos en los que participa.
+		-Parámetros de entrada: Un objeto de tipo ResponsableEnfermeria.
+		-Tipo devuelto: Una lista de objetos de tipo EnsayoClinico.
+	-AnadirDevolucionEnvase(): Dada una Devolución de Envase, realiza la comprobación de la operación ValidarDevolucionEnvase() y, si esta no devuelve errores, registra dicha Devolución de Envase en el sistema. 
+		-Parámetros de entrada: Un objeto de tipo DevolucionEnvase.
+		-Tipo devuelto: void (No devuelve nada).
+	-ValidarDevolucionEnvase(): Dada una Devolución de Envase, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
+		-Parámetros de entrada: Un objeto de tipo DevolucionEnvase.
+		-Tipo devuelto: Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
+	-AnadirIncidencia(): Dada una Incidencia, realiza la comprobación de la operación ValidarIncidencia() y, si esta no devuelve errores, registra dicha Incidencia en el sistema.
+		-Parámetros de entrada: Un objeto de tipo Incidencia.
+		-Tipo devuelto: void (No devuelve nada).
+	-ValidarIncidencia(): Dada una Incidencia, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.
+		-Parámetros de entrada: Un objeto de tipo Incidencia.
+		-Tipo devuelto: Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.
