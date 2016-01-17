@@ -14,22 +14,22 @@ title  Petición de cita. (UC-0001)
 
 #1. El actor Paciente (ACT-0005) solicita una cita de revisión. 
 
-Médico->Interfaz \nde usuario: Solicita pedir\nuna cita
+Paciente->Interfaz \nde usuario: Solicita pedir\nuna cita
 # note right of Bob: Bob thinks about it
 
 
 #2. El sistema muestra el formulario de petición de citas. 
 
-Interfaz \nde usuario->Médico: Muestra formulario \npetición citas
+Interfaz \nde usuario->Paciente: Muestra formulario \npetición citas
 
 
 #3. El actor Paciente (ACT-0005) rellena los campos necesarios y solicita al sistema que registre su cita. 
 
 loop
-    Médico->+Interfaz \nde usuario: Envío formulario\n petición citas
+    Paciente->+Interfaz \nde usuario: Envío formulario\n petición citas
     Interfaz \nde usuario->+Interfaz \nde usuario: Validar\nformulario
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Médico: Muestra errores \n en el formulario
+        Interfaz \nde usuario-->-Paciente: Muestra errores \n en el formulario
     end
     
     Interfaz \nde usuario->+Interfaz\nde servicios: Añadir cita\n paciente
@@ -37,7 +37,7 @@ loop
     Interfaz\nde servicios->+Interfaz\nde servicios: Validar\ncita paciente
     alt Error de validación en interfaz de servicios
         Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-        Interfaz \nde usuario-->Médico: Muestra errores \n en el formulario
+        Interfaz \nde usuario-->Paciente: Muestra errores \n en el formulario
     end
 end
 
@@ -46,4 +46,4 @@ end
 
 Interfaz\nde servicios-->-Interfaz \nde usuario: Correcto
 
-Interfaz \nde usuario-->-Médico: Confirmación añadida\ncita paciente
+Interfaz \nde usuario-->-Paciente: Confirmación añadida\ncita paciente
