@@ -1567,7 +1567,7 @@ No procede</rem:comments>
 <rem:actor
  oid = "ACT-0006">
 <rem:name>
-Responsables de Enfermería</rem:name>
+Responsable de Enfermería</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1586,7 +1586,7 @@ No procede</rem:comments>
 <rem:actor
  oid = "ACT-0007">
 <rem:name>
-Responsable de farmacia</rem:name>
+Responsable de Farmacia</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1889,7 +1889,7 @@ Ninguno</rem:comments>
 <rem:number>5</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-selecciona las pruebas médicas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
+selecciona las analíticas del actor Paciente (ACT-005) dentro del perfil de éste.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1907,7 +1907,7 @@ Ninguno</rem:comments>
 <rem:number>7</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-elige la analítica requerida, que podrá ser descargado desde un enlace.</rem:description>
+podrá descargar desde un enlace la analítica que desee.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1977,7 +1977,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-devuelve un formulario con el identificador del Ensayo y el nombre del paciente ya rellenos.</rem:description>
+devuelve un formulario con el identificador del Ensayo Clínico ya relleno.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2065,7 +2065,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:actorAction actor = "ACT-0007">
 <rem:description>
-decide si cancela o no la petición. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</rem:description>
+decide si cancela o no la petición. Tras su elección, envía su decisión al sistema. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2075,6 +2075,15 @@ Ninguno</rem:comments>
 <rem:systemAction>
 <rem:description>
 notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0158">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+notifica al actor Responsable de Farmacia (ACT-0007) de que su decisión ha sido guardada en el sistema.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2135,7 +2144,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0006">
 <rem:description>
-selecciona el Ensayo del que se quieren devolver envases.</rem:description>
+selecciona el conjunto de Ensayo y médico del que se quieren devolver envases.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
