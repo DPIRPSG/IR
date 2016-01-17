@@ -1,0 +1,67 @@
+
+
+# Realizado con https://www.websequencediagrams.com/
+
+
+title  Devolución de envases de tratamientos en experimentación. (UC-0006)
+# UC-0006
+# Mockup 38 & 39
+
+
+# Se basan en los casos de uso
+# http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/411
+
+
+
+#1. El actor Responsables de Enfermería (ACT-0006) pide al sistema una lista de los Ensayos a los que está asignado. 
+
+Médico->Interfaz \nde usuario: Solicita Ensayos \n Clínicos asignados
+# note right of Bob: Bob thinks about it
+
+Interfaz \nde usuario->Interfaz\nde servicios: Solicita  Ensayos \n Clínicos asignados
+
+
+#2. El sistema le devuelve dicha lista. 
+
+Interfaz\nde servicios-->Interfaz \nde usuario:
+
+Interfaz \nde usuario->Médico: Muestra Ensayos Clínicos \n y médicos asignados
+
+
+#3. El actor Responsables de Enfermería (ACT-0006) selecciona el Ensayo del que se quieren devolver envases. 
+
+Médico->Interfaz \nde usuario: Selecciona el médico \n y el Ensayo Clínico
+
+
+#4. El sistema le devuelve el formulario de devolución de productos.
+
+Interfaz \nde usuario->Médico: Muestra formulario \n devolución de envases
+
+
+#5. El actor Responsables de Enfermería (ACT-0006) rellena una lista con los artículos y las cantidades a devolver y envía el formulario.  
+
+loop
+    Médico->+Interfaz \nde usuario: Envío formulario \n devolución de envases
+    Interfaz \nde usuario->+Interfaz \nde usuario: Validar \n formulario
+    alt Error de validación en interfaz de usuario
+        Interfaz \nde usuario-->-Médico: Muestra errores \n en el formulario
+    end
+    
+    loop
+        Interfaz \nde usuario->+Interfaz\nde servicios: Añadir devolución \n de envase
+
+        Interfaz\nde servicios->+Interfaz\nde servicios: Validar devolucion \n de envase
+        alt Error de validación en interfaz de servicios
+            Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
+            Interfaz \nde usuario-->Médico: Muestra errores \n en la formulario
+        end
+            
+        Interfaz\nde servicios-->-Interfaz \nde usuario: Devolución correcta
+
+    end
+end
+
+
+#6. El sistema devuelve un mensaje de confirmación de envío del formulario. 
+
+Interfaz \nde usuario-->-Médico: Confirmación añadido \n devolución de envases
