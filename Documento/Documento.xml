@@ -7473,6 +7473,41 @@ Ninguno</rem:comments>
 </rem:preconditionExpression>
 </rem:systemOperation>
 </rem:section>
+<rem:section
+ oid = "SEC-0069">
+<rem:name>
+Servicios consumidos por el sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0075">
+<rem:name>
+Serivicios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No consta.</rem:text>
+</rem:paragraph>
+</rem:section>
 </rem:section>
 <rem:section
  oid = "SEC-0066">
@@ -8648,7 +8683,64 @@ Ninguno
 <rem:trace source = "SOP-0022"  target = "UC-0006" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source = "SOP-0013"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0014"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0015"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0016"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0017"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0018"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0019"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source = "SOP-0013"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0014"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0015"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0016"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0017"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0018"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0019"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "FRQ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "SOP-0001"  target = "FRQ-0002" >
@@ -8685,33 +8777,6 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "SOP-0012"  target = "FRQ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0014"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0015"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0016"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0017"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0018"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0019"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0020"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0021"  target = "FRQ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0022"  target = "FRQ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "SOP-0001"  target = "FRQ-0003" >
@@ -8778,36 +8843,6 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "SOP-0022"  target = "FRQ-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0013"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0014"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0015"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0016"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0017"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0018"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0019"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0020"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0021"  target = "UC-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "SOP-0022"  target = "UC-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
