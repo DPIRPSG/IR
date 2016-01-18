@@ -15,51 +15,51 @@ title  Notificar incidencia. (UC-0007)
 
 #1. El actor Investigador Principal (ACT-0008) pide al sistema una lista de los Ensayos a los que está asignado. 
 
-Investigador \n Principal->Interfaz \nde usuario: Solicita Ensayos \n Clínicos asignados
+Investigador \n Principal->Interfaz \n de Usuario: Solicita Ensayos \n Clínicos asignados
 # note right of Bob: Bob thinks about it
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita Ensayos \n Clínicos asignados
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita Ensayos \n Clínicos asignados
 
 
 #2. El sistema devuelve dicha lista. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Investigador \n Principal: Muestra Ensayos \n Clínicos asignados
+Interfaz \n de Usuario->Investigador \n Principal: Muestra Ensayos \n Clínicos asignados
 
 
 #3. El actor Investigador Principal (ACT-0008) selecciona el Ensayo del que se quiere notificar una incidencia. 
 
-Investigador \n Principal->Interfaz \nde usuario: Selecciona el \n Ensayo Clínico
+Investigador \n Principal->Interfaz \n de Usuario: Selecciona el \n Ensayo Clínico
 
 
 #4. El sistema devuelve la vista con el formulario de notificación de incidencias.
 
-Interfaz \nde usuario->Investigador \n Principal: Muestra formulario de \n notificación de incidencias
+Interfaz \n de Usuario->Investigador \n Principal: Muestra formulario de \n notificación de incidencias
 
 
 #5. El actor Investigador Principal (ACT-0008) rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.
 
 
 loop
-    Investigador \n Principal->+Interfaz \nde usuario: Envío formulario \n notificación de incidencias
-    Interfaz \nde usuario->+Interfaz \nde usuario: Validar\nformulario
+    Investigador \n Principal->+Interfaz \n de Usuario: Envío formulario \n notificación de incidencias
+    Interfaz \n de Usuario->+Interfaz \n de Usuario: Validar\nformulario
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Investigador \n Principal: Muestra errores \n en el formulario
+        Interfaz \n de Usuario-->-Investigador \n Principal: Muestra errores \n en el formulario
     end
     
-    Interfaz \nde usuario->+Interfaz\nde servicios: Añadir notificación \n de incidencias
+    Interfaz \n de Usuario->+Interfaz \n de Servicios: Añadir notificación \n de incidencias
 
-    Interfaz\nde servicios->+Interfaz\nde servicios: Validar notificación \n de incidencias
+    Interfaz \n de Servicios->+Interfaz \n de Servicios: Validar notificación \n de incidencias
     alt Error de validación en interfaz de servicios
-        Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-        Interfaz \nde usuario-->Investigador \n Principal: Muestra errores \n en el formulario
+        Interfaz \n de Servicios-->-Interfaz \n de Usuario: Errores
+        Interfaz \n de Usuario-->Investigador \n Principal: Muestra errores \n en el formulario
     end
 end
 
 
 #6. El sistema devuelve un mensaje de confirmación de envío del formulario. 
 
-Interfaz\nde servicios-->-Interfaz \nde usuario: Correcto
+Interfaz \n de Servicios-->-Interfaz \n de Usuario: Correcto
 
-Interfaz \nde usuario-->-Investigador \n Principal: Confirmación añadida \n notificación de incidencias
+Interfaz \n de Usuario-->-Investigador \n Principal: Confirmación añadida \n notificación de incidencias

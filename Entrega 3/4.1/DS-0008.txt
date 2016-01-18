@@ -14,78 +14,78 @@ title  Adición de efectos adversos en los tratamientos. (UC-0008)
 
 #1. El actor Médico (ACT-0004) pide al sistema una lista de los actores Paciente (ACT-005) que tiene asignado. 
 
-Médico->Interfaz \nde usuario: Solicita \npacientes asignados
+Médico->Interfaz \n de Usuario: Solicita \npacientes asignados
 # note right of Bob: Bob thinks about it
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita pacientes \nasignados a ese médico
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita pacientes \nasignados a ese médico
 
 
 #2. El sistema le devuelve dicha lista. 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Médico: Muestra \npacientes asignados
+Interfaz \n de Usuario->Médico: Muestra \npacientes asignados
 
 
 #3. El actor Médico (ACT-0004) selecciona el actor Paciente (ACT-005) al que se le quiere asignar el efecto adverso del tratamiento.
 
-Médico->Interfaz \nde usuario: Selecciona el\npaciente
+Médico->Interfaz \n de Usuario: Selecciona el\npaciente
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita información sobre \npaciente seleccionado
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita información sobre \npaciente seleccionado
 
 
 #4. El sistema devuelve la vista con la información del actor Paciente (ACT-005). 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Médico: Muestra información \npaciente seleccionado
+Interfaz \n de Usuario->Médico: Muestra información \npaciente seleccionado
 
 
 #5. El actor Médico (ACT-0004) selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.
 
-Médico->Interfaz \nde usuario: Solicita efectos \n adversos del paciente
+Médico->Interfaz \n de Usuario: Solicita efectos \n adversos del paciente
 
-Interfaz \nde usuario->Interfaz\nde servicios: Solicita efectos \n adversos del paciente
+Interfaz \n de Usuario->Interfaz \n de Servicios: Solicita efectos \n adversos del paciente
 
 
 #6. El sistema le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-005). 
 
-Interfaz\nde servicios-->Interfaz \nde usuario:
+Interfaz \n de Servicios-->Interfaz \n de Usuario:
 
-Interfaz \nde usuario->Médico: Muestra efectos \nadversos del paciente
+Interfaz \n de Usuario->Médico: Muestra efectos \nadversos del paciente
 
 
 #7. El actor Médico (ACT-0004) le pide al sistema el formulario para poder registrar un nuevo efecto adverso. 
 
-Médico->Interfaz \nde usuario: Solicita formulario registo \n efectos adversos
+Médico->Interfaz \n de Usuario: Solicita formulario registo \n efectos adversos
 
 
 #8. El sistema le devuelve el formulario. 
 
-Interfaz \nde usuario->Médico: Muestra formulario efectos \nadversos del paciente
+Interfaz \n de Usuario->Médico: Muestra formulario efectos \nadversos del paciente
 
 
 #9. El actor Médico (ACT-0004) rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario. 
 
 loop
-    Médico->+Interfaz \nde usuario: Envío formulario\n efectos adversos
-    Interfaz \nde usuario->+Interfaz \nde usuario: Validar\nformulario
+    Médico->+Interfaz \n de Usuario: Envío formulario\n efectos adversos
+    Interfaz \n de Usuario->+Interfaz \n de Usuario: Validar\nformulario
     alt Error de validación en interfaz de usuario
-        Interfaz \nde usuario-->-Médico: Muestra errores \n en el formulario
+        Interfaz \n de Usuario-->-Médico: Muestra errores \n en el formulario
     end
     
-    Interfaz \nde usuario->+Interfaz\nde servicios: Añadir efecto\nadverso al paciente
+    Interfaz \n de Usuario->+Interfaz \n de Servicios: Añadir efecto\nadverso al paciente
 
-    Interfaz\nde servicios->+Interfaz\nde servicios: Validar\nefecto adverso
+    Interfaz \n de Servicios->+Interfaz \n de Servicios: Validar\nefecto adverso
     alt Error de validación en interfaz de servicios
-        Interfaz\nde servicios-->-Interfaz \nde usuario: Errores
-        Interfaz \nde usuario-->Médico: Muestra errores \n en el formulario
+        Interfaz \n de Servicios-->-Interfaz \n de Usuario: Errores
+        Interfaz \n de Usuario-->Médico: Muestra errores \n en el formulario
     end
 end
 
 
 #10. El sistema envía un mensaje de confirmación de envío del informe. 
 
-Interfaz\nde servicios-->-Interfaz \nde usuario: Correcto
+Interfaz \n de Servicios-->-Interfaz \n de Usuario: Correcto
 
-Interfaz \nde usuario-->-Médico: Confirmación añadido\nefecto adverso
+Interfaz \n de Usuario-->-Médico: Confirmación añadido\nefecto adverso
