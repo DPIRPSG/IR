@@ -2508,6 +2508,12 @@ Pacientes incluidos en el Ensayo clínico</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0209">
+<rem:description>
+Incidencias (Lugar, descripción y consecuencias).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
  oid = "IRQ-0002">
@@ -2678,13 +2684,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0028">
 <rem:description>
-Fecha de revisión clínica</rem:description>
+Fecha y lugar de revisión clínica</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0029">
 <rem:description>
-Fechas de Analíticas</rem:description>
+Fecha y lugar de Analíticas</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -4610,6 +4616,15 @@ el tipo de la cita, ya sea de revisión o para estudios complementarios.</rem:des
 Ninguno</rem:comments>
 <rem:isConstant/>
 </rem:attribute>
+<rem:attribute oid = "ATT-0201" baseType = "PVT-0004">
+<rem:name>
+Consulta</rem:name>
+<rem:description>
+donde tendrá lugar la cita.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
 <rem:objectType
@@ -4813,6 +4828,54 @@ Ninguno</rem:comments>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
+<rem:objectType
+ oid = "TYP-0015">
+<rem:name>
+Incidencia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+las incidencias que puede haber en un Ensayo Clínico.</rem:description>
+<rem:attribute oid = "ATT-0202" baseType = "PVT-0004">
+<rem:name>
+Lugar</rem:name>
+<rem:description>
+al lugar donde se da la Incidencia.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0203" baseType = "PVT-0004">
+<rem:name>
+Descripción</rem:name>
+<rem:description>
+una descripción de la Incidencia.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0204" baseType = "PVT-0004">
+<rem:name>
+Consecuencias</rem:name>
+<rem:description>
+las consecuencias de la Incidencia.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
 <rem:userDefinedValueType
  oid = "VAL-0001">
 <rem:name>
@@ -4857,6 +4920,28 @@ Ninguno</rem:comments>
 los dos tipos de <rem:ref oid="GLO-0028">citas</rem:ref> que hay para un Paciente.</rem:description>
 <rem:definition>
 {Revisión, Analítica}
+</rem:definition>
+</rem:userDefinedValueType>
+<rem:userDefinedValueType
+ oid = "VAL-0003">
+<rem:name>
+Enumerado Resolución</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+a la Resolución de una petición de Fármacos.</rem:description>
+<rem:definition>
+{Pendiente, Aceptada, Rechazada}
 </rem:definition>
 </rem:userDefinedValueType>
 <rem:associationType
@@ -5147,7 +5232,7 @@ Tiene</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-que un PAciente tiene un Efecto Adverso.</rem:description>
+que un Paciente tiene un Efecto Adverso.</rem:description>
 <rem:role oid = "ROL-0156" baseType = "TYP-0003">
 <rem:name>
 Paciente</rem:name>
@@ -5162,6 +5247,51 @@ Ninguno</rem:comments>
 Efecto Adverso</rem:name>
 <rem:description>
 al Efecto Adverso.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+0</rem:lowerBound>
+<rem:upperBound>
+*</rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+</rem:associationType>
+<rem:associationType
+ oid = "ASO-0008">
+<rem:name>
+Tiene</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+las Incidencias que se dan en los Ensayos Clínicos.</rem:description>
+<rem:role oid = "ROL-0205" baseType = "TYP-0001">
+<rem:name>
+Ensayo Clínico</rem:name>
+<rem:description>
+al Ensayo Clínico.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:role>
+<rem:role oid = "ROL-0206" baseType = "TYP-0015">
+<rem:name>
+Incidencia</rem:name>
+<rem:description>
+a la Incidencia.</rem:description>
 <rem:isSet/>
 <rem:multiplicity>
 <rem:lowerBound>
@@ -6562,6 +6692,25 @@ Diagramas de la interfaz de servicios del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>6.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0061">
+<rem:name>
+Diagrama de la interfaz de servicios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\Entrega 3\6\6.1\Diagrama de servicios.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0068">
@@ -6580,6 +6729,749 @@ Descripción de la interfaz de servicios del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>6.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0073">
+<rem:name>
+Descripción 1</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La interfaz de servicios del sistema consta de un único Sistema de Gestión de Ensatos Clínicos Hospitalarios compuesto por siete interfaces:<br/><br/>-ServiciosPaciente: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Pacientes registrados en el sistema:</rem:text>
+</rem:paragraph>
+<rem:systemOperation
+ oid = "SOP-0001">
+<rem:name>
+ConsultarPacientesPorInvestigador()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Investigador (Ya sea Investigador Principal o Subinvestigador), devuelve un listado de pacientes con los que tiene relación en ese momento, ya sea que tiene cita con él, participan en uno de sus Ensayos Clínicos o ha participado en alguno, etc...</rem:description>
+<rem:resultType>Una lista de objetos Paciente.</rem:resultType>
+<rem:parameter oid = "PAR-0159" baseType = "TYP-0009">
+<rem:name>
+InvestigadorPrincipal</rem:name>
+<rem:description>
+a un Investigador Principal (Tambíen puede ser un Subinvestigador).</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0002">
+<rem:name>
+ConsultarPerfil()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Paciente, devuelve una lista con todos los datos de su perfil registrados.</rem:description>
+<rem:resultType>Una lista con los distintos objetos de tipo cadena correspondientes a los datos del perfil del Paciente pasado como parámetro: Nombre, Apellidos, NumeroHistoriaClinica, NUHSA, Diagnostico, Ensayo, MedicacionAsignada, FechaInclusion, FechaRevision, FechaEstudios.</rem:resultType>
+<rem:parameter oid = "PAR-0161" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+Un objeto de tipo Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0003">
+<rem:name>
+ConsultarEfectosAdversos()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Paciente, devuelve una lista con los distintos Efectos Adversos ocurridos al paciente registrados en el sistema.</rem:description>
+<rem:resultType>Una lista de objetos EfectoAdverso, cuyos parámetros son dos objetos de tipo cadena: Fecha y descripción.</rem:resultType>
+<rem:parameter oid = "PAR-0162" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+Un objeto de tipo Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0004">
+<rem:name>
+ValidarEfectoAdverso()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un EfectoAdverso, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.</rem:description>
+<rem:resultType>Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.</rem:resultType>
+<rem:parameter oid = "PAR-0169" baseType = "TYP-0014">
+<rem:name>
+EfectoAdverso</rem:name>
+<rem:description>
+Un objeto de tipo EfectoAdverso.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0005">
+<rem:name>
+AnadirEfectoAdverso()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Paciente, y un nuevo EfectoAdverso, realiza la comprobación de la operación ValidarEfectoAdverso() y, si esta no devuelve errores, añade/asigna dicho EfectoAdverso al Paciente.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0171" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+Un objeto de tipo Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0172" baseType = "TYP-0014">
+<rem:name>
+EfectoAdverso</rem:name>
+<rem:description>
+Un objeto de tipo EfectoAdverso.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0170">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarEfectoAdverso() y no devuelve ningún error.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0006">
+<rem:name>
+ConsultarCitasSinProcesar()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Devuelve un listado de las <rem:ref oid="GLO-0028">Citas</rem:ref> que todavía no tengan Investigador o consulta asignados.</rem:description>
+<rem:resultType>Una lista de objetos Cita cuyos campos Investigador o Consulta sean vacíos o nulos.</rem:resultType>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0007">
+<rem:name>
+ConsultarCita()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado el ID de una cita, devuelve la cita que le corresponde.</rem:description>
+<rem:resultType>Un objeto de tipo Cita.</rem:resultType>
+<rem:parameter oid = "PAR-0173" baseType = "PVT-0002">
+<rem:name>
+ID</rem:name>
+<rem:description>
+El ID de una Cita.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0008">
+<rem:name>
+ValidarCita()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Cita, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.</rem:description>
+<rem:resultType>Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.</rem:resultType>
+<rem:parameter oid = "PAR-0174" baseType = "TYP-0006">
+<rem:name>
+Cita</rem:name>
+<rem:description>
+Un objeto de tipo Cita.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0009">
+<rem:name>
+AnadirCita()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dados un Paciente y una Cita, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, agrega dicha cita a la lista de <rem:ref oid="GLO-0028">Citas</rem:ref> del Paciente.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0176" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+Un objeto de tipo Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0177" baseType = "TYP-0006">
+<rem:name>
+Cita</rem:name>
+<rem:description>
+Un objeto de tipo Cita.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0175">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarCita() y ésta no devuelve errores.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0010">
+<rem:name>
+ModificarCita()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Cita, una Consulta y un Investigador, realiza la comprobación de la operación ValidarCita() y, si esta no devuelve errores, añade a la misma la Consulta y el Investigador, en el que caso de que éste no hubiera sido añadido por el Paciente, que se pasan como parámetro.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0180" baseType = "TYP-0006">
+<rem:name>
+Cita</rem:name>
+<rem:description>
+Un objeto de tipo Cita.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0181" baseType = "PVT-0004">
+<rem:name>
+Consulta</rem:name>
+<rem:description>
+Consulta.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0182" baseType = "TYP-0009">
+<rem:name>
+InvestigadorPrincipal</rem:name>
+<rem:description>
+Un objeto de tipo Investigador Principal.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0179">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarCita() y ésta no devuelve errores.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0011">
+<rem:name>
+ConsultarAnaliticas()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Paciente, devuelve un listado de las Analiticas del mismo.</rem:description>
+<rem:resultType>Una lista de objetos de tipo Analitica.</rem:resultType>
+<rem:parameter oid = "PAR-0183" baseType = "TYP-0003">
+<rem:name>
+Paciente</rem:name>
+<rem:description>
+Un objeto de tipo Paciente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0012">
+<rem:name>
+DecargarAnalitica()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Analítica, ofrece al usuario la descarga de su informe correspondiente.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0184" baseType = "PVT-0004">
+<rem:name>
+Analítica</rem:name>
+<rem:description>
+Un objeto de tipo Analitica.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:paragraph
+ oid = "PRG-0074">
+<rem:name>
+Descripción 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>-ServiciosInvestigadorPrincipal: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Investigadores Principales registrados en el sistema:<br/><br/>-ServiciosSubinvestigador: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Subinvestigadores registrados en el sistema:<br/><br/>-ServiciosResponsableFarmacia: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Farmacia registrados en el sistema:<br/><br/>-ServiciosResponsableEnfermería: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Responsables de Enfermería registrados en el sistema:<br/><br/>-ServiciosDataManager: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Data Managers en el sistema:<br/><br/>-ServiciosEnsayosClínicos: Contiene todas aquellas operaciones relacionadas con la obtención, adición y modificación de datos relacionados con Ensayos Clínicos registrados en el sistema:</rem:text>
+</rem:paragraph>
+<rem:systemOperation
+ oid = "SOP-0013">
+<rem:name>
+ConsultarEnsayosPorInvestigador()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Investigador, devuelve un listado con los Ensayos Clínicos en los que participa.</rem:description>
+<rem:resultType>Una lista de objetos de tipo EnsayoClinico.</rem:resultType>
+<rem:parameter oid = "PAR-0185" baseType = "TYP-0009">
+<rem:name>
+InvestigadorPrincipal</rem:name>
+<rem:description>
+Un objeto de tipo Investigador Principal.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0014">
+<rem:name>
+ConsultarPeticionesFarmacos()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Devuelve un listado con todas las peticiones de fármacos pendientes de aceptación.</rem:description>
+<rem:resultType>Una lista de objetos de tipo PeticionFarmaco.</rem:resultType>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0015">
+<rem:name>
+ValidarPeticionFarmaco()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Petición de <rem:ref oid="GLO-0036">Fármaco</rem:ref>, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.</rem:description>
+<rem:resultType>Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.</rem:resultType>
+<rem:parameter oid = "PAR-0186" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0036">Fármaco</rem:ref></rem:name>
+<rem:description>
+El nombre del <rem:ref oid="GLO-0036">Fármaco</rem:ref>.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0016">
+<rem:name>
+AnadirPeticionFarmaco()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un EnsayoClinico y un Investigador, realiza la comprobación de la operación validarPeticionFarmaco() y, si esta no devuelve errores, añade una Petición de <rem:ref oid="GLO-0036">Fármaco</rem:ref> asociada a dicho Investigador a la lista de Peticiones de Fármacos del Ensayo Clínico.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0188" baseType = "TYP-0001">
+<rem:name>
+EnsayoClínico</rem:name>
+<rem:description>
+Un objeto de tipo Ensayo Clinico.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0189" baseType = "TYP-0009">
+<rem:name>
+InvestigadorPrincipal</rem:name>
+<rem:description>
+Un objeto de tipo Investigador.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0187">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarPeticionFarmaco() y no devuelve ningún error.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0017">
+<rem:name>
+ModificarPeticionFarmaco()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Petición de <rem:ref oid="GLO-0036">Fármaco</rem:ref>, una Resolución y una Nota de Resolución, realiza la comprobación de la operación ValidarPeticionFarmaco() y, si esta no devuelve errores, añade la Resolución pasada como parámetro a la misma.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0190" baseType = "PVT-0004">
+<rem:name>
+PeticionFarmaco</rem:name>
+<rem:description>
+El nombre del <rem:ref oid="GLO-0036">Fármaco</rem:ref> pedido.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0192" baseType = "VAL-0003">
+<rem:name>
+Resolucion</rem:name>
+<rem:description>
+A la Resolución de la Petición.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0191" baseType = "PVT-0004">
+<rem:name>
+NotaDeResolucion</rem:name>
+<rem:description>
+Al motivo de la Resolución.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0018">
+<rem:name>
+ConsultarEnsayosPorResponsableEnfermeria()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dado un Responsable de Enfermería, devuelve un listado con los Ensayos Clínicos en los que participa.</rem:description>
+<rem:resultType>Una lista de objetos de tipo EnsayoClinico.</rem:resultType>
+<rem:parameter oid = "PAR-0193" baseType = "TYP-0013">
+<rem:name>
+ResponsableEnfermeria</rem:name>
+<rem:description>
+Un objeto de tipo ResponsableEnfermeria.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0019">
+<rem:name>
+ValidarDevolucionEnvase()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Devolución de Envase, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.</rem:description>
+<rem:resultType>Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.</rem:resultType>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0020">
+<rem:name>
+AnadirDevolucionEnvase()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Devolución de Envase, realiza la comprobación de la operación ValidarDevolucionEnvase() y, si esta no devuelve errores, registra dicha Devolución de Envase en el sistema. </rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0198" baseType = "PVT-0004">
+<rem:name>
+Envase</rem:name>
+<rem:description>
+Al tipo del Envase.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0197">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarDevolucionEnvase() y no devuelve ningún error.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0021">
+<rem:name>
+ValidarIncidencia()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Incidencia, valida si los datos que contiene cumplen las retricciones del sistema o no y devuelve un listado de errores en el caso de que los haya.</rem:description>
+<rem:resultType>Una lista de objetos de tipo cadena, cada uno de ellos correspondiente a un error encontrado durante la validación.</rem:resultType>
+<rem:parameter oid = "PAR-0207" baseType = "TYP-0015">
+<rem:name>
+Incidencia</rem:name>
+<rem:description>
+Un objeto de tipo Incidencia.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0022">
+<rem:name>
+AnadirIncidencia()</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Dada una Incidencia, realiza la comprobación de la operación ValidarIncidencia() y, si esta no devuelve errores, registra dicha Incidencia en el sistema.</rem:description>
+<rem:resultType>void (No devuelve nada).</rem:resultType>
+<rem:parameter oid = "PAR-0200" baseType = "TYP-0015">
+<rem:name>
+Incidencia</rem:name>
+<rem:description>
+Un objeto de tipo Incidencia.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0199">
+<rem:name>Validar</rem:name>
+<rem:expression>
+<rem:natural>
+Llama a ValidarIncidencia() y no devuelve ningún error.</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
 </rem:section>
 </rem:section>
 <rem:section
@@ -6632,6 +7524,7 @@ Ninguno</rem:comments>
 <rem:th oid ="TYP-0012"/>
 <rem:th oid ="TYP-0013"/>
 <rem:th oid ="TYP-0014"/>
+<rem:th oid ="TYP-0015"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0001"/>
@@ -6639,6 +7532,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6666,6 +7560,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0003"/>
@@ -6683,6 +7578,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0004"/>
@@ -6691,6 +7587,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6717,12 +7614,14 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0001"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6751,6 +7650,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0003"/>
@@ -6768,6 +7668,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0004"/>
@@ -6776,6 +7677,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -6802,6 +7704,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="CRQ-0006"/>
@@ -6817,6 +7720,276 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+</rem:traceabilityMatrix>
+<rem:traceabilityMatrix
+ oid = "TRM-0003">
+<rem:name>
+</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2016</rem:year>
+<rem:month>1</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:tr>
+<rem:th/>
+<rem:th oid ="UC-0001"/>
+<rem:th oid ="UC-0002"/>
+<rem:th oid ="UC-0003"/>
+<rem:th oid ="UC-0004"/>
+<rem:th oid ="UC-0005"/>
+<rem:th oid ="UC-0006"/>
+<rem:th oid ="UC-0007"/>
+<rem:th oid ="UC-0008"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0001"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0002"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0003"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0004"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0005"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0006"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0007"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0008"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0009"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0010"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0011"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0012"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0013"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0014"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0015"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0016"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0017"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0018"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0019"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0020"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0021"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="SOP-0022"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 </rem:tr>
@@ -7016,6 +8189,240 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0005"  target = "TYP-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0002"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0003"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0005"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0007"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0008"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0009"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0010"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0011"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0002"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0005"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0007"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0008"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0009"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0010"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0011"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0013"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0014"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0015"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0016"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0017"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0018"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0019"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "UC-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0013"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0014"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0015"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0016"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0017"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0018"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0019"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "UC-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0013"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0014"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0015"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0016"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0017"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0018"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0019"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "UC-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0002"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0003"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0005"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0007"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0008"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0009"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0010"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0011"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0003"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0005"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0007"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0008"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0009"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0010"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0011"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "UC-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0002"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0003"  target = "UC-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "UC-0008" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
