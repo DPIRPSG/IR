@@ -1,0 +1,5617 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Documento</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Documento</h3>
+<p />
+<h1 class="cover">Especificación de Requisitos del Sistema [MadejaIR]</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 19/10/2015</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0002" title="Hospital Virgen del Rocio">
+<p>
+Hospital Virgen del Rocio</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0001" title="Grupo IR">
+<p>
+Grupo IR</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introducción</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Alcance</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0004">
+Objetivos</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0005">
+Organizaciones y Participantes</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0002">
+Información sobre el dominio del problema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Introducción al dominio del problema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0007">
+Glosario de términos del dominio del problema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0008">
+Descripción de la situación actual</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Pros y contras de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0010">
+Fortalezas de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0011">
+Debilidades de la situación actual</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0012">
+Modelos de procesos de negocios actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Descripción de actores de negocio actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0014">
+Descripción de procesos de negocio actuales</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0015">
+Entorno tecnológico actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0016">
+Descripción del entorno de hardward actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0017">
+Descripción del entorno de software actual</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0018">
+Necesidades de negocio</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0019">
+Objetivos de negocio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0020">
+Modelos de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0021">
+Descripción de actores de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0022">
+Descripción de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Descripción de los subsistemas a desarrollar</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">6 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Catálogo de requisitos del sistema a desarrollar</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0028">
+Requisitos generales del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0029">
+Casos de uso del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0035">
+Diagrama de casos de uso del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0036">
+Especificación de actores del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0037">
+Especificación de casos de uso del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0030">
+Requisitos funcionales del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0038">
+Requisitos de información del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0039">
+Requisitos de reglas de negocio del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0040">
+Requisitos de conducta del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0031">
+Requisitos no funcionales del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0041">
+Requisitos de fiabilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0042">
+Requisitos de usabilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0043">
+Requisitos de mantenibilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0044">
+Requisitos de eficiencia del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.5 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0045">
+Requisitos de portabilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.6 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0046">
+Requisitos de seguridad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.7 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0047">
+Otros requisitos no funcionales del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0032">
+Restricciones técnicas del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0033">
+Requisitos de integración del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0034">
+Información sobre trazabilidad</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">A </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0023">
+Actas de reuniones</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">B </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0024">
+Documentación relevante</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">C </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Glosario de términos y abreviaturas</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introducción</h1><a name="PRG-0014" />
+<p>El proyecto que se va a desarrollar abarca la organización interna del Hospital Universitario Virgen del Rocío, en concreto, su Servicio de Hematología. Fundado en 1955, actualmente es el mayor complejo hospitalario del Sistema Sanitario Público de Andalucía, tanto por su intensa actividad asistencial como por su infraestructura y dotación tecnológica, incluyendo la mayor unidad de cuidados intensivos de España. Al tratarse de un hospital universitario, la Universidad de Sevilla es la institución afiliada al complejo sanitario. En resumen, es el centro sanitario de referencia de Andalucía.
+<br />
+</p>
+<a name="SEC-0003" />
+<h2 align="left">1.1 
+Alcance</h2><a name="PRG-0001" />
+<p>La rama del hospital en la que vamos a orientar nuestro proyecto será en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En ella existen multiples ensayos clínicos. Cada uno de estos ensayos clínicos tienen protocolos de actuación diferentes, con diferentes fármacos administrados, diferentes pautas de seguimiento y revisión, diferentes <a href="#GLO-0029" title="Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.">controles analíticos</a> en momentos diferentes de la evolución, etc. Esto hace que la organización y planificación asistencial de los pacientes incluidos en ensayos clínicos suponga un reto.
+<br />
+</p>
+<a name="SEC-0004" />
+<h2 align="left">1.2 
+Objetivos</h2><a name="PRG-0002" />
+<p>Nuestro proyecto pretende dotar al hospital de una herramienta más eficaz para la gestión de todos los procedimientos que se desarrollan en el Servicio de Hematología. El usuario final de este sistema será el personal adscrito a este servicio, y en menor medida, los pacientes, con lo que esperamos que les resulte fácil de usar y que permita agilizar tareas que hasta ahora resultaban muy costosas en tiempo de ejecución.
+<br />
+</p>
+<a name="SEC-0005" />
+<h2 align="left">1.3 
+Organizaciones y Participantes</h2><a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Hospital Virgen del Rocio</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Av. Manuel Siurot, s/n, 41013 Sevilla</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">955 01 20 00</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Grupo IR</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">-</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Miguel Rodríguez Caballero</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Grupo IR</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Ingeniero de Requisitos</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Carlos Alberto Mata Gil</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Grupo IR</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Ingeniero de Requisitos</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Guillermo Alcalá Gamero</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Grupo IR</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Ingeniero de Requisitos</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Manuel Francisco López Ruiz</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Grupo IR</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Ingeniero de Requisitos</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Francisco Javier Rodríguez Martorell</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Hospital Virgen del Rocio</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Médico</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0002" />
+<h1 align="left">2 
+Información sobre el dominio del problema</h1><a name="PRG-0015" />
+<p>La forma en la que está organizada la información en el hospital, tal y como se detallará más adelante, hace que la gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de revisión, <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a>, <a href="#GLO-0035" title="Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc).">dispensación de la medicación</a>, devolución de los envases de tratamientos en experimentación o la gestión de incidencias o efectos adversos inesperados supongan, por tanto, un reto organizativo para el que la gestión mediante un sistema de información podría ser la solución más eficiente. Este programa podría, además, permitir la recogida, almacenamiento y análisis de datos clínicos evolutivos y de posibles efectos indeseables del tratamiento.
+<br />El sistema de información elaborado deberá ser capaz de dar entrada a los datos de los pacientes y almacenarlos de manera encriptada, asegurar el acceso restringido a los diferentes usuarios (médicos responsables de los ensayos) y establecer los diferentes niveles de accesibilidad permitidos a los datos, gestionar las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de revisión clínica de los pacientes de los diferentes ensayos clínicos, así como los diferentes <a href="#GLO-0029" title="Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.">controles analíticos</a> que se realicen durante el seguimiento. Así mismo, deberá gestionar la recepción de medicación desde la unidad de ensayos clínicos del servicio de farmacia del hospital, y el control de la dispensación del <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> en experimentación a los pacientes, así como la devolución por parte de los pacientes de los envases utilizados. Igualmente dispondrá de un sistema de alerta de comunicación de los efectos adversos inesperados, tanto clínicos como biológicos y que serán la base para el reporte al promotor de los SAES (Serious Adverse Events, es decir, Eventos Adversos Serios).
+<br />
+</p>
+<a name="SEC-0006" />
+<h2 align="left">2.1 
+Introducción al dominio del problema</h2><a name="PRG-0003" />
+<p>El sistema a desarrollar comprenderá dos roles principales: los "clientes" y los usuarios
+<br />Los clientes del sistema serían los pacientes con diferentes enfermedades (diagnósticos) que pueden ser incluidos en los ensayos clínicos (pueden existir varios ensayos clínicos diferentes activos para una misma enfermedad).
+<br />Los usuarios del sistema serían los diferentes miembros del equipo médico del servicio responsable de la captación, cuidado y seguimiento de los pacientes incluidos en los ensayos clínicos. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.
+<br />
+</p>
+<a name="SEC-0007" />
+<h2 align="left">2.2 
+Glosario de términos del dominio del problema</h2><a name="GLO-0026" />
+<p align="left">
+<b> Analíticas de control:</b> Determinaciones de diferentes parámetros analíticos (<a href="#GLO-0038" title="Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características.">hemograma</a>, <a href="#GLO-0027" title="Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).">bioquímica</a>, <a href="#GLO-0043" title="Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).">serología</a>, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente. 
+<br />
+</p>
+<a name="GLO-0027" />
+<p align="left">
+<b> Bioquímica:</b> Determinación analítica de diferentes parámetros no celulares (químicos) de diferentes muestras biológicas, pero generalmente en la sangre (por ejemplo, glucosa, proteínas, transaminasas, colesterol, etc).</p>
+<a name="GLO-0028" />
+<p align="left">
+<b> Citas:</b> Fechas en las que se realizan revisiones clínicas o extracciones <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a> a los pacientes. </p>
+<a name="GLO-0029" />
+<p align="left">
+<b> Controles analíticos:</b> Estudios de diferentes parámetros en muestras biológicas (sangre, orina, heces, etc) del paciente.</p>
+<a name="GLO-0030" />
+<p align="left">
+<b> CRO:</b> Encargado de revisar el <a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a> y promover dicho ensayo clínico 
+<br />
+</p>
+<a name="GLO-0031" />
+<p align="left">
+<b> CRF:</b> Informe de control sobre un ensayo clínico realizado por el <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a> y supervisado por el <a href="#GLO-0030" title="Encargado de revisar el CRF y promover dicho ensayo clínico">CRO</a>.</p>
+<a name="GLO-0032" />
+<p align="left">
+<b> Data Manager:</b> Es un empleado del hospital encargado de realizar el <a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a>.</p>
+<a name="GLO-0033" />
+<p align="left">
+<b> Datos clínicos de seguimiento:</b> Valoración de diferentes síntomas y signos en los pacientes como manifestación de enfermedad (fiebre, palpitaciones, dolor de cabeza, etc).</p>
+<a name="GLO-0034" />
+<p align="left">
+<b> Diagnóstico:</b> Procedimiento por el cual se identifica una enfermedad en un paciente.</p>
+<a name="GLO-0035" />
+<p align="left">
+<b> Dispensación de la medicación:</b> Entrega al paciente de la medicación que va a recibir como tratamiento por parte del organismo que la custodia (farmacia, servicio responsable del ensayo clínico, etc). 
+<br />
+</p>
+<a name="GLO-0036" />
+<p align="left">
+<b> Fármaco:</b> Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano. </p>
+<a name="GLO-0037" />
+<p align="left">
+<b> Grupos diagnósticos:</b> Grupos de pacientes afectados por una misma enfermedad o <a href="#GLO-0040" title="Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.">patología</a>.</p>
+<a name="GLO-0038" />
+<p align="left">
+<b> Hemograma:</b> Determinación automatizada de las tres series celulares sanguíneas (glóbulos rojos, glóbulos blancos y plaquetas) y de diferentes índices que nos informan sobre sus características. 
+<br />
+</p>
+<a name="GLO-0039" />
+<p align="left">
+<b> NUHSA:</b> Es el número único de identificación para los pacientes en el sistema de salud de Andalucía. 
+<br />
+</p>
+<a name="GLO-0040" />
+<p align="left">
+<b> Patología:</b> Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.</p>
+<a name="GLO-0041" />
+<p align="left">
+<b> Pautas de tratamiento:</b> Fármacos, dosis y ritmo de administración utilizados tanto en tratamientos convencionales (estándar) como de los tratamientos experimentales evaluados.</p>
+<a name="GLO-0042" />
+<p align="left">
+<b> Protocolo de actuación:</b> Plan sistematizado a seguir en la resolución de un problema o en nuestro caso en la atención y seguimiento de un paciente.</p>
+<a name="GLO-0043" />
+<p align="left">
+<b> Serología:</b> Estudio de diferentes marcadores biológicos asociados a una enfermedad (marcadores tumorales) o a una respuesta inmune (anticuerpos específicos).</p>
+<a name="SEC-0008" />
+<h1 align="left">3 
+Descripción de la situación actual</h1><a name="SEC-0009" />
+<h2 align="left">3.1 
+Pros y contras de la situación actual</h2><a name="PRG-0021" />
+<p>En los siguientes apartados describiremos cuales son las fortalezas y las debilidades de la situación actual.</p>
+<a name="SEC-0010" />
+<h3 align="left">3.1.1 
+Fortalezas de la situación actual</h3><a name="PRG-0005" />
+<p>La única fortaleza del sistema es que los empleados ya están acostumbrados a usarlo.</p>
+<a name="SEC-0011" />
+<h3 align="left">3.1.2 
+Debilidades de la situación actual</h3><a name="PRG-0006" />
+<p>Las debilidades del sistema son las siguientes:
+<br /> - La poca integración entre las bases de datos, ya que son distintas para guardar la información de los pacientes, los ensayos clínicos y la información sobre los distintos empleados. Esto implica que deban reunir la información que necesite de tres bases de datos distintas.
+<br /> - Solo un empleado puede conectarse concurrentemente a una base de datos, por lo que hay problemas a la hora de reunir la información.
+<br /> - El sistema no guarda información sobre las fechas de las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> con los pacientes.</p>
+<a name="SEC-0012" />
+<h2 align="left">3.2 
+Modelos de procesos de negocios actuales</h2><a name="PRG-0017" />
+<p>En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</p>
+<a name="SEC-0013" />
+<h3 align="left">3.2.1 
+Descripción de actores de negocio actuales</h3><a name="PRG-0007" />
+<p>En los procesos de negocio actuales quedan definidos 3 actores participantes, los cuales se describen a continuación:</p>
+<a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+Médico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Responsables de Enfermería</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 02/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0014" />
+<h3 align="left">3.2.2 
+Descripción de procesos de negocio actuales</h3><a name="PRG-0008" />
+<p>Antes del comienzo del desarrollo del sistema software quedaban definidos los siguientes 2 procesos de negocio actuales:
+<br />
+<br />001		Gestión de ensayo clínico de 1 paciente.
+<br />Versión:		1(02/11/2015) 
+<br />Dependencias:	- Tratar paciente
+<br />Descripción:	El proceso comienza con el tratamiento normal del paciente (que se describe como un proceso de negocio aparte(002)). Si los resultados de este primer tratamiento son positivos se le sigue aplicando el mismo tratamiento hasta curarse, pero en caso contrario, sería un denominado paciente candidato a ensayos clínicos. Primero se le hace una valoración para ver si cumple unos criterios que varían según sea la <a href="#GLO-0040" title="Estudio de la enfermedad y sus características. Muchas veces utilizado como sinónimo de enfermedad.">patología</a>, la gravedad de ésta y si ha recibido otros tratamientos anteriormente. Si un paciente no cumple estos criterios, se le aplicarían tratamientos paliativos, no curativos, solo con la intención de reducir los síntomas. En el caso de que si cumpliese los criterios, se le explicaría que tratamiento experimental se le va a aplicar, que beneficios y riesgos conlleva. Si el paciente decide no aplicarse el tratamiento experimental, se le aplicaría uno paliativo, y en el caso de que aceptase aplicarse el tratamiento experimental, empezaría el tratamiento, con una serie de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>, analíticas, controles y demás, según su grupo <a href="#GLO-0034" title="Procedimiento por el cual se identifica una enfermedad en un paciente.">diagnóstico</a>. Si el paciente responde con este tratamiento, se le sigue aplicando hasta su curación. Por lo contrario, si el paciente no responde, se le aplicaría un tratamiento paliativo.
+<br />Importancia:	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
+<br />Actores:		-Médico (001)
+<br />		-Paciente (002)
+<br />Comentarios:	No procede
+<br />
+<br />
+</p>
+<a name="GRF-0001" />
+<p align="center">
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\3.2.2.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Proceso de negocio</p>
+<a name="PRG-0019" />
+<p>002		Tratar paciente
+<br />Versión:		1(02/11/2015)
+<br />Descripción:	El proceso comienza cuando el paciente llama al hospital para pedir cita con su médico. El Responsable de Enfermería recibe la petición de consulta del paciente y le envía la cita al mismo. El paciente asiste a consulta en el momento citado y es atendido por el médico, el cuál le debe recetar las medicinas correspondiente para llevar a cabo un tratamiento normal.
+<br />Importancia:	Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar.
+<br />Actores:		-Médico (001)
+<br />		-Responsable de Enfermería (003)
+<br />		-Paciente (002)
+<br />Comentarios:	No procede</p>
+<a name="GRF-0002" />
+<p align="center">
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\Tratar paciente.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Proceso tratar paciente</p>
+<a name="SEC-0015" />
+<h2 align="left">3.3 
+Entorno tecnológico actual</h2><a name="PRG-0022" />
+<p>A continuación se detallará sobre el Hardware y el Software que se usa en el servicio de Hematología para los ensayos clínicos.</p>
+<a name="SEC-0016" />
+<h3 align="left">3.3.1 
+Descripción del entorno de hardward actual</h3><a name="PRG-0009" />
+<p>Disponen de una intranet a la que se conectan los ordenadores de cada empleado y una torre de gran potencia por la cúal comparten entre sí todo lo necesario (Archivos, carpetas, etc).
+<br />También cuentan con material centrado en la monotorización de los pacientes. Éste no es posible integrarlo en el sistema pero exporta información útil en formatos xml y png que deben ser almacenados.</p>
+<a name="SEC-0017" />
+<h3 align="left">3.3.2 
+Descripción del entorno de software actual</h3><a name="PRG-0010" />
+<p>Entre el Software que usan se encuentra:
+<br />- Una hoja de cálculos de Excel, la cúal usan para anotar los pacientes con sus <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> y pruebas corresponidentes.
+<br />- Un sistema denominado Diraya, el cúal engloba varias bases de datos, donde guardan la información sobre los empleados, los distintos ensayos clínicos y los pacientes.</p>
+<a name="SEC-0018" />
+<h1 align="left">4 
+Necesidades de negocio</h1><a name="SEC-0019" />
+<h2 align="left">4.1 
+Objetivos de negocio</h2><a name="PRG-0011" />
+<p>Objetivo 1
+<br />
+<br />COMO: Director del Ensayo Clínico
+<br />QUIERO: Un sistema que englobe todas las gestiones necesarias de un Ensayo Clínico
+<br />PARA: Facilitar el acceso a los datos por parte del personal de los Ensayos
+<br />
+<br />
+<br />Objetivo 2
+<br />
+<br />COMO: Director del Ensayo Clínico
+<br />QUIERO: Un sistema fácil de entender y accesible para todo el personal perteneciente a los ensayos
+<br />PARA: Reducir el tiempo de aprendizaje y fomentar su uso
+<br />
+<br />
+<br />Objetivo 3
+<br />
+<br />COMO: Personal perteneciente al Ensayo Clínico
+<br />QUIERO: Poder gestionar de manera eficiente los Ensayos Clínicos
+<br />PARA: Poder centrarme en el Ensayo Clínico.</p>
+<a name="SEC-0020" />
+<h2 align="left">4.2 
+Modelos de procesos de negocio a implantar</h2><a name="PRG-0020" />
+<p>En este caso la única diferencia con los modelos actuales es que se añade una capa extra de gestión de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> así como de registros que eran imposibles en los modelos actuales.
+<br />En base a lo descrito por el cliente en las reuniones, definimos un proceso de negocio relevante, "Gestión de ensayo clínico de un paciente", dentro del cuál se encuentra un segundo proceso de negocio, "Tratar paciente", que hemos considerado oportuno aislar debido a que corresponde a un tratamiento anterior, del cuál dependerá que dicho ensayo clínico se lleve a cabo de una manera u otra.</p>
+<a name="SEC-0021" />
+<h3 align="left">4.2.1 
+Descripción de actores de negocio a implantar</h3><a name="PRG-0012" />
+<p>En los procesos de negocio a implantar quedan definidos 3 actores participantes, los cuales son los mismos que los descritos en el apartado 3.2.1.
+<br />
+</p>
+<a name="SEC-0022" />
+<h3 align="left">4.2.2 
+Descripción de procesos de negocio a implantar</h3><a name="PRG-0013" />
+<p>Tras desarrollar el sistema software deben quedar definidos los siguientes 2 procesos de negocio actuales:
+<br />
+<br />001		Gestión de ensayo clínico de 1 paciente.
+<br />Versión		1(02/11/2015) 
+<br />Dependencias	- Tratar paciente
+<br />Descripción	Este proceso de negocio es igual que el proceso de negocio actual descrito en el apartado 3.2.2, a excepción de que en el caso de que el paciente aceptase aplicarse el tratamiento experimental se le registraría en el ensayo clínico y se crearía un calendario de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> para controles, analíticas y demás durante todo el tratamiento. Una vez hecho esto empezaría el tratamiento según su grupo <a href="#GLO-0034" title="Procedimiento por el cual se identifica una enfermedad en un paciente.">diagnóstico</a> y se seguiría el proceso habitual.
+<br />Importancia	Este proceso de negocio es clave para el cliente, siendo el más complejo de gestionar y el principal motivo por el que se desarrolla el sistema software.
+<br />Actores		-Médico (001)
+<br />		-Paciente (002)
+<br />Comentarios	No procede
+<br />
+<br />Puesto que este proceso de negocio cambia en los detalles descriptos, indicamos a continuación el BPMN con los cambios oportunos:
+<br />
+</p>
+<a name="GRF-0003" />
+<p align="center">
+<img src="..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png" title="..\TextoEspecificaciónRequisitosSistema\Entrega1\4.2.2.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Proceso a implantar</p>
+<a name="PRG-0025" />
+<p>002 Tratar paciente 
+<br />Versión 1(02/11/2015) 
+<br />Descripción Este proceso de negocio es exactamente el mismo que en el proceso de negocio actual indicado en el apartado 3.2.2.
+<br />Importancia Este proceso no supone una importancia mayor para el cliente, pero le ayuda a agilizar el proceso posterior (001), el cuál depende por completo de este para comenzar. 
+<br />Actores -Médico (001) 
+<br />-Responsable de Enfermería (003) 
+<br />-Paciente (002) 
+<br />Comentarios No procede </p>
+<a name="SEC-0026" />
+<h1 align="left">5 
+Descripción de los subsistemas a desarrollar</h1><a name="PRG-0056" />
+<p>El sistema a desarrollar quedará dividido en los siguientes subsistemas:
+<br />
+<br />001
+<br />Pacientes
+<br />Descripción
+<br />Este subsistema agrupa los requisitos relacionados con la gestión de los pacientes participantes en los distintos Ensayos Clínicos, el almacenamiento de sus datos e informes necesarios y la gestión completa de sus <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> con el personal sanitario pertinente.
+<br />Comentarios
+<br />No procede
+<br />
+<br />002
+<br />Ensayos Clínicos
+<br />Descripción
+<br />Este subsistema agrupa los requisitos relacionados con los Ensayos Clínicos, los fármacos que se utilizan, los pacientes que participan, las incidencias ocurridas y el resto de datos y documentación necesaria y disponible para cada personal santario en el sistema.
+<br />Comentarios
+<br />No procede
+<br />
+<br />003
+<br />Personal sanitario
+<br />Descripción
+<br />Este subsistema agrupa los requisitos relacionados con la gestión y paricipación del distinto personal sanitario en el sistema.
+<br />Comentarios
+<br />No procede</p>
+<a name="SEC-0027" />
+<h1 align="left">6 
+Catálogo de requisitos del sistema a desarrollar</h1><a name="SEC-0028" />
+<h2 align="left">6.1 
+Requisitos generales del sistema</h2><a name="OBJ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0001</th>
+<th align="left" valign="top" width="100%">
+Gestión de Pacientes</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Manuel Francisco López Ruiz</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+encargarse de la gestión de los pacientes como de sus <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0002</th>
+<th align="left" valign="top" width="100%">
+Gestión de Ensayos Clínicos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Manuel Francisco López Ruiz</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+encargarse de la gestión de los Ensayos Clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0003</th>
+<th align="left" valign="top" width="100%">
+Gestión de Personal Sanitario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Manuel Francisco López Ruiz</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+encargarse de la gestión de los empleados que trabajen en los distintos Ensayos Clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0029" />
+<h2 align="left">6.2 
+Casos de uso del sistema</h2><a name="SEC-0035" />
+<h3 align="left">6.2.1 
+Diagrama de casos de uso del sistema</h3><a name="GRF-0052" />
+<p align="center">
+<img src="..\Diagrama de caso de uso del sistema.png" title="..\Diagrama de caso de uso del sistema.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de casos de uso</p>
+<a name="SEC-0036" />
+<h3 align="left">6.2.2 
+Especificación de actores del sistema</h3><a name="ACT-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0004</th>
+<th align="left" valign="top" width="100%">
+Médico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0005</th>
+<th align="left" valign="top" width="100%">
+Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0006</th>
+<th align="left" valign="top" width="100%">
+Responsable de Enfermería</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Alberto Mata Gil</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0007</th>
+<th align="left" valign="top" width="100%">
+Responsable de Farmacia</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0008</th>
+<th align="left" valign="top" width="100%">
+Investigador Principal</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0009</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 07/01/2016 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Este actor es una subclase dentro de los posibles empleados del Hospital. Su función será la de listar los monitores que tienen visita la semana próxima con los datos oportunos para que se pueda organizar todo correctamente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0037" />
+<h3 align="left">6.2.3 
+Especificación de casos de uso del sistema</h3><a name="UC-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Petición de cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un paciente pida una cita.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El paciente se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0042" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0005" title="Este actor representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.">
+Paciente (ACT-0005)
+    </a>
+<em>
+solicita una cita de revisión.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0043" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+muestra el formulario de petición de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0044" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0005" title="Este actor representa a las personas que asisten a consulta con diferentes enfermedades y que pueden ser incluidas en los ensayos clínicos.">
+Paciente (ACT-0005)
+    </a>
+<em>
+rellena los campos necesarios y solicita al sistema que registre su cita.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0045" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora la petición de cita del actor Paciente (ACT-005).</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        semana(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Confirmación de cita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un responsable de enfermería devuelva la confirmación de una cita.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0046" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+pide la lista de nuevas <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0047" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+muestra la lista de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> por procesar.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0094" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+elige la cita en el que esté interesado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0095" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+le devuelve la cita requerida.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0048" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+le asigna los datos necesarios a la cita y solicita al sistema que envíe su cita.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0049" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+muestra un mensaje de confirmación anunciando que la cita se ha guardado correctamente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora la cita editada con los cambios que se le hayan efectuado.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Solicitar las analíticas de un Paciente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un médico desee gestionar las <a href="#GLO-0026" title="Determinaciones de diferentes parámetros analíticos (hemograma, bioquímica, serología, etc) como seguimiento del tratamiento y la evolución de la enfermedad del paciente.">analíticas de control</a> asignadas a él mismo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El médico se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0050" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+pide la lista de actores Paciente (ACT-005) asociados a ellos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0051" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+devuelve la lista de actores Paciente (ACT-005) requerida.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0052" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+elige el Paciente (ACT-005) en el que esté interesado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0053" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+devuelve el perfil del actor Paciente (ACT-005) seleccionado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0054" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+selecciona las analíticas del actor Paciente (ACT-005) dentro del perfil de éste.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0055" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+devuelve la lista de las analíticas del actor Paciente (ACT-005).</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0056" />
+<td align="center" valign="top">7</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+podrá descargar desde un enlace la analítica que desee.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+En el caso de realizar la descargar de la información de las analíticas del paciente, se generará un archivo que contendrá la información requerida.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        hora(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Petición de Fármacos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un médico pida fármacos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El médico se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0057" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+pide al sistema la lista de los Ensayos Clínicos asociados a él.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0058" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+devuelve la vista con la lista de los Ensayos Clínicos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0059" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+selecciona un Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0060" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+devuelve un formulario con el identificador del Ensayo Clínico ya relleno.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0061" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+rellena el resto de parámetros del formulario (Fármacos actuales, Nuevo <a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">fármaco</a> y las unidades de este último) y lo envía.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0062" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+envía un mensaje de confirmación del envío del formulario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora la nueva petición de medicamentos.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        semana(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Aceptación de pedidos de Fármacos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el responsable de farmacia reciba una petición de fármacos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El responsable de farmacia se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0063" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0007" title="Este actor representa Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.">
+Responsable de Farmacia (ACT-0007)
+    </a>
+<em>
+pide al sistema la lista de las nuevas peticiones de fármacos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0064" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+devuelve la vista con la lista de las peticiones.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0065" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0007" title="Este actor representa Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.">
+Responsable de Farmacia (ACT-0007)
+    </a>
+<em>
+revisa la petición. Esto permite que no se pidan productos con un amplio stock o productos innecesarios.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0066" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0007" title="Este actor representa Este actor representa a la persona que dirige el departamento de farmacia del hospital. Todas la peticiones de material farmacológico pasarán a través de él para un mejor coordinación de los pedidos, con el fin de evitar pedidos innecesarios o fraudulentos.">
+Responsable de Farmacia (ACT-0007)
+    </a>
+<em>
+decide si cancela o no la petición. Tras su elección, envía su decisión al sistema. El actor Responsable de farmacia (ACT-007) puede añadir una aclaración o sugerencias para que el médico la tenga en cuenta.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0067" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+notifica al actor Médico (ACT-004) de la decisión del actor Responsable de farmacia (ACT-007).</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0158" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+notifica al actor Responsable de Farmacia (ACT-0007) de que su decisión ha sido guardada en el sistema.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge la petición de medicamentos actualizada, es decir, cancelada o no. Además, el actor Médico (ACT-004) recibirá una notificación de la decisión del actor Responsable de Farmacia (ACT-007).</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        semana(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Devolución de envases de tratamientos en experimentación</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un responsable de enfermería efectúe la devolución de los envases de tratamiento en experimentación.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El responsable de enfermería se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0068" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+pide al sistema una lista de los Ensayos a los que está asignado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0069" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+le devuelve dicha lista.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0070" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+selecciona el conjunto de Ensayo y médico del que se quieren devolver envases.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0071" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+le devuelve el formulario de devolución de productos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0072" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a las personas que actúan de intermediarias entre paciente y médico en las etapas previas a la primera consulta, con el objetivo de concertar una cita entre ambos.">
+Responsable de Enfermería (ACT-0006)
+    </a>
+<em>
+rellena una lista con los artículos y las cantidades a devolver y envía el formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0073" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+devuelve un mensaje de confirmación de envío del formulario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora el listado de los artículos a devolver.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0007</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Notificar incidencia</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el Investigador Principal notifique alguna incidencia en el sistema.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El Investigador Principal se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0074" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.">
+Investigador Principal (ACT-0008)
+    </a>
+<em>
+pide al sistema una lista de los Ensayos a los que está asignado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0075" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+devuelve dicha lista.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0076" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.">
+Investigador Principal (ACT-0008)
+    </a>
+<em>
+selecciona el Ensayo del que se quiere notificar una incidencia.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0077" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+devuelve la vista con el formulario de notificación de incidencias.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0078" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa a la persona que encabeza un ensayo clínico. Toda la responsabilidad recae sobre él por lo que será el encargado de la gestión de las incidencias que otros actores le notifiquen.">
+Investigador Principal (ACT-0008)
+    </a>
+<em>
+rellena el formulario con todos los datos necesarios para que se pueda procesar la incidencia, tales como los actores implicados, el lugar de la incidencia, una descripción y las consecuencias de la incidencia. Después envía el formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0080" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+devuelve un mensaje de confirmación de envío del formulario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora la incidencia creada.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="UC-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0008</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Adición de efectos adversos en los tratamientos.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 09/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Guillermo Alcalá Gamero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el médico desee añadir algún efecto adverso ocurrido en el tratamiento de algún paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El médico se ha identificado correctamente y su sesión está abierta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="11">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0081" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+pide al sistema una lista de los actores Paciente (ACT-005) que tiene asignado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0082" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+le devuelve dicha lista.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0083" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+selecciona el actor Paciente (ACT-005) al que se le quiere asignar el efecto adverso del tratamiento.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0084" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+devuelve la vista con la información del actor Paciente (ACT-005).</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0085" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+selecciona el conjunto de efectos adversos dentro del perfil del actor Paciente (ACT-005) seleccionado.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0086" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+le devuelve la lista de los efectos adversos asociados al actor Paciente (ACT-005).</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0087" />
+<td align="center" valign="top">7</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+le pide al sistema el formulario para poder registrar un nuevo efecto adverso.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0088" />
+<td align="center" valign="top">8</td>
+<td>El
+     
+    sistema<em>
+le devuelve el formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0089" />
+<td align="center" valign="top">9</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a aquellas personas miembros del equipo médico en el Servicio de Hematología del Hospital Universitario Virgen del Rocío. En cada ensayo clínico existe un investigador principal (IP) que es el responsable de todos los aspectos del proyecto en el hospital, y pueden existir uno o varios Subinvestigadores que tienen diferentes funciones delegadas por el IP y por tanto diferentes cometidos, niveles de responsabilidad y diferentes niveles de autorización al manejo de datos.">
+Médico (ACT-0004)
+    </a>
+<em>
+rellena el formulario con los datos necesarios (Ensayo Clínico asociado y una descripción del efecto adverso). Después envía el formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0091" />
+<td align="center" valign="top">10</td>
+<td>El
+     
+    sistema<em>
+envía un mensaje de confirmación de envío del informe.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema recoge ahora el nuevo efecto adverso detectado en el actor Paciente (ACT-005).</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+No procede</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0030" />
+<h2 align="left">6.3 
+Requisitos funcionales del sistema</h2><a name="SEC-0038" />
+<h3 align="left">6.3.1 
+Requisitos de información del sistema</h3><a name="IRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Información sobre Ensayos clínicos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 23/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Ensayos clínicos.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0041" />
+ID</li>
+<li>
+<a name="DAT-0001" />
+Monitor del Ensayo clínico</li>
+<li>
+<a name="DAT-0002" />
+Situación actual del Ensayo Clínico
+<br />(Pre-evaluación, abierto o cerrado)</li>
+<li>
+<a name="DAT-0004" />
+<a href="#GLO-0036" title="Sustancia medicinal, independiente de su origen o elaboración, a cualquier producto consumible al que se le atribuyen efectos beneficiosos en el ser humano.">Fármaco</a> experimental</li>
+<li>
+<a name="DAT-0005" />
+Criterio de inclusión</li>
+<li>
+<a name="DAT-0006" />
+Criterio de exclusión</li>
+<li>
+<a name="DAT-0007" />
+Periodo de reclutamiento</li>
+<li>
+<a name="DAT-0009" />
+Pacientes incluidos en el Ensayo clínico</li>
+<li>
+<a name="DAT-0209" />
+Incidencias (Lugar, descripción y consecuencias).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>10 
+                        año(s)</td>
+<td>20 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Información sobre Empleados</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 23/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Empleados.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0011" />
+Nombre</li>
+<li>
+<a name="DAT-0012" />
+Apellidos</li>
+<li>
+<a name="DAT-0015" />
+DNI</li>
+<li>
+<a name="DAT-0017" />
+Email</li>
+<li>
+<a name="DAT-0018" />
+Teléfono</li>
+<li>
+<a name="DAT-0013" />
+Ensayos en los que participa</li>
+<li>
+<a name="DAT-0014" />
+Cargo en cada ensayo en el que participa (Los cargos pueden ser Investigador Principal, Subinvestigador, <a href="#GLO-0032" title="Es un empleado del hospital encargado de realizar el CRF.">Data Manager</a>, Responsable de Farmacia y Responsable de Enfermería).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>5 
+                        año(s)</td>
+<td>10 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Información sobre Pacientes</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 23/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Pacientes.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0019" />
+Nombre</li>
+<li>
+<a name="DAT-0020" />
+Apellidos</li>
+<li>
+<a name="DAT-0021" />
+DNI</li>
+<li>
+<a name="DAT-0022" />
+<a href="#GLO-0039" title="Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.">NUHSA</a>
+</li>
+<li>
+<a name="DAT-0023" />
+NHC</li>
+<li>
+<a name="DAT-0024" />
+<a href="#GLO-0034" title="Procedimiento por el cual se identifica una enfermedad en un paciente.">Diagnóstico</a>
+</li>
+<li>
+<a name="DAT-0025" />
+Ensayo en el que participa</li>
+<li>
+<a name="DAT-0026" />
+Fármacos asignados</li>
+<li>
+<a name="DAT-0027" />
+Fecha de inclusión en el Ensayo</li>
+<li>
+<a name="DAT-0028" />
+Fecha y lugar de revisión clínica</li>
+<li>
+<a name="DAT-0029" />
+Fecha y lugar de Analíticas</li>
+<li>
+<a name="DAT-0155" />
+Efectos Adversos (Descripción y fecha)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>15 
+                        año(s)</td>
+<td>20 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>10</td>
+<td>30</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Información sobre Promotor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 23/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Promotor del ensayo.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0030" />
+Nombre de la empresa</li>
+<li>
+<a name="DAT-0031" />
+CIF</li>
+<li>
+<a name="DAT-0093" />
+Monitor que colabora con el Ensayo Clínico</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>10 
+                        año(s)</td>
+<td>20 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Información sobre Monitor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 23/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Monitor del ensayo.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0032" />
+Nombre</li>
+<li>
+<a name="DAT-0033" />
+Apellidos</li>
+<li>
+<a name="DAT-0035" />
+Email</li>
+<li>
+<a name="DAT-0036" />
+Teléfono</li>
+<li>
+<a name="DAT-0037" />
+Empresa para la que trabaja</li>
+<li>
+<a name="DAT-0092" />
+Fecha de visita</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>5 
+                        año(s)</td>
+<td>10 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0039" />
+<h3 align="left">6.3.2 
+Requisitos de reglas de negocio del sistema</h3><a name="CRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Mantener los pacientes en el sistema</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Mantener los pacientes en el sistema un mínimo de 15 años desde su fecha de inclusión para cumplir con la ley vigente sobre Ensayos Clínicos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Un Investigador Principal por Ensayo Clínico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Que sólo haya un Investigador Principal en cada Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0003</th>
+<th align="left" valign="top" width="100%">
+No eliminar empleados</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Que no se eliminen empleados aunque cambien de hospital para permitir que puedan verificar los datos requeridos por los monitores.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0004</th>
+<th align="left" valign="top" width="100%">
+No eliminar promotores</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Que no se eliminen los promotores para mantener la información de los mismos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0005</th>
+<th align="left" valign="top" width="100%">
+No eliminar Ensayos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Que no se eliminen los Ensayos Clínicos en los que no se incluyan pacientes para mantener la información de los mismos.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0006</th>
+<th align="left" valign="top" width="100%">
+Un paciente en un sólo Ensayo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Que si un paciente está o ha estado en un Ensayo Clínico no pueda ser propuesto para otro para evitar duplicidad de participación en Ensayos Clínicos conforme a la normativa vigente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0040" />
+<h3 align="left">6.3.3 
+Requisitos de conducta del sistema</h3><a name="FRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Lista de Ensayos Clínicos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+tener a principios de mes una lista con los Ensayos Clínicos abiertos y los pacientes incluidos en cada Ensayo Clínico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Lista de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+tener cada semana una lista con los pacientes con cita médica para la próxima semana y los estudios complementarios a realizar al paciente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0003</th>
+<th align="left" valign="top" width="100%">
+Lista de pacientes con su medicación</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+poder generar en cualquier momento una lista con los pacientes  con su respectiva medicación.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0004</th>
+<th align="left" valign="top" width="100%">
+Lista de monitores con visita</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0003" title="Gestión de Personal Sanitario">
+                                [OBJ-0003] 
+Gestión de Personal Sanitario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+tener cada semana una lista con los monitores que tienen visita la semana siguiente.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0005</th>
+<th align="left" valign="top" width="100%">
+Lista de pacientes con su estudio a realizar</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+poder generar en cualquier momento una lista con los estudios complementarios a realizar a los pacientes.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0006</th>
+<th align="left" valign="top" width="100%">
+Lista de Ensayos con número de pacientes</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 04/12/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Gestión de Pacientes">
+                                [OBJ-0001] 
+Gestión de Pacientes</a>
+</li>
+<li>
+<a href="#OBJ-0002" title="Gestión de Ensayos Clínicos">
+                                [OBJ-0002] 
+Gestión de Ensayos Clínicos</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+poder generar en cualquier momento una lista con los Ensayos Clínicos abiertos y el número de pacientes incluido en cada Ensayo.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0031" />
+<h2 align="left">6.4 
+Requisitos no funcionales del sistema</h2><a name="SEC-0041" />
+<h3 align="left">6.4.1 
+Requisitos de fiabilidad del sistema</h3><a name="NFR-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0004</th>
+<th align="left" valign="top" width="100%">
+Disponibilidad 24/7</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que el programa esté operativo
+<br />permanentemente y que no exista
+<br />restricción horaria de acceso
+<br />para facilitar el registro de los datos
+<br />independientemente del horario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0042" />
+<h3 align="left">6.4.2 
+Requisitos de usabilidad del sistema</h3><a name="NFR-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0003</th>
+<th align="left" valign="top" width="100%">
+Multi-Usuario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que varios usuarios puedan
+<br />estar registrando datos simultáneamente
+<br />en un mismo paciente o Ensayo</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">quedaría bien</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0043" />
+<h3 align="left">6.4.3 
+Requisitos de mantenibilidad del sistema</h3><a name="PRG-0046" />
+<p>No procede</p>
+<a name="SEC-0044" />
+<h3 align="left">6.4.4 
+Requisitos de eficiencia del sistema</h3><a name="PRG-0047" />
+<p>No procede</p>
+<a name="SEC-0045" />
+<h3 align="left">6.4.5 
+Requisitos de portabilidad del sistema</h3><a name="NFR-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0005</th>
+<th align="left" valign="top" width="100%">
+Clave acceso</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que se pueda acceder de
+<br />forma remota al sistema con una clave
+<br />especial de acceso para consulta de datos puntuales
+<br />desde fuera del hospital</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0046" />
+<h3 align="left">6.4.6 
+Requisitos de seguridad del sistema</h3><a name="NFR-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0001</th>
+<th align="left" valign="top" width="100%">
+Acceso</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que sólo puedan acceder al sistema los empleados autorizados de la
+<br />organización para cumplir con la Ley de Protección de Datos</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0002</th>
+<th align="left" valign="top" width="100%">
+Datos Encriptados</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que todos los datos personales de los pacientes
+<br />se almacenen de forma encriptada para cumplir con la Ley de Protección de Datos </em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0006</th>
+<th align="left" valign="top" width="100%">
+Acceso Restringido</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/11/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Miguel Rodríguez Caballero</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Francisco Javier Rodríguez Martorell</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+asegurarse de que cada empleado perteneciente
+<br />al Ensayo sólo vea la información que necesita
+<br />para mantener en el anonimato a
+<br />los pacientes y evitar filtraciones de
+<br />información referentes al Ensayo Clínico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0047" />
+<h3 align="left">6.4.7 
+Otros requisitos no funcionales del sistema</h3><a name="PRG-0048" />
+<p>No procede</p>
+<a name="SEC-0032" />
+<h2 align="left">6.5 
+Restricciones técnicas del sistema</h2><a name="PRG-0052" />
+<p>Las únicas restricciones técnicas impuestas por el cliente son:
+<br />
+<br />== Compatibilidad ==
+<br />Descripción: El sistema deberá ser compatible con los navegadores web firefox, chrome, safari e internet explorer.
+<br />
+<br />
+<br />== Rendimiento ==
+<br />Descripción: El sistema deberá funcionar sin ningún problema de rendimiento en la máquina que ya poseen.
+<br />
+</p>
+<a name="SEC-0033" />
+<h2 align="left">6.6 
+Requisitos de integración del sistema</h2><a name="PRG-0049" />
+<p>No procede</p>
+<a name="SEC-0034" />
+<h2 align="left">6.7 
+Información sobre trazabilidad</h2><a name="TRM-0001" />
+<table border="1" width="100%">
+<tr>
+<th bgcolor="#c8e0e0">TRM-0001</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0001" title="Gestión de Pacientes">OBJ-0001</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0002" title="Gestión de Ensayos Clínicos">OBJ-0002</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0003" title="Gestión de Personal Sanitario">OBJ-0003</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0001" title="Información sobre Ensayos clínicos">IRQ-0001</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0002" title="Información sobre Empleados">IRQ-0002</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0003" title="Información sobre Pacientes">IRQ-0003</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0004" title="Información sobre Promotor">IRQ-0004</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #IRQ-0005" title="Información sobre Monitor">IRQ-0005</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0001" title="Mantener los pacientes en el sistema">CRQ-0001</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0002" title="Un Investigador Principal por Ensayo Clínico">CRQ-0002</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0003" title="No eliminar empleados">CRQ-0003</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0004" title="No eliminar promotores">CRQ-0004</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0005" title="No eliminar Ensayos">CRQ-0005</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #CRQ-0006" title="Un paciente en un sólo Ensayo">CRQ-0006</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0001" title="Lista de Ensayos Clínicos">FRQ-0001</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0002" title="Lista de citas">FRQ-0002</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0003" title="Lista de pacientes con su medicación">FRQ-0003</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0004" title="Lista de monitores con visita">FRQ-0004</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0005" title="Lista de pacientes con su estudio a realizar">FRQ-0005</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0006" title="Lista de Ensayos con número de pacientes">FRQ-0006</a>
+</th>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+</table>
+<p align="center">
+<b>Matriz de rastreabilidad</b>:
+        
+Requisitos Generales frente a funcionales</p>
+<a name="SEC-0023" />
+<h1 align="left">A 
+Actas de reuniones</h1><a name="PRG-0023" />
+<p>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 14/10/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />- Orden del día:
+<br />    1.- Presentación de los asistentes.
+<br />    2.- Exposición de los ensayos clínicos y sus características.
+<br />    3.- Exposición de la situación actual en la gestión de los ensayos clínicos.
+<br />    4.- Exposición de los principales problemas y las posibles soluciones.
+<br />
+<br />- Objetivos principales (de la reunión):
+<br />    Toma de contacto con el proyecto, presentación de los problemas y debilidades del sistema actual y posibles soluciones propuestas por el equipo de desarrollo.
+<br />
+<br />- Desarrollo de la reunión:
+<br />    Primeramente se presentaron los asistentes a pesar de que Francisco es el padre de un integrante del grupo y que el año pasado dos de los integrantes del proyecto realizaron el mismo proyecto en la asignatura de IISSI.
+<br />    A continuación se hablo de lo que se hace en un ensayo clínico para tener una idea general del sistema. Estos conceptos son de caracter informativo por lo que no proceden en el acta ya que no tienen cabida en el proyecto.
+<br />    Seguidamente se presentó la situación actual en lo que respecta a la gestión de los ensayos. Dichos ensayos se gestionan actualmente mediante una base de datos en Access situada en una carpeta compartida. Esa base de datos solo almacena los pacientes, los ensayos clínicos a los que pertenecen y la evolución de cada paciente. Todo el historial clínico es gestionado con otra base de datos perteneciente a la Junta de Andalucía junto con el resto de historiales clínicos de toda Andalucía. El resto de datos necesarios como son los medicamentos para cada paciente, el personal perteneciente al ensayo (investigador principal, responsable de farmacia o patrocinador) o las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de los pacientes no tiene conocimiento de como se realizan debido a que el lo escribe y otro personal se encarga de gestionarlo.
+<br />    Sobre esto nos comentó los problemas como es la no uniformidad en el sistema y la dispersión de todos los elementos lo que generan grandes perdidas de tiempo. Además, concretando más, nos encontramos con algunos problemas como la base de datos access en la que solo puede estar conectada una persona lo que relentiza mucho la gestión de todos los ensayos, el descontrol con el sistema de <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> debido a que no se llevan de manera uniforme u otras complicaciones más que encuentra en el día a día sus compañeros de farmacia al tener que buscar la medicación que deben facilitarle a cada paciente.
+<br />    Tras contarnos su problema le propusimos una solución en la que pudiera estar todo centralizado en un único lugar, que fuera accesible por varios usuarios a la vez y con la privacidad que requiere el tratamiento de estos datos. 
+<br />
+<br />    Como puntos a destacar, los cuales nunca dejo de recordar Francisco durante la reunión, fueron la importancía en la privacidad de los datos almacenados en el sistema, la imposibilidad de que el sistema contenga errores (aquí estan en juego vidas no dinero) y que el sistema sea simple (no poseen conocimientos informaticos por lo que el sistema actual solo saben usarlo algunos miembros)
+<br />
+<br />
+<br />- Acuerdos y tareas: 
+<br />    Realizar un esquema de lo que integraría el sistema
+<br />- Puntos pendientes:
+<br />    Como punto pendiente quedó el precisar que aspectos integraría el sistema debido a la escasa información extraida de esta reunión y a los componentes actuales de la gestión de los ensayos.
+<br />- Próximas reuniones:
+<br />    No se concretó la fecha de la próxima reunión.</p>
+<a name="PRG-0044" />
+<p>Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 27/10/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />+-+Orden del día:
+<br />    1.- Refutación de las ideas obtenidas en la reunión anterior.
+<br />    2.- Resolución de los puntos pendientes de la reunión anterior.
+<br />    3.- Exposición de los procesos de un ensayo clínico.
+<br />    4.- Herramientas tenológicas actuales y disponibilidad de las mismas para el desarrollo del proyecto.
+<br />
+<br />+-+Objetivos principales (de la reunión):
+<br />    Una visión más profunda de como funciona la iteracción con el sistema actual.
+<br />
+<br />+-+Desarrollo de la reunión:
+<br />    Primeramente se comentarón las conclusiones obtenidas por el equipo de desarrollo en la reunión anterior y se corrigieron algunos conceptos erroneos. 
+<br />    A continuación se resolvieron los puntos pendientes de la reunión anterior, es decir, nos expuso como se gestiona la información relativa a los medicamentos, el personal perteneciente al ensayo y las <a href="#GLO-0028" title="Fechas en las que se realizan revisiones clínicas o extracciones analíticas de control a los pacientes.">citas</a> de pacientes.
+<br />    Como marca el punto 3 de la reunión nos expuso los procesos de negocio comprendidos en los ensayos clínicos, tanto su creación como la iteracción que tienen con el paciente.
+<br />    Nos expuso los puntos fuertes y débiles del entorno actual los cuales están integramente ligados a sus tecnologías actuales. Desde un inapropiado hardware donde centralizar todos sus datos hasta un inapropiado software debido a descentralización del mismo. Todo esto conlleva a una enorme ineficiencia de los empleados y una constante inseguridad sobre si se estarán haciendo correctamente las cosas.
+<br />
+<br />+-+Acuerdos y tareas: 
+<br />    Realizar una proposición sobre mejora en la gestión de los ensayos clínicos (desde el punto de vista software).
+<br />+-+Puntos pendientes:
+<br />    No quedo ningún punto pendiente.
+<br />+-+Próximas reuniones:
+<br />    La próxima reunión se concreto una vez se hubiera realizado la revisión del primer entregable.</p>
+<a name="PRG-0061" />
+<p>== Acta reunión 3 ==
+<br />
+<br />Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 10/11/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />+-+Orden del día:
+<br />
+<br />    1.- Comentarios primer entregable.
+<br />    2.- Petición de requisitos.
+<br />
+<br />
+<br />+-+Objetivos principales (de la reunión):
+<br />    Enumeración de los requisitos.
+<br />
+<br />+-+Desarrollo de la reunión:
+<br />    Primeramente se comentó la corrección del primer entregable y, puesto que nos comentaron que íbamos por buen camino, pasamos al siguiente punto. 
+<br />    A continuación se paso a la explicación de que es un requisito, para que lo necesitamos y algunos ejemplos. Tras esto, empezamos a hablar de todos los posibles requisitos.
+<br />
+<br />+-+Acuerdos y tareas: 
+<br />    Por parte de los desarrolladores: Realización formalizada de los requisitos del sistema y algunos diseños básicos de mockups.
+<br />    Por parte del cliente: Petición de algunos requisitos a sus compañeros.
+<br />
+<br />+-+Puntos pendientes:
+<br />    Requisitos del sistema.
+<br />
+<br />+-+Próximas reuniones:
+<br />    La próxima reunión se concreto para la próxima semana.</p>
+<a name="PRG-0062" />
+<p>== Acta reunión 4 ==
+<br />
+<br />Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 19/11/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />+-+Orden del día:
+<br />
+<br />    +Peticiones mockups
+<br />    Resolver algunas dudas de lo anterior
+<br />    +Guía y Enumeración de requisitos (II)
+<br />    Requisitos de integración....
+<br />    Hablar de los puntos futuros 
+<br />
+<br />
+<br />    1.- Finalización requisitos.
+<br />    2.- Comentarios y pautas a seguir en los mockups.
+<br />
+<br />+-+Objetivos principales (de la reunión):
+<br />    Finalizar los requisitos y tener una idea clara de como continuar los mockups.
+<br />
+<br />+-+Desarrollo de la reunión:
+<br />    Primeramente se completaron todas las ideas necesarias para realizar los requisitos del sistema. 
+<br />    Por último se mostraron algunos mockups de lo que sería la interfaz gráfica finalizada y se comentaron algunos aspectos a cambiar y mejorar.
+<br />
+<br />+-+Acuerdos y tareas: 
+<br />    Revisión total de los mockups para la próxima reunión.
+<br />
+<br />+-+Puntos pendientes:
+<br />    No quedo ningún punto pendiente.
+<br />
+<br />+-+Próximas reuniones:
+<br />    La próxima reunión se concretará una vez finalizados los mockups.</p>
+<a name="PRG-0063" />
+<p>== Acta reunión 5 ==
+<br />
+<br />Lugar de la reunión: Laboratorios de hematología del Hospital Vírgen del Rocío
+<br />Fecha: 26/11/2015
+<br />Asistentes: 
+<br />    Guillermo Alcalá Gamero. Equipo de desarrollo de GECH.
+<br />    Manuel Francisco López Ruiz. Equipo de desarrollo de GECH.
+<br />    Carlos Alberto Mata Gil. Equipo de desarrollo de GECH.
+<br />    Miguel Rodríguez Caballero. Equipo de desarrollo de GECH.
+<br />    Francisco Javier Rodríguez Martorel. Representante de los ensayos clínicos de hematología por parte del Hospital Virgen del Rocío.
+<br />
+<br />+-+Orden del día:
+<br />
+<br />    1.- Resolución de dudas pendientes respecto a los requisitos.
+<br />    2.- Revisión de los mockups.
+<br />
+<br />+-+Objetivos principales (de la reunión):
+<br />    Revisión de los mockups.
+<br />
+<br />+-+Desarrollo de la reunión:
+<br />    Primeramente se resolvieron algunas dudas para finalizar los requisitos. 
+<br />    Por último se comentaron los mockups los cuales le parecieron correctos debido a las pautas de la última reunión.
+<br />
+<br />+-+Acuerdos y tareas: 
+<br />    Ninguno.
+<br />+-+Puntos pendientes:
+<br />    No quedo ningún punto pendiente.
+<br />+-+Próximas reuniones:
+<br />    La próxima reunión se concreto una vez se hubiera realizado la revisión del segundo entregable.</p>
+<a name="SEC-0024" />
+<h1 align="left">B 
+Documentación relevante</h1><a name="PRG-0024" />
+<p>No procede</p>
+<a name="SEC-0025" />
+<h1 align="left">C 
+Glosario de términos y abreviaturas</h1><a name="PRG-0016" />
+<p>
+<a href="#GLO-0030" title="Encargado de revisar el CRF y promover dicho ensayo clínico">CRO</a>: Clinical Research Organization
+<br />
+<a href="#GLO-0031" title="Informe de control sobre un ensayo clínico realizado por el Data Manager y supervisado por el CRO.">CRF</a>: Clinical Research Formulary
+<br />IP: Investigador principal
+<br />
+<a href="#GLO-0039" title="Es el número único de identificación para los pacientes en el sistema de salud de Andalucía.">NUHSA</a>: Número Único de Historia de Salud de Andalucía
+<br />SAES: Serious Adverse Events (Eventos Adversos Serios)</p>
+</body>
+</html>
